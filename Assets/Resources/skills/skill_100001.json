@@ -1,0 +1,12 @@
+
+{"file":"Skill_100001_爆炸清屏","id":100001,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":1000,"time":1000,"eLogic":2,"eventList":[
+{"type":"BombOnce","targettype":"local","target":
+{"camp":"diff","rule":"none","save":100,"num":99,"rang":15}
+,"item":
+{"flags":8,"res":"ExplosionSmoke_40","num":1,"l":1000,"scale":3}
+,"childs":[
+{"type":"CalcDamage","targettype":"local","item":
+{"rule":"Real","per":999999,"skillId":100001}
+}
+]}
+]}

@@ -1,0 +1,12 @@
+
+{"file":"AI_BOSS_1008_41","id":1008,"childs":[
+{"datas":[
+{"hp":1,"skillId":60030,"find":"FollowTarget","delay":750}
+,
+{"hp":0.6,"waveTime":25,"skillId":60031,"find":"FollowTarget","delay":1500}
+],"name":"BossState","type":"BossState","typeName":"AIEvent_BossStateData","auto":1,"l":-1,"childs":[
+{"name":"AutoPlaySkill","type":"AutoPlaySkill","typeName":"AIEvent_AutoPlaySkillData","auto":1,"l":-1}
+,
+{"name":"FollowTarget","type":"FollowTarget","typeName":"AI_FollowTargetData","auto":1,"l":-1}
+]}
+]}

@@ -1,0 +1,14 @@
+
+{"file":"Skill_3017_异形眼球","id":3017,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":3000,"time":3000,"eventList":[
+{"type":"CreatBullet","targettype":"none","item":
+{"projectId":26197,"itemId":30003,"res":"bullet_alleneyes","pass":1,"num":1,"angle":60,"flags":32768,"move":
+{"movetype":"Speed","speed":20,"dis":20,"tween":"None"}
+,"target":
+{"camp":"diff","flags":1,"rule":"none","save":2000,"num":999,"w":0.19,"h":0.2,"offdir":-0.2}
+}
+,"childs":[
+{"type":"CalcDamage","targettype":"none","item":
+{"rule":"Bullet_Attr","per":1}
+}
+]}
+]}

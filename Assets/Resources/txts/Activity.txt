@@ -1,0 +1,6 @@
+ID	startTime	endTime	itemID	monsterID	avatar	treeSkin	btnName	channel
+int	int[]	int[]	int	int	string[]	string	string	int[]
+ID								
+0	2023,10,26	2023,11,13	38001	48001	avatar_halloween		SETTING_HALLOWEEN	0,1,2,3
+1	2023,11,18	2023,12,3	38002	48002	avatar_thanksgiving		SETTING_THANKSGIVING	0,1,2,3
+2	2023,12,16	2024,1,2	38003	48003	avatar_christmas_0,avatar_christmas_1	christmas_tree	SETTING_CHRISTMAS	0,1,2,3

@@ -1,0 +1,16 @@
+
+{"file":"Skill_500302_生成3小怪40216","id":500302,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":999999,"time":999999,"eventList":[
+{"type":"UpdateChilds","l":999999,"targettype":"none","item":
+{"evt":9}
+,"childs":[
+{"type":"CreatPet","l":999999,"targettype":"none","item":
+{"isMonster":1,"id":40217,"num":3,"offArr":[
+{"x":0.5,"y":0.5}
+,
+{"x":0.5}
+,
+{"y":0.5}
+],"flags":1}
+}
+]}
+]}

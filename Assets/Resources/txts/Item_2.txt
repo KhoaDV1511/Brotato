@@ -1,0 +1,194 @@
+ID	name	desc	type	icon	tier	skills	buffs	unique	isClose	res	Price	RecyclePrice	size	scale	birthEff	deathEff	ai	mass	pushAtten	layer	Unlock	DrawingRewards	AdventureDiff	AdventureHero
+int	LocalStr	LocalStr	int	string	int	int[]	BuffExcelList	bool	bool	string	int	int	float	float	string	string	int	float	float	int	int	DropArray	int	int[]
+ID																								
+30001	ITEM_ACID		3	acid_icon	2		201,8#207,-4	0			65	0	0.2				0			0	0	60001,5	0	
+30002	ITEM_ALIEN_BABY		3	alien_baby_icon	3		201,15#2001,8	0			80	0	0.2				0			0	0	60001,5	0	
+30003	ITEM_ALIEN_EYES	DAMAGE_DEALT	3	alien_eyes_icon	2	3017	2002,6,1,0,201,50,3	0			50	0	0.2				0			0	0	60001,5	0	
+30004	ITEM_ALIEN_MAGIC		3	alien_magic_icon	3		201,8#205,3#217,-8	0			85	0	0.2				0			0	0	60001,5	0	
+30005	ITEM_ALIEN_TONGUE		3	alien_tongue_icon	1		1003,30	0			25	0	0.2				0			0	0	60001,5	0	
+30006	ITEM_ALIEN_WORM		3	alien_worm_icon	1		201,3#205,2#2004,-1	0			15	0	0.2				0			0	0	60001,5	0	
+30007	ITEM_ALLOY		3	alloy_icon	3		210,3#212,3#218,3#213,5#207,-6	0			80	0	0.2				0			0	0	60001,5	0	
+30008	ITEM_ANVIL	STATS_GAINED	3	anvil_icon	4		2005,1,2,208	1			120	0	0.2				0			0	56	60001,5	0	
+30009	ITEM_BABY_ELEPHANT	DAMAGE_DEALT	3	baby_elephant_icon	1		2006,3020,25,0,217,25	0			25	0	0.2				0			0	0	60001,5	0	
+30010	ITEM_BABY_GECKO		3	baby_gecko_icon	1		2007,20#216,10	0			18	0	0.2				0			0	0	60001,5	0	
+30011	ITEM_BABY_WITH_A_BEARD	DAMAGE_DEALT	3	baby_with_a_beard_icon	3		2008,3018,100,1,212,100#216,-50	0			100	0	0.2				0			0	0	60001,5	0	
+30012	ITEM_BAG	MATERIALS_GAINED	3	bag_icon	1		2009,15#204,-1	0			15	0	0.2				0			0	0	60001,5	0	
+30013	ITEM_BANDANA		3	bandana_icon	3		2063,1#200,-10	0			75	0	0.2				0			0	0	60001,5	0	
+30014	ITEM_BANNER		3	banner_icon	2		216,20#215,10#206,-2	0			55	0	0.2				0			0	0	60001,5	0	
+30015	ITEM_BARRICADE		3	barricade_icon	3		2042,208,8#204,-5	0			75	0	0.2				0			0	0	60001,5	0	
+30016	ITEM_BAT		3	bat_icon	1		206,2#219,-2	0			20	0	0.2				0			0	0	60001,5	0	
+30017	ITEM_BEAN_TEACHER		3	bean_teacher_icon	3		2010,40#206,-2	0			70	0	0.2				0			0	0	60001,5	0	
+30018	ITEM_BEANIE		3	beanie_icon	1		204,4#216,-6	0			20	0	0.2				0			0	0	60001,5	0	
+30019	ITEM_BIG_ARMS		3	big_arms_icon	4		210,12#212,6#208,-1#204,-5	0			105	0	0.2				0			0	39	60001,5	0	
+30020	ITEM_BLACK_BELT		3	black_belt_icon	2		2010,25#210,3#217,-8	0			50	0	0.2				0			0	0	60001,5	0	
+30021	ITEM_BLINDFOLD		3	blindfold_icon	2		213,5#207,5#216,-15	0			45	0	0.2				0			0	0	60001,5	0	
+30022	ITEM_BLOOD_DONATION		3	blood_donation_icon	3		219,40#2012,-1	0			50	0	0.2				0			0	0	60001,5	0	
+30023	ITEM_BLOOD_LEECH		3	blood_leech_icon	2		206,2#205,2#219,-4	0			45	0	0.2				0			0	0	60001,5	0	
+30024	ITEM_BOILING_WATER		3	boiling_water_icon	1		211,2#201,-1	0			30	0	0.2				0			0	0	60001,5	0	
+30025	ITEM_BOOK		3	book_icon	1		218,1	0			8	0	0.2				0			0	0	60001,5	0	
+30026	ITEM_BOWLER_HAT		3	bowler_hat_icon	3		217,15#219,18#215,-5#213,-3	0			75	0	0.2				0			0	50	60001,5	0	
+30027	ITEM_BOXING_GLOVE		3	boxing_glove_icon	1		2013,3	0			15	0	0.2				0			0	0	60001,5	0	
+30028	ITEM_BROKEN_MOUTH		3	broken_mouth_icon	1		201,5#205,-1	0			25	0	0.2				0			0	0	60001,5	0	
+30029	ITEM_BUTTERFLY		3	butterfly_icon	1		206,2#211,-1	0			30	0	0.2				0			0	0	60001,5	2	10001,10002
+30030	ITEM_CAKE		3	cake_icon	1		201,3#200,-1	0			15	0	0.2				0			0	0	60001,5	0	
+30031	ITEM_CAMPFIRE		3	campfire_icon	2		211,2#205,2#204,-2	0			40	0	0.2				0			0	0	60001,5	0	
+30032	ITEM_CANDLE		3	candle_icon	3		211,4#205,1#2014,-10#200,-5	1			65	0	0.2				0			0	0	60001,5	0	
+30033	ITEM_CAPE		3	cape_icon	4		206,5#207,20#210,-2#212,-2#211,-2	0			110	0	0.2				0			0	0	60001,5	0	
+30034	ITEM_CHAMELEON		3	chameleon_icon	3		207,3#2042,3008,20#200,-4	0			70	0	0.2				0			0	0	60001,5	0	
+30035	ITEM_CHARCOAL		3	charcoal_icon	1		211,1#210,2#219,-2	0			20	0	0.2				0			0	0	60001,5	0	
+30036	ITEM_CLAW_TREE		3	claw_tree_icon	1		210,1#213,3#201,-1	0			20	0	0.2				0			0	0	60001,5	0	
+30037	ITEM_CLOVER		3	clover_icon	3		217,20#207,6#206,-2	0			65	0	0.2				0			0	0	60001,5	0	
+30038	ITEM_COFFEE		3	coffee_icon	1		215,10#200,-2	0			15	0	0.2				0			0	0	60001,5	0	
+30039	ITEM_COG		3	cog_icon	2		218,4#200,-4	0			35	0	0.2				0			0	0	60001,5	0	
+30040	ITEM_COMMUNITY_SUPPORT		3	community_support_icon	3		2015,215,1#208,-2	1			75	0	0.2				0			0	57	60001,5	0	
+30041	ITEM_COMPASS		3	compass_icon	2		204,5#218,3#213,-3	0			40	0	0.2				0			0	52	60001,5	0	
+30042	ITEM_COUPON	MATERIALS_SAVED	3	coupon_icon	1		2016,-5	0			15	0	0.2				0			0	0	60001,5	0	
+30043	ITEM_CROWN	STATS_GAINED	3	crown_icon	3		2089,8	1			70	0	0.2				0			0	0	60001,5	0	
+30044	ITEM_CUTE_MONKEY	HEALTH_RECOVERED	3	cute_monkey_icon	1		2018,8#212,-1	0			25	0	0.2				0			0	0	60001,5	0	
+30045	ITEM_CYBERBALL	DAMAGE_DEALT	3	cyberball_icon	2		2019,3020,25,0,217,25	0			35	0	0.2				0			0	0	60001,5	0	
+30046	ITEM_CYCLOPS_WORM		3	cyclops_worm_icon	2		200,12#216,-12	0			45	0	0.2				0			0	0	60001,5	0	
+30047	ITEM_DANGEROUS_BUNNY	MATERIALS_SAVED	3	dangerous_bunny_icon	2		2020,1	0			35	0	0.2				0			0	0	60001,5	0	
+30048	ITEM_DEFECTIVE_STEROIDS		3	defective_steroids_icon	1		201,2#210,2#215,-3	0			20	0	0.2				0			0	0	60001,5	0	
+30049	ITEM_DIPLOMA		3	diploma_icon	4		218,10#2010,20#201,-3	0			80	0	0.2				0			0	0	60001,5	0	
+30050	ITEM_DUCT_TAPE		3	duct_tape_icon	1		208,1#218,1#201,-2	0			25	0	0.2				0			0	0	60001,5	0	
+30051	ITEM_DYNAMITE		3	dynamite_icon	1		1001,15	0			20	0	0.2				0			0	0	60001,5	0	
+30052	ITEM_ENERGY_BRACELET		3	energy_bracelet_icon	2		213,4#211,2#212,-2	0			55	0	0.2				0			0	0	60001,5	0	
+30053	ITEM_ESTYS_COUCH		3	estys_couch_icon	4		201,5#2021,2,205,-1,204#204,-15	1			100	0	0.2				0			0	0	60001,5	0	
+30054	ITEM_EXOSKELETON		3	exoskeleton_icon	4		208,5#213,5#218,5#204,5#205,-2#206,-2	0			90	0	0.2				0			0	0	60001,5	0	
+30055	ITEM_EXPLOSIVE_SHELLS		3	explosive_shells_icon	4		1001,60#1002,15#200,-15	0			110	0	0.2				0			0	55	60001,5	0	
+30056	ITEM_EYES_SURGERY		3	eye_surgery_icon	2		2022,10#216,-10	0			60	0	0.2				0			0	0	60001,5	0	
+30057	ITEM_FERTILIZER		3	fertilizer_icon	1		219,8#210,-1	0			15	0	0.2				0			0	0	60001,5	0	
+30058	ITEM_FIN		3	fin_icon	3		204,10#206,3#219,-8	0			65	0	0.2				0			0	49	60001,5	0	
+30059	ITEM_FOCUS		3	focus_icon	4		200,30#2023,215,-3	0			110	0	0.2				0			0	58	60001,5	0	
+30060	ITEM_FUEL_TANK		3	fuel_tank_icon	2		211,4#210,-1#212,-1	0			45	0	0.2				0			0	0	60001,5	0	
+30061	ITEM_GAMBLING_TOKEN		3	gambling_token_icon	2		207,8#208,-1	0			60	0	0.2				0			0	0	60001,5	0	
+30062	ITEM_GENTLE_ALIEN		3	gentle_alien_icon	1		201,2#200,5#2014,5	0			30	0	0.2				0			0	0	60001,5	0	
+30063	ITEM_GLASS_CANNON		3	glass_cannon_icon	3		200,25#208,-3	0			75	0	0.2				0			0	0	60001,5	0	
+30064	ITEM_GLASSES		3	glasses_icon	1		216,20	0			25	0	0.2				0			0	0	60001,5	0	
+30065	ITEM_GNOME		3	gnome_icon	4		210,10#211,10#216,-20#1003,-20	0			100	0	0.2				0			0	59	60001,5	0	
+30066	ITEM_GOAT_SKULL		3	goat_skull_icon	1		210,3#213,-2	0			25	0	0.2				0			0	0	60001,5	0	
+30067	ITEM_GRINDS_MAGICAL_LEAF	STATS_GAINED	3	grinds_magical_leaf_icon	4		2024,100,30067201,3#2025,100,30067205,1#2026,100,30067206,1	0			100	0	0.2				0			0	0	60001,5	0	
+30068	ITEM_GUMMY_BERSERKER		3	gummy_berserker_icon	1		215,5#216,15#208,-1	0			25	0	0.2				0			0	0	60001,5	0	
+30069	ITEM_HANDCUFFS		3	handcuffs_icon	3		210,8#212,8#211,8#2027,15	1			80	0	0.2				0			0	0	60001,5	0	
+30070	ITEM_HEAD_INJURY		3	head_injury_icon	1		200,6#216,-8	0			25	0	0.2				0			0	0	60001,5	0	
+30071	ITEM_HEAVY_BULLETS		3	heavy_bullets_icon	4		212,5#200,10#216,10#215,-5#213,-5	0			100	0	0.2				0			0	0	60001,5	0	
+30072	ITEM_HEDGEHOG		3	hedgehog_icon	1		210,2#212,1#205,-1	0			30	0	0.2				0			0	0	60001,5	0	
+30073	ITEM_HELMET		3	helmet_icon	1		208,1#204,-2	0			25	0	0.2				0			0	0	60001,5	0	
+30074	ITEM_HUNTING_TROPHY	MATERIALS_GAINED	3	hunting_trophy_icon	3		2088,33	0			55	0	0.2				0			0	32	60001,5	0	
+30075	ITEM_INJECTION		3	injection_icon	1		200,7#201,-2	0			20	0	0.2				0			0	0	60001,5	0	
+30076	ITEM_INSANITY		3	insanity_icon	1		213,6#200,-3	0			20	0	0.2				0			0	0	60001,5	0	
+30077	ITEM_JETPACK		3	jetpack_icon	4		204,15#207,10#201,-5#208,-1	0			100	0	0.2				0			0	0	60001,5	0	
+30078	ITEM_LANDMINES		3	landmines_icon	1		2029,0,12,10,218,100#1017,3015#20292,10,218,100	0			15	0	0.2				0			0	0	60001,5	0	
+30079	ITEM_LEATHER_VEST		3	leather_vest_icon	2		208,2#207,6#201,-3	0			45	0	0.2				0			0	0	60001,5	0	
+30080	ITEM_LEMONADE		3	lemonade_icon	1		2004,1	0			15	0	0.2				0			0	0	60001,5	0	
+30081	ITEM_LENS		3	lens_icon	1		212,1#216,-5	0			20	0	0.2				0			0	0	60001,5	0	
+30082	ITEM_LITTLE_FROG		3	little_frog_icon	2		1003,20#219,10#207,-5	0			50	0	0.2				0			0	0	60001,5	0	
+30083	ITEM_LITTLE_MUSCLEY_DUDE		3	little_muscley_dude_icon	2		210,3#201,5#216,-15	0			50	0	0.2				0			0	0	60001,5	0	
+30084	ITEM_LOST_DUCK		3	lost_duck_icon	1		217,10#211,-1	0			25	0	0.2				0			0	0	60001,5	0	
+30085	ITEM_LUCKY_CHARM		3	lucky_charm_icon	3		217,30#210,-2#212,-1	0			75	0	0.2				0			0	37	60001,5	0	
+30086	ITEM_LUMBERJACK_SHIRT		3	lumberjack_shirt_icon	1		2030,1	1			15	0	0.2				0			0	0	60001,5	0	
+30087	ITEM_MAMMOTH		3	mammoth_icon	4		210,20#205,5#200,-8#204,-3	0			130	0	0.2				0			0	0	60001,5	0	
+30088	ITEM_MASTERY		3	mastery_icon	2		210,6#212,-3	0			55	0	0.2				0			0	0	60001,5	0	
+30089	ITEM_MEDAL		3	medal_icon	2		201,3#200,3#208,1#204,3#213,-4	0			55	0	0.2				0			0	0	60001,5	0	
+30090	ITEM_MEDIKIT		3	medikit_icon	4		205,10#2155,20501,2#217,-10	0			95	0	0.2				0			0	53	60001,5	0	
+30091	ITEM_METAL_DETECTOR	MATERIALS_GAINED	3	metal_detector_icon	2		2031,5#217,6#218,2#200,-5	0			40	0	0.2				0			0	0	60001,5	0	
+30092	ITEM_METAL_PLATE		3	metal_plate_icon	2		208,2#200,-3	0			40	0	0.2				0			0	0	60001,5	0	
+30093	ITEM_MISSILE		3	missile_icon	2		200,10#215,-4	0			45	0	0.2				0			0	0	60001,5	0	
+30094	ITEM_MOUSE		3	mouse_icon	3		206,5#2014,10#219,-5	0			55	0	0.2				0			0	0	60001,5	0	
+30095	ITEM_MUSHROOM		3	mushroom_icon	1		205,3#217,-2	0			25	0	0.2				0			0	0	60001,5	0	
+30096	ITEM_MUTATION		3	mutation_icon	1		212,1#211,1#204,-3	0			25	0	0.2				0			0	0	60001,5	0	
+30097	ITEM_NIGHT_GOGGLES		3	night_goggles_icon	4		213,15#216,50#201,-3#208,-1	0			90	0	0.2				0			0	33	60001,5	0	
+30098	ITEM_OCTOPUS		3	octopus_icon	4		201,12#205,5#206,3#213,-8	0			105	0	0.2				0			0	38	60001,5	0	
+30099	ITEM_PADDING		3	padding_icon	2		201,3#2090,224,1,222,100#204,-5	0			45	0	0.2				0			0	45	60001,5	0	
+30100	ITEM_PANDA		3	panda_icon	4		201,12#217,25#200,-5	0			100	0	0.2				0			0	43	60001,5	0	
+30101	ITEM_PEACEFUL_BEE		3	peaceful_bee_icon	1		207,4#219,4#210,-1#212,-1	0			18	0	0.2				0			0	0	60001,5	0	
+30102	ITEM_PENCIL		3	pencil_icon	1		218,2#215,-1#213,-1	0			15	0	0.2				0			0	0	60001,5	0	
+30103	ITEM_PIGGY_BANK	MATERIALS_GAINED	3	piggy_bank_icon	2		20331,20,20	1			40	0	0.2				0			0	0	60001,5	0	
+30104	ITEM_PLANT		3	plant_icon	1		205,3#206,-1	0			10	0	0.2				0			0	0	60001,5	0	
+30105	ITEM_PLASTIC_EXPLOSIVE		3	plastic_explosive_icon	3		1002,25	0			60	0	0.2				0			0	0	60001,5	0	
+30106	ITEM_POISONOUS_TONIC		3	poisonous_tonic_icon	3		215,10#213,5#216,15#205,-2	0			80	0	0.2				0			0	0	60001,5	0	
+30107	ITEM_POTATO		3	potato_icon	4		201,3#205,2#206,1#200,5#215,5#204,3#207,3#208,1#217,5	0			95	0	0.2				0			0	30	60001,5	0	
+30108	ITEM_POTION		3	potion_icon	4		2034,2#205,3	1			90	0	0.2				0			0	0	60001,5	0	
+30109	ITEM_POWER_GENERATOR		3	power_generator_icon	3		2021,1,200,1,204#200,-5	1			65	0	0.2				0			0	0	60001,5	0	
+30110	ITEM_PROPELLER_HAT		3	propeller_hat_icon	1		217,10#200,-2	0			28	0	0.2				0			0	0	60001,5	0	
+30111	ITEM_PUMPKIN		3	pumpkin_icon	2		2035,15#200,-2	0			40	0	0.2				0			0	0	60001,5	0	
+30112	ITEM_RECYCLING_MACHINE	MATERIALS_GAINED	3	recycling_machine_icon	2		2036,35	1			35	0	0.2				0			0	0	60001,5	0	
+30113	ITEM_RETROMATIONS_HOODIE		3	retromations_hoodie_icon	4		2032,2,215,1,207#216,-80	1			100	0	0.2				0			0	0	60001,5	0	
+30114	ITEM_RICOCHET		3	ricochet_icon	4		2037,1#200,-25	0			110	0	0.2				0			0	0	60001,5	0	
+30115	ITEM_RIP_AND_TEAR	DAMAGE_DEALT	3	rip_and_tear_icon	3		2038,3021,20,10,210,50#219,-12	0			65	0	0.2				0			0	40	60001,5	0	
+30116	ITEM_RITUAL		3	ritual_icon	2		200,6#206,2#218,-2	0			60	0	0.2				0			0	48	60001,5	0	
+30117	ITEM_ROBOT_ARM		3	robot_arm_icon	4		208,6#218,6#205,-2#206,-2	0			90	0	0.2				0			0	51	60001,5	0	
+30118	ITEM_SAD_TOMATO		3	sad_tomato_icon	3		205,8#2039,-50	1			50	0	0.2				0			0	0	60001,5	0	
+30119	ITEM_SCAR		3	scar_icon	1		2010,20#216,-8	0			30	0	0.2				0			0	0	60001,5	0	
+30120	ITEM_SCARED_SAUSAGE	DAMAGE_DEALT	3	scared_sausage_icon	1		1014,25,2040,1,3,211,100	0			25	0	0.2				0			0	0	60001,5	0	
+30121	ITEM_SCOPE		3	scope_icon	2		212,2#216,25#215,-7	0			55	0	0.2				0			0	0	60001,5	0	
+30122	ITEM_SHADY_POTION		3	shady_potion_icon	2		217,20#205,-2	0			48	0	0.2				0			0	0	60001,5	0	
+30123	ITEM_SHMOOP		3	shmoop_icon	3		201,6#205,2#210,-2#212,-1	0			60	0	0.2				0			0	0	60001,5	0	
+30124	ITEM_SIFDS_RELIC		3	sifds_relic_icon	4		2007,100	1			100	0	0.2				0			0	0	60001,5	0	
+30125	ITEM_SMALL_MAGAZINE		3	small_magazine_icon	2		212,2#215,10#200,-6	0			60	0	0.2				0			0	0	60001,5	0	
+30126	ITEM_SNAIL		3	snail_icon	2		2001,-5#204,-3	1			40	0	0.2				0			0	36	60001,5	0	
+30127	ITEM_SNAKE		3	snake_icon	1		2041,1#201,-1	0			25	0	0.2				0			0	0	60001,5	0	
+30128	ITEM_SPIDER		3	spider_icon	4		200,12#2023,215,6#207,-3#219,-5	0			120	0	0.2				0			0	44	60001,5	0	
+30129	ITEM_STATUE		3	statue_icon	3		2042,215,40#204,-10	0			60	0	0.2				0			0	0	60001,5	0	
+30130	ITEM_STRANGE_BOOK		3	strange_book_icon	3		2032,1,218,1,211#210,-1#212,-1	1			70	0	0.2				0			0	0	60001,5	0	
+30131	ITEM_SUNGLASSES		3	sunglasses_icon	2		213,10#208,-1	0			50	0	0.2				0			0	0	60001,5	0	
+30132	ITEM_TARDIGRADE		3	tardigrade_icon	3		2043,1	0			50	0	0.2				0			0	0	60001,5	0	
+30133	ITEM_TERRIFIED_ONION		3	terrified_onion_icon	1		204,4#217,-6	0			15	0	0.2				0			0	0	60001,5	0	
+30134	ITEM_TOOLBOX		3	toolbox_icon	3		218,6#215,-8	0			55	0	0.2				0			0	0	60001,5	0	
+30135	ITEM_TORTURE		3	torture_icon	4		201,15#2044,4	1			110	0	0.2				0			0	0	60001,5	0	
+30136	ITEM_TOXIC_SLUDGE		3	toxic_sludge_icon	1		211,2#207,-2	0			20	0	0.2				0			0	0	60001,5	0	
+30137	ITEM_TRACTOR		3	tractor_icon	3		219,40#200,-8	0			70	0	0.2				0			0	0	60001,5	0	
+30138	ITEM_TREE		3	tree_icon	1		2045,1	0			15	0	0.2				0			0	0	60001,5	0	
+30139	ITEM_TRIANGLE_OF_POWER		3	triangle_of_power_icon	3		200,20#208,1#2082,-2,2083	0			15	0	0.2				0			0	0	60001,5	0	
+30140	ITEM_TURRET		3	turret_icon	1		1017,3006#2074,10,218,80	0			15	0	0.2				0			0	0	60001,5	0	
+30141	ITEM_TURRET_FLAME		3	turret_flame_icon	2		1017,3007#1016,100,2075,5,8,218,33	0			40	0	0.2				0			0	0	60001,5	0	
+30142	ITEM_TURRET_HEALING		3	turret_healing_icon	2		1017,3010#2076,3,218,5	0			40	0	0.2				0			0	0	60001,5	0	
+30143	ITEM_TURRET_LASER		3	turret_laser_icon	3		1017,3008#2077,20,218,125	0			65	0	0.2				0			0	0	60001,5	0	
+30144	ITEM_TURRET_ROCKET		3	turret_rocket_icon	4		1017,3009#2078,25,218,150	0			80	0	0.2				0			0	0	60001,5	0	
+30145	ITEM_TYLER		3	tyler_icon	3		2052,10,218,100,10#1017,3016#20521,10,218,100	0			75	0	0.2				0			0	0	60001,5	0	
+30146	ITEM_UGLY_TOOTH		3	ugly_tooth_icon	1		2053,100,20531,-10#204,-3	1			25	0	0.2				0			0	0	60001,5	0	
+30147	ITEM_VIGILANTE_RING	STATS_GAINED	3	vigilante_ring_icon	3		2024,100,20006,3	0			92	0	0.2				0			0	0	60001,5	0	
+30148	ITEM_WANDERING_BOT		3	wandering_bot_icon	3	3019	1021,100,2054,-20,-1	0			60	0	0.2				0			0	0	60001,5	0	
+30149	ITEM_WARRIOR_HELMET		3	warrior_helmet_icon	3		208,3#201,5#204,-5	0			80	0	0.2				0			0	0	60001,5	0	
+30150	ITEM_WEIRD_FOOD		3	weird_food_icon	1		2004,2#207,-2	0			20	0	0.2				0			0	0	60001,5	0	
+30151	ITEM_WEIRD_GHOST		3	weird_ghost_icon	1		201,3#2055,-100	0			12	0	0.2				0			0	0	60001,5	0	
+30152	ITEM_WHEAT		3	wheat_icon	3		210,4#212,2#219,10#211,-2	0			85	0	0.2				0			0	47	60001,5	0	
+30153	ITEM_WHEELBARROW		3	wheelbarrow_icon	2		219,16#208,-1	0			40	0	0.2				0			0	0	60001,5	0	
+30154	ITEM_WHETSTONE		3	whetstone_icon	2		206,4#2013,-3	0			40	0	0.2				0			0	46	60001,5	0	
+30155	ITEM_WHITE_FLAG		3	white_flag_icon	2		219,5#2014,-5	1			40	0	0.2				0			0	0	60001,5	0	
+30156	ITEM_WINGS		3	wings_icon	3		204,10#216,30#211,-2	0			85	0	0.2				0			0	0	60001,5	0	
+30157	ITEM_WISDOM		3	wisdom_icon	3		2056,200,5#2083,-20	1			85	0	0.2				0			0	0	60001,5	0	
+30158	ITEM_WOLF_HELMET		3	wolf_helmet_icon	4		211,10#217,20#218,-5	0			90	0	0.2				0			0	0	60001,5	0	
+30159	ITEM_BLOODY_HAND		3	bloody_hand_icon	4		206,12#3051,2,200,1,206#2012,-1	0			100	0	0.2				0			0	0	60001,5	0	
+30160	ITEM_EXTRA_STOMACH	STATS_GAINED	3	extra_stomach_icon	4		2116,1,201,10	1			100	0	0.2				0			0	0	60001,5	0	
+30161	ITEM_SPICY_SAUCE	DAMAGE_DEALT	3	spicy_sauce_icon	2		201,3#2124,3023,25,0,201,100	0			40	0	0.2				0			0	69	60001,5	0	
+30162	ITEM_TENTACLE	HEALTH_RECOVERED	3	tentacle_icon	2		213,3#2125,20	0			32	0	0.2				0			0	71	60001,5	0	
+30163	ITEM_SILVER_BULLET		3	silver_bullet_icon	3		2123,25	0			70	0	0.2				0			0	0	60001,5	0	
+30164	ITEM_BAIT		3	bait_icon	2		200,8#2117,10002	0			25	0	0.2				0			0	0	60001,5	0	
+30165	ITEM_PEACOCK		3	peacock_icon	3		2010,25#2120,100,2010#2121,50,401	0			50	0	0.2				0			0	0	60001,5	0	
+30166	ITEM_LUCKY_COIN		3	lucky_coin_icon	4		3051,2,217,1,213#208,-2	1			100	0	0.2				0			0	0	60001,5	0	
+30167	ITEM_ADRENALINE	HEALTH_RECOVERED	3	adrenaline_icon	3		207,5#2115,50,5	1			60	0	0.2				0			0	0	60001,5	0	
+30168	ITEM_RIPOSTE	DAMAGE_DEALT	3	riposte_icon	2		210,2#2122,3020,100,0,210,300	0			40	0	0.2				0			0	0	60001,5	0	
+30169	ITEM_GARDEN		3	garden_icon	2	3024	2126,15	0			50	0	0.2				0			0	0	60001,5	0	
+30170	ITEM_IMPROVED_TOOLS		3	improved_tools_icon	3		215,10#2119,0,215,50	1			70	0	0.2				0			0	68	60001,5	0	
+30171	ITEM_GIANT_BELT	DAMAGE_DEALT	3	giant_belt_icon	4		2118,10,1	1			100	0	0.2				0			0	70	60001,5	0	
+30172	ITEM_LURE		3	lure_icon	2		205,3#2144,10003,2	0			45	0	0.2				0			0	78	60001,5	0	
+30173	ITEM_SHACKLES		3	shackles_icon	3		205,8#218,8#216,80#2145,5	1			80	0	0.2				0			0	0	60001,5	0	
+30174	ITEM_STONE_SKIN		3	stone_skin_icon	3		2146,1,201,1,208#208,-2	1			80	0	0.2				0			0	79	60001,5	0	
+30175	ITEM_FAIRY		3	fairy_icon	3		2154,205,1,1#21541,20501,-2,4	1			85	0	0.2				0			0	83	60001,5	0	
+30176	ITEM_POCKET_FACTORY		3	pocket_factory_icon	2		218,2#2159,3043#20741,10,218,80	1			75	0	0.2				0			0	0	60001,5	0	
+30177	ITEM_SHARP_BULLET		3	sharp_bullet_icon	1		2158,1#405,-20#200,-5	1			25	0	0.2				0			0	0	60001,5	0	
+39000	VIP_ITEM_NAME		3	vip_item_icon	4		40051,100#40061,20	1			0	0	0.2				0			0	0		0	
+39001	VIP_ITEM_NAME		3	vip_item_icon	4		40051,50#40061,10	1			0	0	0.2				0			0	0		0	
+39002	VIP_ITEM_NAME		3	vip_item_icon	4		40051,20#40012,5	1			0	0	0.2				0			0	0		0	
+39003	VIP_ITEM_NAME		3	vip_item_icon	4		40051,10#40012,10	1			0	0	0.2				0			0	0		0	
+39004	VIP_ITEM_NAME		3	vip_item_icon	4		40051,10#40012,20	1			0	0	0.2				0			0	0		0	
+39005	VIP_ITEM_NAME		3	vip_item_icon	4		40051,10#40012,30	1			0	0	0.2				0			0	0		0	
+39006	ENUM_TOTEM		3	totem_item_icon1	4			1			0	0	0.2				0			0	0		0	
+39007	ENUM_TOTEM		3	totem_item_icon2	4			1			0	0	0.2				0			0	0		0	
+39008	ENUM_TOTEM		3	totem_item_icon3	4			1			0	0	0.2				0			0	0		0	
+39009	ENUM_TOTEM		3	totem_item_icon4	4			1			0	0	0.2				0			0	0		0	
+39010	ENUM_TOTEM		3	totem_item_icon5	4			1			0	0	0.2				0			0	0		0	
+38001	ITEM_PUMPKIN_BOMB		3	pumpkin_bomb_icon	4		204,10#2007,50#2029,0,12,10,218,100#1017,3044#20293,10,218,100	1			0	0	0.2				0			0	0		0	
+38002	ITEM_TURKEY_BOMB		3	turkey_bomb_icon	4		204,10#2007,50#2029,0,12,10,218,100#1017,3044#20293,10,218,100	1			0	0	0.2				0			0	0		0	
+38003	ITEM_CHRISTMAS_BOMB		3	christmas_bomb_icon	4		204,10#2007,50#2029,0,12,10,218,100#1017,3044#20293,10,218,100	1			0	0	0.2				0			0	0		0	

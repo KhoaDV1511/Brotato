@@ -1,0 +1,17 @@
+ID	Target	Type
+int	string[]	int
+编号		
+1	HallUI,btnSign,redDot	1
+2	HallUI,btnShare,redDot	1
+3	HallUI,btnRecharge,redDot	1
+4	HallUI,btnVip,redDot	1
+5	HallUI,btnShop,redDot	1
+51	GoodsShopUI,redDotDaily	1
+52	GoodsShopUI,redDotDiff	1
+54	GoodsShopUI,redDotPotato	1
+6	HallUI,bottomCom,btnTask,redDot	1
+61	TaskUI,redDotDaily	1
+62	TaskUI,redDotWeekly	1
+63	TaskUI,redDotAchieve	1
+7	HallUI,btnGrowthFund,redDot	1
+8	HallUI,bottomCom,btnTotem,redDot	1

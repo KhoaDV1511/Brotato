@@ -1,0 +1,6 @@
+
+{"file":"AI_1_普通跟随小怪","id":1,"childs":[
+{"name":"FollowTarget","type":"FollowTarget","typeName":"AI_FollowTargetData","auto":1,"l":-1}
+,
+{"name":"AutoPlaySkill","type":"AutoPlaySkill","typeName":"AIEvent_AutoPlaySkillData","auto":1,"l":-1}
+]}

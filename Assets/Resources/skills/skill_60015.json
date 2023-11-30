@@ -1,0 +1,16 @@
+
+{"file":"Skill_60015_BOSS11随机子弹PLUS（玩家圆心）","id":60015,"skillbase":"target","check":"none","showtype":"rang","dir":"Random","cd":3600,"randomCd":166,"time":3600,"target":
+{"camp":"diff","rule":"none","num":1,"rang":20}
+,"eventList":[
+{"type":"IntervalTrigger","s":666,"l":100,"targettype":"none","item":
+{"time":1,"num":30}
+,"childs":[
+{"type":"BombField","s":600,"targettype":"root","item":
+{"flags":34,"res":"bullet_pillar","skill":600151,"dis":4,"dis_min":1,"num":1,"l":2500}
+}
+]}
+,
+{"type":"AddBuff","targettype":"self","item":
+{"buffId":104,"l":666}
+}
+]}

@@ -1,0 +1,12 @@
+
+{"file":"Skill_50022_怪物加血","id":50022,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":99999,"time":99999,"eventList":[
+{"type":"IntervalTrigger","l":99999,"targettype":"local","target":
+{"camp":"equal_nonself_hpLess","flags":4,"rule":"none","save":99999,"num":999,"rang":2}
+,"item":
+{"time":100,"num":999}
+,"childs":[
+{"type":"CalcDamage","targettype":"none","item":
+{"rule":"AddHpWave","per":100,"hitEff":"effect_hit"}
+}
+]}
+]}

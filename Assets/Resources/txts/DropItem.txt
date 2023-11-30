@@ -1,0 +1,7 @@
+ID	name	type	icon	res	value	size	tier
+int	LocalStr	int	string	string	int	float	int
+ID							
+50001		0			1	0.2	-1
+50002		1	fruit	ItemGo2	3	0.3	-1
+50003		2	item_box	ItemGo2	3	0.3	-1
+50004		2	legendary_item_box	ItemGo2	100	0.3	4

@@ -1,0 +1,12 @@
+
+{"file":"Skill_3041_Glutton爆炸","id":3041,"skillbase":"buff_trigger","check":"none","showtype":"rang","dir":"Self","eventList":[
+{"type":"BombOnce","targettype":"local","target":
+{"camp":"diff","rule":"none","save":100,"num":99,"rang":3}
+,"item":
+{"flags":8,"res":"ExplosionSmoke_20","num":1,"l":1000,"scale":3}
+,"childs":[
+{"type":"CalcDamage","targettype":"local","item":
+{"rule":"BuffSkill","per":1,"skillId":3041}
+}
+]}
+]}

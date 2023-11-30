@@ -1,0 +1,8 @@
+
+{"file":"Skill_60027_冲撞+圆环子弹_精英怪40039","id":600271,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":1000,"time":1000,"eventList":[
+{"type":"CalcDamage","s":450,"targettype":"local","target":
+{"camp":"diff","rule":"none","save":1000,"num":99,"rang":0.23}
+,"item":
+{"rule":"Wave","per":1.15}
+}
+]}

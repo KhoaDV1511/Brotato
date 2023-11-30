@@ -1,0 +1,20 @@
+
+{"file":"Skill_60021_Boss21激光3","id":60021,"skillbase":"target","check":"none","showtype":"rang","dir":"Random","cd":1450,"time":1450,"target":
+{"camp":"diff","rule":"none","num":1,"rang":20}
+,"eventList":[
+{"type":"PlayAni","targettype":"none","item":
+{"ani":"Shoot","flags":4,"l":666}
+}
+,
+{"type":"IntervalTrigger","s":600,"l":10,"targettype":"none","item":
+{"time":1,"num":3}
+,"childs":[
+{"type":"BombField","s":600,"targettype":"root","item":
+{"flags":50,"res":"bullet_enemylong 2","skill":600211,"dis":2.5,"dis_min":0.01,"num":1,"l":1000}
+}
+]}
+,
+{"type":"AddBuff","targettype":"self","item":
+{"buffId":104,"l":600}
+}
+]}

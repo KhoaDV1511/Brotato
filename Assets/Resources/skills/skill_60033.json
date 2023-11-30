@@ -1,0 +1,16 @@
+
+{"file":"Skill_60033_4束激光_精英怪40042","id":60033,"skillbase":"target","check":"none","showtype":"rang","dir":"Self","cd":1666,"randomCd":166,"time":1666,"target":
+{"camp":"diff","rule":"none","num":1,"rang":10}
+,"eventList":[
+{"type":"PlayAni","targettype":"none","item":
+{"ani":"Shoot","flags":4,"l":666}
+}
+,
+{"type":"CreatBullet","s":600,"targettype":"none","item":
+{"res":"bullet_enemylong","pass":99,"num":4,"angle":45,"flags":65824,"skillId":600331,"move":
+{"movetype":"Speed","ignore":65535,"speed":6,"dis":6,"tween":"None"}
+,"target":
+{"camp":"diff","rule":"none","save":2000,"num":99,"w":0.15,"h":1.5}
+}
+}
+]}

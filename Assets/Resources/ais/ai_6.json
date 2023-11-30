@@ -1,0 +1,6 @@
+
+{"file":"AI_6_怪物给友方加Buff_怪物7","id":6,"childs":[
+{"skillId":50021,"name":"AutoPlaySkill","type":"AutoPlaySkill","typeName":"AIEvent_AutoPlaySkillData","auto":1,"l":-1}
+,
+{"targetRange":5,"targetRangeRandomization":1,"name":"StayInRange","type":"StayInRange","typeName":"AIEvent_StayInRangeData","auto":1,"l":-1}
+]}

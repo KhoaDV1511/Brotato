@@ -1,0 +1,16 @@
+
+{"file":"AI_BOSS_100505_22","id":100505,"childs":[
+{"datas":[
+{"hp":1,"skillId":6002305,"find":"TargetRandPos","delay":1500}
+,
+{"hp":0.75,"waveTime":10,"skillId":60024,"buffId":1020,"buffValue":-50,"find":"TargetRandPos","delay":1000}
+,
+{"hp":0.5,"waveTime":30,"skillId":6002505,"buffId":1020,"buffValue":50,"find":"TargetRandPos","delay":1000}
+,
+{"hp":0.3,"waveTime":40,"skillId":60024,"buffId":1020,"buffValue":-50,"find":"TargetRandPos","delay":1000}
+],"name":"BossState","type":"BossState","typeName":"AIEvent_BossStateData","auto":1,"l":-1,"childs":[
+{"name":"AutoPlaySkill","type":"AutoPlaySkill","typeName":"AIEvent_AutoPlaySkillData","auto":1,"l":-1}
+,
+{"name":"TargetRandPos","type":"TargetRandPos","typeName":"AI_TargetRandPosData","auto":1,"l":-1}
+]}
+]}

@@ -1,0 +1,6 @@
+
+{"file":"Skill_3038_激光炮塔（贯通） 天赋卡2","id":3038,"skillbase":"trigger","check":"none","showtype":"rang","dir":"Random","eventList":[
+{"type":"BombField","targettype":"self","item":
+{"flags":4,"res":"build_laser_turret","skill":303801,"dis":8,"dis_min":0.1,"num":1,"s":750,"l":9999999,"effRes":"Birth_blue"}
+}
+]}

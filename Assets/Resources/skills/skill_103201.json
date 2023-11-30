@@ -1,0 +1,12 @@
+
+{"file":"Skill_1032_雷剑4","id":103201,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":1,"time":10000,"eventList":[
+{"type":"IntervalTrigger","l":10000,"targettype":"none","item":
+{"time":30,"num":1000}
+,"childs":[
+{"type":"TriggerBuff","targettype":"local","target":
+{"camp":"diff","rule":"none","num":999,"rang":1.33}
+,"item":
+{"buffType":"target_add_buff","isWeapon":1}
+}
+]}
+]}

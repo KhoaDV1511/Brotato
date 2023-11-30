@@ -1,0 +1,6 @@
+
+{"file":"AI_5_撞击_怪物6","id":5,"childs":[
+{"skillId":50011,"name":"AutoPlaySkill","type":"AutoPlaySkill","typeName":"AIEvent_AutoPlaySkillData","auto":1,"l":-1}
+,
+{"name":"TargetRandPos","type":"TargetRandPos","typeName":"AI_TargetRandPosData","auto":1,"l":-1}
+]}

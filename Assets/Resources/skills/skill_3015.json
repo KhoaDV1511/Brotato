@@ -1,0 +1,6 @@
+
+{"file":"Skill_3015_地雷道具","id":3015,"skillbase":"normal","check":"none","showtype":"rang","dir":"Random","cd":12000,"eLogic":64,"eventList":[
+{"type":"BombField","targettype":"self","item":
+{"itemId":30078,"flags":132,"res":"Iandmine","skill":301501,"dis":8,"dis_min":0.1,"num":1,"s":750,"l":9999999,"effRes":"Birth_blue"}
+}
+]}

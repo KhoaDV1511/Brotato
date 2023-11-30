@@ -1,0 +1,202 @@
+ID	name	desc	type	icon	tier	skills	buffs	unique	isClose	res	Price	RecyclePrice	size	scale	birthEff	deathEff	ai	mass	pushAtten	layer	Unlock	DrawingRewards	AdventureDiff	AdventureHero
+int	LocalStr	LocalStr	int	string	int	int[]	BuffExcelList	bool	bool	string	int	int	float	float	string	string	int	float	float	int	int	DropArray	int	int[]
+ID																								
+20001	WEAPON_CACTI_CLUB		2	cactus_mace_icon	1	1027	2085,3,1,0,212,50	0			20	0	0.2				0			0	0	60001,5	0	
+20002	WEAPON_CACTI_CLUB		2	cactus_mace_icon	2	1028	2085,4,1,0,212,50	0			39	0	0.2				0			0	0	60001,5	0	
+20003	WEAPON_CACTI_CLUB		2	cactus_mace_icon	3	1029	2085,5,1,0,212,50	0			74	0	0.2				0			0	0	60001,5	0	
+20004	WEAPON_CACTI_CLUB		2	cactus_mace_icon	4	1030	2085,6,1,0,212,50	0			149	0	0.2				0			0	0	60001,5	0	
+20011	WEAPON_CHOPPER		2	chopper_icon	1	1033	20041,1	0			15	0	0.2				0			0	41	60001,5	0	
+20012	WEAPON_CHOPPER		2	chopper_icon	2	1033	20041,1	0			31	0	0.2				0			0	41	60001,5	0	
+20013	WEAPON_CHOPPER		2	chopper_icon	3	1033	20041,1	0			61	0	0.2				0			0	41	60001,5	0	
+20014	WEAPON_CHOPPER		2	chopper_icon	4	1033	20041,2	0			122	0	0.2				0			0	41	60001,5	0	
+20022	WEAPON_CIRCULAR_SAW		2	circular_saw_icon	2	1019		0			46	0	0.2				0			0	0	60001,5	0	
+20023	WEAPON_CIRCULAR_SAW		2	circular_saw_icon	3	1019		0			86	0	0.2				0			0	0	60001,5	0	
+20024	WEAPON_CIRCULAR_SAW		2	circular_saw_icon	4	1019		0			173	0	0.2				0			0	0	60001,5	0	
+20031	WEAPON_DAGGER		2	dagger_icon	1	1008	2062,50	0			12	0	0.2				0			0	0	60001,5	0	
+20032	WEAPON_DAGGER		2	dagger_icon	2	1008	2062,56	0			26	0	0.2				0			0	0	60001,5	0	
+20033	WEAPON_DAGGER		2	dagger_icon	3	1008	2062,62	0			52	0	0.2				0			0	0	60001,5	0	
+20034	WEAPON_DAGGER		2	dagger_icon	4	1008	2062,80	0			105	0	0.2				0			0	0	60001,5	0	
+20041	WEAPON_FIST		2	fist_icon	1	1003		0			10	0	0.2				0			0	0	60001,5	0	
+20042	WEAPON_FIST		2	fist_icon	2	1003		0			22	0	0.2				0			0	0	60001,5	0	
+20043	WEAPON_FIST		2	fist_icon	3	1003		0			45	0	0.2				0			0	0	60001,5	0	
+20044	WEAPON_FIST		2	fist_icon	4	1003		0			91	0	0.2				0			0	0	60001,5	0	
+20052	WEAPON_FLAMING_BRASS_KNUCKLES		2	flaming_knuckles_icon	2	1020	1005,100,2067,8,5,211,100	0		Weaponknuckles	46	0	0.2				0			0	0	60001,5	0	
+20053	WEAPON_FLAMING_BRASS_KNUCKLES		2	flaming_knuckles_icon	3	1020	1005,100,2067,12,6,211,100	0		Weaponknuckles	86	0	0.2				0			0	0	60001,5	0	
+20054	WEAPON_FLAMING_BRASS_KNUCKLES		2	flaming_knuckles_icon	4	1020	1005,100,2067,15,7,211,100	0		Weaponknuckles	173	0	0.2				0			0	0	60001,5	0	
+20061	WEAPON_GHOST_AXE		2	ghost_axe_icon	1	1035	2080,1,200,20	0			20	0	0.2				0			0	0	60001,5	0	
+20062	WEAPON_GHOST_AXE		2	ghost_axe_icon	2	1035	2080,1,200,18	0			39	0	0.2				0			0	0	60001,5	0	
+20063	WEAPON_GHOST_AXE		2	ghost_axe_icon	3	1035	2080,1,200,16	0			74	0	0.2				0			0	0	60001,5	0	
+20064	WEAPON_GHOST_AXE		2	ghost_axe_icon	4	1035	2080,1,200,12	0			149	0	0.2				0			0	0	60001,5	0	
+20071	WEAPON_GHOST_FLINT		2	ghost_flint_icon	1	1034	2080,1,215,20	0			12	0	0.2				0			0	0	60001,5	0	
+20072	WEAPON_GHOST_FLINT		2	ghost_flint_icon	2	1034	2080,1,215,18	0			26	0	0.2				0			0	0	60001,5	0	
+20073	WEAPON_GHOST_FLINT		2	ghost_flint_icon	3	1034	2080,1,215,16	0			52	0	0.2				0			0	0	60001,5	0	
+20074	WEAPON_GHOST_FLINT		2	ghost_flint_icon	4	1034	2080,1,215,12	0			105	0	0.2				0			0	0	60001,5	0	
+20082	WEAPON_HAMMER		2	hammer_icon	2	1013		0			51	0	0.2				0			0	0	60001,5	0	
+20083	WEAPON_HAMMER		2	hammer_icon	3	1013		0			95	0	0.2				0			0	0	60001,5	0	
+20084	WEAPON_HAMMER		2	hammer_icon	4	1013		0			190	0	0.2				0			0	0	60001,5	0	
+20091	WEAPON_HAND		2	hand_icon	1	1004	219,3	0			10	0	0.2				0			0	0	60001,5	0	
+20092	WEAPON_HAND		2	hand_icon	2	1004	219,6	0			22	0	0.2				0			0	0	60001,5	0	
+20093	WEAPON_HAND		2	hand_icon	3	1004	219,9	0			45	0	0.2				0			0	0	60001,5	0	
+20094	WEAPON_HAND		2	hand_icon	4	1004	219,18	0			91	0	0.2				0			0	0	60001,5	0	
+20101	WEAPON_HATCHET		2	hatchet_icon	1	1016		0			15	0	0.2				0			0	42	60001,5	0	
+20102	WEAPON_HATCHET		2	hatchet_icon	2	1016		0			31	0	0.2				0			0	42	60001,5	0	
+20103	WEAPON_HATCHET		2	hatchet_icon	3	1016		0			61	0	0.2				0			0	42	60001,5	0	
+20104	WEAPON_HATCHET		2	hatchet_icon	4	1016		0			122	0	0.2				0			0	42	60001,5	0	
+20111	WEAPON_KNIFE		2	knife_icon	1	1005		0			15	0	0.2				0			0	0	60001,5	0	
+20112	WEAPON_KNIFE		2	knife_icon	2	1005		0			31	0	0.2				0			0	0	60001,5	0	
+20113	WEAPON_KNIFE		2	knife_icon	3	1005		0			61	0	0.2				0			0	0	60001,5	0	
+20114	WEAPON_KNIFE		2	knife_icon	4	1005		0			122	0	0.2				0			0	0	60001,5	0	
+20121	WEAPON_BRASS_KNUCKLES		2	knuckles_icon	1	1021		0	1		40	0	0.2				0			0	0		0	
+20131	WEAPON_LIGHTNING_SHIV		2	lightning_shiv_icon	1	1023	2069,0,5,1,211,100	0			15	0	0.2				0			0	0	60001,5	0	
+20132	WEAPON_LIGHTNING_SHIV		2	lightning_shiv_icon	2	1024	2069,0,8,2,211,100	0			31	0	0.2				0			0	0	60001,5	0	
+20133	WEAPON_LIGHTNING_SHIV		2	lightning_shiv_icon	3	1025	2069,0,12,3,211,100	0			61	0	0.2				0			0	0	60001,5	0	
+20134	WEAPON_LIGHTNING_SHIV		2	lightning_shiv_icon	4	1026	2069,0,15,4,211,100	0			122	0	0.2				0			0	0	60001,5	0	
+20141	WEAPON_PLANK		2	plank_icon	1	1009	2070,25	0			15	0	0.2				0			0	0	60001,5	0	
+20142	WEAPON_PLANK		2	plank_icon	2	1009	2070,30	0			31	0	0.2				0			0	0	60001,5	0	
+20143	WEAPON_PLANK		2	plank_icon	3	1009	2070,35	0			61	0	0.2				0			0	0	60001,5	0	
+20144	WEAPON_PLANK		2	plank_icon	4	1009	2070,40	0			122	0	0.2				0			0	0	60001,5	0	
+20153	WEAPON_PLASMA_SLEDGEHAMMER		2	plasma_sledgehammer_icon	3	1018	2070,25	0			136	0	0.2				0			0	62	60001,5	0	
+20154	WEAPON_PLASMA_SLEDGEHAMMER		2	plasma_sledgehammer_icon	4	1018	2070,50	0			272	0	0.2				0			0	62	60001,5	0	
+20163	WEAPON_POWER_FIST		2	power_fist_icon	3	1022	2070,25	0			110	0	0.2				0			0	31	60001,5	0	
+20164	WEAPON_POWER_FIST		2	power_fist_icon	4	1022	2070,50	0			221	0	0.2				0			0	31	60001,5	0	
+20171	WEAPON_ROCK		2	rock_icon	1	1011		0			10	0	0.2				0			0	0	60001,5	0	
+20172	WEAPON_ROCK		2	rock_icon	2	1011	208,1	0			22	0	0.2				0			0	0	60001,5	0	
+20173	WEAPON_ROCK		2	rock_icon	3	1011	208,1#201,2	0			45	0	0.2				0			0	0	60001,5	0	
+20174	WEAPON_ROCK		2	rock_icon	4	1011	208,2#201,2	0			91	0	0.2				0			0	0	60001,5	0	
+20181	WEAPON_SCISSORS		2	scissors_icon	1	1006		0			15	0	0.2				0			0	0	60001,5	0	
+20182	WEAPON_SCISSORS		2	scissors_icon	2	1006		0			31	0	0.2				0			0	0	60001,5	0	
+20183	WEAPON_SCISSORS		2	scissors_icon	3	1006		0			61	0	0.2				0			0	0	60001,5	0	
+20184	WEAPON_SCISSORS		2	scissors_icon	4	1006		0			122	0	0.2				0			0	0	60001,5	0	
+20191	WEAPON_SCREWDRIVER		2	screwdriver_icon	1	1036	2029,0,12,10,218,100#1015,3011#20291,10,218,100	0			10	0	0.2				0			0	0	60001,5	0	
+20192	WEAPON_SCREWDRIVER		2	screwdriver_icon	2	1036	2029,0,9,10,218,100#1015,3012#20291,10,218,100	0			22	0	0.2				0			0	0	60001,5	0	
+20193	WEAPON_SCREWDRIVER		2	screwdriver_icon	3	1036	2029,0,6,10,218,100#1015,3013#20291,10,218,100	0			45	0	0.2				0			0	0	60001,5	0	
+20194	WEAPON_SCREWDRIVER		2	screwdriver_icon	4	1036	2029,0,3,10,218,100#1015,3014#20291,10,218,100	0			91	0	0.2				0			0	0	60001,5	0	
+20201	WEAPON_SPEAR		2	spear_icon	1	1012		0			20	0	0.2				0			0	0	60001,5	0	
+20202	WEAPON_SPEAR		2	spear_icon	2	1012		0			39	0	0.2				0			0	0	60001,5	0	
+20203	WEAPON_SPEAR		2	spear_icon	3	1012		0			74	0	0.2				0			0	0	60001,5	0	
+20204	WEAPON_SPEAR		2	spear_icon	4	1012		0			149	0	0.2				0			0	0	60001,5	0	
+20211	WEAPON_SPIKY_SHIELD		2	spiky_shield_icon	1	1017		0			15	0	0.2				0			0	61	60001,5	0	
+20212	WEAPON_SPIKY_SHIELD		2	spiky_shield_icon	2	1017		0			31	0	0.2				0			0	61	60001,5	0	
+20213	WEAPON_SPIKY_SHIELD		2	spiky_shield_icon	3	1017		0			61	0	0.2				0			0	61	60001,5	0	
+20214	WEAPON_SPIKY_SHIELD		2	spiky_shield_icon	4	1017		0			122	0	0.2				0			0	61	60001,5	0	
+20221	WEAPON_STICK		2	stick_icon	1	1037	2093,220,4,20221	0			10	0	0.2				0			0	0	60001,5	0	
+20222	WEAPON_STICK		2	stick_icon	2	1037	2093,220,6,20221	0			22	0	0.2				0			0	0	60001,5	0	
+20223	WEAPON_STICK		2	stick_icon	3	1037	2093,220,8,20221	0			45	0	0.2				0			0	0	60001,5	0	
+20224	WEAPON_STICK		2	stick_icon	4	1037	2093,220,10,20221	0			91	0	0.2				0			0	0	60001,5	0	
+20232	WEAPON_SWORD		2	sword_icon	2	10141	2081	0			51	0	0.2				0			0	0	60001,5	0	
+20233	WEAPON_SWORD		2	sword_icon	3	10141	2081	0			95	0	0.2				0			0	0	60001,5	0	
+20234	WEAPON_SWORD		2	sword_icon	4	10141	2081	0			190	0	0.2				0			0	0	60001,5	0	
+20243	WEAPON_THUNDER_SWORD		2	thunder_sword_icon	3	1031	2086,2,1,0,211,100#1005,100,2087,-20,-1	0			119	0	0.2				0			0	34	60001,5	0	
+20244	WEAPON_THUNDER_SWORD		2	thunder_sword_icon	4	1032	2086,4,1,0,211,100#1005,100,2087,-20,-1	0			238	0	0.2				0			0	34	60001,5	0	
+20251	WEAPON_TORCH		2	torch_icon	1	1010	1005,100,2067,3,3,211,100	0		Weapontorch	12	0	0.2				0			0	0	60001,5	0	
+20252	WEAPON_TORCH		2	torch_icon	2	1010	1005,100,2067,5,4,211,100	0		Weapontorch	26	0	0.2				0			0	0	60001,5	0	
+20253	WEAPON_TORCH		2	torch_icon	3	1010	1005,100,2067,8,5,211,100	0		Weapontorch	52	0	0.2				0			0	0	60001,5	0	
+20254	WEAPON_TORCH		2	torch_icon	4	1010	1005,100,2067,12,8,211,100	0		Weapontorch	105	0	0.2				0			0	0	60001,5	0	
+20261	WEAPON_WRENCH		2	wrench_icon	1	1007	1015,3001#2047,10,218,80	0			20	0	0.2				0			0	0	60001,5	0	
+20262	WEAPON_WRENCH		2	wrench_icon	2	1007	1015,3002#1005,100,2048,5,8,218,33	0			39	0	0.2				0			0	0	60001,5	0	
+20263	WEAPON_WRENCH		2	wrench_icon	3	1007	1015,3003#2050,20,218,125	0			74	0	0.2				0			0	0	60001,5	0	
+20264	WEAPON_WRENCH		2	wrench_icon	4	1007	1015,3004#2051,25,218,150	0			149	0	0.2				0			0	0	60001,5	0	
+26001	WEAPON_CROSSBOW		2	crossbow_icon	1	2015	2079,1	0		Weaponcrossbow	18	0	0.2				0			0	0	60001,5	0	
+26002	WEAPON_CROSSBOW		2	crossbow_icon	2	2015	2079,2	0		Weaponcrossbow	36	0	0.2				0			0	0	60001,5	0	
+26003	WEAPON_CROSSBOW		2	crossbow_icon	3	2015	2079,3	0		Weaponcrossbow	66	0	0.2				0			0	0	60001,5	0	
+26004	WEAPON_CROSSBOW		2	crossbow_icon	4	2015	2079,4	0		Weaponcrossbow	140	0	0.2				0			0	0	60001,5	0	
+26011	WEAPON_DOUBLE_BARREL_SHOTGUN		2	double_barrel_shotgun_icon	1	2003		0			20	0	0.2				0			0	0	60001,5	0	
+26012	WEAPON_DOUBLE_BARREL_SHOTGUN		2	double_barrel_shotgun_icon	2	2003		0			39	0	0.2				0			0	0	60001,5	0	
+26013	WEAPON_DOUBLE_BARREL_SHOTGUN		2	double_barrel_shotgun_icon	3	2003		0			74	0	0.2				0			0	0	60001,5	0	
+26014	WEAPON_DOUBLE_BARREL_SHOTGUN		2	double_barrel_shotgun_icon	4	2003		0			149	0	0.2				0			0	0	60001,5	0	
+26022	WEAPON_FLAMETHROWER		2	flamethrower_icon	2	2013	1005,100,2067,3,5,211,100	0			56	0	0.2				0			0	0	60001,5	0	
+26023	WEAPON_FLAMETHROWER		2	flamethrower_icon	3	2013	1005,100,2067,4,6,211,100	0			103	0	0.2				0			0	0	60001,5	0	
+26024	WEAPON_FLAMETHROWER		2	flamethrower_icon	4	2013	1005,100,2067,5,8,211,100	0			207	0	0.2				0			0	0	60001,5	0	
+26031	WEAPON_GHOST_SCEPTER		2	ghost_scepter_icon	1	2021	2080,1,201,20	0		Weaponscepter	15	0	0.2				0			0	0	60001,5	0	
+26032	WEAPON_GHOST_SCEPTER		2	ghost_scepter_icon	2	2021	2080,1,201,18	0		Weaponscepter	31	0	0.2				0			0	0	60001,5	0	
+26033	WEAPON_GHOST_SCEPTER		2	ghost_scepter_icon	3	2021	2080,1,201,16	0		Weaponscepter	61	0	0.2				0			0	0	60001,5	0	
+26034	WEAPON_GHOST_SCEPTER		2	ghost_scepter_icon	4	2021	2080,1,201,12	0		Weaponscepter	122	0	0.2				0			0	0	60001,5	0	
+26041	WEAPON_LASER_GUN		2	laser_gun_icon	1	2009		0			15	0	0.2				0			0	0	60001,5	0	
+26042	WEAPON_LASER_GUN		2	laser_gun_icon	2	2009		0			31	0	0.2				0			0	0	60001,5	0	
+26043	WEAPON_LASER_GUN		2	laser_gun_icon	3	2009		0			61	0	0.2				0			0	0	60001,5	0	
+26044	WEAPON_LASER_GUN		2	laser_gun_icon	4	2009		0			122	0	0.2				0			0	0	60001,5	0	
+26051	WEAPON_MEDICAL_GUN		2	medical_gun_icon	1	2010		0			15	0	0.2				0			0	0	60001,5	0	
+26052	WEAPON_MEDICAL_GUN		2	medical_gun_icon	2	2010		0			31	0	0.2				0			0	0	60001,5	0	
+26053	WEAPON_MEDICAL_GUN		2	medical_gun_icon	3	2010		0			61	0	0.2				0			0	0	60001,5	0	
+26054	WEAPON_MEDICAL_GUN		2	medical_gun_icon	4	2010		0			122	0	0.2				0			0	0	60001,5	0	
+26063	WEAPON_MINIGUN		2	minigun_icon	3	2014		0			127	0	0.2				0			0	0	60001,5	0	
+26064	WEAPON_MINIGUN		2	minigun_icon	4	2014		0			255	0	0.2				0			0	0	60001,5	0	
+26073	WEAPON_NUCLEAR_LAUNCHER		2	nuclear_launcher_icon	3	2016	2084,100	0			144	0	0.2				0			0	60	60001,5	0	
+26074	WEAPON_NUCLEAR_LAUNCHER		2	nuclear_launcher_icon	4	2016	2084,100	0			289	0	0.2				0			0	60	60001,5	0	
+26083	WEAPON_OBLITERATOR		2	obliterator_icon	3	2012		0			127	0	0.2				0			0	63	60001,5	0	
+26084	WEAPON_OBLITERATOR		2	obliterator_icon	4	2012		0			255	0	0.2				0			0	63	60001,5	0	
+26091	WEAPON_PISTOL		2	pistol_icon	1	2008		0			10	0	0.2				0			0	0	60001,5	0	
+26092	WEAPON_PISTOL		2	pistol_icon	2	2008		0			22	0	0.2				0			0	0	60001,5	0	
+26093	WEAPON_PISTOL		2	pistol_icon	3	2008		0			45	0	0.2				0			0	0	60001,5	0	
+26094	WEAPON_PISTOL		2	pistol_icon	4	2008		0			91	0	0.2				0			0	0	60001,5	0	
+26102	WEAPON_POTATO_THROWER		2	potato_thrower_icon	2	2011		0			36	0	0.2				0			0	35	60001,5	0	
+26103	WEAPON_POTATO_THROWER		2	potato_thrower_icon	3	2011		0			69	0	0.2				0			0	35	60001,5	0	
+26104	WEAPON_POTATO_THROWER		2	potato_thrower_icon	4	2011		0			139	0	0.2				0			0	35	60001,5	0	
+26112	WEAPON_ROCKET_LAUNCHER		2	rocket_launcher_icon	2	2017	2084,100	0			56	0	0.2				0			0	0	60001,5	0	
+26113	WEAPON_ROCKET_LAUNCHER		2	rocket_launcher_icon	3	2017	2084,100	0			103	0	0.2				0			0	0	60001,5	0	
+26114	WEAPON_ROCKET_LAUNCHER		2	rocket_launcher_icon	4	2017	2084,100	0			207	0	0.2				0			0	0	60001,5	0	
+26121	WEAPON_SHREDDER		2	shredder_icon	1	2004	2065,50	0			15	0	0.2				0			0	0	60001,5	0	
+26122	WEAPON_SHREDDER		2	shredder_icon	2	2004	2065,65	0			31	0	0.2				0			0	0	60001,5	0	
+26123	WEAPON_SHREDDER		2	shredder_icon	3	2004	2065,80	0			61	0	0.2				0			0	0	60001,5	0	
+26124	WEAPON_SHREDDER		2	shredder_icon	4	2004	2065,100	0			122	0	0.2				0			0	0	60001,5	0	
+26131	WEAPON_SHURIKEN		2	shuriken_icon	1	2007	2066,1	0		Weaponsshuriken	12	0	0.2				0			0	0	60001,5	0	
+26132	WEAPON_SHURIKEN		2	shuriken_icon	2	2007	2066,2	0		Weaponsshuriken	26	0	0.2				0			0	0	60001,5	0	
+26133	WEAPON_SHURIKEN		2	shuriken_icon	3	2007	2066,3	0		Weaponsshuriken	52	0	0.2				0			0	0	60001,5	0	
+26134	WEAPON_SHURIKEN		2	shuriken_icon	4	2007	2066,4	0		Weaponsshuriken	105	0	0.2				0			0	0	60001,5	0	
+26141	WEAPON_SLINGSHOT		2	slingshot_icon	1	2018		0		Weaponslingshot	15	0	0.2				0			0	0	60001,5	0	
+26142	WEAPON_SLINGSHOT		2	slingshot_icon	2	2018		0		Weaponslingshot	31	0	0.2				0			0	0	60001,5	0	
+26143	WEAPON_SLINGSHOT		2	slingshot_icon	3	2018		0		Weaponslingshot	61	0	0.2				0			0	0	60001,5	0	
+26144	WEAPON_SLINGSHOT		2	slingshot_icon	4	2018		0		Weaponslingshot	122	0	0.2				0			0	0	60001,5	0	
+26151	WEAPON_SMG		2	smg_icon	1	2002		0			20	0	0.2				0			0	0	60001,5	0	
+26152	WEAPON_SMG		2	smg_icon	2	2002		0			39	0	0.2				0			0	0	60001,5	0	
+26153	WEAPON_SMG		2	smg_icon	3	2002		0			74	0	0.2				0			0	0	60001,5	0	
+26154	WEAPON_SMG		2	smg_icon	4	2002		0			149	0	0.2				0			0	0	60001,5	0	
+26163	WEAPON_SNIPER_GUN		2	sniper_gun_icon	3	2019	2085,5,5,0,216,10	0			115	0	0.2				0			0	54	60001,5	0	
+26164	WEAPON_SNIPER_GUN		2	sniper_gun_icon	4	2020	2085,8,5,0,216,15	0			245	0	0.2				0			0	54	60001,5	0	
+26171	WEAPON_TASER		2	taser_icon	1	2006	1005,100,2068,-20,-1	0			15	0	0.2				0			0	0	60001,5	0	
+26172	WEAPON_TASER		2	taser_icon	2	2006	1005,100,2068,-20,-1	0			31	0	0.2				0			0	0	60001,5	0	
+26173	WEAPON_TASER		2	taser_icon	3	2006	1005,100,2068,-20,-1	0			61	0	0.2				0			0	0	60001,5	0	
+26174	WEAPON_TASER		2	taser_icon	4	2006	1005,100,2068,-20,-1	0			122	0	0.2				0			0	0	60001,5	0	
+26181	WEAPON_WAND		2	wand_icon	1	2005	1005,100,2067,3,3,211,100	0		Weaponwand	15	0	0.2				0			0	0	60001,5	0	
+26182	WEAPON_WAND		2	wand_icon	2	2005	1005,100,2067,5,4,211,100	0		Weaponwand	31	0	0.2				0			0	0	60001,5	0	
+26183	WEAPON_WAND		2	wand_icon	3	2005	1005,100,2067,8,5,211,100	0		Weaponwand	61	0	0.2				0			0	0	60001,5	0	
+26184	WEAPON_WAND		2	wand_icon	4	2005	1005,100,2067,12,6,211,100	0		Weaponwand	122	0	0.2				0			0	0	60001,5	0	
+26185			0		0				1		0	0					0			0	0		0	
+26186			0		0				1		0	0					0			0	0		0	
+26187			0		0				1		0	0					0			0	0		0	
+26188			0		0				1		0	0					0			0	0		0	
+26189			0		0				1		0	0					0			0	0		0	
+26190			0		0				1		0	0					0			0	0		0	
+26191			0		0				1		0	0					0			0	0		0	
+26192			0		0				1		0	0					0			0	0		0	
+26193			0		0				1		0	0					0			0	0		0	
+26194			0		0				1		0	0					0			0	0		0	
+26195			0		0				1		0	0					0			0	0		0	
+26196			0		0				1		0	0					0			0	0		0	
+26197			0		0				1		0	0					0			0	0		0	
+26198			0		0				1		0	0					0			0	0		0	
+26199	WEAPON_PRUNER		2	pruner_icon	1	1038,3025	212601,15				15	0	0.2				0			0	0	60001,5	0	
+26200	WEAPON_PRUNER		2	pruner_icon	2	1038,3026	212602,14				28	0	0.2				0			0	0	60001,5	0	
+26201	WEAPON_PRUNER		2	pruner_icon	3	1038,3027	212603,12				52	0	0.2				0			0	0	60001,5	0	
+26202	WEAPON_PRUNER		2	pruner_icon	4	1038,3028	212604,10				95	0	0.2				0			0	0	60001,5	0	
+26203	WEAPON_REVOLVER		2	revolver_icon	1	2022					20	0	0.2				0			0	0	60001,5	0	
+26204	WEAPON_REVOLVER		2	revolver_icon	2	2022					34	0	0.2				0			0	0	60001,5	0	
+26205	WEAPON_REVOLVER		2	revolver_icon	3	2022					70	0	0.2				0			0	0	60001,5	0	
+26206	WEAPON_REVOLVER		2	revolver_icon	4	2022					130	0	0.2				0			0	0	60001,5	0	
+26207	WEAPON_JOUSTING_LANCE		2	jousting_lance_icon	1	1039	20401,2#20422,20002,-10				18	0	0.2				0			0	0	60001,5	0	
+26208	WEAPON_JOUSTING_LANCE		2	jousting_lance_icon	2	1039	20402,3#20423,20003,-15				34	0	0.2				0			0	0	60001,5	0	
+26209	WEAPON_JOUSTING_LANCE		2	jousting_lance_icon	3	1039	20403,4#20424,20004,-20				68	0	0.2				0			0	0	60001,5	0	
+26210	WEAPON_JOUSTING_LANCE		2	jousting_lance_icon	4	1039	20404,5#20425,20005,-25				118	0	0.2				0			0	0	60001,5	0	
+26251	WEAPON_CLAW		2	claw_icon	1	1040			1		15	0	0.2				0			0	77	60001,5	0	
+26252	WEAPON_CLAW		2	claw_icon	2	1040			1		28	0	0.2				0			0	77	60001,5	0	
+26253	WEAPON_CLAW		2	claw_icon	3	1040			1		55	0	0.2				0			0	77	60001,5	0	
+26254	WEAPON_CLAW		2	claw_icon	4	1040			1		110	0	0.2				0			0	77	60001,5	0	
+26264	WEAPON_DRILL		2	drill_icon	4	1041	2133,226,10#2132,100		1		250	0	0.2				0			0	0	60001,5	0	
+26271	WEAPON_FIGHTING_STICK		2	fighting_stick_icon	1	10421	2081		1		17	0	0.2				0			0	76	60001,5	0	
+26272	WEAPON_FIGHTING_STICK		2	fighting_stick_icon	2	10421	2081		1		34	0	0.2				0			0	76	60001,5	0	
+26273	WEAPON_FIGHTING_STICK		2	fighting_stick_icon	3	10421	2081		1		66	0	0.2				0			0	76	60001,5	0	
+26274	WEAPON_FIGHTING_STICK		2	fighting_stick_icon	4	10421	2081		1		130	0	0.2				0			0	76	60001,5	0	
+26284	WEAPON_SCYTHE		2	scythe_icon	4	1044	2148,-3#2150,3,227		1		260	0	0.2				0			0	0	60001,5	0	
+26294	WEAPON_CHAIN_GUN		2	chain_gun_icon	4	2023			1		270	0	0.2				0			0	0	60001,5	0	
+26304	WEAPON_GATLING_LASER		2	gatling_laser_icon	4	2024			1		300	0	0.2				0			0	0	60001,5	0	
+26314	WEAPON_EXCALIBUR		2	excalibur_icon	4	10451	2081#2151,20802,-3		1		260	0	0.2				0			0	82	60001,5	0	

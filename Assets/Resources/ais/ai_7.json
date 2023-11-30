@@ -1,0 +1,6 @@
+
+{"file":"AI_7_受击射击_怪物8","id":7,"childs":[
+{"skillId":50003,"name":"AutoPlaySkill","type":"AutoPlaySkill","typeName":"AIEvent_AutoPlaySkillData","auto":1,"l":-1}
+,
+{"rangeAroundTarget":1.5,"rangeRandomization":0.5,"name":"TargetRandPosAround","type":"TargetRandPosAround","typeName":"AIEvent_TargetRandPosAroundData","auto":1,"l":-1}
+]}

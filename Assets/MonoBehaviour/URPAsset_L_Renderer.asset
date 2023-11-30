@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1575395517, guid: c88ab7b37c4f350242674d2efd621c19, type: 3}
+  m_Name: URPAsset_L_Renderer
+  m_EditorClassIdentifier:
+  debugShaders:
+    debugReplacementPS: {fileID: 4800000, guid: eeaaccc4377e84f4d8be24052325eeec, type: 3}
+  m_RendererFeatures: []
+  m_RendererFeatureMap:
+  m_UseNativeRenderPass: 0
+  postProcessData: {fileID: 0}
+  shaders:
+    blitPS: {fileID: 4800000, guid: 1366783065bfbe146b3808bfbba0005b, type: 3}
+    copyDepthPS: {fileID: 4800000, guid: 3775a8dfa4badae4ebb7bb6030618681, type: 3}
+    screenSpaceShadowPS: {fileID: 0}
+    samplingPS: {fileID: 4800000, guid: 2e8bbf795a4a6bf4face721b6eca89eb, type: 3}
+    stencilDeferredPS: {fileID: 4800000, guid: ca8cb02ec8148234a8ab819bf2454348, type: 3}
+    fallbackErrorPS: {fileID: 4800000, guid: 5439b4a5c285ce34b808d95bf08f9c43, type: 3}
+    materialErrorPS: {fileID: 4800000, guid: 6108e97ab8f5d3d488dfb44327c82821, type: 3}
+    coreBlitPS: {fileID: 4800000, guid: 843dcc56783138f418207c11bc62ce51, type: 3}
+    coreBlitColorAndDepthPS: {fileID: 4800000, guid: 67538f82c65b72a45a3102f9b488047c, type: 3}
+    cameraMotionVector: {fileID: 4800000, guid: 8e1e8f7c39176664d83672cb0459e451, type: 3}
+    objectMotionVector: {fileID: 4800000, guid: bd34f0c0dc7258c4a93dc6534fe9f1ff, type: 3}
+  m_AssetVersion: 2
+  m_OpaqueLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_TransparentLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_DefaultStencilState:
+    overrideStencilState: 0
+    stencilReference: 0
+    stencilCompareFunction: 8
+    passOperation: 2
+    failOperation: 0
+    zFailOperation: 0
+  m_ShadowTransparentReceive: 0
+  m_RenderingMode: 0
+  m_DepthPrimingMode: 0
+  m_CopyDepthMode: 0
+  m_AccurateGbufferNormals: 0
+  m_ClusteredRendering: 0
+  m_TileSize: 32
+  m_IntermediateTextureMode: 1

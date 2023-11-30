@@ -1,0 +1,5 @@
+ID	type	res
+int	int	string
+等级		
+50000	6	well_rounded_eyes
+50001	8	well_rounded_mouth

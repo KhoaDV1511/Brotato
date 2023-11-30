@@ -1,0 +1,8 @@
+
+{"file":"Skill_60036_怪物圆心随机子弹_精英怪40043","id":600361,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":1000,"time":1000,"eventList":[
+{"type":"CalcDamage","s":450,"targettype":"local","target":
+{"camp":"diff","rule":"none","save":1000,"num":99,"rang":0.23}
+,"item":
+{"rule":"Wave","per":1.15}
+}
+]}

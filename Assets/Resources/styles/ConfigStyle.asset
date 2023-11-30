@@ -1,0 +1,2745 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c224a0c181adfd3851331f5ffe286afd, type: 3}
+  m_Name: ConfigStyle
+  m_EditorClassIdentifier:
+  sounds:
+  - eType: 2
+    sounds:
+    - {fileID: 8300000, guid: 9a6b8d4644758d947abc9bffc0785d28, type: 3}
+    - {fileID: 8300000, guid: 15679ae5df0bb494f9daa513eccae95c, type: 3}
+    - {fileID: 8300000, guid: 2ada757974d3b07428134b05f4836f47, type: 3}
+    - {fileID: 8300000, guid: 5549941754ac7e348b0a02ca01032554, type: 3}
+    - {fileID: 8300000, guid: 91459d946eae0044dacd169264912f16, type: 3}
+    - {fileID: 8300000, guid: 1c154bd606cdaa44e9a474112aba7612, type: 3}
+    - {fileID: 8300000, guid: 4d651f935c3ef5f4ca0219ba54d39553, type: 3}
+    - {fileID: 8300000, guid: e61992a26f2f67e42befbdb0caf11454, type: 3}
+    volume: 0.7
+  - eType: 1
+    sounds:
+    - {fileID: 8300000, guid: 26c99d18a57b975478520de84452a676, type: 3}
+    - {fileID: 8300000, guid: 57af5137886b3f04fb91a26020b6a5fb, type: 3}
+    - {fileID: 8300000, guid: 18a12fad5af3d5c4b87ab07c7d5828b6, type: 3}
+    - {fileID: 8300000, guid: 17a9cda2ef2891b4b9de295711c64ef8, type: 3}
+    volume: 0.7
+  - eType: 4
+    sounds:
+    - {fileID: 8300000, guid: 2150e334fb3338940b3494bc953739a1, type: 3}
+    - {fileID: 8300000, guid: 6263b0d4f8af4964798759199c511edd, type: 3}
+    - {fileID: 8300000, guid: 36b025b9cc519a946be09fc305fff8e6, type: 3}
+    - {fileID: 8300000, guid: 2a8b07e6f00d839488993018c4f3eb36, type: 3}
+    volume: 0.55
+  - eType: 3
+    sounds:
+    - {fileID: 8300000, guid: 742b032aff0510146b63ef6d46f3db18, type: 3}
+    - {fileID: 8300000, guid: 8a818f8af1ef5a644948e43be76d317c, type: 3}
+    volume: 0.8
+  - eType: 6
+    sounds:
+    - {fileID: 8300000, guid: f705b8319de1248459eb9fec25bd251d, type: 3}
+    volume: 0.1
+  - eType: 5
+    sounds:
+    - {fileID: 8300000, guid: 6af6bc5f232c8574994f929564c9956d, type: 3}
+    volume: 0.7
+  soundVolumes:
+  - sound: {fileID: 8300000, guid: 0fc088aade2650c4580bc080917e04d5, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: e349950f0471143409e2339bc41e7cef, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 1527e298313e2444e87a110cff0eff8b, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: dabb931197e51a0419b69f90449ed841, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 0262eb4b4e422154a87f54af9fccceae, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 3bfd6b62b5d2c724a8710ad52b375b18, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 553e0465d472a9a45baea3d1110d7dc5, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 134c73d5e0d5e8e4a873c0931dd4a342, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 42ec91d0ba2cc124e82b32c32ace9826, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: a7963d62a111bb14b8b45917f3243c3e, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 622ce6b95e88da84bbef8d894bd276bc, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 3c3ed6819da825346af83cfcf1fec87b, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 5fa0937aa8d9cf24c960e23c0ab81dce, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 270a9fc28682f304d995c968f4dc0c2d, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: ef3f1240a9c33c94fbd42bf3b73c6931, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 7c388b307469bb442ba3d0e3d66d8964, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 88452a58257ee2643ab0edf53a4ea8e0, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 1eee7c781bf50ea448e927a8c93ccacf, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 625d45bc3c1dbdb4a96d45c4e7af675b, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 15e059dfcbaa39c4da7192ab6079f53b, type: 3}
+    volume: 0.7
+  - sound: {fileID: 8300000, guid: 4edbb12333f0e684bb0176811486545f, type: 3}
+    volume: 0.7
+  - sound: {fileID: 8300000, guid: 98c93788a109ef241b5485eb1cadf083, type: 3}
+    volume: 0.7
+  - sound: {fileID: 8300000, guid: 603f8255a7191394c98e43a0b27958de, type: 3}
+    volume: 0.7
+  - sound: {fileID: 8300000, guid: 4fb8462642172d34e82e5d830788c53a, type: 3}
+    volume: 0.7
+  - sound: {fileID: 8300000, guid: f3f99ee10e517bb418c999269e7b4211, type: 3}
+    volume: 0.7
+  - sound: {fileID: 8300000, guid: 2c7f515ef8c6fc1449518e1a96cd76cd, type: 3}
+    volume: 0.7
+  - sound: {fileID: 8300000, guid: b5acb692d8416c94f9cbac0a670c75a4, type: 3}
+    volume: 0.7
+  - sound: {fileID: 8300000, guid: f0c94e2ca1a538d44b6b43677f4ceecd, type: 3}
+    volume: 0.7
+  - sound: {fileID: 8300000, guid: b97cee8a95c60b145ba934af1ab68c08, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: d74be124809900e4e95fe692835638bb, type: 3}
+    volume: 0.6
+  - sound: {fileID: 8300000, guid: 08e569ab09cb12544a290825171b0f5f, type: 3}
+    volume: 0.4
+  - sound: {fileID: 8300000, guid: 742e975a000dfea4ea392c0ce6c8598d, type: 3}
+    volume: 0.4
+  - sound: {fileID: 8300000, guid: 21eac10f191b28446a48379c5d76d867, type: 3}
+    volume: 0.4
+  - sound: {fileID: 8300000, guid: 254d4419eec5cba408f319f5868e1fb0, type: 3}
+    volume: 0.4
+  - sound: {fileID: 8300000, guid: 62567d4ede8a4be488a42fc1e6b39844, type: 3}
+    volume: 0.7
+  - sound: {fileID: 8300000, guid: b9ce019b12018d04583608ef404fbcb3, type: 3}
+    volume: 0.4
+  - sound: {fileID: 8300000, guid: 586db54b914cc7c4c80bd0d22d224031, type: 3}
+    volume: 0.4
+  - sound: {fileID: 8300000, guid: 938cd0a6f4a0db046be86a4121570243, type: 3}
+    volume: 0.4
+  - sound: {fileID: 8300000, guid: c5269c174b2de7141be44b3b656768e4, type: 3}
+    volume: 0.4
+  - sound: {fileID: 8300000, guid: 6aae6932749a30b4281e4432707e4bec, type: 3}
+    volume: 0.4
+  - sound: {fileID: 8300000, guid: dab53b351f63a33489417d68f3fdf3f4, type: 3}
+    volume: 0.45
+  bulletBounceTarget:
+    camp: 1
+    layer: 0
+    flags: 0
+    rule: 0
+    num: 1
+    save: 0
+    delay: 0
+    rang: 20
+    angle: 0
+    w: 0
+    h: 0
+    offdir: 0
+    colliders: []
+  itemList:
+  - id: 10000
+    avatars:
+    - name: well_rounded
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 4275692e906920940966e65efe26406d, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: well_rounded
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 5209e7db5ec991644957b0d398afd1fc, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10001
+    avatars:
+    - name: brawler
+      eType: 32
+      priority: 2
+      sprite: {fileID: 21300000, guid: b144c59792aae2f40a348e60ce5053c6, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 423ce4cd37fec5c44b7840f8d868c179, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10002
+    avatars:
+    - name: crazy
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: cbbfc6f877b9c2c45bb705648063366d, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 58e0ac6b62a71c34581bbc95e365f7f7, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10003
+    avatars:
+    - name: ranger
+      eType: 32
+      priority: 3
+      sprite: {fileID: 21300000, guid: d31768ce7aa0d4f4090b7288e1f7be77, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 70d48c1e46ab30940b961213a5d22c4c, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10004
+    avatars:
+    - name: mage
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 3079781b9bdad37459d5f2a5cb4face3, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 3
+      sprite: {fileID: 21300000, guid: 05c68670aaead754a867f24ffafa6241, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10005
+    avatars:
+    - name: chunky
+      eType: 32
+      priority: 2
+      sprite: {fileID: 21300000, guid: 0c867efda22a2334385a28dc581c0ede, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: f73f365daeb13034787162fac7f1c2b9, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10006
+    avatars:
+    - name: old
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 3b11466a1eb1de847bcd4e81563df936, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 18df8f93df90a0f46a9a1579eb4b96a3, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10007
+    avatars:
+    - name: lucky
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: b0c21131fc12cd143b7e544f1bfa754c, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 28bc9daf6fb89804ea2fe33b5f55f50b, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10008
+    avatars:
+    - name: mutant
+      eType: 32
+      priority: 3
+      sprite: {fileID: 21300000, guid: 21cbe42754b13f248bf1e1b974240d09, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 3
+      sprite: {fileID: 21300000, guid: 4d63bf92ccd64274e9c4fd2c31fb5d16, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10009
+    avatars:
+    - name: generalist
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 8a566a78f84b393428364b4caa687ae7, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 0615a80ed26676b4e8b25f7e8bf93925, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10010
+    avatars:
+    - name: loud
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 97f9bf237423c8b4c9bba133a57853c2, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 3
+      sprite: {fileID: 21300000, guid: b92bf2ea501827e43b1c705b5ba76452, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10011
+    avatars:
+    - name: multitasker
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 613ea292091bc0044871aae53460610d, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: f7a505898c8c98d49ac920e4cc9f33ea, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10012
+    avatars:
+    - name: wildling
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: db76cb1074f96cd4987a6c65b6a112f4, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 0075a921c0e25d94888531d818129c12, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10013
+    avatars:
+    - name: pacifist
+      eType: 32
+      priority: 3
+      sprite: {fileID: 21300000, guid: df7acc4d0f51bc444b195218983ac536, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: ba568114be8743c4ca288a894a981cf2, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10014
+    avatars:
+    - name: gladiator
+      eType: 32
+      priority: 1
+      sprite: {fileID: 21300000, guid: df6601a139dfe804ab2ab4193c3907f7, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: e1773f6af3de5b946a4d92eeded05a04, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 8
+      priority: 3
+      sprite: {fileID: 21300000, guid: 4e01a4f0983a6184a84ddf73e1d7a741, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10015
+    avatars:
+    - name: saver
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: dd9367d3ca5b7604cb62030231e25369, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: f8a08c972bde16943a624aade7d6452c, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 64
+      priority: 3
+      sprite: {fileID: 0}
+      depth: 700
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10016
+    avatars:
+    - name: sick
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 032cb619767e5984abaafca2fa4dd468, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: cf99f2845fa77314cba761cd5f722bf2, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10017
+    avatars:
+    - name: farmer
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: a6d2f4feeb2861847ae6f7d2a7294ff2, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 570d451e56f423e42ae22685f0c6c5ad, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 64
+      priority: 0
+      sprite: {fileID: 21300000, guid: 02abb7f5ba84b41419d5df92cb16d67d, type: 2}
+      depth: 600
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10018
+    avatars:
+    - name: ghost
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 63d925af04daa9249a708ef3f58250b8, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: b69573312acbb4e4790daf1c2942a149, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10019
+    avatars:
+    - name: speedy
+      eType: 32
+      priority: 3
+      sprite: {fileID: 21300000, guid: 4093bea5600672a48a2a149f08ab5596, type: 2}
+      depth: 1200
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: bdf0c335a09a5324daa0f7969b89a092, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10020
+    avatars:
+    - name: entrepreneur
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 338806d32365431419975315ab3d6312, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: f9ec4f606c80398418312483b4efbf9f, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 1024
+      priority: 0
+      sprite: {fileID: 21300000, guid: 07125d27ee4a70147bd20d5e6dd1ee0f, type: 2}
+      depth: 320
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10021
+    avatars:
+    - name: engineer
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 71f8ab4406bc4b640ac2c53db9aa8847, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 3
+      sprite: {fileID: 21300000, guid: 051a5916529150e4b9cc7ff95feed544, type: 2}
+      depth: 1250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10022
+    avatars:
+    - name: explorer
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: ab128b442a4237c4792317ef3c5c71a7, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 8
+      priority: 0
+      sprite: {fileID: 21300000, guid: c583b3db1460b1345a0ec6979e88264e, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 2
+      sprite: {fileID: 21300000, guid: 16c7a10aec3f4a4409d22f5547ffb67e, type: 2}
+      depth: 550
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10023
+    avatars:
+    - name: doctor
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 2e1a5074b1a39fa41b38d92a71bc4816, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 2
+      sprite: {fileID: 21300000, guid: 0d2ef404b0d066a498cf18963548bb2e, type: 2}
+      depth: 540
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10024
+    avatars:
+    - name: hunter
+      eType: 32
+      priority: 3
+      sprite: {fileID: 21300000, guid: fc6cd29854aa90d4ea9efd033eb73ad9, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 8
+      priority: 3
+      sprite: {fileID: 21300000, guid: a45fdc753e1bcab43873b129d6a79bd1, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 2
+      sprite: {fileID: 21300000, guid: d0b0e57158a76ab4db89912befd59a2f, type: 2}
+      depth: 540
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10025
+    avatars:
+    - name: artificer
+      eType: 32
+      priority: 3
+      sprite: {fileID: 21300000, guid: cecf8701859d55c46bfba836e3fe3466, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 3
+      sprite: {fileID: 21300000, guid: ed01ed215ff77f34c88d76a31c4e2a94, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10026
+    avatars:
+    - name: arms_dealer
+      eType: 32
+      priority: 2
+      sprite: {fileID: 21300000, guid: 893099aa56bc5de4a86ddff434d336fe, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 2
+      sprite: {fileID: 21300000, guid: bb5480a470408a24b92d9df21b163f28, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10027
+    avatars:
+    - name: streamer
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: a79a66c0c6601aa4694977430d438b3b, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 0
+      priority: 4
+      sprite: {fileID: 21300000, guid: b19ebbb39d65a3d4f8a7f2dd091e4de9, type: 2}
+      depth: 540
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10028
+    avatars:
+    - name: one_arm
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 8c221eb10c2450448a58e30d558a2e01, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: b5b213792347f3145bd114230b58e20e, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10029
+    avatars:
+    - name: bull
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: edc85e32f9174a741890d5158cb45522, type: 2}
+      depth: 1200
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 79023044f12810248ac777d8d99f7a3e, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10030
+    avatars:
+    - name: soldier
+      eType: 32
+      priority: 3
+      sprite: {fileID: 21300000, guid: 5a4653a3de457bf43be7500d5b970820, type: 2}
+      depth: 1200
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 9dcd2220f8e3d7c41b0d0d437a59672e, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10031
+    avatars:
+    - name: masochist
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: cb2316997d1de8140b7bc2a18fd590d7, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 894964755eefd3c439c0070829ac7b1e, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10032
+    avatars:
+    - name: knight
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: df8914168d128f84ab1ca4b1ec64bab5, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 128
+      priority: 2
+      sprite: {fileID: 21300000, guid: 6c6f4b9c219e18746b376ce15c245981, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 8
+      priority: 3
+      sprite: {fileID: 21300000, guid: fbfcf05cb9895fd459b6bad8813e52a8, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10033
+    avatars:
+    - name: demon
+      eType: 4
+      priority: 0
+      sprite: {fileID: 21300000, guid: 01b59688fb655f148b1f0dfad8a2613b, type: 2}
+      depth: -100
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: demon
+      eType: 2
+      priority: 0
+      sprite: {fileID: 21300000, guid: 5c288155fe4d01f4a9ab58c4bcceff44, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: demon
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 154e432f7006e2f4fb42294579445587, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: demon
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 789fc092913f73b45b3a6c136d9bcd59, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: demon
+      eType: 16384
+      priority: 0
+      sprite: {fileID: 21300000, guid: 1a3291139225ad548bede50d88e118b2, type: 2}
+      depth: -1100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10034
+    avatars:
+    - name: cyborg
+      eType: 32
+      priority: 4
+      sprite: {fileID: 21300000, guid: 8bb39228e81f6c648bdefa8a85ffd27e, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: cyborg
+      eType: 128
+      priority: 1
+      sprite: {fileID: 21300000, guid: 999a56f1a47ac53409c91e16f23ded2d, type: 2}
+      depth: 550
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: cyborg
+      eType: 8192
+      priority: 1
+      sprite: {fileID: 21300000, guid: f9d9abf5efbc50c4382a840b09311e57, type: 2}
+      depth: 1
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10035
+    avatars:
+    - name: glutton
+      eType: 32
+      priority: 1
+      sprite: {fileID: 21300000, guid: 0900e960a7d2ce945bcc3fa68d70c36c, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: glutton
+      eType: 128
+      priority: 1
+      sprite: {fileID: 21300000, guid: 269008abe9eb5b7448336016aacdd326, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10036
+    avatars:
+    - name: jack
+      eType: 32
+      priority: 1
+      sprite: {fileID: 21300000, guid: dca5b45e36b446c42b35ca67d7798ae8, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: jack
+      eType: 128
+      priority: 1
+      sprite: {fileID: 21300000, guid: 1d89b56535447cd4b930813090200368, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: jack
+      eType: 64
+      priority: 0
+      sprite: {fileID: 21300000, guid: 55b4576dc5b9f594a8953fd66d4c2d7f, type: 2}
+      depth: 600
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10037
+    avatars:
+    - name: lich
+      eType: 16
+      priority: 3
+      sprite: {fileID: 21300000, guid: eea362bf9d3110f4a929b64129957019, type: 2}
+      depth: 50
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: lich
+      eType: 32
+      priority: 2
+      sprite: {fileID: 21300000, guid: 4f049f4e52fbf2445ba8e365a12347b6, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: lich
+      eType: 128
+      priority: 3
+      sprite: {fileID: 21300000, guid: 9638e222889634742acd6f79a1b6aa4d, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10038
+    avatars:
+    - name: apprentice
+      eType: 32
+      priority: 1
+      sprite: {fileID: 21300000, guid: a297fb52cde82594f808afee735da837, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: apprentice
+      eType: 128
+      priority: 1
+      sprite: {fileID: 21300000, guid: ea986b6e964a1a043bb27966b86cd470, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: apprentice
+      eType: 1024
+      priority: 1
+      sprite: {fileID: 21300000, guid: 955650cccd99e724695665f78f766d0c, type: 2}
+      depth: 320
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10039
+    avatars:
+    - name: cryptid
+      eType: 32
+      priority: 2
+      sprite: {fileID: 21300000, guid: d518faae6116e6a41b22c0c71f6a8049, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: cryptid
+      eType: 128
+      priority: 2
+      sprite: {fileID: 21300000, guid: 9c2d02f4d68280b478e9dbc3eee64607, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10040
+    avatars:
+    - name: fisherman
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: bb3f64665cf91984da55b5bf27c6d9ae, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: fisherman
+      eType: 128
+      priority: 1
+      sprite: {fileID: 21300000, guid: c5260735913432843bb044840d548a24, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: fisherman
+      eType: 8
+      priority: 2
+      sprite: {fileID: 21300000, guid: ac20768e6508fde43a2e0bd851048c7d, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10041
+    avatars:
+    - name: golem
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: dca6a49563e71fb428c3bdc3e19a1185, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: golem
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 45eaac80471fca147b4e3ba454165589, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: golem
+      eType: 8192
+      priority: 3
+      sprite: {fileID: 21300000, guid: 1a74cf0cff4a4354881e340179eab0be, type: 2}
+      depth: 1
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10042
+    avatars:
+    - name: king
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 5a80c192752723d40887660255d77d06, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: king
+      eType: 128
+      priority: 2
+      sprite: {fileID: 21300000, guid: b0f440298ea71004caaecaf81249cfc5, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: king
+      eType: 8
+      priority: 3
+      sprite: {fileID: 21300000, guid: f07c45fe82e870c4cb8384fa8c4c3967, type: 2}
+      depth: 900
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 10043
+    avatars:
+    - name: renegade
+      eType: 32
+      priority: 1
+      sprite: {fileID: 21300000, guid: 9326415de0671204798ae2b5777f6ed4, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: renegade
+      eType: 128
+      priority: 2
+      sprite: {fileID: 21300000, guid: db16c24d6e36f8f4f95f57177da9ca99, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: renegade
+      eType: 8
+      priority: 3
+      sprite: {fileID: 21300000, guid: dd94583572ec1df4a93a61d0a0869383, type: 2}
+      depth: 800
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30001
+    avatars:
+    - name: acid
+      eType: 128
+      priority: 1
+      sprite: {fileID: 21300000, guid: 8a9c840c2657c9b4391b883fbc156963, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30002
+    avatars:
+    - name: alien_baby
+      eType: 512
+      priority: 3
+      sprite: {fileID: 21300000, guid: c22655f9e5b6bf149ac3905ebc1bb744, type: 2}
+      depth: 600
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30003
+    avatars:
+    - name: alien_eyes
+      eType: 32
+      priority: 2
+      sprite: {fileID: 21300000, guid: 01ee1e00799670c4c88c5269786bed75, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30004
+    avatars:
+    - name: alien_magic
+      eType: 32
+      priority: 3
+      sprite: {fileID: 21300000, guid: bcc71f7abaf307a4f9b0c3df037a007d, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30005
+    avatars:
+    - name: alien_tongue
+      eType: 128
+      priority: 2
+      sprite: {fileID: 21300000, guid: 457d80ae137107749929c81f85ca1cc6, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30006
+    avatars:
+    - name: alien_worm
+      eType: 2048
+      priority: 0
+      sprite: {fileID: 21300000, guid: 8a8a11cf25de4b248bb1996253a7bf32, type: 2}
+      depth: 400
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30007
+    avatars:
+    - name: alloy
+      eType: 0
+      priority: 3
+      sprite: {fileID: 21300000, guid: c39e7464e36882646b9b3475b3b05c3f, type: 2}
+      depth: 1
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30008
+    avatars:
+    - name: anvil
+      eType: 8192
+      priority: 3
+      sprite: {fileID: 21300000, guid: 989eaf411beff1245bb7495cb55bf833, type: 2}
+      depth: 1
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30009
+    avatars:
+    - name: baby_elephant
+      eType: 64
+      priority: 0
+      sprite: {fileID: 21300000, guid: d228bd6b58094404c8701959166daddd, type: 2}
+      depth: 620
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30010
+    avatars:
+    - name: baby_gecko
+      eType: 16384
+      priority: 0
+      sprite: {fileID: 21300000, guid: b2d144b1da527a54589a212eea49b721, type: 2}
+      depth: -1010
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30011
+    avatars:
+    - name: baby_with_a_beard
+      eType: 128
+      priority: 4
+      sprite: {fileID: 21300000, guid: 26dfcf0de3eb01a4d9272e0571582a34, type: 2}
+      depth: 550
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30012
+    avatars:
+    - name: bag
+      eType: 2048
+      priority: 1
+      sprite: {fileID: 21300000, guid: 9a5cb63293676874e8152f158b795651, type: 2}
+      depth: 400
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30013
+    avatars:
+    - name: bandana
+      eType: 8
+      priority: 3
+      sprite: {fileID: 21300000, guid: 45b2dc5e55ce2ee4ab4184bc6357b965, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30014
+    avatars:
+    - name: banner
+      eType: 256
+      priority: 2
+      sprite: {fileID: 21300000, guid: 22dd5a5c75e350344a5a53a53c9de202, type: 2}
+      depth: -1000
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 30015
+    avatars:
+    - name: barricade
+      eType: 16
+      priority: 3
+      sprite: {fileID: 21300000, guid: 787a8846db566e9449545dcb333f130c, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30016
+    avatars:
+    - name: bat
+      eType: 256
+      priority: 2
+      sprite: {fileID: 21300000, guid: aa0b7bedadbd9834388220a041db1fc2, type: 2}
+      depth: -1000
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 30017
+    avatars:
+    - name: bean_teacher
+      eType: 1024
+      priority: 2
+      sprite: {fileID: 21300000, guid: cf8f075379b5d4444a5a8feac64ae8e9, type: 2}
+      depth: 320
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30018
+    avatars:
+    - name: beanie
+      eType: 8
+      priority: 0
+      sprite: {fileID: 21300000, guid: 155f5eae8fc5a1e428a73a25cfab65e6, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30019
+    avatars:
+    - name: big_arms
+      eType: 65536
+      priority: 4
+      sprite: {fileID: 21300000, guid: 8748aaa2f5f7a3b4cbe05f8746260f97, type: 2}
+      depth: -60
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 30020
+    avatars:
+    - name: black_belt
+      eType: 512
+      priority: 2
+      sprite: {fileID: 21300000, guid: c261d601860bb1b4fa2d1ace3127fcec, type: 2}
+      depth: 401
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30021
+    avatars:
+    - name: blindfold
+      eType: 32
+      priority: 2
+      sprite: {fileID: 21300000, guid: 020584d294e17d24d95cb84fa6809f22, type: 2}
+      depth: 800
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30022
+    avatars:
+    - name: blood_donation
+      eType: 2048
+      priority: 2
+      sprite: {fileID: 21300000, guid: 721189fa532461e40884ea88af95cd42, type: 2}
+      depth: 450
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30023
+    avatars:
+    - name: blood_leech
+      eType: 128
+      priority: 2
+      sprite: {fileID: 21300000, guid: 9ffe0fe3ac5bd7349b8db397610dd371, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30024
+    avatars:
+    - name: boiling_water
+      eType: 0
+      priority: 0
+      sprite: {fileID: 21300000, guid: 7f714596477329c4fbc10032550215f7, type: 2}
+      depth: 25
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30025
+    avatars:
+    - name: book
+      eType: 8
+      priority: 0
+      sprite: {fileID: 21300000, guid: a47f5650d72af4249a6d87806b25d71f, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30026
+    avatars:
+    - name: bowler_hat
+      eType: 8
+      priority: 3
+      sprite: {fileID: 21300000, guid: 6dd6d23187d7a534696ae429c5c166e9, type: 2}
+      depth: 1100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30027
+    avatars:
+    - name: boxing_glove
+      eType: 4
+      priority: 0
+      sprite: {fileID: 21300000, guid: e1760c775964bd148889597ecb5faa99, type: 2}
+      depth: 1200
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30028
+    avatars:
+    - name: broken_mouth
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 33ae23fc771872c49ba4f23931bc7bfa, type: 2}
+      depth: 450
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30029
+    avatars:
+    - name: butterfly
+      eType: 256
+      priority: 2
+      sprite: {fileID: 21300000, guid: 0620d15602b158040abd67d92b6483ce, type: 2}
+      depth: -1000
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 30030
+    avatars:
+    - name: cake
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: a13a34cbfefbf9541a163a6689bb4dbb, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30031
+    avatars:
+    - name: campfire
+      eType: 1
+      priority: 0
+      sprite: {fileID: 21300000, guid: 95580167a771e604897467c472ef6ac6, type: 2}
+      depth: -1100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30032
+    avatars:
+    - name: candle
+      eType: 1
+      priority: 0
+      sprite: {fileID: 21300000, guid: e3b1e2cbd6aca784492bf536da981b4c, type: 2}
+      depth: 1200
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30033
+    avatars:
+    - name: cape
+      eType: 256
+      priority: 4
+      sprite: {fileID: 21300000, guid: 312d57daa92e34948a22a8984ee0259e, type: 2}
+      depth: -1000
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30034
+    avatars:
+    - name: chameleon
+      eType: 16384
+      priority: 3
+      sprite: {fileID: 21300000, guid: 2ec1c28e3f5aa734b98f1e2aec325520, type: 2}
+      depth: -1001
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30035
+    avatars:
+    - name: charcoal
+      eType: 0
+      priority: 0
+      sprite: {fileID: 21300000, guid: 0d9bf2e1dd2154944809e70d8c271286, type: 2}
+      depth: 25
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30036
+    avatars:
+    - name: claw_tree
+      eType: 4096
+      priority: 0
+      sprite: {fileID: 21300000, guid: 77086d604bb39164fa3a21a7aafe16cd, type: 2}
+      depth: 600
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30037
+    avatars:
+    - name: clover
+      eType: 2
+      priority: 3
+      sprite: {fileID: 21300000, guid: ca909b6c7978e514bb70765731a7463c, type: 2}
+      depth: 1100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30038
+    avatars:
+    - name: coffee
+      eType: 1
+      priority: 0
+      sprite: {fileID: 21300000, guid: 5a15bd9169ebae34ba18b846dae9b75d, type: 2}
+      depth: 100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30039
+    avatars:
+    - name: cog
+      eType: 0
+      priority: 1
+      sprite: {fileID: 21300000, guid: 15138ac90f3ea874ea9a53dfc1fd93e9, type: 2}
+      depth: 50
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30040
+    avatars:
+    - name: community_support
+      eType: 256
+      priority: 3
+      sprite: {fileID: 21300000, guid: 71397a0dcb9d3c34eb3a700e3183991c, type: 2}
+      depth: -500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30042
+    avatars:
+    - name: coupon
+      eType: 4096
+      priority: 0
+      sprite: {fileID: 21300000, guid: b332a27d450e4fe459dea137d119e11a, type: 2}
+      depth: -100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30043
+    avatars:
+    - name: crown
+      eType: 8
+      priority: 4
+      sprite: {fileID: 21300000, guid: 86c6ec2d95c826147bcc392a209cfc37, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30044
+    avatars:
+    - name: cute_monkey
+      eType: 32768
+      priority: 0
+      sprite: {fileID: 21300000, guid: 1cf46d25ec029f14184b9825992b5949, type: 2}
+      depth: 600
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 65536
+      priority: 0
+      sprite: {fileID: 21300000, guid: 9e34627864e619f4e88e4efea814174b, type: 2}
+      depth: -200
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30045
+    avatars:
+    - name: cyberball
+      eType: 8192
+      priority: 0
+      sprite: {fileID: 21300000, guid: 1d66ae0d33d5c7c4382ebfeb948568c5, type: 2}
+      depth: 1
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30046
+    avatars:
+    - name: cyclops_worm
+      eType: 32
+      priority: 1
+      sprite: {fileID: 21300000, guid: d9375138053624f49910a8805d29ab31, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30047
+    avatars:
+    - name: dangerous_bunny
+      eType: 2048
+      priority: 2
+      sprite: {fileID: 21300000, guid: 35aeb49f1d35d7848936cd1b7f2dc586, type: 2}
+      depth: 400
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30048
+    avatars:
+    - name: defective_steroids
+      eType: 4
+      priority: 0
+      sprite: {fileID: 21300000, guid: c2c136c0f4e96bd438f7143cee4942c8, type: 2}
+      depth: 1200
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30049
+    avatars:
+    - name: diploma
+      eType: 32
+      priority: 3
+      sprite: {fileID: 21300000, guid: 07b29996f45e87142bea7cf583af97d7, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30050
+    avatars:
+    - name: duct_tape
+      eType: 0
+      priority: 0
+      sprite: {fileID: 21300000, guid: 15c19a74b83a7114a8c5df95df879c81, type: 2}
+      depth: 50
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30051
+    avatars:
+    - name: dynamite
+      eType: 1
+      priority: 0
+      sprite: {fileID: 21300000, guid: ec8b36df8a86ab541ad0f03fc3d81b3b, type: 2}
+      depth: 1200
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30052
+    avatars:
+    - name: energy_bracelet
+      eType: 512
+      priority: 2
+      sprite: {fileID: 21300000, guid: e37eb9ba913aafc46b1886b3190093ef, type: 2}
+      depth: 450
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30053
+    avatars:
+    - name: estys_couch
+      eType: 256
+      priority: 4
+      sprite: {fileID: 21300000, guid: 298d22ff3cfc3384b9c4419aa2d61a59, type: 2}
+      depth: -1000
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 30054
+    avatars:
+    - name: exoskeleton
+      eType: 32768
+      priority: 4
+      sprite: {fileID: 21300000, guid: 24c7c070352af37428e4faeeaabfff18, type: 2}
+      depth: 800
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 65536
+      priority: 4
+      sprite: {fileID: 21300000, guid: 5b0973f69c81e0f4598afe91d802ec21, type: 2}
+      depth: -75
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30056
+    avatars:
+    - name: eyes_surgery
+      eType: 32
+      priority: 1
+      sprite: {fileID: 21300000, guid: dbe4a4c35e036a94fb6b54c19e793568, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30057
+    avatars:
+    - name: fertilizer
+      eType: 2048
+      priority: 0
+      sprite: {fileID: 21300000, guid: 825fd16a0f77696468201df1e4f3ee8e, type: 2}
+      depth: 450
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30058
+    avatars:
+    - name: fin
+      eType: 1
+      priority: 2
+      sprite: {fileID: 21300000, guid: ddafead9de543454f91f4e66e9a54d8c, type: 2}
+      depth: 750
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30059
+    avatars:
+    - name: focus
+      eType: 16
+      priority: 4
+      sprite: {fileID: 21300000, guid: 3cd6ce21cfeb9744dac6da3cd543de2e, type: 2}
+      depth: 50
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30060
+    avatars:
+    - name: fuel_tank
+      eType: 256
+      priority: 2
+      sprite: {fileID: 21300000, guid: ea61ed31c73290f40b0dcc135f446320, type: 2}
+      depth: -500
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 30061
+    avatars:
+    - name: gambling_token
+      eType: 16
+      priority: 2
+      sprite: {fileID: 21300000, guid: 1429725d1fa39aa40a782c9436120655, type: 2}
+      depth: 50
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30062
+    avatars:
+    - name: gentle_alien
+      eType: 2
+      priority: 0
+      sprite: {fileID: 21300000, guid: fbb54d59c62f4ef41b2762583b4ca27e, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30063
+    avatars:
+    - name: glass_cannon
+      eType: 4
+      priority: 3
+      sprite: {fileID: 21300000, guid: 885d1b4cfe9723e43a286a789f0edb19, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30064
+    avatars:
+    - name: glasses
+      eType: 32
+      priority: 2
+      sprite: {fileID: 21300000, guid: 8d136f44d0826624a83a9bb025b732bd, type: 2}
+      depth: 1200
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30065
+    avatars:
+    - name: gnome
+      eType: 8
+      priority: 4
+      sprite: {fileID: 21300000, guid: f60598d0a2f2fa24cb4b5bafdaadf867, type: 2}
+      depth: 1100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30066
+    avatars:
+    - name: goat_skull
+      eType: 2
+      priority: 0
+      sprite: {fileID: 21300000, guid: a137e27da32cd0a4686679ab0f02127e, type: 2}
+      depth: 1100
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 4
+      priority: 0
+      sprite: {fileID: 21300000, guid: 30549330b16fee142a99cfea20c91c59, type: 2}
+      depth: -100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30067
+    avatars:
+    - name: grinds_magical_leaf
+      eType: 2
+      priority: 4
+      sprite: {fileID: 21300000, guid: 517e4355daff0d641b6dcebd4b737b78, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30068
+    avatars:
+    - name: gummy_berserker
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: ee5f29062ec15b24193316fd55748bbc, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30069
+    avatars:
+    - name: handcuffs
+      eType: 512
+      priority: 3
+      sprite: {fileID: 21300000, guid: 8cd7531569f9d3b4e84df1a1ae9d5885, type: 2}
+      depth: 401
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30070
+    avatars:
+    - name: head_injury
+      eType: 0
+      priority: 0
+      sprite: {fileID: 21300000, guid: 8871fe78976a11949acca889b7d6712c, type: 2}
+      depth: 150
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30072
+    avatars:
+    - name: hedgehog
+      eType: 8
+      priority: 0
+      sprite: {fileID: 21300000, guid: e2e20614aa707244192e787ebb5aed49, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30073
+    avatars:
+    - name: helmet
+      eType: 8
+      priority: 1
+      sprite: {fileID: 21300000, guid: bb14887ef5c32d543ac7cf9e3bd8d57e, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30074
+    avatars:
+    - name: hunting_trophy
+      eType: 2
+      priority: 3
+      sprite: {fileID: 21300000, guid: 4011e8655f6bdb146891e6ebac0497ac, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 4
+      priority: 3
+      sprite: {fileID: 21300000, guid: 43a264264696bc441ac96fa38ba57f64, type: 2}
+      depth: -75
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30075
+    avatars:
+    - name: injection
+      eType: 2
+      priority: 0
+      sprite: {fileID: 21300000, guid: f8a3945a22398a34e855c8d680f35350, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30076
+    avatars:
+    - name: insanity
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: 1b05dd72bb3b2764196cff3df2838733, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30077
+    avatars:
+    - name: jetpack
+      eType: 256
+      priority: 4
+      sprite: {fileID: 21300000, guid: e008fa0cd9ae5fa4c9e03d6e98b9e949, type: 2}
+      depth: -1000
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 30079
+    avatars:
+    - name: leather_vest
+      eType: 1024
+      priority: 2
+      sprite: {fileID: 21300000, guid: 3abf69c9b9bb2ab40bf0f63491d33c38, type: 2}
+      depth: 320
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30080
+    avatars:
+    - name: lemonade
+      eType: 2
+      priority: 0
+      sprite: {fileID: 21300000, guid: aa3a5f31424d0b245986b2c407a99402, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30081
+    avatars:
+    - name: lens
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: f45b80d8af40e544ab38ac46685294f8, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30082
+    avatars:
+    - name: little_frog
+      eType: 1
+      priority: 1
+      sprite: {fileID: 21300000, guid: 421ee67b579c6344ebe5ec51fcf632ab, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30083
+    avatars:
+    - name: little_muscley_dude
+      eType: 2
+      priority: 2
+      sprite: {fileID: 21300000, guid: e11463ece13347e48ac3fc6bf424dc96, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30084
+    avatars:
+    - name: lost_duck
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 90b9abb49ea539a42a3076b067b27ad3, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30085
+    avatars:
+    - name: lucky_charm
+      eType: 512
+      priority: 3
+      sprite: {fileID: 21300000, guid: 27134b174a7c4fa42a035a28d9cda9fa, type: 2}
+      depth: 401
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30086
+    avatars:
+    - name: lumberjack_shirt
+      eType: 1024
+      priority: 1
+      sprite: {fileID: 21300000, guid: 708c06bd65d966f43a96288169eca992, type: 2}
+      depth: 301
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30087
+    avatars:
+    - name: mammoth
+      eType: 128
+      priority: 4
+      sprite: {fileID: 21300000, guid: f4e20432cec1ad24e9882ccf1e6638a6, type: 2}
+      depth: 600
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30088
+    avatars:
+    - name: mastery
+      eType: 32
+      priority: 2
+      sprite: {fileID: 21300000, guid: 5f6ee21daf4770b4e95a5b505642784b, type: 2}
+      depth: 700
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30089
+    avatars:
+    - name: medal
+      eType: 512
+      priority: 2
+      sprite: {fileID: 21300000, guid: 3badf973a1a000d4cbd97a09391d65f5, type: 2}
+      depth: 401
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30090
+    avatars:
+    - name: medikit
+      eType: 16
+      priority: 3
+      sprite: {fileID: 21300000, guid: 6026ad30ee3ed9b40a805c0c71084cd6, type: 2}
+      depth: 650
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30091
+    avatars:
+    - name: metal_detector
+      eType: 4
+      priority: 2
+      sprite: {fileID: 21300000, guid: 866e845d8096cc745a1c2ffe4ff0ade3, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30092
+    avatars:
+    - name: metal_plate
+      eType: 128
+      priority: 3
+      sprite: {fileID: 21300000, guid: 592d3bf0cddb99c4db0fccbc3e249dcc, type: 2}
+      depth: 600
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30093
+    avatars:
+    - name: missile
+      eType: 256
+      priority: 1
+      sprite: {fileID: 21300000, guid: 34b573eccb3465949ad0aed9ddf6f854, type: 2}
+      depth: -500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30094
+    avatars:
+    - name: mouse
+      eType: 64
+      priority: 2
+      sprite: {fileID: 21300000, guid: 572a7da5fc78fcf4dba931f66a411027, type: 2}
+      depth: 601
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30095
+    avatars:
+    - name: mushroom
+      eType: 2
+      priority: 0
+      sprite: {fileID: 21300000, guid: 4b06ac1d3977bfb46827e4264f5a3517, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30096
+    avatars:
+    - name: mutation
+      eType: 4
+      priority: 0
+      sprite: {fileID: 21300000, guid: 25187650a27170d469d9e9b5ab08d401, type: 2}
+      depth: -100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30097
+    avatars:
+    - name: night_goggles
+      eType: 32
+      priority: 4
+      sprite: {fileID: 21300000, guid: a0311b743c7262142b704ff525bcb63f, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30098
+    avatars:
+    - name: octopus
+      eType: 65536
+      priority: 3
+      sprite: {fileID: 21300000, guid: 04612dcdc5ca3124e89bfec28a45e0a3, type: 2}
+      depth: -75
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30099
+    avatars:
+    - name: padding
+      eType: 1024
+      priority: 2
+      sprite: {fileID: 21300000, guid: 14b8f9262076c59488f79b12a02cfc4f, type: 2}
+      depth: 301
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30100
+    avatars:
+    - name: panda
+      eType: 32
+      priority: 4
+      sprite: {fileID: 21300000, guid: 963a6dc9388672e40b9e556ee967916b, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30101
+    avatars:
+    - name: peaceful_bee
+      eType: 0
+      priority: 0
+      sprite: {fileID: 21300000, guid: 8cda116a755b7b543b1a5aa52dda3ecb, type: 2}
+      depth: 50
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30102
+    avatars:
+    - name: pencil
+      eType: 2
+      priority: 0
+      sprite: {fileID: 21300000, guid: 97491b02115143e49bb00efdd95b61ca, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30103
+    avatars:
+    - name: piggy_bank
+      eType: 64
+      priority: 2
+      sprite: {fileID: 21300000, guid: d059fb5846e923b4b846c21ab9a70e94, type: 2}
+      depth: 600
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30104
+    avatars:
+    - name: plant
+      eType: 1
+      priority: 0
+      sprite: {fileID: 21300000, guid: 08bdf3a373b00f74eb26cc14dad5ed1c, type: 2}
+      depth: 1200
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30105
+    avatars:
+    - name: plastic_explosive
+      eType: 256
+      priority: 0
+      sprite: {fileID: 21300000, guid: 44ffc56d71de01d49bb4d952eab75568, type: 2}
+      depth: -500
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 30106
+    avatars:
+    - name: poisonous_tonic
+      eType: 2
+      priority: 2
+      sprite: {fileID: 21300000, guid: 55b4987ed5159224395cf3b674504cb6, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30107
+    avatars:
+    - name: potato
+      eType: 8192
+      priority: 3
+      sprite: {fileID: 21300000, guid: bab8fef0640a7574482d4a83354adc5f, type: 2}
+      depth: 1
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30108
+    avatars:
+    - name: potion
+      eType: 128
+      priority: 3
+      sprite: {fileID: 21300000, guid: d60564d76ba56284aac9f8746fe8143c, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30109
+    avatars:
+    - name: power_generator
+      eType: 4
+      priority: 3
+      sprite: {fileID: 21300000, guid: 1072437767958d6489760829fa0aa860, type: 2}
+      depth: 800
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30110
+    avatars:
+    - name: propeller_hat
+      eType: 8
+      priority: 1
+      sprite: {fileID: 21300000, guid: d42c47bbf4646184db3cd0a14f707288, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30111
+    avatars:
+    - name: pumpkin
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 4503530e46e152c4ebe8d6647fd127c8, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30112
+    avatars:
+    - name: recycling_machine
+      eType: 2
+      priority: 0
+      sprite: {fileID: 21300000, guid: 88ed226df700f7348823eecc5e46bdf5, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30113
+    avatars:
+    - name: retromations_hoodie
+      eType: 1024
+      priority: 4
+      sprite: {fileID: 21300000, guid: 60d678dacf0f9d84ca82e97e74b8440f, type: 2}
+      depth: 301
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30115
+    avatars:
+    - name: rip_and_tear
+      eType: 128
+      priority: 3
+      sprite: {fileID: 21300000, guid: 23ebbe19fd4692a4d872f1e92853c4a6, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30116
+    avatars:
+    - name: ritual
+      eType: 32
+      priority: 2
+      sprite: {fileID: 21300000, guid: ebc1fb058e8277b42b51e6ea45cef246, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30117
+    avatars:
+    - name: robot_arm
+      eType: 65536
+      priority: 4
+      sprite: {fileID: 21300000, guid: 8cd0abfc33856f745a4b737c659e02f9, type: 2}
+      depth: -100
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 30118
+    avatars:
+    - name: sad_tomato
+      eType: 32
+      priority: 3
+      sprite: {fileID: 21300000, guid: 6a21e14090fe3ca4696648077e008f92, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30119
+    avatars:
+    - name: scar
+      eType: 0
+      priority: 0
+      sprite: {fileID: 21300000, guid: 5e05796175f45634295b1d53337eb550, type: 2}
+      depth: 100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30120
+    avatars:
+    - name: scared_sausage
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 7b3d5389098501044b2a8d9a1a43a514, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30121
+    avatars:
+    - name: scope
+      eType: 1
+      priority: 2
+      sprite: {fileID: 21300000, guid: a71da2cc7e7bc444f880626fc0a47c32, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30122
+    avatars:
+    - name: shady_potion
+      eType: 128
+      priority: 2
+      sprite: {fileID: 21300000, guid: 07f01e4a6ab5879418c410b82b4ec837, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30123
+    avatars:
+    - name: shmoop
+      eType: 0
+      priority: 0
+      sprite: {fileID: 21300000, guid: e2cc6db12c3ef2f46a1337d9eff308ec, type: 2}
+      depth: 20
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30124
+    avatars:
+    - name: sifds_relic
+      eType: 16
+      priority: 4
+      sprite: {fileID: 21300000, guid: a74c937b554b9664dac3afeaf7874823, type: 2}
+      depth: 700
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30126
+    avatars:
+    - name: snail
+      eType: 256
+      priority: 1
+      sprite: {fileID: 21300000, guid: 86ab1e113ea265648af9bca64927933f, type: 2}
+      depth: -500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30127
+    avatars:
+    - name: snake
+      eType: 4
+      priority: 0
+      sprite: {fileID: 21300000, guid: 8fbdfcf3d32fe594887470c2c5b5ef8a, type: 2}
+      depth: -50
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30128
+    avatars:
+    - name: spider
+      eType: 32
+      priority: 2
+      sprite: {fileID: 21300000, guid: e07bc00511824c747b71e2ec81ce9624, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30129
+    avatars:
+    - name: statue
+      eType: 32768
+      priority: 3
+      sprite: {fileID: 21300000, guid: 041d8db9828cdf247828c80bcda25d27, type: 2}
+      depth: 600
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30130
+    avatars:
+    - name: strange_book
+      eType: 32
+      priority: 3
+      sprite: {fileID: 21300000, guid: 09ad951ff72faa1448187d806e2b3fa2, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30131
+    avatars:
+    - name: sunglasses
+      eType: 32
+      priority: 2
+      sprite: {fileID: 21300000, guid: 1ba4258fb0ed0ad46988a59e8476b310, type: 2}
+      depth: 1200
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30132
+    avatars:
+    - name: tardigrade
+      eType: 128
+      priority: 3
+      sprite: {fileID: 21300000, guid: 4ebbd5cafd0d17d4abe6896f5392717d, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30133
+    avatars:
+    - name: terrified_onion
+      eType: 32
+      priority: 1
+      sprite: {fileID: 21300000, guid: 99cb824e694d57c46bd932242e14887d, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30134
+    avatars:
+    - name: toolbox
+      eType: 256
+      priority: 3
+      sprite: {fileID: 21300000, guid: a24c4434cb7986f4a9eb31e1a0847798, type: 2}
+      depth: -500
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 30135
+    avatars:
+    - name: torture
+      eType: 32768
+      priority: 3
+      sprite: {fileID: 21300000, guid: 8b4b6ee7534fdcc4eb3188f4058cbaab, type: 2}
+      depth: 600
+      height: 0
+      offX: 0
+      offZ: 0
+    - name:
+      eType: 65536
+      priority: 3
+      sprite: {fileID: 21300000, guid: 60d0696eaa0a8a842afe2fdce02395aa, type: 2}
+      depth: -100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30136
+    avatars:
+    - name: toxic_sludge
+      eType: 2
+      priority: 0
+      sprite: {fileID: 21300000, guid: e114bd31d4f0c084ca3d88bd5981eb08, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30137
+    avatars:
+    - name: tractor
+      eType: 128
+      priority: 3
+      sprite: {fileID: 21300000, guid: 2443382bc92514842b349404f6df880b, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30138
+    avatars:
+    - name: tree
+      eType: 8
+      priority: 0
+      sprite: {fileID: 21300000, guid: 45a3ff62f176f1248ac818ef361f02fc, type: 2}
+      depth: 1001
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30139
+    avatars:
+    - name: triangle_of_power
+      eType: 16
+      priority: 3
+      sprite: {fileID: 21300000, guid: be1073bd99ba0aa47a04262b15559e68, type: 2}
+      depth: 100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30146
+    avatars:
+    - name: ugly_tooth
+      eType: 128
+      priority: 0
+      sprite: {fileID: 21300000, guid: 6ae0dd27ec2766f46bab75c85194c8b2, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30147
+    avatars:
+    - name: vigilante_ring
+      eType: 128
+      priority: 3
+      sprite: {fileID: 21300000, guid: cb91ce803d1dff1418aa10b839dce59a, type: 2}
+      depth: 250
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30149
+    avatars:
+    - name: warrior_helmet
+      eType: 8
+      priority: 2
+      sprite: {fileID: 21300000, guid: 0655e5380a877574d931da720b141fc8, type: 2}
+      depth: 1000
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30150
+    avatars:
+    - name: weird_food
+      eType: 32
+      priority: 0
+      sprite: {fileID: 21300000, guid: a032a17f78bc57d48b04da640fda415f, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30151
+    avatars:
+    - name: weird_ghost
+      eType: 65536
+      priority: 0
+      sprite: {fileID: 21300000, guid: 2b5be49bd92437044b96dfedb801dc34, type: 2}
+      depth: -50
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30153
+    avatars:
+    - name: wheelbarrow
+      eType: 256
+      priority: 2
+      sprite: {fileID: 21300000, guid: fc452d34cb771d94180f1bbe9162df52, type: 2}
+      depth: -501
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 30155
+    avatars:
+    - name: white_flag
+      eType: 1
+      priority: 2
+      sprite: {fileID: 21300000, guid: 4b56f20f1e3acdd4ba9405a903db4f45, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30156
+    avatars:
+    - name: wings
+      eType: 256
+      priority: 3
+      sprite: {fileID: 21300000, guid: c3e7b8b0b0cf6f44daf43ddf66d1767a, type: 2}
+      depth: -1000
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 30157
+    avatars:
+    - name: wisdom
+      eType: 128
+      priority: 3
+      sprite: {fileID: 21300000, guid: 6d7c12082ecbce643add4c1eed9dc780, type: 2}
+      depth: 550
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30158
+    avatars:
+    - name: wolf_helmet
+      eType: 8
+      priority: 4
+      sprite: {fileID: 21300000, guid: c415d84007f62774dbea6ca9816a3298, type: 2}
+      depth: 1100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30159
+    avatars:
+    - name: bloody_hand
+      eType: 8192
+      priority: 3
+      sprite: {fileID: 21300000, guid: e7238250de977d342ad8eeb62bb5c27c, type: 2}
+      depth: 1
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30160
+    avatars:
+    - name: extra_stomach
+      eType: 2048
+      priority: 3
+      sprite: {fileID: 21300000, guid: 7ae01e2fee41cc240b648d4bf113c57e, type: 2}
+      depth: 450
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30161
+    avatars:
+    - name: spicy_sauce
+      eType: 2
+      priority: 0
+      sprite: {fileID: 21300000, guid: cac333d740850cc4682cdfa997411223, type: 2}
+      depth: -500
+      height: 0
+      offX: 43
+      offZ: 0
+  - id: 30162
+    avatars:
+    - name: tentacle
+      eType: 65536
+      priority: 2
+      sprite: {fileID: 21300000, guid: 364a1a4644e14ec4a85d83ff342321eb, type: 2}
+      depth: -75
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30164
+    avatars:
+    - name: bait1
+      eType: 32768
+      priority: 2
+      sprite: {fileID: 21300000, guid: 2255ffbea44082043bfaf1334b06d993, type: 2}
+      depth: 600
+      height: 0
+      offX: 0
+      offZ: 0
+    - name: bait2
+      eType: 65536
+      priority: 2
+      sprite: {fileID: 21300000, guid: b6d7377f4a845df4a80f4d47629afd52, type: 2}
+      depth: -100
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30165
+    avatars:
+    - name: peacock
+      eType: 256
+      priority: 2
+      sprite: {fileID: 21300000, guid: 874954c6134980e4db8c8f51ec560d9d, type: 2}
+      depth: -500
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 30167
+    avatars:
+    - name: adrenaline
+      eType: 2
+      priority: 2
+      sprite: {fileID: 21300000, guid: 7d02b83b242d528458dcf0567077fb26, type: 2}
+      depth: 1300
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30170
+    avatars:
+    - name: improved_tools
+      eType: 2048
+      priority: 2
+      sprite: {fileID: 21300000, guid: 791a5e8ad7ca4a04aad8c8175b9291a1, type: 2}
+      depth: 400
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30171
+    avatars:
+    - name: giant_belt
+      eType: 512
+      priority: 3
+      sprite: {fileID: 21300000, guid: 256f73d9c60d95a46b053956943c80ef, type: 2}
+      depth: 401
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30173
+    avatars:
+    - name: shackles
+      eType: 512
+      priority: 2
+      sprite: {fileID: 21300000, guid: 8da1266bc4cd9d94895ba555296926ce, type: 2}
+      depth: 401
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30175
+    avatars:
+    - name: fairy
+      eType: 32
+      priority: 3
+      sprite: {fileID: 21300000, guid: 263cbe7b698ea0b45b3a0874ca9b1454, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 30176
+    avatars:
+    - name: pocket_factory
+      eType: 32
+      priority: 2
+      sprite: {fileID: 21300000, guid: f4ac8f9f36843fc4798f6db48b4f650f, type: 2}
+      depth: 500
+      height: 0
+      offX: 0
+      offZ: 0
+  - id: 39006
+    avatars:
+    - name: totem1
+      eType: 131072
+      priority: 4
+      sprite: {fileID: 21300000, guid: 234413091b0bbb04d85a651cfd88b101, type: 2}
+      depth: -1000
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 39007
+    avatars:
+    - name: totem2
+      eType: 131072
+      priority: 4
+      sprite: {fileID: 21300000, guid: 78eeb5bcec7941d4c92fe8efa827e7d0, type: 2}
+      depth: -1000
+      height: 50
+      offX: 0
+      offZ: -10
+  - id: 39008
+    avatars:
+    - name: totem3
+      eType: 131072
+      priority: 4
+      sprite: {fileID: 21300000, guid: bb42018f91ba0cb43a7a7824c09e7716, type: 2}
+      depth: -1000
+      height: 0
+      offX: -10
+      offZ: -10
+  - id: 39009
+    avatars:
+    - name: totem4
+      eType: 131072
+      priority: 4
+      sprite: {fileID: 21300000, guid: 9a10f0d125ada4f479d8419416fce8c3, type: 2}
+      depth: -1000
+      height: 0
+      offX: 0
+      offZ: -10
+  - id: 39010
+    avatars:
+    - name: totem5
+      eType: 131072
+      priority: 4
+      sprite: {fileID: 21300000, guid: b0dd3237d93554148b0a0de27e82833b, type: 2}
+      depth: -1000
+      height: 0
+      offX: 0
+      offZ: -10
+  musicRandom:
+    eType: 7
+    sounds:
+    - {fileID: 8300000, guid: 20eb080db75ab92408df4288a39576a3, type: 3}
+    - {fileID: 8300000, guid: 5470bb8394ba69c4b9d820102952f23a, type: 3}
+    - {fileID: 8300000, guid: ed8131fbc670aec4fa3c6d80bb255c38, type: 3}
+    - {fileID: 8300000, guid: bb65fc3848694e5409a26a1fcd4ac90b, type: 3}
+    - {fileID: 8300000, guid: 605f94d070fd37d4e98a058863fab7cb, type: 3}
+    - {fileID: 8300000, guid: 090a195f1d85413488c5e2e46c6594c3, type: 3}
+    volume: 1

@@ -1,0 +1,6 @@
+
+{"file":"AI_16_怪物24","id":16,"childs":[
+{"skillId":50041,"name":"AutoPlaySkill","type":"AutoPlaySkill","typeName":"AIEvent_AutoPlaySkillData","auto":1,"l":-1}
+,
+{"rangeAround":3,"allowWithin":1,"name":"FRPATarget","type":"FRPATarget","typeName":"AI_FRPATargetData","auto":1,"l":-1}
+]}

@@ -1,0 +1,6 @@
+
+{"file":"Skill_3019_流浪的机器人","id":301901,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":10,"eventList":[
+{"type":"TriggerBuff","targettype":"none","item":
+{"buffType":"target_add_buff"}
+}
+]}

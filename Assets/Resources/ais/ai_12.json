@@ -1,0 +1,6 @@
+
+{"file":"AI_12_怪物17","id":12,"childs":[
+{"skillId":50002,"name":"AutoPlaySkill","type":"AutoPlaySkill","typeName":"AIEvent_AutoPlaySkillData","auto":1,"s":1000,"l":-1}
+,
+{"name":"TargetRandPos","type":"TargetRandPos","typeName":"AI_TargetRandPosData","auto":1,"l":-1}
+]}

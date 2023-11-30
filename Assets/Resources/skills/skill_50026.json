@@ -1,0 +1,14 @@
+
+{"file":"Skill_50026_怪物绕圈子弹40009","id":50026,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":999999,"time":999999,"eventList":[
+{"type":"CreatBullet","targettype":"self","item":
+{"res":"bullet_enemy","size":0.18,"pass":99,"num":1,"move":
+{"movetype":"Follow_Circle","ignore":65535,"speed":180,"end_speed":0.4,"tween":"None","time":999999,"h":1.25}
+,"target":
+{"camp":"diff","flags":1,"rule":"none","save":1000,"num":99}
+}
+,"childs":[
+{"type":"CalcDamage","targettype":"none","item":
+{"rule":"Wave","per":1}
+}
+]}
+]}

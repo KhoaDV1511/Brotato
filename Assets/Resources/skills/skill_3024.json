@@ -1,0 +1,6 @@
+
+{"file":"Skill_3024_花园","id":3024,"skillbase":"normal","check":"none","showtype":"rang","dir":"Random","cd":999999,"time":999999,"eventList":[
+{"type":"BombField","targettype":"self","item":
+{"itemId":30169,"flags":132,"res":"build_garden","skill":302401,"dis":8,"dis_min":0.1,"num":1,"s":750,"l":9999999,"effRes":"Birth_blue"}
+}
+]}

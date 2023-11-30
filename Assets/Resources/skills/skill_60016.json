@@ -1,0 +1,16 @@
+
+{"file":"Skill_60016_BOSS11圆环子弹（玩家圆心）","id":60016,"skillbase":"target","check":"none","showtype":"rang","dir":"LX","cd":3600,"randomCd":166,"time":3600,"target":
+{"camp":"diff","rule":"none","num":1,"rang":20}
+,"eventList":[
+{"type":"IntervalTrigger","s":666,"l":100,"targettype":"none","item":
+{"time":1,"num":24,"eflag":"Angle","value":15}
+,"childs":[
+{"type":"BombField","s":600,"targettype":"root","item":
+{"flags":34,"res":"bullet_pillar","skill":600161,"dis":3,"num":1,"l":2500}
+}
+]}
+,
+{"type":"AddBuff","targettype":"self","item":
+{"buffId":104,"l":666}
+}
+]}

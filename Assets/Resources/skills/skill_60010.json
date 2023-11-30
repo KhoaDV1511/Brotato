@@ -1,0 +1,8 @@
+
+{"file":"Skill_60010_BOSS10普攻","id":60010,"skillbase":"target","check":"none","showtype":"rang","dir":"Self","cd":1000,"time":1000,"target":
+{"camp":"diff","flags":1,"rule":"none","num":1}
+,"eventList":[
+{"type":"CalcDamage","targettype":"root","item":
+{"rule":"Normal","per":1}
+}
+]}

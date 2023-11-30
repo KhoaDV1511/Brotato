@@ -1,0 +1,16 @@
+
+{"file":"Skill_500311_死亡召唤40123","id":500311,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":999999,"time":5001,"eLogic":2,"eventList":[
+{"type":"PlayAni","s":4000,"targettype":"none","item":
+{"ani":"Shoot","loop":1,"l":666}
+}
+,
+{"type":"CreatPet","s":5000,"targettype":"none","item":
+{"isMonster":1,"id":40124,"num":1,"offArr":[
+{}
+],"flags":1}
+}
+,
+{"type":"CalcDamage","s":5001,"targettype":"self","item":
+{"rule":"KillSelf","per":9999999}
+}
+]}

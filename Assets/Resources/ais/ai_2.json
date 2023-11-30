@@ -1,0 +1,6 @@
+
+{"file":"AI_2_跟随射击小怪","id":2,"childs":[
+{"targetRange":3,"targetRangeRandomization":1,"name":"StayInRange","type":"StayInRange","typeName":"AIEvent_StayInRangeData","auto":1,"l":-1}
+,
+{"skillId":50001,"name":"AutoPlaySkill","type":"AutoPlaySkill","typeName":"AIEvent_AutoPlaySkillData","auto":1,"s":1000,"l":-1}
+]}

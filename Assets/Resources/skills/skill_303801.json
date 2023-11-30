@@ -1,0 +1,26 @@
+
+{"file":"Skill_3038_激光炮塔（贯通） 天赋卡2","id":303801,"skillbase":"target","check":"none","showtype":"rang","dir":"Self","cd":850,"time":850,"eLogic":64,"target":
+{"camp":"diff","rule":"none","num":1,"rang":4}
+,"eventList":[
+{"type":"PlayAni","targettype":"none","item":
+{"ani":"shoot","flags":12}
+}
+,
+{"type":"CreatBullet","targettype":"none","item":
+{"res":"bullet_laser","pass":3,"num":1,"flags":65536,"offArr":[
+{"y":0.5}
+],"move":
+{"movetype":"Speed","speed":30,"dis":4,"tween":"None"}
+,"target":
+{"camp":"diff","flags":1,"rule":"none","save":2000,"num":999,"w":0.44,"h":0.48,"offdir":-0.48}
+}
+,"childs":[
+{"type":"TriggerBuff","targettype":"none","item":
+{"buffType":"buff_calc_damage","triggerBuffId":3048,"hitEff":"HitParticles"}
+}
+]}
+,
+{"type":"RandomAudio","targettype":"none","item":
+{"clips":["gun_silenced_sniper1_shot_04","gun_silenced_sniper1_shot_04v2"]}
+}
+]}
