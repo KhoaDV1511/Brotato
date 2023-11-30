@@ -1,0 +1,6 @@
+
+{"file":"Skill_60022_Boss22加速","id":60022,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":1000,"time":1000,"eventList":[
+{"type":"AddBuff","l":1000,"targettype":"self","item":
+{"buffId":1020,"l":1000,"values":[50]}
+}
+]}

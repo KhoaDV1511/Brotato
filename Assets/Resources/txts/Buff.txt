@@ -1,0 +1,357 @@
+ID	name	bufftype	repeat	count	IsWeapon	triggerType	checkType	checkId	NoFinalPer	multiple	timeIdx	nameFlag	res	locator	icon	death	desc	toIntType	save
+int	LocalStr	string	int	int	bool	int	int	int	bool	int	int	int	string	string	string	int	LocalStr	int	int
+qwe																			
+101		calcu_recovery_hp	1	0		0	0	0		0	0	0				0		0	0
+102		calcu_steal_hp	1	0		0	0	0		0	0	0				0		0	0
+103		non_move	1	0		0	0	0		0	0	0				0		0	0
+104		non_dir	1	0		0	0	0		0	0	0				0		0	0
+105		mutex_skill	1	0		0	0	0		0	0	0				0		0	0
+106		non_control	1	0		0	0	0		0	0	0				0		0	0
+107		invincible	1	0		0	0	0		0	0	0				0		0	0
+108		lock_hp_1	1	0		0	0	0		0	0	0				0		0	0
+200	STAT_PERCENT_DAMAGE	percent_damage	0	999		0	0	0		0	0	0			percent_damage	0		3	0
+20001	STAT_PERCENT_DAMAGE	percent_damage	0	999		0	0	0		0	0	0			percent_damage	0		3	0
+20002	STAT_PERCENT_DAMAGE	percent_damage	3	999		0	0	0		0	0	0			percent_damage	0		3	0
+20003	STAT_PERCENT_DAMAGE	percent_damage	3	999		0	0	0		0	0	0			percent_damage	0		3	0
+20004	STAT_PERCENT_DAMAGE	percent_damage	3	999		0	0	0		0	0	0			percent_damage	0		3	0
+20005	STAT_PERCENT_DAMAGE	percent_damage	3	999		0	0	0		0	0	0			percent_damage	0		3	0
+20006	STAT_PERCENT_DAMAGE	percent_damage	0	999		0	0	0		0	0	0			percent_damage	0		3	1
+201	STAT_MAX_HP	max_hp_add	0	999		0	0	0		0	0	0			max_hp	0		3	0
+20101	STAT_MAX_HP	max_hp_add	0	999		0	0	0		0	0	0			max_hp	0		3	0
+202	STAT_MAX_HP	max_hp_per	0	999		0	0	0		0	0	0				0		3	0
+203	STAT_SPEED	speed_add	0	999		0	0	0		0	0	0				0		3	0
+204	STAT_SPEED	speed_per	0	999		0	0	0		0	0	0			speed	0		3	0
+20401	STAT_SPEED	speed_per	3	999		0	0	0		0	0	0			speed	0		3	0
+20402	STAT_SPEED	speed_per	3	999		0	0	0		0	0	0			speed	0		3	0
+20403	STAT_SPEED	speed_per	3	999		0	0	0		0	0	0			speed	0		3	0
+20404	STAT_SPEED	speed_per	3	999		0	0	0		0	0	0			speed	0		3	0
+205	STAT_HP_REGENERATION	recovery_hp_1	0	999		0	0	0		0	0	0			hp_regeneration	0		3	0
+20501	STAT_HP_REGENERATION	recovery_hp_1	0	999		0	0	0		0	0	0			hp_regeneration	0		3	0
+206	STAT_LIFESTEAL	life_steal	0	999		0	0	0		0	0	0			lifesteal	0		3	0
+207	STAT_DODGE	dodge	0	999		0	0	0		0	0	0			dodge	0		3	0
+208	STAT_ARMOR	armor_add	0	999		0	0	0		0	0	0			armor	0		3	0
+20801	STAT_ARMOR	armor_add	0	999		0	0	0		0	0	0			armor	0		3	0
+20802	STAT_ARMOR	armor_add	3	999		0	0	0		0	0	0			armor	0		3	0
+209	STAT_DAMAGE	percent_damage	0	999		0	0	0		0	0	0			percent_damage	0		3	0
+210	STAT_MELEE_DAMAGE	melee_damage	0	999		0	0	0		0	0	0			melee_damage	0		3	0
+211	STAT_ELEMENTAL_DAMAGE	elemental_damage	0	999		0	0	0		0	0	0			elemental_damage	0		3	0
+212	STAT_RANGED_DAMAGE	ranged_damage	0	999		0	0	0		0	0	0			ranged_damage	0		3	0
+213	STAT_CRIT_CHANCE	crit_per	0	999		0	0	0		0	0	0			crit_chance	0		3	0
+214	STAT_CRIT_DAMAGE	crit_add	0	999		0	0	0		0	0	0				0		3	0
+215	STAT_ATTACK_SPEED	atk_speed_per	0	999		0	0	0		0	0	0			attack_speed1	0		3	0
+216	STAT_RANGE	range	0	999		0	0	0		0	0	0			range	0		3	0
+217	STAT_LUCK	luck_add	0	999		0	0	0		0	0	0			luck	0		3	0
+21701	STAT_LUCK	luck_add	2	999		0	0	0		0	0	0			luck	0		3	0
+218	STAT_ENGINEERING	engineering	0	999		0	0	0		0	0	0			engineering	0		3	0
+219	STAT_HARVESTING	harvesting	0	999		0	0	0		0	0	0			harvesting	0		3	0
+220	STAT_DAMAGE	damage_add	0	999		0	0	0		0	0	0				0		3	0
+221	STAT_HARVESTING	harvesting_per	0	999		0	0	0		0	0	4			harvesting	0		3	0
+222	MATERIALS	material	0	999		0	0	0		0	0	0				0		3	0
+223	STAT_ARMOR	armor_per	0	999		0	0	0		0	0	0			armor	0		3	0
+224	STAT_MAX_HP	max_hp_add	2	999		0	0	0		0	0	0			max_hp	0		3	0
+225	STRUCTURE	structure	0	999		0	0	0		0	0	0			max_hp	0		3	0
+226	STAT_ATTACK_SPEED	atk_speed_per	3	999		0	0	0		0	0	0			attack_speed1	0		3	0
+227	STAT_PERCENT_DAMAGE	percent_damage	3	999		0	0	0		0	0	0			percent_damage	0		3	0
+300	STAT_ATTACK_SPEED	atk_speed_per	0	999		0	0	0		0	0	0			attack_speed1	0		3	0
+301	EFFECT_DOUBLE_HP_REGEN	recovery_hp_1	0	999		0	0	0		0	0	1			hp_regeneration	0		3	0
+302	EFFECT_DODGE_CAP	dodge_max	0	0		0	0	0		0	0	4				0		3	0
+303	STAT_PERCENT_DAMAGE	percent_damage	0	999		0	0	0		0	0	0			percent_damage	0		3	0
+401	ENEMY_DAMAGE_PERCENT	enemy_damage_per	0	0		0	0	0		0	0	11				0		0	0
+402	XP_GAIN	xp_gain_per	0	0		0	0	0		0	0	0				0		0	0
+403	EXPLOSION_DAMAGE	explosion_damage	0	0		0	0	0		0	0	0				0		0	0
+404	ENEMY_HEALTH_PERCENT	enemy_max_hp_per	0	0		0	0	0		0	0	11				0		0	0
+405	PIERCING_DAMAGE	bullet_pierce_dmg_per	0	0		0	0	0		0	0	0				0		0	0
+406	EFFECT_DAMAGE_AGAINST_BOSSES	damage_by_enemy_type	0	0		0	0	0		0	0	6				0		0	0
+407	BOUNCE_DAMAGE	bounce_dmg_per	0	0		0	0	0		0	0	0				0		0	0
+1001	EXPLOSION_DAMAGE	explosion_damage	0	999		0	0	0		0	0	0				0		0	0
+1002	EXPLOSION_SIZE	explosion_size	0	999		0	0	0		0	0	0				0		0	0
+1003	EFFECT_PICKUP_RANGE	pick_rang_add	0	999		0	0	0		0	0	6				0		0	0
+1004		burn_odds	0	999		0	0	0		0	0	0				0		0	0
+1005		target_add_buff	0	0	1	6	0	0		0	0	0				0		0	0
+1006		buff_calc_damage	0	0		0	0	0		0	0	0				0		2	0
+1007		trigger_skill_add	0	0		0	0	0		0	0	0				0		0	0
+1008		trigger_skill_play	0	0		0	0	0		0	0	0				0		0	0
+1009		trigger_skill_add_play	0	0		0	0	0		0	0	0				0		0	0
+1010		max_hp_add	0	99999		0	0	0		100	0	0	outline			0		0	0
+1011		damage_add	0	99999		0	0	0		100	0	0	outline			0		0	0
+1012		speed_add	0	99999		0	0	0		100	0	0	outline			0		0	0
+101201		speed_add	0	99999		0	0	0		100	0	0	outline			0		0	0
+1013		speed_add	0	10		0	0	0		0	0	0				0		0	0
+1014		target_add_buff	0	99999		1	0	0		0	0	0				0		0	0
+1015		trigger_skill_add_play	3	99999	1	2	0	0		0	0	0				0		0	0
+1016		target_add_buff	3	0		6	0	0		0	0	0				0		0	0
+1017		trigger_skill_add_play	3	99999		2	0	0		0	0	0				0		0	0
+1018		weapon_type_attr	0	0		0	0	0		0	0	0				0		0	0
+1019		calc_damage_explosion	0	0		0	0	0		0	0	0				0		2	0
+1020		speed_per	0	-1		0	0	0		0	0	0				0		0	0
+1021		target_add_buff	3	0		6	0	0		0	0	0				0		0	0
+2001	ENEMY_SPEED	enemy_speed	0	99999		0	0	0		0	0	17				0		0	0
+2002	EFFECT_ALIEN_EYES	project_desc	0	0		0	0	0		0	0	0				0		3	0
+2004	EFFECT_CONSUMABLE_HEAL	consumable_heal	0	99999		11	0	0		0	0	3				0		0	0
+20041	EFFECT_CONSUMABLE_HEAL	consumable_heal	3	99999		11	0	0		0	0	3				0		0	0
+2005	EFFECT_UPGRADE_RANDOM_WEAPON	upgrade_random_weapon	0	99999		0	0	0		0	0	0				0		0	0
+2006	EFFECT_DEAL_DMG_WHEN_PICKUP_GOLD	buff_skill_odds_dmg	0	999		10	0	0		0	0	0				0		3	0
+2007	EFFECT_INSTANT_GOLD_ATTRACTING	instant_gold_attracting	0	99999		0	0	0		0	0	6				0		0	0
+2008	EFFECT_PROJECTILES_ON_DEATH	buff_skill_odds_dmg	0	999		8	0	0		0	0	13				0		2	0
+2009	EFFECT_ITEM_BOX_GOLD	item_box_gold	0	99999		12	0	0		0	0	3				0		0	0
+2010	XP_GAIN	xp_gain_per	0	999		0	0	0		0	0	0				0		0	0
+2011	XP_GAIN	xp_gain	0	999		0	0	0		0	0	0				0		0	0
+2012	EFFECT_LOSE_HP_PER_SECOND	lose_hp_per_second	1	999		0	0	0		0	0	2				0		0	0
+2013	EFFECT_KNOCKBACK	knockback	0	999		0	0	0		0	0	3				0		0	0
+2014	PCT_NUMBER_OF_ENEMIES	number_of_enemies	0	99999		0	0	0		0	0	20				0		0	0
+2015	EFFECT_GAIN_STAT_FOR_EVERY_ENEMY	stat_attack_speed	0	0		13	0	0		0	0	0				0		0	0
+2016	ITEMS_PRICE	items_price	0	999		0	0	0		0	0	11				0		0	0
+20161	ITEMS_PRICE	items_price	0	999		0	0	0		0	0	11				0		0	0
+2017	EFFECT_HARVESTING_GROWTH	harvesting_growth	0	0		0	0	0		0	0	2				0		0	0
+2018	EFFECT_HEAL_WHEN_PICKUP_GOLD	heal_when_pickup_gold	0	99999		10	0	0		0	0	6				0		0	0
+2019	EFFECT_DEAL_DMG_WHEN_DEATH	buff_skill_odds_dmg	0	999		8	0	0		0	0	0				0		2	0
+2020	EFFECT_FREE_SHOP_REROLL	free_rerolls	2	99999		0	0	0		0	0	3				0		0	0
+2021	EFFECT_GAIN_STAT_FOR_EVERY_PERM_STAT	attr_transform	0	0		0	0	0		0	0	0				0		3	0
+20211	EFFECT_GAIN_STAT_FOR_EVERY_PERM_STAT	attr_transform	0	0		0	0	0		0	0	0				0		3	0
+2022	EFFECT_BURNING_COOLDOWN_REDUCTION	burning_cooldown_reduction	0	999		0	0	0		0	0	4				0		0	0
+2023	EFFECT_UNIQUE_WEAPON_BONUS	effect_unique_weapon_bonus	0	99999		0	0	0		0	0	0				0		0	0
+2024	EFFECT_GAIN_STAT_END_OF_WAVE	target_add_buff	0	999		9	0	0		0	0	0				0		0	0
+2025	EFFECT_GAIN_STAT_END_OF_WAVE	target_add_buff	0	999		9	0	0		0	0	0				0		0	0
+2026	EFFECT_GAIN_STAT_END_OF_WAVE	target_add_buff	0	999		9	0	0		0	0	0				0		0	0
+2027	EFFECT_HP_CAP_AT_CURRENT_VALUE	hp_cap	0	0		0	0	0		0	0	2				0		0	0
+2028	EFFECT_GOLD_ON_CRIT_KILL	gold_on_crit_kill	0	0		7	0	0		0	0	2				0		0	0
+2029	EFFECT_LANDMINES	mine_desc	0	0		0	0	0	1	0	0	0				0		2	0
+20291		calc_damage_explosion	1	0	1	6	0	0	1	0	0	0				0		2	0
+20292		calc_damage_explosion	1	0		6	0	0	1	0	0	0				0		2	0
+20293		calc_damage_explosion	1	0		6	0	0	1	0	0	0				0		2	0
+2030	EFFECT_ONE_SHOT_TREES	one_shot_trees	0	0		0	0	0		0	0	1				0		0	0
+2031	EFFECT_CHANCE_DOUBLE_GOLD	chance_double_gold	0	99999		10	0	0		0	0	6				0		0	0
+2032	EFFECT_GAIN_STAT_FOR_EVERY_STAT	attr_transform	0	0		0	0	0		0	0	0				0		0	0
+2033	EFFECT_GAIN_PCT_GOLD_START_WAVE	gain_pct_gold_start_wave	0	99999		2	0	0		0	0	6				0		0	0
+20331	EFFECT_GAIN_PCT_GOLD_START_WAVE_LIMITED	gain_pct_gold_start_wave	0	99999		2	0	0		0	0	6				0		0	0
+2034	EFFECT_DOUBLE_HP_REGEN_BELOW_HALF_HEALTH	recovery_hp_value	0	0		0	4	0		0	0	1				0		0	0
+20341	STAT_HP_REGENERATION	recovery_hp_1_per	0	0		0	0	0		0	0	0				0		0	0
+20342	EFFECT_DOUBLE_HP_REGEN	recovery_hp_value	0	0		0	0	0		0	0	1				0		0	0
+2035	EFFECT_PIERCING_DAMAGE	bullet_pierce_dmg_per	0	999		0	0	0		0	0	6				0		0	0
+2036	EFFECT_RECYCLING_GAINS	recycling_gains	0	99999		0	0	0		0	0	4				0		0	0
+2037	EFFECT_BOUNCING	bounce	0	999		0	0	0		0	0	2				0		0	0
+2038	EFFECT_EXPLODE_ON_DEATH	buff_skill_odds_explosion	0	999		8	0	0		0	0	0				0		2	0
+2039	EFFECT_START_WAVE_LESS_HP	hp_start_wave	0	99		0	0	0		0	0	0				0		0	0
+2040	EFFECT_BURN_CHANCE	burn	0	0		0	0	0		0	0	0	TorchBurningParticlesRed			0		2	0
+2041	EFFECT_BURNING_SPREAD_PLURAL	burning_spread	0	9999		0	0	0		0	0	2				0		0	0
+2042	EFFECT_STAT_WHILE_NOT_MOVING	stand_add_attr	0	99999		0	0	0		0	0	0				0		0	0
+20421	EFFECT_STAT_WHILE_NOT_MOVING	stand_add_attr	0	99999		0	0	0		0	0	0				0		0	0
+20422	EFFECT_STAT_WHILE_NOT_MOVING	stand_add_attr	3	99999		0	0	0		0	0	0				0		0	0
+20423	EFFECT_STAT_WHILE_NOT_MOVING	stand_add_attr	3	99999		0	0	0		0	0	0				0		0	0
+20424	EFFECT_STAT_WHILE_NOT_MOVING	stand_add_attr	3	99999		0	0	0		0	0	0				0		0	0
+20425	EFFECT_STAT_WHILE_NOT_MOVING	stand_add_attr	3	99999		0	0	0		0	0	0				0		0	0
+2043	EFFECT_HIT_PROTECTION	hit_protection	0	9999		2	0	0		0	0	0				0		0	0
+2044	EFFECT_TORTURE	torture	0	0		0	0	0		0	0	0				0		0	0
+2045	EFFECT_TREES	trees	0	9999		0	0	0		0	0	1				0		0	0
+2046	EFFECT_ON_HIT		0	0		0	0	0		0	0	0				0		0	0
+2047	EFFECT_TURRET	buff_calc_damage	1	0	1	6	0	0	1	0	0	0				0		2	0
+2048	EFFECT_TURRET_FLAME	burn	3	0	1	6	0	0	1	0	0	0	TorchBurningParticlesBlue			0		0	0
+2049	EFFECT_TURRET_HEALING	buff_add_hp	1	0	1	6	0	0	1	0	0	0				0		3	0
+2050	EFFECT_TURRET_LASER	buff_calc_damage	1	0	1	6	0	0	1	0	0	0				0		2	0
+2051	EFFECT_TURRET_ROCKET	calc_damage_explosion	1	0	1	6	0	0	1	0	0	0				0		2	0
+2052	EFFECT_TYLER	tyler_desc	1	0		6	0	0	1	0	0	0				0		2	0
+20521		buff_calc_damage	1	0		6	0	0	1	0	0	0				0		2	0
+2053	EFFECT_REMOVE_SPEED	target_add_buff	0	3		1	0	0		0	0	10				0		0	0
+20531		speed_per	0	3		0	0	0		0	0	0			speed	0		0	0
+2054	EFFECT_WANDERING_BOT	speed_per	1	-1		6	0	0		0	2	1	SpeedRemovedParticles			0		0	0
+2055	EFFECT_HP_START_NEXT_WAVE	hp_start_next_wave	0	99		0	0	0		0	0	0				0		0	0
+2056	EFFECT_STACK_STAT	stat_percent_damage	0	0		0	0	0		0	0	0				0		0	0
+2057	EFFECT_WEAPON_CLASS_BONUS	weapon_type_attr	0	0		0	0	0		0	0	0				0		0	0
+2058	EFFECT_REDUCE_STAT_GAINS	stat_gains	2	0		0	0	0		0	0	0				0		3	0
+20581	EFFECT_REDUCE_STAT_GAINS	desc	0	0		0	0	0		0	0	0				0		3	0
+20582		stat_gains	2	0		0	0	0		0	0	0				0		3	0
+2059	EFFECT_INCREASE_STAT_GAINS	stat_gains	2	0		0	0	0		0	0	0				0		3	0
+20591		stat_gains	2	0		0	0	0		0	0	0				0		3	0
+2060	EFFECT_STARTING_ITEM	starting_item	2	0		5	0	0		0	0	0				0		0	0
+2061	EFFECT_GROUP_STRUCTURES	group_structures	0	0		0	0	0		0	0	1				0		0	0
+2062	EFFECT_GOLD_ON_CRIT_KILL	gold_on_crit_kill	3	0	1	7	0	0		0	0	4				0		0	0
+2063	PIERCING	bullet_pierce	0	999		0	0	0		0	0	0				0		0	0
+2064	PIERCING_DAMAGE	bullet_pierce_dmg_per	0	0		0	0	0		0	0	0				0		0	0
+2065	EFFECT_EXPLODE_CUSTOM	skill_event_odds	0	0	1	0	0	0		0	0	4				0		0	0
+2066	EFFECT_BOUNCE_ON_CRIT	bounce_on_crit	3	0	1	7	0	0		0	0	2				0		0	0
+2067	EFFECT_BURNING	burn	3	0	1	6	0	0		0	0	0	TorchBurningParticlesRed			0		2	0
+2068	EFFECT_SLOW_IN_ZONE	speed_per	1	-1		6	0	0		0	2	1	SpeedRemovedParticles			0		0	0
+2069	EFFECT_LIGHTNING_ON_HIT	project_desc	0	0		0	0	0		0	0	16				0		3	0
+2070	EFFECT_EXPLODE_MELEE	skill_event_odds	0	0	1	0	0	0		0	0	4				0		0	0
+2071	EFFECT_NO_MELEE_WEAPONS	no_melee_weapons	0	0		0	0	0		0	0	1				0		0	0
+2072	EFFECT_NO_RANGED_WEAPONS	no_ranged_weapons	0	0		0	0	0		0	0	1				0		0	0
+2073	EFFECT_WEAPON_CLASS_BONUS	weapon_type_attr	0	0		0	0	0		0	0	0				0		0	0
+2074	EFFECT_TURRET	buff_calc_damage	1	0		6	0	0	1	0	0	0				0		2	0
+20741		buff_calc_damage	1	0		6	0	0	1	0	0	0				0		2	0
+2075	EFFECT_TURRET_FLAME	burn	3	0		6	0	0	1	0	0	0	TorchBurningParticlesBlue			0		0	0
+2076	EFFECT_TURRET_HEALING	buff_add_hp	1	0		6	0	0	1	0	0	0				0		3	0
+2077	EFFECT_TURRET_LASER	buff_calc_damage	1	0		6	0	0	1	0	0	0				0		2	0
+2078	EFFECT_TURRET_ROCKET	calc_damage_explosion	1	0		6	0	0	1	0	0	0				0		2	0
+2079	EFFECT_PIERCE_ON_CRIT	pierce_on_crit	3	0	1	7	0	0		0	0	2				0		0	0
+2080	EFFECT_GAIN_STAT_EVERY_KILLED_ENEMIES	weapon_kill_add_attr	1	0	1	0	0	0		0	0	0				0		0	0
+2081	ALTERNATES_ATTACK_TYPE	desc	0	0		0	0	0		0	0	1				0		0	0
+2082	EFFECT_ON_HIT	onhurt_changeStat	0	99999		4	0	0		0	0	0				0		0	0
+2083	STAT_PERCENT_DAMAGE	percent_damage	0	99999		0	0	0		0	0	0				0		0	0
+2084	EFFECT_EXPLODE	skill_event_odds	0	0	1	0	0	0		0	0	1				0		0	0
+2085	EFFECT_PROJECTILES_ON_HIT	project_desc	0	0		0	0	0		0	0	0				0		3	0
+2086	EFFECT_SLOW_PROJECTILES_ON_HIT	project_desc	0	0		0	0	0		0	0	0				0		3	0
+2087		speed_per	1	-1		6	0	0		0	2	1	SpeedRemovedParticles			0		0	0
+2088	EFFECT_GOLD_ON_CRIT_KILL	gold_on_crit_kill_item	0	99999		8	0	0		0	0	4				0		0	0
+2089	EFFECT_HARVESTING_GROWTH	harvesting_growth	0	999		0	0	0		0	0	4				0		0	0
+2090	EFFECT_GAIN_STAT_FOR_EVERY_PERM_STAT	gold_transform	0	9999		0	0	0		0	0	0				0		0	0
+20901	EFFECT_GAIN_STAT_FOR_EVERY_PERM_STAT	gold_transform	0	0		0	0	0		0	0	0				0		0	0
+2091	EFFECT_HP_SHOP	hp_shop	0	0		0	0	0		0	0	1				0		0	0
+2092	EFFECT_CONVERT_STAT_END_OF_WAVE	gold_transform_end_wave	0	0		9	0	0		0	0	0				0		0	0
+2093	EFFECT_WEAPON_STACK	weapon_add_att	0	0	1	0	0	0		0	0	0				0		0	0
+2094	EFFECT_GOLD_WHILE_NOT_MOVING	stand_add_gold	0	99999		0	0	0		0	0	0				0		0	0
+2095	EFFECT_EXPLODE_ON_HIT	buff_skill_odds_explosion	0	0		4	0	0		0	0	0				0		2	0
+2096	EFFECT_NO_WEAPONS	no_weapon	0	0		0	0	0		0	0	1				0		0	0
+2097	EFFECT_CANT_ATTACK_WHILE_MOVING	no_atk_move	0	0		0	0	0		0	0	1				0		0	0
+2098	EFFECT_STAT_WHILE_MOVING	move_add_attr	0	0		0	0	0		0	0	0				0		0	0
+20981	EFFECT_STAT_WHILE_MOVING	move_add_attr	0	0		0	0	0		0	0	0				0		0	0
+2099	EFFECT_GOLD_DROPS	gold_drops	0	0		0	0	0		0	0	6				0		0	0
+2100	EFFECT_ENEMY_GOLD_DROPS	enemy_gold_drops	0	0		0	0	0		0	0	6				0		0	0
+2101	EFFECT_PACIFIST	pacifist	0	0		0	0	0		0	0	15				0		0	0
+2102	EFFECT_MAX_WEAPONS	weapon_slot	0	0		0	0	0		0	0	1				0		0	0
+2103	EFFECT_ADDITIONAL_WEAPON_BONUS	weapon_count_effect_attr	0	0		0	0	0		0	0	0				0		0	0
+2104	WEAPONS_PRICE	weapon_price	0	0		0	0	0		0	0	17				0		0	0
+2105	EFFECT_MINIMUM_WEAPONS_IN_SHOP	minimum_weapons_in_shop	0	0		0	0	0		0	0	2				0		0	0
+2106	EFFECT_DESTROY_WEAPONS	destroy_weapons	0	0		0	0	0		0	0	1				0		0	0
+2107	EFFECT_MIN_WEAPON_TIER	min_weapon_tier	0	0		0	0	0		0	0	18				0		0	0
+2108	EFFECT_MAX_WEAPON_TIER	max_weapon_tier	0	0		0	0	0		0	0	19				0		0	0
+2109	EFFECT_MAX_MELEE_WEAPONS	max_melee_weapons	0	0		0	0	0		0	0	21				0		0	0
+2110	EFFECT_MAX_RANGED_WEAPONS	max_ranged_weapons	0	0		0	0	0		0	0	21				0		0	0
+2111	MAP_SIZE	map_size	0	0		0	0	0		0	0	0				0		0	0
+2112	EFFECT_GAIN_STAT_FOR_EVERY_STAT	structure_transform	0	0		0	0	0		0	0	0				0		0	0
+2113		rebirth	2	999		3	0	0		0	0	0				1		0	0
+2114		level_up_slot	0	0		0	0	0		0	0	0				1		0	0
+2115	EFFECT_HEAL_WHEN_DODGE	buff_add_hp_odds	0	999		13	0	0		0	0	0				0		0	0
+2116	EFFECT_CONSUMABLE_STAT_WHILE_MAX_LIMITED	add_max_hp_full	0	0		11	0	0		0	0	0				0		0	0
+2117	EFFECT_EXTRA_ENEMIES_NEXT_WAVE	special_enemy_start_wave	0	999		2	5	0		0	0	1				0		0	0
+2118	EFFECT_GIANT_CRIT_DAMAGE	reward_damage_by_hp	0	9999		7	0	0		0	0	0				0		0	0
+2119	EFFECT_STRUCTURES_COOLDOWN_REDUCTION	build_cd	0	0		0	0	0	1	0	0	0				0		0	0
+2120	EFFECT_STAT_NEXT_WAVE	xp_gain_per	0	999		0	5	0		0	0	7				0		0	0
+2121	EFFECT_STAT_NEXT_WAVE	enemy_damage_per	0	999		0	5	0		0	0	22				0		0	0
+2122	EFFECT_DEAL_DMG_WHEN_DODGE	buff_skill_odds_dmg	0	999		13	0	0		0	0	0				0		2	0
+2123	EFFECT_DAMAGE_AGAINST_BOSSES	damage_by_enemy_type	0	999		0	0	0		0	0	6				0		0	0
+2124	EFFECT_EXPLODE_ON_CONSUMABLE	buff_skill_odds_explosion	0	999		11	0	0		0	0	0				0		3	0
+2125	EFFECT_HEAL_ON_CRIT_KILL	buff_add_hp_odds_crit_kill	0	5		8	0	0		0	0	4				0		0	0
+2126	EFFECT_GARDEN	garden_desc	0	9999		0	0	0		0	0	2				0		0	0
+212601	EFFECT_GARDEN	garden_desc	0	9999		0	0	0		0	0	2				0		0	0
+212602	EFFECT_GARDEN	garden_desc	0	9999		0	0	0		0	0	2				0		0	0
+212603	EFFECT_GARDEN	garden_desc	0	9999		0	0	0		0	0	2				0		0	0
+212604	EFFECT_GARDEN	garden_desc	0	9999		0	0	0		0	0	2				0		0	0
+2127		shop_slot	0	0		0	0	0		0	0	0				1		0	0
+2128	EFFECT_CONSUMABLE_STAT_WHILE_MAX	add_max_hp_full	0	0		11	0	0		0	0	0				0		0	0
+2129	EFFECT_CONVERT_STAT_TEMP_HALF_WAVE	convert_stats_half_wave	0	9999		0	0	0		0	0	0				0		0	0
+2130	EFFECT_DEAL_DMG_WHEN_HEAL	buff_skill_odds_dmg	0	999		14	0	0		0	0	0				0		3	0
+2131	EFFECT_EXPLODE_ON_CONSUMABLE	buff_skill_odds_explosion	0	999		11	0	0		0	0	0				0		2	0
+2132	EFFECT_GOLD_ON_CRIT_KILL	gold_on_crit_kill	3	0	1	7	0	0		0	0	4				0		0	0
+2133	EFFECT_STACK_STAT	stat_percent_damage	3	0		0	0	0		0	0	0				0		0	0
+2134	EFFECT_STAT_ON_LEVEL_UP	attribute_binding_level	2	0		0	0	0		0	0	3				0		0	0
+2135	EFFECT_CRYPTID	tree_live_add_exp_and_point	0	0		9	0	0		0	0	2				0		0	0
+2136	EFFECT_GAIN_STAT_FOR_EVERY_TREE	tree_live_add_stat	0	0		0	0	0		0	0	3				0		0	0
+2137	EFFECT_TEMP_STAT_ON_DODGE	dodge_add_stat_onwave	0	0		13	0	0		0	0	6				0		0	0
+2138	EFFECT_GUARANTEED_SHOP_ITEM	shop_always_sale	0	0		0	0	0		0	0	0				0		0	0
+2139	EFFECT_SPECIFIC_ITEM_PRICE	shop_discount_buy	0	0		0	0	0		0	0	6				0		0	0
+2140	EFFECT_GAIN_STAT_FOR_EVERY_STAT	have_any_item_add_stat	0	0		0	0	0		0	0	0				0		0	0
+2141	EFFECT_UPGRADED_BAITS	upgraded_baits	0	0		0	0	0		0	0	1				0		0	0
+2142	EFFECT_STAT_BELOW_HALF_HEALTH	hp_percent_effect_stat	2	0		0	0	0		0	0	6				0		0	0
+2143	EFFECT_NO_HEAL	unable_to_treat	0	0		0	0	0		0	0	1				0		0	0
+2144	EFFECT_EXTRA_LOOT_ALIENS_NEXT_WAVE	extra_loot_aliens_next_wave	0	999		2	5	0		0	0	0				0		0	0
+2145	EFFECT_SPEED_CAP_AT_CURRENT_VALUE	speed_cap	0	0		0	0	0		0	0	2				0		0	0
+2146	EFFECT_GAIN_STAT_FOR_EVERY_STAT	attr_transform	0	0		0	0	0		0	0	0				0		0	0
+2147	EFFECT_ON_HIT	onhurt_changeStat	0	99999		4	0	0		0	0	6				0		0	0
+2148	EFFECT_LOSE_HP_PER_SECOND	lose_hp_per_second	3	999		0	0	0		0	0	2				0		0	0
+2149		lose_hp_per_second_trigger	1	0		0	0	0		0	0	0				0		0	0
+2150	EFFECT_ON_HIT	onhurt_changeStat	3	99999		4	0	0		0	0	0				0		0	0
+2151	EFFECT_ADDITIONAL_WEAPON_BONUS	weapon_count_effect_attr	3	0		0	0	0		0	0	0				0		0	0
+2152	EFFECT_TIER_IV_WEAPON_BONUS	weapon_tier_bonus	0	0		0	0	0		0	0	0				0		0	0
+21521	EFFECT_TIER_IV_WEAPON_BONUS	weapon_tier_bonus	0	0		0	0	0		0	0	0				0		0	0
+2153	EFFECT_TIER_I_WEAPON_BONUS	weapon_tier_bonus	0	0		0	0	0		0	0	0				0		0	0
+21531	EFFECT_TIER_I_WEAPON_BONUS	weapon_tier_bonus	0	0		0	0	0		0	0	0				0		0	0
+2154	EFFECT_GAIN_STAT_FOR_EVERY_DIFFERENT_STAT	unique_item_tier_bonus	0	0		0	0	0		0	0	0				0		0	0
+21541	EFFECT_GAIN_STAT_FOR_EVERY_DIFFERENT_STAT	unique_item_tier_bonus	0	0		0	0	0		0	0	0				0		0	0
+2155	EFFECT_STACK_STAT	stat_percent_damage	0	0		0	0	0		0	0	0				0		0	0
+2156	EFFECT_PROJECTILES	projectile	0	0		0	0	0		0	0	3				0		0	0
+2157	EFFECT_ACCURACY	accuracy	0	0		0	0	0		0	0	6				0		0	0
+2158	EFFECT_PIERCING	bullet_pierce	0	999		0	0	0		0	0	2				0		0	0
+2159	EFFECT_TREE_TURRET	tree_turrets	1	-1		8	0	0		0	0	1				0		0	0
+3000	STAT_ARMOR	armor_add	0	999		0	0	0		0	0	0			armor	0		3	0
+3001	STAT_PERCENT_DAMAGE	percent_damage	0	999		0	0	0		0	0	0			percent_damage	0		3	0
+3002	STAT_ATTACK_SPEED	atk_speed_per	0	999		0	0	0		0	0	0			attack_speed1	0		3	0
+3003	STAT_CRIT_CHANCE	crit_per	0	999		0	0	0		0	0	0			crit_chance	0		3	0
+3004	STAT_CRIT_DAMAGE	crit_add	0	999		0	0	0		0	0	0				0		3	0
+3005	STAT_MAX_HP	max_hp_add	0	999		0	0	0		0	0	0			max_hp	0		3	0
+3006	STAT_HP_REGENERATION	recovery_hp_1	0	999		0	0	0		0	0	0			hp_regeneration	0		3	0
+3007	STAT_LIFESTEAL	life_steal	0	999		0	0	0		0	0	0			lifesteal	0		3	0
+3008	STAT_DODGE	dodge	0	999		0	0	0		0	0	0			dodge	0		3	0
+3009	STAT_MELEE_DAMAGE	melee_damage	0	999		0	0	0		0	0	0			melee_damage	0		3	0
+3010	STAT_ELEMENTAL_DAMAGE	elemental_damage	0	999		0	0	0		0	0	0			elemental_damage	0		3	0
+3011	STAT_RANGED_DAMAGE	ranged_damage	0	999		0	0	0		0	0	0			ranged_damage	0		3	0
+3012	STAT_LUCK	luck_add	0	999		0	0	0		0	0	0			luck	0		3	0
+3013	STAT_ENGINEERING	engineering	0	999		0	0	0		0	0	0			engineering	0		3	0
+3014	STAT_HARVESTING	harvesting	0	999		0	0	0		0	0	0			harvesting	0		3	0
+3015	STAT_SPEED	speed_per	0	999		0	0	0		0	0	0			speed	0		3	0
+3016	STAT_RANGE	range	0	999		0	0	0		0	0	0			range	0		3	0
+3017	EFFECT_STAT_WHILE_NOT_MOVING	stand_add_attr	0	99999		0	0	0		0	0	0				0		0	0
+3018	EFFECT_STAT_WHILE_MOVING	move_add_attr	0	9999		0	0	0		0	0	0				0		0	0
+3019	EFFECT_GAIN_STAT_FOR_EVERY_PERM_STAT	attr_transform	0	9999		0	0	0		0	0	0				0		3	0
+3020	EFFECT_PIERCE_ON_CRIT	pierce_on_crit	0	9999	1	7	0	0		0	0	2				0		0	0
+3021	EFFECT_INCREASE_STAT_GAINS	stat_gains	0	9999		0	0	0		0	0	0				0		3	0
+3022	EFFECT_STACK_STAT	stat_percent_damage	0	9999		0	0	0		0	0	0				0		0	0
+3023	EFFECT_BURNING_SPREAD_PLURAL	burning_spread	0	9999		0	0	0		0	0	2				0		0	0
+3024	EFFECT_TURRET	buff_calc_damage	0	9999		6	0	0	1	0	0	0				0		2	0
+3025	EFFECT_TURRET_FLAME	burn	0	9999		6	0	0	1	0	0	0	TorchBurningParticlesBlue			0		0	0
+3026	EFFECT_TURRET_HEALING	buff_add_hp	0	9999		6	0	0	1	0	0	0				0		3	0
+3027	EFFECT_TURRET_LASER	buff_calc_damage	0	9999		6	0	0	1	0	0	0				0		2	0
+3028	EFFECT_TURRET_ROCKET	calc_damage_explosion	0	9999		6	0	0	1	0	0	0				0		2	0
+3029	EFFECT_HARVESTING_GROWTH	harvesting_growth	0	9999		0	0	0		0	0	2				0		0	0
+3030	EFFECT_DOUBLE_HP_REGEN_BELOW_HALF_HEALTH	recovery_hp_value	0	9999		0	4	0		0	0	1				0		0	0
+3031	EFFECT_DEAL_DMG_WHEN_PICKUP_GOLD	buff_skill_odds_dmg	0	999		10	0	0		0	0	0				0		3	0
+3032	EFFECT_EXPLODE_CUSTOM	skill_event_odds	0	0	1	0	0	0		0	0	4				0		0	0
+3033	ENEMY_SPEED	enemy_speed	0	99999		0	0	0		0	0	17				0		0	0
+3034	EXPLOSION_SIZE	explosion_size	0	999		0	0	0		0	0	0				0		0	0
+3035	EFFECT_GOLD_ON_CRIT_KILL	gold_on_crit_kill_item	0	99999		8	0	0		0	0	4				0		0	0
+3036	EFFECT_EXPLODE_ON_DEATH	buff_skill_odds_explosion	0	999		8	0	0		0	0	0				0		2	0
+3037	EFFECT_HARVESTING_GROWTH	harvesting_growth	0	999		0	0	0		0	0	4				0		0	0
+3038	EFFECT_INSTANT_GOLD_ATTRACTING	instant_gold_attracting	0	99999		0	0	0		0	0	6				0		0	0
+3040	EFFECT_EXPLODE_ON_DEATH	buff_skill_odds_explosion	0	999		8	0	0		0	0	0				0		2	0
+3041	EFFECT_TURRET	buff_calc_damage	1	0		6	0	0	1	0	0	0				0		2	0
+3042	EFFECT_TURRET	buff_calc_damage	1	0		6	0	0	1	0	0	0				0		2	0
+3043	EFFECT_TURRET_FLAME	burn	3	0		6	0	0	1	0	0	0	TorchBurningParticlesBlue			0		0	0
+3044	EFFECT_TURRET_FLAME	burn	3	0		6	0	0	1	0	0	0	TorchBurningParticlesBlue			0		0	0
+3045	EFFECT_TURRET_HEALING	buff_add_hp	1	0		6	0	0	1	0	0	0				0		3	0
+3046	EFFECT_TURRET_HEALING	buff_add_hp	1	0		6	0	0	1	0	0	0				0		3	0
+3047	EFFECT_TURRET_LASER	buff_calc_damage	1	0		6	0	0	1	0	0	0				0		2	0
+3048	EFFECT_TURRET_LASER	buff_calc_damage	1	0		6	0	0	1	0	0	0				0		2	0
+3049	EFFECT_TURRET_ROCKET	calc_damage_explosion	1	0		6	0	0	1	0	0	0				0		2	0
+3050	EFFECT_TURRET_ROCKET	calc_damage_explosion	1	0		6	0	0	1	0	0	0				0		2	0
+3051	EFFECT_GAIN_STAT_FOR_EVERY_PERM_STAT	attr_transform	0	9999		0	0	0		0	0	0				0		3	0
+4000	STAT_ARMOR	armor_add	0	3		0	0	0		0	0	0			armor	0		3	0
+4001	STAT_PERCENT_DAMAGE	percent_damage	0	3		0	0	0		0	0	0			percent_damage	0		3	0
+40011	STAT_PERCENT_DAMAGE	percent_damage	0	1		0	0	0		0	0	0			percent_damage	0		3	0
+40012	STAT_PERCENT_DAMAGE	percent_damage	0	1		0	0	0		0	0	0			percent_damage	1		3	0
+4002	STAT_ATTACK_SPEED	atk_speed_per	0	3		0	0	0		0	0	0			attack_speed1	0		3	0
+4003	STAT_CRIT_CHANCE	crit_per	0	3		0	0	0		0	0	0			crit_chance	0		3	0
+4004	STAT_CRIT_DAMAGE	crit_add	0	3		0	0	0		0	0	0				0		3	0
+4005	STAT_MAX_HP	max_hp_add	0	3		0	0	0		0	0	0			max_hp	0		3	0
+40051	STAT_MAX_HP	max_hp_add	0	1		0	0	0		0	0	0			max_hp	1		3	0
+4006	STAT_HP_REGENERATION	recovery_hp_1	0	3		0	0	0		0	0	0			hp_regeneration	0		3	0
+40061	STAT_HP_REGENERATION	recovery_hp_1	0	1		0	0	0		0	0	0			hp_regeneration	1		3	0
+4007	STAT_LIFESTEAL	life_steal	0	3		0	0	0		0	0	0			lifesteal	0		3	0
+4008	STAT_DODGE	dodge	0	3		0	0	0		0	0	0			dodge	0		3	0
+4009	STAT_MELEE_DAMAGE	melee_damage	0	3		0	0	0		0	0	0			melee_damage	0		3	0
+4010	STAT_ELEMENTAL_DAMAGE	elemental_damage	0	3		0	0	0		0	0	0			elemental_damage	0		3	0
+4011	STAT_RANGED_DAMAGE	ranged_damage	0	3		0	0	0		0	0	0			ranged_damage	0		3	0
+4012	STAT_LUCK	luck_add	0	3		0	0	0		0	0	0			luck	0		3	0
+4013	STAT_ENGINEERING	engineering	0	3		0	0	0		0	0	0			engineering	0		3	0
+4014	STAT_HARVESTING	harvesting	0	3		0	0	0		0	0	0			harvesting	0		3	0
+4015	STAT_SPEED	speed_per	0	3		0	0	0		0	0	0			speed	0		3	0
+4016	STAT_RANGE	range	0	3		0	0	0		0	0	0			range	0		3	0
+4020	EFFECT_FREE_SHOP_REROLL	free_rerolls	2	1		0	0	0		0	0	3				1		0	0
+30067201	STAT_MAX_HP	max_hp_add	3	999		0	0	0		0	0	0			max_hp	0		3	1
+30067205	STAT_HP_REGENERATION	recovery_hp_1	3	999		0	0	0		0	0	0			hp_regeneration	0		3	1
+30067206	STAT_LIFESTEAL	life_steal	3	999		0	0	0		0	0	0			lifesteal	0		3	1
+10010219	STAT_HARVESTING	harvesting	3	999		0	0	0		0	0	0			harvesting	0		3	1
+5001	STAT_MAX_HP	max_hp_add	0	999		0	0	0		0	0	0			max_hp	1		3	0
+5002	STAT_HP_REGENERATION	recovery_hp_1	0	999		0	0	0		0	0	0			hp_regeneration	1		3	0
+5003	STAT_MELEE_DAMAGE	melee_damage	0	999		0	0	0		0	0	0			melee_damage	1		3	0
+5004	STAT_ELEMENTAL_DAMAGE	elemental_damage	0	999		0	0	0		0	0	0			elemental_damage	1		3	0
+5005	STAT_RANGED_DAMAGE	ranged_damage	0	999		0	0	0		0	0	0			ranged_damage	1		3	0
+5006	STAT_ENGINEERING	engineering	0	999		0	0	0		0	0	0			engineering	1		3	0

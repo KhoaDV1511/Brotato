@@ -1,0 +1,6 @@
+
+{"file":"Skill_3016_泰勒","id":3016,"skillbase":"trigger","check":"none","showtype":"rang","dir":"Random","eventList":[
+{"type":"BombField","targettype":"self","item":
+{"flags":4,"res":"build_tyler","skill":301601,"dis":8,"dis_min":0.1,"num":1,"s":750,"l":9999999,"effRes":"Birth_blue"}
+}
+]}

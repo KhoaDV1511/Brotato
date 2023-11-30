@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f1e3452505d12389f0cf8d9860e1a8, type: 3}
+  m_Name: VersionStyle
+  m_EditorClassIdentifier:
+  verData:
+    Major: 1
+    Minor: 3
+    build: 210
+  data:
+    channel: 2
+    productName: Brotato
+    bundleIdentifier: com.brotato.shooting.survivors.action.roguelike
+    SauceSDKGo: {fileID: 1104245740171895, guid: 81cba21cc0135884ea427c2e126b3757, type: 2}
+    flag: 16383
+    AppleId:
+    icon: {fileID: 0}
+  flags: 12
+  JobName: http://10.225.20.241:8080/job/tudou_free
+  Reprot: 0
+  language: -1

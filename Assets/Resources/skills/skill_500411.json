@@ -1,0 +1,8 @@
+
+{"file":"Skill_50041_激光怪40024","id":500411,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":1000,"time":1000,"eventList":[
+{"type":"CalcDamage","s":450,"targettype":"local","target":
+{"camp":"diff","rule":"none","save":1000,"num":99,"w":1.5,"h":0.15}
+,"item":
+{"rule":"Wave","per":1}
+}
+]}

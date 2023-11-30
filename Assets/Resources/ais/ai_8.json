@@ -1,0 +1,4 @@
+
+{"file":"AI_8_不移动播放自身技能","id":8,"childs":[
+{"name":"AutoPlaySkill","type":"AutoPlaySkill","typeName":"AIEvent_AutoPlaySkillData","auto":1,"l":-1}
+]}

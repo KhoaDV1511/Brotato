@@ -1,0 +1,8 @@
+
+{"file":"Skill_3042_lich","id":3042,"skillbase":"buff_trigger","check":"none","showtype":"rang","dir":"Random","eventList":[
+{"type":"CalcDamage","targettype":"local","target":
+{"camp":"diff","rule":"random","num":1,"rang":20}
+,"item":
+{"rule":"BuffSkill","per":1,"skillId":3042}
+}
+]}

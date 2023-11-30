@@ -1,0 +1,6 @@
+
+{"file":"Skill_50020_怪物为自己加速","id":50020,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":1000,"time":999999,"eventList":[
+{"type":"AddBuff","l":999999,"targettype":"self","item":
+{"buffId":1013,"l":-1,"values":[45]}
+}
+]}

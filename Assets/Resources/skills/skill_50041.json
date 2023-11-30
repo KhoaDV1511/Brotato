@@ -1,0 +1,16 @@
+
+{"file":"Skill_50041_激光怪40024","id":50041,"skillbase":"target","check":"none","showtype":"rang","dir":"Random","cd":2000,"randomCd":166,"time":2000,"target":
+{"camp":"diff","rule":"none","num":1,"rang":5}
+,"eventList":[
+{"type":"PlayAni","targettype":"none","item":
+{"ani":"Shoot","flags":4,"l":666}
+}
+,
+{"type":"BombField","s":600,"targettype":"root","item":
+{"flags":50,"res":"bullet_enemylong 2","skill":500411,"dis":1,"dis_min":0.01,"num":1,"l":1000}
+}
+,
+{"type":"AddBuff","targettype":"self","item":
+{"buffId":104,"l":666}
+}
+]}

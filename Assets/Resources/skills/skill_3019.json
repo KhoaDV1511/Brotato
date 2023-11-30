@@ -1,0 +1,14 @@
+
+{"file":"Skill_3019_流浪的机器人","id":3019,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":999999,"time":999999,"eventList":[
+{"type":"CreatBullet","targettype":"self","item":
+{"itemId":30148,"res":"build_bot","size":1.71,"pass":999999,"num":1,"angle":360,"flags":8192,"move":
+{"movetype":"Follow_Circle","ignore":65535,"speed":120,"end_speed":2,"tween":"None","time":999999,"h":1.8}
+,"target":
+{"camp":"diff","flags":1,"rule":"none","save":5000,"num":999999}
+}
+,"childs":[
+{"type":"TriggerBuff","targettype":"none","item":
+{"buffType":"target_add_buff"}
+}
+]}
+]}

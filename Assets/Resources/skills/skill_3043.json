@@ -1,0 +1,6 @@
+
+{"file":"Skill_3043_口袋工厂炮塔 道具","id":3043,"skillbase":"trigger","check":"none","showtype":"rang","dir":"Random","eventList":[
+{"type":"BombField","targettype":"self","item":
+{"flags":4,"res":"build_turret","skill":304301,"dis":8,"dis_min":0.1,"num":1,"s":750,"l":9999999,"effRes":"Birth_blue"}
+}
+]}

@@ -1,0 +1,6 @@
+
+{"file":"Skill_3011_地雷1","id":3011,"skillbase":"normal","check":"none","showtype":"rang","dir":"Random","cd":12000,"eLogic":64,"eventList":[
+{"type":"BombField","targettype":"self","item":
+{"flags":132,"res":"Iandmine","skill":301101,"dis":8,"dis_min":0.1,"num":1,"s":750,"l":9999999,"effRes":"Birth_blue"}
+}
+]}

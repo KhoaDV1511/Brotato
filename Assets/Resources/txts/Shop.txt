@@ -1,0 +1,99 @@
+ID	goods	type	buyNum	refreshType	cd	priceType	price	purchaseAndroid	purchaseIOS	isOpen	order	isNet	discount
+int	int	int	int	int	int	int	int	string	string	int	int	bool	int
+编号													
+1	61001	0	-1	1	0	1	1			0	0		0
+2	62001	0	1	1	0	60001	100			1	2		0
+3	63003	0	1	1	0	60001	50			1	3		0
+4	63002	0	1	1	0	60001	12			1	4		0
+5	63002	0	1	1	0	60001	12			1	5		0
+6	63001	0	1	1	0	60001	1			1	6		0
+7	63001	0	1	1	0	60001	1			1	7		0
+8	64001	1	1	0	0	0	99	level_0_potato_parcels	new_level_0_potato_parcels	0	5		0
+9	64002	1	1	0	0	0	99	level_1_potato_parcels	new_level_1_potato_parcels	0	6		0
+10	64003	1	1	0	0	0	99	level_2_potato_parcels	new_level_2_potato_parcels	0	7		0
+11	64004	1	1	0	0	0	99	level_3_potato_parcels	new_level_3_potato_parcels	0	8		0
+12	64005	1	1	0	0	0	99	level_4_potato_parcels	new_level_4_potato_parcels	0	9		0
+13	64006	1	1	0	0	0	99	level_5_potato_parcels	new_level_5_potato_parcels	0	10		0
+14	65001	3	20	1	0	1	1			1	0		0
+15	65002	3	0	0	0	0	99	spuds_30	spuds_30	1	0		0
+16	65003	3	0	0	0	0	499	spuds_170	spuds_170	1	0		0
+17	65004	3	0	0	0	0	999	spuds_380	spuds_380	1	0		0
+18	65005	3	0	0	0	0	1999	spuds_900	spuds_900	1	0		0
+19	65006	3	0	0	0	0	4999	spuds_2650	spuds_2650	1	0		0
+20	66001	10	0	0	604800	0	99	weekly_vip	new_weekly_vip	1	0		0
+21	66001	10	0	0	2592000	0	199	monthly_vip	new_month_vip	1	0		0
+22	66001	10	0	0	2592000	0	99	monthly_vip_sales	new_month_vip_sales	1	0		0
+23	66001	10	1	0	0	0	499	permanent_vip	new_permanent_vip	1	0		0
+24	66001	10	1	0	0	0	399	permanent_vip_sales	new_permanent_vip_sales	1	0		0
+25	66001	10	1	0	0	0	299	permanent_vip_sales2	new_permanent_vip_sales2	1	0		0
+26	66001	10	1	0	3600	60001	0			1	0		0
+27	66002	10	1	1	0	60001	0			1	0		0
+28	67001	2	1	0	0	60001	30			1	0		0
+29	67002	2	1	0	0	60001	30			1	0		0
+30	67003	2	1	0	0	60001	60			1	0		0
+31	67004	2	1	0	0	60001	60			1	0		0
+32	67005	2	1	0	0	60001	90			1	0		0
+33	67006	2	1	0	0	60001	90			1	0		0
+34	67007	2	1	0	0	60001	90			1	0		0
+35	67008	2	1	0	0	60001	120			1	0		0
+36	67009	2	1	0	0	60001	120			1	0		0
+37	67010	2	1	0	0	60001	120			1	0		0
+38	67011	2	1	0	0	60001	150			1	0		0
+39	67012	2	1	0	0	60001	150			1	0		0
+40	67013	2	1	0	0	60001	150			1	0		0
+41	67014	2	1	0	0	60001	150			1	0		0
+42	67015	2	1	0	0	60001	150			1	0		0
+43	67016	2	1	0	0	60001	150			1	0		0
+44	67017	2	1	0	0	60001	150			1	0		0
+45	67020	2	1	0	0	60001	150			1	0		0
+46	67021	2	1	0	0	60001	150			1	0		0
+47	67022	2	1	0	0	60001	150			1	0		0
+48	67023	2	1	0	0	60001	150			1	0		0
+49	67024	2	1	0	0	60001	150			1	0		0
+50	67025	2	1	0	0	60001	150			1	0		0
+51	67026	2	1	0	0	60001	150			1	0		0
+52	67027	2	1	0	0	60001	150			1	0		0
+53	67028	2	1	0	0	60001	150			1	0		0
+54	67029	2	1	0	0	60001	150			1	0		0
+55	64000	1	1	0	0	0	99	starterpack	starterpack	0	1		0
+56	69001	5	1	1	0	0	199	limitedbundle	limitedbundle	1	0	1	0
+57	62002	6	1	0	0	0	99	3_characters_pack	3_characters_pack	1	10		0
+58	62003	6	1	0	0	0	99	5_characters_pack	5_characters_pack	1	11		0
+59	61100	0	1	1	0	60001	3			1	1		0
+60	68001	100	1	0	0	0	1999	growthfund	GrowthFund	1	0		0
+61	64010	7	1	1	0	60001	0			1	0		0
+62	64011	7	1	1	0	0	199	dailygiftpack2	DailyGiftPack2	1	0		0
+63	64012	7	1	1	0	0	499	dailygiftpack3	DailyGiftPack3	1	0		0
+64	64013	8	1	2	0	60001	0			1	0		0
+65	64014	8	1	2	0	0	999	weeklygiftpack2	WeeklyGiftPack2	1	0		35
+66	64015	8	1	2	0	0	1499	weeklygiftpack3	WeeklyGiftPack3	1	0		33
+67	64016	9	1	3	0	60001	0			1	0		0
+68	64017	9	1	3	0	0	1999	monthlygiftpack2	MonthlyGiftPack2	1	0		35
+69	64018	9	1	3	0	0	2999	monthlygiftpack3	MonthlyGiftPack3	1	0		33
+70	68004	4	0	0	0	0	799	frenchfriesgiftpack1	FrenchFriesGiftPack1	1	0		0
+71	68005	4	0	0	0	0	999	mashedpotatoesgiftpack1	MashedPotatoesGiftPack1	1	0		0
+72	67030	2	1	0	0	60001	300			1	0		0
+73	67031	2	1	0	0	60001	300			1	0		0
+74	67032	2	1	0	0	60001	300			1	0		0
+75	67033	2	1	0	0	60001	500			1	0		0
+76	68006	100	0	0	0	1	1			1	0		0
+77	68007	4	0	0	0	0	1499	frenchfriesgiftpack2	FrenchFriesGiftPack2	1	0		0
+78	68008	4	0	0	0	0	4299	mashedpotatoesgiftpack2	MashedPotatoesGiftPack2	1	0		0
+79	68009	4	0	0	0	0	2499	frenchfriesgiftpack3	FrenchFriesGiftPack3	1	0		0
+80	68010	4	0	0	0	0	6999	mashedpotatoesgiftpack3	MashedPotatoesGiftPack3	1	0		0
+81	68100	1	1	0	0	0	99	beginner_totem_pack	beginner_totem_pack	1	1		0
+82	68101	1	1	0	0	0	199	totem_pack_1	totem_pack_1	1	2		0
+83	68102	1	1	0	0	0	499	totem_pack_2	totem_pack_2	1	3		0
+84	68103	1	1	0	0	0	1999	totem_pack_3	totem_pack_3	1	4		35
+85	68104	11	1	1	0	1	2			1	0		0
+86	68105	11	1	1	0	1	5			1	0		0
+87	68106	11	1	1	0	1	10			1	0		0
+88	68107	1	1	0	0	0	2499	totem_pack_4	totem_pack_4	1	5		36
+89	68108	1	1	0	0	0	2999	totem_pack_5	totem_pack_5	1	6		33
+90	68109	1	1	0	0	0	4999	totem_pack_6	totem_pack_6	1	7		34
+91	68110	1	1	0	0	0	9999	totem_pack_7	totem_pack_7	1	8		35
+92	68111	1	1	0	0	0	14999	totem_pack_8	totem_pack_8	1	9		33
+93	67034	2	1	0	0	60001	500			1	0		0
+94	67035	2	1	0	0	60001	500			1	0		0
+95	67036	2	1	0	0	60001	500			1	0		0
+96	67037	2	1	0	0	60001	500			1	0		0

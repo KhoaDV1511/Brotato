@@ -1,0 +1,6 @@
+
+{"file":"Skill_3028_花园修枝剪刀4","id":3028,"skillbase":"normal","check":"none","showtype":"rang","dir":"Random","cd":999999,"time":999999,"eventList":[
+{"type":"BombField","targettype":"self","item":
+{"flags":132,"res":"build_garden","skill":302801,"dis":8,"dis_min":0.1,"num":1,"s":750,"l":9999999,"effRes":"Birth_blue"}
+}
+]}

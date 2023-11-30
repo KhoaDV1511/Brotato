@@ -1,0 +1,14 @@
+
+{"file":"Skill_3021_狂怒","id":3021,"skillbase":"buff_trigger","check":"none","showtype":"rang","dir":"Self","target":
+{"camp":"diff","rule":"none","num":1}
+,"eventList":[
+{"type":"BombOnce","targettype":"local","target":
+{"camp":"diff","rule":"none","save":100,"num":99,"rang":0.975}
+,"item":
+{"flags":72,"res":"ExplosionSmoke_20","num":1,"l":1000,"scale":0.975}
+,"childs":[
+{"type":"CalcDamage","targettype":"local","item":
+{"rule":"BuffSkill","per":1,"skillId":3021}
+}
+]}
+]}

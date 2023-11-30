@@ -1,0 +1,26 @@
+
+{"file":"Skill_3010_医疗炮塔 道具","id":301001,"skillbase":"target","check":"none","showtype":"rang","dir":"Self","cd":2200,"time":2200,"eLogic":64,"target":
+{"camp":"equal","layer":2,"rule":"none","num":1,"rang":4}
+,"eventList":[
+{"type":"PlayAni","targettype":"none","item":
+{"ani":"shoot","flags":12}
+}
+,
+{"type":"CreatBullet","targettype":"none","item":
+{"res":"bullet_medical","pass":1,"num":1,"flags":65536,"offArr":[
+{"y":0.5}
+],"move":
+{"movetype":"Speed","speed":30,"dis":4,"tween":"None"}
+,"target":
+{"camp":"equal","layer":2,"flags":1,"rule":"none","save":2000,"num":999,"w":1.04,"h":1.2,"offdir":-1.2}
+}
+,"childs":[
+{"type":"TriggerBuff","targettype":"none","item":
+{"buffType":"buff_add_hp","triggerBuffId":2076}
+}
+]}
+,
+{"type":"RandomAudio","targettype":"none","item":
+{"clips":["weapon_fun_pea_shooter_01","weapon_fun_pea_shooter_02","weapon_fun_small_zapper_02"]}
+}
+]}

@@ -1,0 +1,6 @@
+
+{"file":"Skill_6002504_Boss22生成40425","id":6002504,"skillbase":"normal","check":"none","showtype":"rang","dir":"Random","cd":4500,"randomCd":500,"time":5000,"eventList":[
+{"type":"CreatPet","targettype":"none","item":
+{"isMonster":1,"id":40425,"num":2,"dis":5,"dis_min":1}
+}
+]}

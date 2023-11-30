@@ -1,0 +1,8 @@
+
+{"file":"Skill_60014_BOSS11随机子弹（玩家圆心）","id":600141,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":1500,"time":1500,"eventList":[
+{"type":"CalcDamage","s":800,"targettype":"local","target":
+{"camp":"diff","rule":"none","save":1000,"num":99,"rang":0.23}
+,"item":
+{"rule":"Wave","per":1.15}
+}
+]}

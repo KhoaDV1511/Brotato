@@ -1,0 +1,8 @@
+
+{"file":"Skill_1045_1_王者之剑合并","id":10451,"skillbase":"target","check":"none","showtype":"rang","dir":"Self","cd":1000,"time":1000,"eLogic":12,"target":
+{"camp":"diff","rule":"none","num":1,"rang":1}
+,"eventList":[
+{"type":"PlaySkillQueue","targettype":"none","item":
+{"skillId":[1045,1046]}
+}
+]}

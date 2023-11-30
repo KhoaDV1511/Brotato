@@ -1,0 +1,6 @@
+
+{"file":"Skill_3031_炮塔 天赋卡1","id":3031,"skillbase":"trigger","check":"none","showtype":"rang","dir":"Random","eventList":[
+{"type":"BombField","targettype":"self","item":
+{"flags":4,"res":"build_turret","skill":303101,"dis":8,"dis_min":0.1,"num":1,"s":750,"l":9999999,"effRes":"Birth_blue"}
+}
+]}

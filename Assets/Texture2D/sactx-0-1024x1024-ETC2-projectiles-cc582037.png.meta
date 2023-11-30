@@ -1,0 +1,1665 @@
+fileFormatVersion: 2
+guid: 4327b79ad261ab149a5ef3e447bc0bd4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 47
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 0
+  flipbookColumns: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 868
+        width: 148
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4935e95ba05ddf40a14a6bee6ca95d5
+      internalID: 100592927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 892
+        width: 120
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12391b4e58bc9d245a1a8fb61dab879f
+      internalID: 1117646616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 892
+        width: 168
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e673e2bb3c583479a9670041bf1642
+      internalID: 415866385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_3
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 892
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc0c429c8e10f247ae907f8b22abc8e
+      internalID: 245220729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 728
+        width: 148
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83aae795a87b69a41aa14f4228153b37
+      internalID: 313482765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_5
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 848
+        width: 339
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26f62676cb404b44bb2cfe4ddabd42c
+      internalID: -76613162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_6
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 829
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d20186614424948b03a8f9b9f29073
+      internalID: -462969813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_7
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 724
+        width: 132
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97c444ba6befba4fbc23c6e64b58bdb
+      internalID: -482235615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_8
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 724
+        width: 144
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4851fda3af31e48b5f9060631ef2b2
+      internalID: -1021640112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_9
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 784
+        width: 80
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ca9f4197046d44cbaad81f043e29c1
+      internalID: 2103617606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 584
+        width: 152
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9a94d0aa00591419989cb7b520ca90
+      internalID: 1651826080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_11
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 692
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa279a89a7df5314d8be5419223430c9
+      internalID: -781545590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_12
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 716
+        width: 88
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2372f0b3aa777834c9370e28bd8796b0
+      internalID: 1252880599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_13
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 674
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0caf50d83780004795fcae42c2be6ec
+      internalID: 841087946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_14
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 712
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda8c894dcf73bd44b8792223b164474
+      internalID: -1966237770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_15
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 596
+        width: 132
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcb4fe0d1a770042b1391de72ede59a
+      internalID: 801900452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_16
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 592
+        width: 124
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425b4712ffabfac4c904fc2a54920f63
+      internalID: -57040302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_17
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 588
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68a950f58f8c0b408f8afc3bd57fb86
+      internalID: 25505316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_18
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 644
+        width: 68
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7d0c906ba6ae246bd29e6a22d0955f
+      internalID: 1749639646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_19
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 676
+        width: 60
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0913d807cb8b94c92b406377959334
+      internalID: 346558390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_20
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 643
+        width: 89
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facca640360190742b729d42047ad330
+      internalID: -1659868342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_21
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 589
+        width: 128
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076871b46ad6712479b9d797a67ef06c
+      internalID: -598436833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_22
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 599
+        width: 89
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0f14d2fc9222c43960492e7e7e757b
+      internalID: 1855100978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_23
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 516
+        width: 244
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd389107c337db4d9842321b892cde8
+      internalID: 536372761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_24
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 580
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8026ae26dbb363f4ca81844840bfe8cd
+      internalID: -1017955235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_25
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 552
+        width: 88
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c352af08ddf739d41b33559fefa2d76c
+      internalID: 86273602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 152
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a91471651d5c24ca4256ead8e9ef33
+      internalID: 309636753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 516
+        width: 148
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437871a630ed88f4ea1931f12464d184
+      internalID: -1169245293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_28
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 470
+        width: 71
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4256edac5ede3ca419397955aa764f2a
+      internalID: -1513148970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_29
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 484
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800dc33b4e1b89d42a515a3e7bb09dd2
+      internalID: -906954223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_30
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 536
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358328c03971df74a9dbeb48ce207ba8
+      internalID: -1289465574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_31
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 518
+        width: 38
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1742ff47ac968b419c1686f14131ea3
+      internalID: -1157326028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_32
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 440
+        width: 276
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eee82ec2d0087645adf9a92739a97d4
+      internalID: -1065295300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_33
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 484
+        width: 75
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060fcaa8d5e751448aa344485a2f5b3a
+      internalID: -273765928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_34
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 480
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6070132a75823194081c268fec43d00f
+      internalID: 607086287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_35
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 379
+        width: 76
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d0c4a514b4e1d47a66f771a275a001
+      internalID: -1793401305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_36
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 379
+        width: 74
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6e2395bbe95b949a31bdbbcde2fc76
+      internalID: -1722293177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_37
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 436
+        width: 92
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6a3642fc00fe247851a59718d5c64f
+      internalID: 927987222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_38
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 436
+        width: 104
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56820eb7ba68ef47ae4f0c5c72015b3
+      internalID: 294898079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 148
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ec55840768f304b896e77b7b58e9cd
+      internalID: -428868190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_40
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 288
+        width: 304
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2740e50dcf1ba4b9022b04e4b2a717
+      internalID: -1924843436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_41
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 376
+        width: 132
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3989ee81c6f62f44fa0db0727ba0f08e
+      internalID: 1558258311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_42
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 328
+        width: 68
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6f67e609aa92042b0f6bceb59566e4
+      internalID: 1566069792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_43
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 288
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d92feee50c3e748a4d217d997a3c20
+      internalID: -1146661857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_44
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 290
+        width: 76
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c798ab158f04142bd92b3438fad00b
+      internalID: -209619802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_45
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 348
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3b2a6edda1f294791a3ffc81a274f4
+      internalID: 1356091837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_46
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 330
+        width: 52
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d925e9e1e222b94dadbb0d8e32cd4b5
+      internalID: 1151163234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_47
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 292
+        width: 124
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df7a4ab700243940b47e9b96e54dcbb
+      internalID: 1398822586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_48
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 300
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048585de4c4866e4c9e2bb4630ca71f9
+      internalID: -1897490677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_49
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 284
+        width: 102
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81d498654b56cc4984b629c216dac73
+      internalID: -682257187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 368
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43f7b0c9e0d81a4382831c380ac114a
+      internalID: 1156802136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_51
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 204
+        width: 260
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ca33ade40d7d945ba4f221e16d8e03
+      internalID: -1626756927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_52
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 240
+        width: 102
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d6d134507f4ae45b3e4305d2bb3fc8
+      internalID: 2118623380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_53
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 209
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2dbb56f442c4e642b6e2cf05266d633
+      internalID: 1437380602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_54
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 212
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc1abf5b3f445b4fae1c5618b684563
+      internalID: 1164608237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_55
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 196
+        width: 102
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778038bd427cee14189c908129aa19db
+      internalID: -1108529176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_56
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 194
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912f9e92773b3ff42b6e5c068cdc2899
+      internalID: 1592613776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_57
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 4
+        width: 264
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ac48f989fdc54439560e32f6798804
+      internalID: -1829941387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_58
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 104
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b268aa4a1f81e47b9b6db9cca7b9e8
+      internalID: 1545176649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_59
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 104
+        width: 96
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241032c5709f4644a91f0b74952a13a7
+      internalID: 52208030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_60
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 144
+        width: 128
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb078506299e9b429bd2dc5fe75c052
+      internalID: -2081376291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_61
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 136
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2812ddeacb981614c90515e3170a696c
+      internalID: -1293735493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_62
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 4
+        width: 96
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e084c5e333d04214b87cee56380018f5
+      internalID: 1465900737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_63
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 0
+        width: 95
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d900664d2932f0f489f8ef4edcb93d1f
+      internalID: 1345998278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_64
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 88
+        width: 128
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a39044655b23444fa33256ee68c05fa
+      internalID: 449730853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_65
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 66
+        width: 78
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f45e9e29d42004999b40addbf50098
+      internalID: 1386329034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_66
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 66
+        width: 75
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370bad1957ff05d4cb2fe0a9ced2f6a0
+      internalID: -853233246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_67
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 0
+        width: 108
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1be9fad5c778f42a82144a1baabdc6
+      internalID: -432125098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-projectiles-cc582037_68
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 4
+        width: 128
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d4507d2d7855c4b942ee10a3c27042
+      internalID: 2022046555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e393a9407e8db954aa1b90c0138022f6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_0: 100592927
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_1: 1117646616
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_10: 1651826080
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_11: -781545590
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_12: 1252880599
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_13: 841087946
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_14: -1966237770
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_15: 801900452
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_16: -57040302
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_17: 25505316
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_18: 1749639646
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_19: 346558390
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_2: 415866385
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_20: -1659868342
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_21: -598436833
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_22: 1855100978
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_23: 536372761
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_24: -1017955235
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_25: 86273602
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_26: 309636753
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_27: -1169245293
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_28: -1513148970
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_29: -906954223
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_3: 245220729
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_30: -1289465574
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_31: -1157326028
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_32: -1065295300
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_33: -273765928
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_34: 607086287
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_35: -1793401305
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_36: -1722293177
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_37: 927987222
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_38: 294898079
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_39: -428868190
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_4: 313482765
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_40: -1924843436
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_41: 1558258311
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_42: 1566069792
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_43: -1146661857
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_44: -209619802
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_45: 1356091837
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_46: 1151163234
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_47: 1398822586
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_48: -1897490677
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_49: -682257187
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_5: -76613162
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_50: 1156802136
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_51: -1626756927
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_52: 2118623380
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_53: 1437380602
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_54: 1164608237
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_55: -1108529176
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_56: 1592613776
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_57: -1829941387
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_58: 1545176649
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_59: 52208030
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_6: -462969813
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_60: -2081376291
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_61: -1293735493
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_62: 1465900737
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_63: 1345998278
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_64: 449730853
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_65: 1386329034
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_66: -853233246
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_67: -432125098
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_68: 2022046555
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_7: -482235615
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_8: -1021640112
+      sactx-0-1024x1024-ETC2-projectiles-cc582037_9: 2103617606
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,6 @@
+
+{"file":"AI_9_加血_怪物12","id":9,"childs":[
+{"skillId":50022,"name":"AutoPlaySkill","type":"AutoPlaySkill","typeName":"AIEvent_AutoPlaySkillData","auto":1,"l":-1}
+,
+{"name":"TargetRandPos","type":"TargetRandPos","typeName":"AI_TargetRandPosData","auto":1,"l":-1}
+]}

@@ -1,0 +1,8 @@
+
+{"file":"Skill_60032_冲撞+怪物中心3对激光_精英怪40102_未完成","id":600321,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":1000,"time":1000,"target":
+{"camp":"diff","rule":"none","save":2000,"num":99,"w":0.15,"h":1.5}
+,"eventList":[
+{"type":"CalcDamage","s":600,"targettype":"root","item":
+{"rule":"Wave","per":1.15}
+}
+]}

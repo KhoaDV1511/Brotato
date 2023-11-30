@@ -1,0 +1,8 @@
+
+{"file":"Skill_60033_4束激光_精英怪40042","id":600331,"skillbase":"normal","check":"none","showtype":"rang","dir":"Self","cd":1000,"time":1000,"target":
+{"camp":"diff","rule":"none","save":2000,"num":99,"w":0.15,"h":1.5}
+,"eventList":[
+{"type":"CalcDamage","s":450,"targettype":"root","item":
+{"rule":"Wave","per":1.15}
+}
+]}

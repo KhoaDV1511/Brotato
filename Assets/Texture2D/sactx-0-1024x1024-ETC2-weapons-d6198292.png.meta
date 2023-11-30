@@ -1,0 +1,2809 @@
+fileFormatVersion: 2
+guid: 7e3668c0b7aaf7d4e8494067c193c9b2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 47
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 0
+  flipbookColumns: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 966
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352f15866525fdf4aafdaf98533abf73
+      internalID: 942841390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 920
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8535540f63060e84090e6b70595f1ffd
+      internalID: 1546893499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 920
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ec15b18fae2154d97902e24971e6f8
+      internalID: 1109587991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 927
+        width: 79
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd075fb081bf3ec41922e8522e34775d
+      internalID: 1196739488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 878
+        width: 94
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e1ba26f83a21642ba79090e9f657a8
+      internalID: -314743929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 882
+        width: 59
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3962e196b2bb0c45b1472f94e81165c
+      internalID: -200656983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_6
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 892
+        width: 45
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817f45262b16fb7498696617740c45ce
+      internalID: -1622460216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_7
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 869
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0edd1c942c65ff34a88f2d49d784a09e
+      internalID: -1984556659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 816
+        width: 88
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65662d45ab2081b40b2506576a52d381
+      internalID: -2080541070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_9
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 844
+        width: 87
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99711287365d2547a5a2a52c26bedd7
+      internalID: 2039745935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_10
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 844
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1d266d5de57eb4886ab068b4ef6619
+      internalID: -1868627825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_11
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 836
+        width: 96
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a65cd1f8bceafb4d9acdcdbab535e2c
+      internalID: -112603295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_12
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 845
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e38659966970e04b9f74df277ed2474
+      internalID: 272387434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_13
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 811
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f952e69b0b1f25d4c8984dbb70ea7bc9
+      internalID: 293449160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_14
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 787
+        width: 93
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f043cc9f6d8e3644acf3cc66c442df7
+      internalID: -1971141405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_15
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 788
+        width: 76
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafac9e92c35b0b4f9ef89d8fe558e89
+      internalID: 1326741706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_16
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 788
+        width: 66
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022284a49382ed84daaeb05f011185bc
+      internalID: -656794408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_17
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 800
+        width: 65
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92e7c19675e2f64f87e25a152af6f63
+      internalID: -963080583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_18
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 811
+        width: 105
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f62df010ac8a3c4c9638cf63692f1aa
+      internalID: 2126166827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 759
+        width: 106
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2425f7b42f4370b40b92034fd7f5f27c
+      internalID: 2076232869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_20
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 700
+        width: 61
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80babb2e8fb26ee449cf389ddabf06ac
+      internalID: -2107826855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_21
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 736
+        width: 76
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7c651784c67df46a3a71e0be88f687
+      internalID: -1263581138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_22
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 772
+        width: 121
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b688604f806054b83aa43ba851ed69
+      internalID: -66213104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_23
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 766
+        width: 63
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96bdf284571e744abe74ce1b51be1d4
+      internalID: -1127261151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_24
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 766
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a58bd68698e3564e9db96ef859d79b1
+      internalID: -306573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 681
+        width: 78
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53895321b578b14a89804daa87f2415
+      internalID: -824662819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_26
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 679
+        width: 69
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6918c6b56cc39184bb903a181d5b79fc
+      internalID: 1500276662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 698
+        width: 52
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916dc7d28c2e0344d9edc186cb8d6740
+      internalID: -282436712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_28
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 720
+        width: 65
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdfc659ae01fc64aa0d9822c7b978d3
+      internalID: -1623346746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_29
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 721
+        width: 64
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b98565dc62da94dba85f880a1540c4
+      internalID: -643882816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_30
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 733
+        width: 77
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126fb08f1922f1e48a261e1b5036fa77
+      internalID: 1677470929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_31
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 700
+        width: 123
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b33fc05b4b6a14a97c2c2f626cf3f9
+      internalID: -780533558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_32
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 656
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f81b81e299224c4388f153192c1e748
+      internalID: 933942473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_33
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 656
+        width: 28
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e27eb509a3c4584ca9a5713c5fb1bd9
+      internalID: -324359571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_34
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 698
+        width: 73
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5212eb94e32f64bbf79311bb73ea88
+      internalID: 1459858374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 626
+        width: 113
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1a50536189687419eed71af6b4a8af
+      internalID: -2050971250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_36
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 588
+        width: 66
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f9338e2a4de8743b0a6cc440b47170
+      internalID: 892408006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_37
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 642
+        width: 95
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fde502f714f9747a8c7ee0d62dfb65
+      internalID: 2000764253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_38
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 642
+        width: 99
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0d0a2113242c146a8e1bd106a7f264
+      internalID: -217876339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_39
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 656
+        width: 75
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f740b57b8413eb418001388d0c2489f
+      internalID: -993579878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_40
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 540
+        width: 74
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8ed5050ddd4b14786c645da2852fd3
+      internalID: 1776095969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_41
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 590
+        width: 110
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5607070a102def04da9d693ccc6030be
+      internalID: 744969061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_42
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 569
+        width: 82
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120cb960debb6bb4f89ffa60c0e1d461
+      internalID: -1527866225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_43
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 612
+        width: 91
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66f727bca71b884abc0ef5b9113dbe4
+      internalID: -1936335684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_44
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 612
+        width: 87
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6696fdb34218649b34b975cb73fc8f
+      internalID: -1136869620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_45
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 612
+        width: 71
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a21cb654eb4b94e89b4a50204db7f3
+      internalID: -1108675963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_46
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 608
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665255d4025e80148ab40e504249fb08
+      internalID: -306053470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_47
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 532
+        width: 109
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cb3c5f4b4e8c646a1323dd20b48109
+      internalID: -1559340078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_48
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 576
+        width: 162
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea018569dddb5e645907bed27927fd5b
+      internalID: 2086701381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_49
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 551
+        width: 76
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d494d4231907aad43bf3b2c82faaabf3
+      internalID: 504861533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_50
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 540
+        width: 55
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25596407d21bbe545a931a2e90f00ced
+      internalID: 1879996015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_51
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 494
+        width: 70
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e313ce35eb7ad47ad68ad2e25115b7
+      internalID: 2104279332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_52
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 510
+        width: 102
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73cd9f53cc371d4bbe4a68b7fc6e8c1
+      internalID: 690103036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_53
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 510
+        width: 82
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e07d23991290d3459edfb42d032b918
+      internalID: 1791939301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_54
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 501
+        width: 73
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22c1020ac6eb494bbcc69675c75df79
+      internalID: -1165681751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_55
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 543
+        width: 67
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eded91da2d67b54cafd93047e834f5f
+      internalID: 1292983386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_56
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 459
+        width: 79
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af107a006be1bf0449668d276bb4ecbc
+      internalID: 1170686358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_57
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 451
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a857e0f91fa3241b396f05e949fb28
+      internalID: 1510301577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_58
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 466
+        width: 147
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f3a7e2611b2074a8a04500a791d6bc
+      internalID: -1737074218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_59
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 500
+        width: 108
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d387cf22b9a09b64c94fbc5d46435047
+      internalID: -1837106518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_60
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 445
+        width: 56
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f969594ddc6934ea9b6de61902c7f2
+      internalID: 1599408236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_61
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 500
+        width: 87
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3665844908dbe5549a592e3efcbd927c
+      internalID: 1477471749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_62
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 500
+        width: 55
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbcc2909a294074d80920c1a484f5e7
+      internalID: -2061750012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_63
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 395
+        width: 129
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8d1b666b40b6449be495412c99ae6d
+      internalID: -420618315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_64
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 394
+        width: 79
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6c72d61ab84014b88a1d2da7a57a2d
+      internalID: -211663664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_65
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 356
+        width: 82
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845e0576dbf842942a9d07c6c289d881
+      internalID: 936880443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_66
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 373
+        width: 74
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df96b1dcf59f6c42be2a6e63451e3ef
+      internalID: 2062934325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_67
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 439
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9027845fb2f13448728b6f8f130c19
+      internalID: 471123212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_68
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 427
+        width: 90
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ef3b6cba5e13b4fb3906a5e45c3384
+      internalID: -1285560299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_69
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 427
+        width: 98
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0049e999475853449b8d76e2ff9d063b
+      internalID: 716149190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_70
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 291
+        width: 81
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6558ecf075b035040851cf9006513042
+      internalID: -1637373679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_71
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 294
+        width: 79
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5453982deda05b44af2dc48f41b4983
+      internalID: 271204181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_72
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 299
+        width: 82
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2681afa67f3eaad459ee875fe80ddf2f
+      internalID: 573905154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_73
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 356
+        width: 90
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a26452b62e9deb4585770839211b02a
+      internalID: 1744746666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_74
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 380
+        width: 69
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71534ab12e354240a433ca6e015d723
+      internalID: 853303141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_75
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 354
+        width: 83
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb8042c798d73d4bb3f6aa4453aa419
+      internalID: 2043894414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_76
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 355
+        width: 77
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6af20e7b9eae94088a8d7822d71c40
+      internalID: -1418356826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_77
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 351
+        width: 90
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32e19fe09f8550489d18a126cf19d59
+      internalID: -1420730200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_78
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 336
+        width: 73
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b5d271b54a03d4990d16dbc25febd5
+      internalID: 1609762565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_79
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 261
+        width: 83
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b3b68f7bf5baa41b2509a10e3ae612
+      internalID: -2044567916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_80
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 260
+        width: 82
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e44c4bbcd3321043bc7ab9fc1f111ec
+      internalID: -1262985799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_81
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 286
+        width: 86
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1bfb7f9fa56674598b1a725dad916d
+      internalID: -665637153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_82
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 283
+        width: 73
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58d75310d0797347bff55bded2d0b89
+      internalID: 837786455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_83
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 277
+        width: 93
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524f5c1baea856942bbe2a24edf293e3
+      internalID: -21881785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_84
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 344
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2454f8efe9a2a84428564696ca13e2ad
+      internalID: 1799306834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_85
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 196
+        width: 85
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548a092092a5c2e44b4f188a53b8f5f8
+      internalID: 231249337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_86
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 202
+        width: 86
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7377d9977e0fed43874c48f749742d7
+      internalID: -1729082776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_87
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 202
+        width: 83
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b3ebfc2bc2a6a419d10b6ba9fa3e9a
+      internalID: -415499897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_88
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 192
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fa7566783bd4746af394c5691468dd
+      internalID: 566164086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_89
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 259
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465537783098f2547a3049b726d335ee
+      internalID: 393613566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_90
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 190
+        width: 79
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d63bcb5f8ff5dd489df854f49001a7f
+      internalID: 1963926982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_91
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 190
+        width: 82
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96ed12a78cf5fb40a0500006effb441
+      internalID: 1376141214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_92
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 260
+        width: 81
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0af726ae1eafd4183c0e8e986c3180
+      internalID: -1484831041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_93
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 259
+        width: 74
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cd75f458c15f1428fc01c7f3c1dcc1
+      internalID: -476366176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_94
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 249
+        width: 76
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7028a86a9b2c1aa409f37967a4c464e9
+      internalID: 719919656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_95
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 198
+        width: 131
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a271d98585b9ad4696b54a9133a2143
+      internalID: 1471900162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_96
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 229
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833ecc3c21b956d4ca48c7b8848b1686
+      internalID: -1814994850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_97
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 173
+        width: 81
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cd1ce867b07c64c83d1ba578dc7876
+      internalID: -815106146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_98
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 172
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db3928ce152ea044a0a1e697e234beb
+      internalID: 2028709081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_99
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 182
+        width: 103
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8e2523b709a8e4db8fb6785d3c399f
+      internalID: 422350493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_100
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 97
+        width: 98
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ceab9bf40f7d442ba303714125e5b9
+      internalID: 686039377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_101
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 102
+        width: 89
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125ccae38e759a14ab3ec0fce59c9be1
+      internalID: -1134480607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_102
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 102
+        width: 92
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd2a251427d7ad429e25af5814ddee3
+      internalID: 1977054887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_103
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 100
+        width: 88
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fc9c6466dce4c4488a75058dd33f7f
+      internalID: 756129617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_104
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 120
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a97f1d199b7034e818e674602fb70b
+      internalID: -1142557374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_105
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 100
+        width: 94
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3ab20c9ec9fa840a8cd25be8bc0cbd
+      internalID: -864734719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_106
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 97
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070ba2a489ea7364f89423c39790e88e
+      internalID: 1445409826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_107
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 94
+        width: 77
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cc4ba0e789d0b4e9562ad0294c966c
+      internalID: 1147543819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_108
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 84
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddec018da6bb89040be5513b82d4bd4f
+      internalID: -114909069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_109
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 95
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6f18f6c7b60064b8b86d7751c80c60
+      internalID: -283113324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_110
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 0
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b98d35efa2d0aa4d83a7ddc9cf9c796
+      internalID: -1725324281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_111
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1
+        width: 89
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f5e2020eeb98a409435c77f504ce89
+      internalID: -422251349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_112
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 3
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991459cbf168fff46bd8585c89b0dcfb
+      internalID: 1474200140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_113
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 4
+        width: 94
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc21c3c19edf37646ad08ca625648f10
+      internalID: -1533717956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_114
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 89
+        width: 75
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c982d27835c06794f9f9319c25e97eca
+      internalID: 788678382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_115
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 110
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6732815a6f297e244bcd47e41a2fff13
+      internalID: 1370807949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_116
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 2
+        width: 82
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fceec1f0bfb43494894fbecc1268262f
+      internalID: -1334198751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_117
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 2
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b661156af46874d883860567ff0eae
+      internalID: 879590095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_118
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 2
+        width: 83
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1929c9b5e2419b345b6007cf0a06c944
+      internalID: 316149594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_119
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 2
+        width: 87
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6948a9e33ab7a2a4789af0c5e3b4b2bc
+      internalID: -374745672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-1024x1024-ETC2-weapons-d6198292_120
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 2
+        width: 75
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee84d29e4b16834eb1855f5e4013bb6
+      internalID: -831210232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 291c2dd4d4f036a4db533a7efdf9b577
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sactx-0-1024x1024-ETC2-weapons-d6198292_0: 942841390
+      sactx-0-1024x1024-ETC2-weapons-d6198292_1: 1546893499
+      sactx-0-1024x1024-ETC2-weapons-d6198292_10: -1868627825
+      sactx-0-1024x1024-ETC2-weapons-d6198292_100: 686039377
+      sactx-0-1024x1024-ETC2-weapons-d6198292_101: -1134480607
+      sactx-0-1024x1024-ETC2-weapons-d6198292_102: 1977054887
+      sactx-0-1024x1024-ETC2-weapons-d6198292_103: 756129617
+      sactx-0-1024x1024-ETC2-weapons-d6198292_104: -1142557374
+      sactx-0-1024x1024-ETC2-weapons-d6198292_105: -864734719
+      sactx-0-1024x1024-ETC2-weapons-d6198292_106: 1445409826
+      sactx-0-1024x1024-ETC2-weapons-d6198292_107: 1147543819
+      sactx-0-1024x1024-ETC2-weapons-d6198292_108: -114909069
+      sactx-0-1024x1024-ETC2-weapons-d6198292_109: -283113324
+      sactx-0-1024x1024-ETC2-weapons-d6198292_11: -112603295
+      sactx-0-1024x1024-ETC2-weapons-d6198292_110: -1725324281
+      sactx-0-1024x1024-ETC2-weapons-d6198292_111: -422251349
+      sactx-0-1024x1024-ETC2-weapons-d6198292_112: 1474200140
+      sactx-0-1024x1024-ETC2-weapons-d6198292_113: -1533717956
+      sactx-0-1024x1024-ETC2-weapons-d6198292_114: 788678382
+      sactx-0-1024x1024-ETC2-weapons-d6198292_115: 1370807949
+      sactx-0-1024x1024-ETC2-weapons-d6198292_116: -1334198751
+      sactx-0-1024x1024-ETC2-weapons-d6198292_117: 879590095
+      sactx-0-1024x1024-ETC2-weapons-d6198292_118: 316149594
+      sactx-0-1024x1024-ETC2-weapons-d6198292_119: -374745672
+      sactx-0-1024x1024-ETC2-weapons-d6198292_12: 272387434
+      sactx-0-1024x1024-ETC2-weapons-d6198292_120: -831210232
+      sactx-0-1024x1024-ETC2-weapons-d6198292_13: 293449160
+      sactx-0-1024x1024-ETC2-weapons-d6198292_14: -1971141405
+      sactx-0-1024x1024-ETC2-weapons-d6198292_15: 1326741706
+      sactx-0-1024x1024-ETC2-weapons-d6198292_16: -656794408
+      sactx-0-1024x1024-ETC2-weapons-d6198292_17: -963080583
+      sactx-0-1024x1024-ETC2-weapons-d6198292_18: 2126166827
+      sactx-0-1024x1024-ETC2-weapons-d6198292_19: 2076232869
+      sactx-0-1024x1024-ETC2-weapons-d6198292_2: 1109587991
+      sactx-0-1024x1024-ETC2-weapons-d6198292_20: -2107826855
+      sactx-0-1024x1024-ETC2-weapons-d6198292_21: -1263581138
+      sactx-0-1024x1024-ETC2-weapons-d6198292_22: -66213104
+      sactx-0-1024x1024-ETC2-weapons-d6198292_23: -1127261151
+      sactx-0-1024x1024-ETC2-weapons-d6198292_24: -306573
+      sactx-0-1024x1024-ETC2-weapons-d6198292_25: -824662819
+      sactx-0-1024x1024-ETC2-weapons-d6198292_26: 1500276662
+      sactx-0-1024x1024-ETC2-weapons-d6198292_27: -282436712
+      sactx-0-1024x1024-ETC2-weapons-d6198292_28: -1623346746
+      sactx-0-1024x1024-ETC2-weapons-d6198292_29: -643882816
+      sactx-0-1024x1024-ETC2-weapons-d6198292_3: 1196739488
+      sactx-0-1024x1024-ETC2-weapons-d6198292_30: 1677470929
+      sactx-0-1024x1024-ETC2-weapons-d6198292_31: -780533558
+      sactx-0-1024x1024-ETC2-weapons-d6198292_32: 933942473
+      sactx-0-1024x1024-ETC2-weapons-d6198292_33: -324359571
+      sactx-0-1024x1024-ETC2-weapons-d6198292_34: 1459858374
+      sactx-0-1024x1024-ETC2-weapons-d6198292_35: -2050971250
+      sactx-0-1024x1024-ETC2-weapons-d6198292_36: 892408006
+      sactx-0-1024x1024-ETC2-weapons-d6198292_37: 2000764253
+      sactx-0-1024x1024-ETC2-weapons-d6198292_38: -217876339
+      sactx-0-1024x1024-ETC2-weapons-d6198292_39: -993579878
+      sactx-0-1024x1024-ETC2-weapons-d6198292_4: -314743929
+      sactx-0-1024x1024-ETC2-weapons-d6198292_40: 1776095969
+      sactx-0-1024x1024-ETC2-weapons-d6198292_41: 744969061
+      sactx-0-1024x1024-ETC2-weapons-d6198292_42: -1527866225
+      sactx-0-1024x1024-ETC2-weapons-d6198292_43: -1936335684
+      sactx-0-1024x1024-ETC2-weapons-d6198292_44: -1136869620
+      sactx-0-1024x1024-ETC2-weapons-d6198292_45: -1108675963
+      sactx-0-1024x1024-ETC2-weapons-d6198292_46: -306053470
+      sactx-0-1024x1024-ETC2-weapons-d6198292_47: -1559340078
+      sactx-0-1024x1024-ETC2-weapons-d6198292_48: 2086701381
+      sactx-0-1024x1024-ETC2-weapons-d6198292_49: 504861533
+      sactx-0-1024x1024-ETC2-weapons-d6198292_5: -200656983
+      sactx-0-1024x1024-ETC2-weapons-d6198292_50: 1879996015
+      sactx-0-1024x1024-ETC2-weapons-d6198292_51: 2104279332
+      sactx-0-1024x1024-ETC2-weapons-d6198292_52: 690103036
+      sactx-0-1024x1024-ETC2-weapons-d6198292_53: 1791939301
+      sactx-0-1024x1024-ETC2-weapons-d6198292_54: -1165681751
+      sactx-0-1024x1024-ETC2-weapons-d6198292_55: 1292983386
+      sactx-0-1024x1024-ETC2-weapons-d6198292_56: 1170686358
+      sactx-0-1024x1024-ETC2-weapons-d6198292_57: 1510301577
+      sactx-0-1024x1024-ETC2-weapons-d6198292_58: -1737074218
+      sactx-0-1024x1024-ETC2-weapons-d6198292_59: -1837106518
+      sactx-0-1024x1024-ETC2-weapons-d6198292_6: -1622460216
+      sactx-0-1024x1024-ETC2-weapons-d6198292_60: 1599408236
+      sactx-0-1024x1024-ETC2-weapons-d6198292_61: 1477471749
+      sactx-0-1024x1024-ETC2-weapons-d6198292_62: -2061750012
+      sactx-0-1024x1024-ETC2-weapons-d6198292_63: -420618315
+      sactx-0-1024x1024-ETC2-weapons-d6198292_64: -211663664
+      sactx-0-1024x1024-ETC2-weapons-d6198292_65: 936880443
+      sactx-0-1024x1024-ETC2-weapons-d6198292_66: 2062934325
+      sactx-0-1024x1024-ETC2-weapons-d6198292_67: 471123212
+      sactx-0-1024x1024-ETC2-weapons-d6198292_68: -1285560299
+      sactx-0-1024x1024-ETC2-weapons-d6198292_69: 716149190
+      sactx-0-1024x1024-ETC2-weapons-d6198292_7: -1984556659
+      sactx-0-1024x1024-ETC2-weapons-d6198292_70: -1637373679
+      sactx-0-1024x1024-ETC2-weapons-d6198292_71: 271204181
+      sactx-0-1024x1024-ETC2-weapons-d6198292_72: 573905154
+      sactx-0-1024x1024-ETC2-weapons-d6198292_73: 1744746666
+      sactx-0-1024x1024-ETC2-weapons-d6198292_74: 853303141
+      sactx-0-1024x1024-ETC2-weapons-d6198292_75: 2043894414
+      sactx-0-1024x1024-ETC2-weapons-d6198292_76: -1418356826
+      sactx-0-1024x1024-ETC2-weapons-d6198292_77: -1420730200
+      sactx-0-1024x1024-ETC2-weapons-d6198292_78: 1609762565
+      sactx-0-1024x1024-ETC2-weapons-d6198292_79: -2044567916
+      sactx-0-1024x1024-ETC2-weapons-d6198292_8: -2080541070
+      sactx-0-1024x1024-ETC2-weapons-d6198292_80: -1262985799
+      sactx-0-1024x1024-ETC2-weapons-d6198292_81: -665637153
+      sactx-0-1024x1024-ETC2-weapons-d6198292_82: 837786455
+      sactx-0-1024x1024-ETC2-weapons-d6198292_83: -21881785
+      sactx-0-1024x1024-ETC2-weapons-d6198292_84: 1799306834
+      sactx-0-1024x1024-ETC2-weapons-d6198292_85: 231249337
+      sactx-0-1024x1024-ETC2-weapons-d6198292_86: -1729082776
+      sactx-0-1024x1024-ETC2-weapons-d6198292_87: -415499897
+      sactx-0-1024x1024-ETC2-weapons-d6198292_88: 566164086
+      sactx-0-1024x1024-ETC2-weapons-d6198292_89: 393613566
+      sactx-0-1024x1024-ETC2-weapons-d6198292_9: 2039745935
+      sactx-0-1024x1024-ETC2-weapons-d6198292_90: 1963926982
+      sactx-0-1024x1024-ETC2-weapons-d6198292_91: 1376141214
+      sactx-0-1024x1024-ETC2-weapons-d6198292_92: -1484831041
+      sactx-0-1024x1024-ETC2-weapons-d6198292_93: -476366176
+      sactx-0-1024x1024-ETC2-weapons-d6198292_94: 719919656
+      sactx-0-1024x1024-ETC2-weapons-d6198292_95: 1471900162
+      sactx-0-1024x1024-ETC2-weapons-d6198292_96: -1814994850
+      sactx-0-1024x1024-ETC2-weapons-d6198292_97: -815106146
+      sactx-0-1024x1024-ETC2-weapons-d6198292_98: 2028709081
+      sactx-0-1024x1024-ETC2-weapons-d6198292_99: 422350493
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,20 @@
+
+{"file":"Skill_60020_Boss21激光2","id":60020,"skillbase":"target","check":"none","showtype":"rang","dir":"Random","cd":1750,"time":1750,"target":
+{"camp":"diff","rule":"none","num":1,"rang":12}
+,"eventList":[
+{"type":"PlayAni","targettype":"none","item":
+{"ani":"Shoot","flags":4,"l":666}
+}
+,
+{"type":"IntervalTrigger","s":600,"l":10,"targettype":"none","item":
+{"time":1,"num":8}
+,"childs":[
+{"type":"BombField","s":600,"targettype":"root","item":
+{"flags":50,"res":"bullet_enemylong 2","skill":600201,"dis":5,"dis_min":0.01,"num":1,"l":1000}
+}
+]}
+,
+{"type":"AddBuff","targettype":"self","item":
+{"buffId":104,"l":600}
+}
+]}

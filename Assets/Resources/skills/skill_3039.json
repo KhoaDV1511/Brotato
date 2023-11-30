@@ -1,0 +1,6 @@
+
+{"file":"Skill_3039_爆炸炮塔 天赋卡1","id":3039,"skillbase":"trigger","check":"none","showtype":"rang","dir":"Random","eventList":[
+{"type":"BombField","targettype":"self","item":
+{"flags":4,"res":"build_rocket_turret","skill":303901,"dis":8,"dis_min":0.1,"num":1,"s":750,"l":9999999,"effRes":"Birth_blue"}
+}
+]}

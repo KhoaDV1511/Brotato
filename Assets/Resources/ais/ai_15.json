@@ -1,0 +1,6 @@
+
+{"file":"AI_15_撞击_怪物25","id":15,"childs":[
+{"skillId":50040,"name":"AutoPlaySkill","type":"AutoPlaySkill","typeName":"AIEvent_AutoPlaySkillData","auto":1,"l":-1}
+,
+{"rangeAround":3,"allowWithin":1,"name":"FRPATarget","type":"FRPATarget","typeName":"AI_FRPATargetData","auto":1,"l":-1}
+]}

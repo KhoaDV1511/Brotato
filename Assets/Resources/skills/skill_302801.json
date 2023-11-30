@@ -1,0 +1,10 @@
+
+{"file":"Skill_3028_花园修枝剪刀4","id":302801,"skillbase":"normal","check":"none","showtype":"rang","dir":"Random","cd":10000,"time":10000,"eLogic":64,"eventList":[
+{"type":"PlayAni","s":1000,"targettype":"none","item":
+{"ani":"shoot","flags":12}
+}
+,
+{"type":"CreatItem","s":1000,"targettype":"none","item":
+{"id":50002,"num":1,"dis":0.8}
+}
+]}

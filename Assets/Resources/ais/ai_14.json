@@ -1,0 +1,6 @@
+
+{"file":"AI_14_撞击_怪物19","id":14,"childs":[
+{"skillId":50013,"name":"AutoPlaySkill","type":"AutoPlaySkill","typeName":"AIEvent_AutoPlaySkillData","auto":1,"l":-1}
+,
+{"name":"FollowTarget","type":"FollowTarget","typeName":"AI_FollowTargetData","auto":1,"l":-1}
+]}

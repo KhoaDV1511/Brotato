@@ -1,0 +1,5 @@
+ID	name	trigger
+int	string	string
+ID		
+1	大厅选择引导	Guide_Task_HallGuideStart
+2	战斗引导	Guide_Task_FightGuideStart
