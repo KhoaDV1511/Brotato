@@ -3,7 +3,7 @@ using Animancer;
 using UnityEngine;
 public class PotatoMediator : Character
 {
-    [SerializeField] private FixedJoystick joystick;
+    [SerializeField] private Joystick joystick;
     [SerializeField] private AnimationClip[] clips;
     
     private AnimancerComponent _animancer;
@@ -18,7 +18,6 @@ public class PotatoMediator : Character
         _animancer = GetComponent<AnimancerComponent>();
         _animancer.Play(clips[(int)AnimPotato.Idle]);
     }
-
     private void FixedUpdate()
     {
         var horizontal = joystick.Horizontal;
@@ -26,7 +25,12 @@ public class PotatoMediator : Character
         _move = new Vector2(horizontal, vertical);
         if (horizontal != 0)
         {
-            _rb.MovePosition(_rb.position + _move * (speed * Time.fixedDeltaTime));
+            Vector2 posMove = _rb.position + _move * (speed * Time.fixedDeltaTime);
+            posMove.x = posMove.x > 13 ? 13 : posMove.x;
+            posMove.x = posMove.x < -13 ? -13 : posMove.x;
+            posMove.y = posMove.y > 9 ? 9 : posMove.y;
+            posMove.y = posMove.y < -9 ? -9 : posMove.y;
+            _rb.MovePosition(posMove);
             _animancer.Play(clips[(int)AnimPotato.Move]);
         }
         else
