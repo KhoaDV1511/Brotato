@@ -23,7 +23,7 @@ TagManager:
   - Npc
   - Item
   - Bullet
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -69,6 +69,12 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3216131019
+    locked: 0
+  - name: Weapon
+    uniqueID: 1770053571
+    locked: 0
+  - name: Enemy
+    uniqueID: 1571356171
     locked: 0
   - name: UI
     uniqueID: 1354640331

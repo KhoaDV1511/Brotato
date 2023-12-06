@@ -5,6 +5,7 @@ public class PotatoMediator : Character
 {
     [SerializeField] private Joystick joystick;
     [SerializeField] private AnimationClip[] clips;
+    [SerializeField] private Transform potatoBody;
     
     private AnimancerComponent _animancer;
     private Rigidbody2D _rb;
@@ -14,7 +15,7 @@ public class PotatoMediator : Character
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        speed = 10;
+        speed = 5;
         _animancer = GetComponent<AnimancerComponent>();
         _animancer.Play(clips[(int)AnimPotato.Idle]);
     }
@@ -26,10 +27,10 @@ public class PotatoMediator : Character
         if (horizontal != 0)
         {
             Vector2 posMove = _rb.position + _move * (speed * Time.fixedDeltaTime);
-            posMove.x = posMove.x > 13 ? 13 : posMove.x;
-            posMove.x = posMove.x < -13 ? -13 : posMove.x;
-            posMove.y = posMove.y > 9 ? 9 : posMove.y;
-            posMove.y = posMove.y < -9 ? -9 : posMove.y;
+            posMove.x = posMove.x > GameKey.MAP_MAX_X ? GameKey.MAP_MAX_X : posMove.x;
+            posMove.x = posMove.x < GameKey.MAP_MIN_X ? GameKey.MAP_MIN_X : posMove.x;
+            posMove.y = posMove.y > GameKey.MAP_MAX_Y ? GameKey.MAP_MAX_Y : posMove.y;
+            posMove.y = posMove.y < GameKey.MAP_MIN_Y ? GameKey.MAP_MIN_Y : posMove.y;
             _rb.MovePosition(posMove);
             _animancer.Play(clips[(int)AnimPotato.Move]);
         }
@@ -47,10 +48,9 @@ public class PotatoMediator : Character
         void FlipFace()
         {
             _facingRight = !_facingRight;
-            var trans = transform;
-            Vector3 tempLocalScale = trans.localScale;
-            tempLocalScale.x *= -1; 
-            trans.localScale = tempLocalScale; 
+            var trans = potatoBody;
+            
+            trans.eulerAngles = new Vector3 (0, _facingRight ? 0 : 180, 0);
         }
     }
 }

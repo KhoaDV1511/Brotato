@@ -2,12 +2,23 @@ using UnityEngine;
 
 public static class Extension
 {
-    public static void Show(this Component obj)
+    public static void Hide(this GameObject obj)
     {
-        obj.gameObject.SetActive(true);
+        obj.SetActive(false);
     }
-    public static void Hide(this Component obj)
+
+    public static void Hide(this Component component)
     {
-        obj.gameObject.SetActive(false);
+        component.gameObject.SetActive(false);
+    }
+
+    public static void Show(this GameObject obj)
+    {
+        obj.SetActive(true);
+    }
+
+    public static void Show(this Component o)
+    {
+        o.gameObject.SetActive(true);
     }
 }
