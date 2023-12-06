@@ -9,8 +9,8 @@ public class Gun : Weapon
     private void Start()
     {
         attackSpeed = 1;
-        attackRange = 4;
-        radius = 4;
+        attackRange = 5;
+        radius = 5;
         DetectAndAttackTarget();
     }
 

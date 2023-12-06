@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
-        _speed = 10;
+        _speed = 30;
     }
 
     private void Update()

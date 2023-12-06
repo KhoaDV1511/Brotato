@@ -27,11 +27,8 @@ public class PotatoMediator : Character
         if (horizontal != 0)
         {
             Vector2 posMove = _rb.position + _move * (speed * Time.fixedDeltaTime);
-            posMove.x = posMove.x > GameKey.MAP_MAX_X ? GameKey.MAP_MAX_X : posMove.x;
-            posMove.x = posMove.x < GameKey.MAP_MIN_X ? GameKey.MAP_MIN_X : posMove.x;
-            posMove.y = posMove.y > GameKey.MAP_MAX_Y ? GameKey.MAP_MAX_Y : posMove.y;
-            posMove.y = posMove.y < GameKey.MAP_MIN_Y ? GameKey.MAP_MIN_Y : posMove.y;
-            _rb.MovePosition(posMove);
+            
+            _rb.MovePosition(MoveWithLimited(posMove));
             _animancer.Play(clips[(int)AnimPotato.Move]);
         }
         else

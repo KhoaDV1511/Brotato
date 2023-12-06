@@ -1,53 +1,54 @@
 using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class EnemyCloseCombat : Character
 {
+    [SerializeField] private CloseCombat closeCombat;
     private Camera _camera;
     private Vector3 _enemyMoveNotVisible;
+
+    private Coroutine _insideCam;
 
     private void Start()
     {
         _camera = Camera.main;
-        radius = 9.5f;
         speed = 2;
-        attackSpeed = 1;
-        attackRange = 0.7f;
-
-        DetectAndAttackTarget();
+        
+        CheckInSideCam();
     }
 
     private void Update()
     {
-        if (Vector3.Distance(transform.position, targetPosMin) > radius)
+        if (closeCombat.enemyInsideArea.Length <= 0)
         {
             var position = transform.position;
-            position = Vector3.MoveTowards(position, _enemyMoveNotVisible, speed * Time.deltaTime);
+            position = Vector3.MoveTowards(position, MoveWithLimited(_enemyMoveNotVisible), speed * Time.deltaTime);
             transform.position = position;
         }
         else
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetPosMin, speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, closeCombat.targetPosMin, speed * Time.deltaTime);
         }
     }
 
-    protected override void DetectAndAttackTarget()
+    private void CheckInSideCam()
     {
-        base.DetectAndAttackTarget();
-        Attack();
+        if(_insideCam != null) StopCoroutine(_insideCam);
+        _insideCam = StartCoroutine(InsideCamera());
     }
 
-    private void Attack()
+    private IEnumerator InsideCamera()
     {
-        if (IsVisible(_camera, targetPosMin))
+        if (IsVisible(_camera, transform.position))
         {
-            radius = 9.5f;
+            closeCombat.radius = 9.5f;
         }
         else
         {
-            radius = 4.75f;
+            closeCombat.radius = 4.75f;
             var position = transform.position;
             var posX = Random.Range(position.x - 2, position.x + 2);
             var posY = Random.Range(position.y - 2, position.y + 2);
@@ -69,5 +70,8 @@ public class EnemyCloseCombat : Character
 
             return true;
         }
+
+        yield return new WaitForSeconds(1f);
+        CheckInSideCam();
     }
 }

@@ -1,21 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class Weapon : MonoBehaviour
 {
     [SerializeField] LayerMask mask;
-    protected Collider2D[] enemyInsideArea;
-    protected Vector3 targetPosMin;
+    public Collider2D[] enemyInsideArea;
+    public Vector3 targetPosMin;
     private Coroutine _sweep;
     private readonly List<Vector3> _enemyPos = new List<Vector3>();
     private readonly List<float> _distanceEnemy = new List<float>();
     
     protected float attackSpeed;
     protected float attackRange;
-    protected float radius;
-    protected float speed;
+    public float radius;
+    protected virtual void LookAtTarget(Vector3 target, Transform weaponPos)
+    {
+        weaponPos.right = target - weaponPos.position;
+    }
     
     protected virtual void DetectAndAttackTarget()
     {
