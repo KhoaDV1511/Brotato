@@ -74,4 +74,12 @@ public class EnemyCloseCombat : Character
         yield return new WaitForSeconds(1f);
         CheckInSideCam();
     }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag($"Bullet"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

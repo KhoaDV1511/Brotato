@@ -1,0 +1,102 @@
+[
+  {
+    "Turn": 1,
+    "Turn Reload Base": 3,
+    "Enemy Quant Base": 4
+  },
+  {
+    "Turn": 2,
+    "Turn Reload Base": 3,
+    "Enemy Quant Base": 4
+  },
+  {
+    "Turn": 3,
+    "Turn Reload Base": 3,
+    "Enemy Quant Base": 4
+  },
+  {
+    "Turn": 4,
+    "Turn Reload Base": 3,
+    "Enemy Quant Base": 4
+  },
+  {
+    "Turn": 5,
+    "Turn Reload Base": 3,
+    "Enemy Quant Base": 4
+  },
+  {
+    "Turn": 6,
+    "Turn Reload Base": "2,8",
+    "Enemy Quant Base": 4
+  },
+  {
+    "Turn": 7,
+    "Turn Reload Base": "2,8",
+    "Enemy Quant Base": 4
+  },
+  {
+    "Turn": 8,
+    "Turn Reload Base": "2,8",
+    "Enemy Quant Base": 4
+  },
+  {
+    "Turn": 9,
+    "Turn Reload Base": "2,8",
+    "Enemy Quant Base": 4
+  },
+  {
+    "Turn": 10,
+    "Turn Reload Base": "2,8",
+    "Enemy Quant Base": 4
+  },
+  {
+    "Turn": 11,
+    "Turn Reload Base": "2,6",
+    "Enemy Quant Base": 6
+  },
+  {
+    "Turn": 12,
+    "Turn Reload Base": "2,6",
+    "Enemy Quant Base": 6
+  },
+  {
+    "Turn": 13,
+    "Turn Reload Base": "2,6",
+    "Enemy Quant Base": 6
+  },
+  {
+    "Turn": 14,
+    "Turn Reload Base": "2,6",
+    "Enemy Quant Base": 6
+  },
+  {
+    "Turn": 15,
+    "Turn Reload Base": "2,6",
+    "Enemy Quant Base": 6
+  },
+  {
+    "Turn": 16,
+    "Turn Reload Base": "2,4",
+    "Enemy Quant Base": 6
+  },
+  {
+    "Turn": 17,
+    "Turn Reload Base": "2,4",
+    "Enemy Quant Base": 6
+  },
+  {
+    "Turn": 18,
+    "Turn Reload Base": "2,4",
+    "Enemy Quant Base": 6
+  },
+  {
+    "Turn": 19,
+    "Turn Reload Base": "2,4",
+    "Enemy Quant Base": 6
+  },
+  {
+    "Turn": 20,
+    "Turn Reload Base": "2,4",
+    "Enemy Quant Base": 6
+  }
+]

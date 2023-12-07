@@ -1,10 +1,13 @@
 using System;
+using Cinemachine.Utility;
 using UnityEngine;
 
 public class Gun : Weapon
 {
     [SerializeField] private SpriteRenderer sprGun;
     [SerializeField] private Projectile projectile;
+    
+    private readonly PotatoModel _potatoModel = PotatoModel.Instance;
 
     private void Start()
     {
@@ -16,12 +19,24 @@ public class Gun : Weapon
 
     private void Update()
     {
-        LookAtTarget(targetPosMin, transform);
+        var target = enemyInsideArea.Length <= 0 ? Direction() : targetPosMin;
+        LookAtTarget(target, transform);
+
+        Vector3 Direction()
+        {
+            var position = transform.position;
+            return _potatoModel.facingRight ? new Vector3(position.x + 100, position.y) : new Vector3(position.x - 100, position.y);
+        }
     }
 
     protected override void LookAtTarget(Vector3 target, Transform weaponPos)
     {
         base.LookAtTarget(target, weaponPos);
+        if(enemyInsideArea.Length <= 0)
+        {
+            sprGun.flipY = false;
+            return;
+        }
         Flip(target, weaponPos);
     }
 

@@ -16,7 +16,13 @@ public class Projectile : MonoBehaviour
         Transform trans;
         (trans = transform).position = Vector3.MoveTowards(transform.position, target, _speed * Time.deltaTime);
         trans.right = target - trans.position;
-        
-        if(Vector3.Distance(trans.position, target) < 0.5f) Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag($"Enemy"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

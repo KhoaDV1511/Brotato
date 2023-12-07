@@ -7,7 +7,7 @@ public class Character : MonoBehaviour
 {
     protected float speed;
 
-    protected Vector2 MoveWithLimited(Vector2 posMove)
+    public Vector2 MoveWithLimited(Vector2 posMove)
     {
         posMove.x = posMove.x > GameKey.MAP_MAX_X ? GameKey.MAP_MAX_X : posMove.x;
         posMove.x = posMove.x < GameKey.MAP_MIN_X ? GameKey.MAP_MIN_X : posMove.x;

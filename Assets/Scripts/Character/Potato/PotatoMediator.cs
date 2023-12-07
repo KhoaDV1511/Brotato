@@ -7,9 +7,10 @@ public class PotatoMediator : Character
     [SerializeField] private AnimationClip[] clips;
     [SerializeField] private Transform potatoBody;
     
+    private readonly PotatoModel _potatoModel = PotatoModel.Instance;
+    
     private AnimancerComponent _animancer;
     private Rigidbody2D _rb;
-    private bool _facingRight = true;
     private Vector2 _move;
 
     private void Start()
@@ -29,6 +30,7 @@ public class PotatoMediator : Character
             Vector2 posMove = _rb.position + _move * (speed * Time.fixedDeltaTime);
             
             _rb.MovePosition(MoveWithLimited(posMove));
+            _potatoModel.potatoPos = MoveWithLimited(posMove);
             _animancer.Play(clips[(int)AnimPotato.Move]);
         }
         else
@@ -37,18 +39,24 @@ public class PotatoMediator : Character
         }
         switch (horizontal)
         {
-            case < 0 when _facingRight:
-            case > 0 when !_facingRight:
+            case < 0 when _potatoModel.facingRight:
+            case > 0 when !_potatoModel.facingRight:
                 FlipFace();
                 break;
         }
         void FlipFace()
         {
-            _facingRight = !_facingRight;
+            _potatoModel.facingRight = !_potatoModel.facingRight;
             var trans = potatoBody;
             
-            trans.eulerAngles = new Vector3 (0, _facingRight ? 0 : 180, 0);
+            trans.eulerAngles = new Vector3 (0, _potatoModel.facingRight ? 0 : 180, 0);
         }
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(transform.position, 3);
+        Gizmos.DrawWireSphere(transform.position, 7);
     }
 }
 
