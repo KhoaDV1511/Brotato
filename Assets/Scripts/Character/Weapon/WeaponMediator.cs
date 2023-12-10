@@ -10,9 +10,3 @@ public class WeaponMediator : MonoBehaviour
         obj.transform.position = new Vector3(0, 0.25f, 0);
     }
 }
-
-public enum TypeWeapon
-{
-    Gun,
-    Stick
-}

@@ -25,7 +25,7 @@ public class EnemyCloseCombat : Character
         if (closeCombat.enemyInsideArea.Length <= 0)
         {
             var position = transform.position;
-            position = Vector3.MoveTowards(position, MoveWithLimited(_enemyMoveNotVisible), speed * Time.deltaTime);
+            position = Vector3.MoveTowards(position, _enemyMoveNotVisible.MapLimited(), speed * Time.deltaTime);
             transform.position = position;
         }
         else

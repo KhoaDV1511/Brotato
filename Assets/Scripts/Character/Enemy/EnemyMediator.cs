@@ -72,12 +72,11 @@ public class EnemyMediator : MonoBehaviour
         }
     }
 
-    private Vector2 PositionAppear()
+    private Vector3 PositionAppear()
     {
-        var r1 = 3;
-        var r2 = 7;
-        var direction = new Vector2(Random.Range(-1, 1f), Random.Range(-1, 1f)).normalized;
-        return direction * Random.Range(3f, 7f);
+        var direction = new Vector3(Random.Range(-1, 1f), Random.Range(-1, 1f)).normalized * Random.Range(PotatoKey.DISTANCE_MIN, PotatoKey.DISTANCE_MAX);
+        direction = new Vector3(direction.x + _potatoModel.potatoPos.x, direction.y + _potatoModel.potatoPos.y);
+        return  direction.MapLimited();
     }
 }
 

@@ -67,4 +67,14 @@ public static class Extension
         yield return new WaitForSeconds(delay);
         cb.Invoke();
     }
+    
+    public static Vector3 MapLimited(this Vector3 posMove)
+    {
+        posMove.x = posMove.x > PotatoKey.MAP_MAX_X ? PotatoKey.MAP_MAX_X : posMove.x;
+        posMove.x = posMove.x < PotatoKey.MAP_MIN_X ? PotatoKey.MAP_MIN_X : posMove.x;
+        posMove.y = posMove.y > PotatoKey.MAP_MAX_Y ? PotatoKey.MAP_MAX_Y : posMove.y;
+        posMove.y = posMove.y < PotatoKey.MAP_MIN_Y ? PotatoKey.MAP_MIN_Y : posMove.y;
+        posMove.z = 0;
+        return posMove;
+    }
 }

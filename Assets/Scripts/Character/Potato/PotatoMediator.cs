@@ -27,10 +27,10 @@ public class PotatoMediator : Character
         _move = new Vector2(horizontal, vertical);
         if (horizontal != 0)
         {
-            Vector2 posMove = _rb.position + _move * (speed * Time.fixedDeltaTime);
+            Vector3 posMove = _rb.position + _move * (speed * Time.fixedDeltaTime);
             
-            _rb.MovePosition(MoveWithLimited(posMove));
-            _potatoModel.potatoPos = MoveWithLimited(posMove);
+            _rb.MovePosition(posMove.MapLimited());
+            _potatoModel.potatoPos = posMove;
             _animancer.Play(clips[(int)AnimPotato.Move]);
         }
         else

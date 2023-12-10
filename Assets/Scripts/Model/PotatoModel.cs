@@ -2,6 +2,6 @@ using UnityEngine;
 
 public class PotatoModel : Singleton<PotatoModel>
 {
-    public Vector2 potatoPos;
+    public Vector3 potatoPos;
     public bool facingRight = true;
 }
