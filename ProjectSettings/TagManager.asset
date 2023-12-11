@@ -9,8 +9,8 @@ TagManager:
   - footR
   - Flash
   - area
-  - Bullet
   - Enemy
+  - Weapon
   layers:
   - Default
   - TransparentFX

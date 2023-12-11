@@ -77,4 +77,9 @@ public static class Extension
         posMove.z = 0;
         return posMove;
     }
+    public static T Cast<T>(this MonoBehaviour mono) where T : class
+    {
+        var t = mono as T;
+        return t;
+    }
 }

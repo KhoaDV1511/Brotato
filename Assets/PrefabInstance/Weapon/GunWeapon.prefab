@@ -1,5 +1,57 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2076391127081581063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3657105574972341819}
+  - component: {fileID: 8362309613256642701}
+  m_Layer: 0
+  m_Name: HandleGun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3657105574972341819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076391127081581063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3534103945624310365}
+  m_Father: {fileID: 1010361895395143272}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8362309613256642701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076391127081581063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f2d192e9c9541388cf9b3ef48bcbe55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mask:
+    serializedVersion: 2
+    m_Bits: 8192
+  enemyInsideArea: []
+  targetPosMin: {x: 0, y: 0, z: 0}
+  radius: 0
+  projectile: {fileID: 6633765561129217758}
 --- !u!1 &2486771915057580772
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,7 +66,7 @@ GameObject:
   - component: {fileID: 5102981741531937688}
   m_Layer: 0
   m_Name: Projectile
-  m_TagString: Bullet
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,7 +186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1010361895395143272}
-  - component: {fileID: -8322881648486431392}
+  - component: {fileID: 4339226493836938610}
   m_Layer: 0
   m_Name: GunWeapon
   m_TagString: Untagged
@@ -154,12 +206,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3534103945624310365}
   - {fileID: 3534103944743794148}
+  - {fileID: 3657105574972341819}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-8322881648486431392
+--- !u!114 &4339226493836938610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,8 +223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c947fb18921345fcb47d4f93ed83d9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guns: {fileID: 3534103944743794148}
-  gun: {fileID: 5733419307566447166}
+  weapons: {fileID: 3534103944743794148}
+  weapon: {fileID: 8362309613256642701}
+  sprWeapon: {fileID: 3534103945624310354}
 --- !u!1 &3534103944743794151
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,7 +255,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1010361895395143272}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3534103945624310364
 GameObject:
@@ -214,14 +267,13 @@ GameObject:
   m_Component:
   - component: {fileID: 3534103945624310365}
   - component: {fileID: 3534103945624310354}
-  - component: {fileID: 5733419307566447166}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3534103945624310365
 Transform:
   m_ObjectHideFlags: 0
@@ -235,7 +287,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1723829924302012432}
-  m_Father: {fileID: 1010361895395143272}
+  m_Father: {fileID: 3657105574972341819}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3534103945624310354
@@ -290,23 +342,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5733419307566447166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3534103945624310364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f2d192e9c9541388cf9b3ef48bcbe55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mask:
-    serializedVersion: 2
-    m_Bits: 8192
-  enemyInsideArea: []
-  targetPosMin: {x: 0, y: 0, z: 0}
-  radius: 0
-  sprGun: {fileID: 3534103945624310354}
-  projectile: {fileID: 6633765561129217758}

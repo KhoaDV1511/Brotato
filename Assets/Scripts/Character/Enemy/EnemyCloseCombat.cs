@@ -6,7 +6,6 @@ using Random = UnityEngine.Random;
 
 public class EnemyCloseCombat : Character
 {
-    [SerializeField] private CloseCombat closeCombat;
     private Camera _camera;
     private Vector3 _enemyMoveNotVisible;
 
@@ -15,23 +14,44 @@ public class EnemyCloseCombat : Character
     private void Start()
     {
         _camera = Camera.main;
-        speed = 2;
-        
+
+        InitEnemy();
+        DetectAndAttackTarget();
         CheckInSideCam();
     }
 
     private void Update()
     {
-        if (closeCombat.enemyInsideArea.Length <= 0)
+        var positionTrans = transform.position;
+        if (enemyInsideArea.Length <= 0)
         {
-            var position = transform.position;
-            position = Vector3.MoveTowards(position, _enemyMoveNotVisible.MapLimited(), speed * Time.deltaTime);
-            transform.position = position;
+            positionTrans = Vector3.MoveTowards(positionTrans, _enemyMoveNotVisible.MapLimited(), speed * Time.deltaTime);
+            transform.position = positionTrans;
         }
         else
         {
-            transform.position = Vector3.MoveTowards(transform.position, closeCombat.targetPosMin, speed * Time.deltaTime);
+            transform.position = Vector3.Distance(positionTrans, targetPosMin) < 0.5f ? positionTrans : Vector3.MoveTowards(transform.position, targetPosMin, speed * Time.deltaTime);
         }
+    }
+
+    private void InitEnemy()
+    {
+        speed = 2;
+        radius = 9.5f;
+        attackSpeed = 1;
+        attackRange = 0.7f;
+    }
+    
+    protected override void DetectAndAttackTarget()
+    {
+        base.DetectAndAttackTarget();
+        if(enemyInsideArea.Length > 0 && Vector3.Distance(targetPosMin, transform.position) <= attackRange)
+            Attack();
+    }
+
+    private void Attack()
+    {
+        
     }
 
     private void CheckInSideCam()
@@ -44,11 +64,11 @@ public class EnemyCloseCombat : Character
     {
         if (IsVisible(_camera, transform.position))
         {
-            closeCombat.radius = 9.5f;
+            radius = 9.5f;
         }
         else
         {
-            closeCombat.radius = 4.75f;
+            radius = 4.75f;
             var position = transform.position;
             var posX = Random.Range(position.x - 2, position.x + 2);
             var posY = Random.Range(position.y - 2, position.y + 2);
@@ -77,7 +97,7 @@ public class EnemyCloseCombat : Character
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag($"Bullet"))
+        if (col.CompareTag("Weapon"))
         {
             Destroy(gameObject);
         }

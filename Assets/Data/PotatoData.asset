@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a906e29537d842a78375e4733622ee88, type: 3}
+  m_Name: PotatoData
+  m_EditorClassIdentifier: 
+  potatoes:
+  - id: 1
+    rarity: 0
+    name: Potato_1
+    typeWeapon: 1
+  - id: 2
+    rarity: 0
+    name: Potato_2
+    typeWeapon: 0
+  - id: 3
+    rarity: 0
+    name: Potato_3
+    typeWeapon: 0
+  - id: 4
+    rarity: 0
+    name: Potato_4
+    typeWeapon: 0
+  - id: 5
+    rarity: 0
+    name: Potato_5
+    typeWeapon: 0
+  - id: 6
+    rarity: 0
+    name: Potato_6
+    typeWeapon: 0
+  - id: 7
+    rarity: 0
+    name: Potato_7
+    typeWeapon: 0
+  - id: 8
+    rarity: 0
+    name: Potato_8
+    typeWeapon: 0
+  - id: 9
+    rarity: 0
+    name: Potato_9
+    typeWeapon: 0
+  - id: 10
+    rarity: 0
+    name: Potato_10
+    typeWeapon: 0
+  weapons:
+  - id: 1
+    rarity: 0
+    name: Weapon_1
+    typeWeapon: 0
+  - id: 2
+    rarity: 0
+    name: Weapon_2
+    typeWeapon: 1
+  - id: 3
+    rarity: 0
+    name: Weapon_3
+    typeWeapon: 1
+  - id: 4
+    rarity: 0
+    name: Weapon_4
+    typeWeapon: 0
+  - id: 5
+    rarity: 0
+    name: Weapon_5
+    typeWeapon: 0
+  - id: 6
+    rarity: 0
+    name: Weapon_6
+    typeWeapon: 1
+  - id: 7
+    rarity: 0
+    name: Weapon_7
+    typeWeapon: 1
+  - id: 8
+    rarity: 0
+    name: Weapon_8
+    typeWeapon: 1
+  - id: 9
+    rarity: 0
+    name: Weapon_9
+    typeWeapon: 1

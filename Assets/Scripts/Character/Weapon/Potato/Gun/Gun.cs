@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Gun : Weapon
 {
-    [SerializeField] private SpriteRenderer sprGun;
     [SerializeField] private Projectile projectile;
     
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
@@ -12,8 +11,8 @@ public class Gun : Weapon
     private void Start()
     {
         attackSpeed = 1;
-        attackRange = 5;
-        radius = 5;
+        attackRange = 6;
+        radius = 7;
         DetectAndAttackTarget();
     }
 
@@ -25,28 +24,25 @@ public class Gun : Weapon
         Vector3 Direction()
         {
             var position = transform.position;
-            return _potatoModel.facingRight ? new Vector3(position.x + 100, position.y) : new Vector3(position.x - 100, position.y);
+            return _potatoModel.facingRight ? new Vector3(position.x + 1, position.y) : new Vector3(position.x - 1, position.y);
         }
     }
 
     protected override void LookAtTarget(Vector3 target, Transform weaponPos)
     {
         base.LookAtTarget(target, weaponPos);
-        if(enemyInsideArea.Length <= 0)
-        {
-            sprGun.flipY = false;
-            return;
-        }
+        
         Flip(target, weaponPos);
     }
 
     private void Flip(Vector3 target, Transform weaponPos)
     {
-        sprGun.flipY = target.x < weaponPos.position.x;
+        transform.localScale = new Vector2 (1, target.x > weaponPos.position.x ? 1 : -1); 
     }
 
-    private void Attack()
+    protected override void Attack()
     {
+        base.Attack();
         var objBullet = Instantiate(projectile, transform);
         objBullet.target = targetPosMin;
         objBullet.Show();
@@ -55,7 +51,7 @@ public class Gun : Weapon
     protected override void DetectAndAttackTarget()
     {
         base.DetectAndAttackTarget();
-        if(enemyInsideArea.Length > 0)
+        if(enemyInsideArea.Length > 0 && Vector3.Distance(targetPosMin, transform.position) <= attackRange)
             Attack();
     }
 

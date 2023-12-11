@@ -93,7 +93,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7244811128583281358}
-  - component: {fileID: 7244811128583281359}
   m_Layer: 13
   m_Name: CloseCombat
   m_TagString: Untagged
@@ -116,24 +115,6 @@ Transform:
   m_Father: {fileID: 7244811129355822419}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7244811128583281359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7244811128583281353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95cbbf1aae1d478a83ede185e0569323, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mask:
-    serializedVersion: 2
-    m_Bits: 512
-  enemyInsideArea: []
-  targetPosMin: {x: 0, y: 0, z: 0}
-  radius: 0
 --- !u!1 &7244811129355822418
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +185,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a659d3df6574428cbf5d6c1ebe38c6ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeCombat: {fileID: 7244811128583281359}
+  mask:
+    serializedVersion: 2
+    m_Bits: 512
+  enemyInsideArea: []
+  targetPosMin: {x: 0, y: 0, z: 0}
+  radius: 0
 --- !u!50 &2732478692117997819
 Rigidbody2D:
   serializedVersion: 4

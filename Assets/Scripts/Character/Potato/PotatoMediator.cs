@@ -1,17 +1,31 @@
 using System;
 using Animancer;
 using UnityEngine;
+using UnityEngine.U2D;
+
 public class PotatoMediator : Character
 {
     [SerializeField] private Joystick joystick;
     [SerializeField] private AnimationClip[] clips;
     [SerializeField] private Transform potatoBody;
+    [SerializeField] private RenderPotato renderPotato;
     
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
+    private readonly RenderPotatoSignals _renderPotatoSignals = Signals.Get<RenderPotatoSignals>();
     
     private AnimancerComponent _animancer;
     private Rigidbody2D _rb;
     private Vector2 _move;
+
+    private void OnEnable()
+    {
+        _renderPotatoSignals.AddListener(RenderPotato);
+    }
+
+    private void OnDisable()
+    {
+        _renderPotatoSignals.RemoveListener(RenderPotato);
+    }
 
     private void Start()
     {
@@ -19,6 +33,14 @@ public class PotatoMediator : Character
         speed = 5;
         _animancer = GetComponent<AnimancerComponent>();
         _animancer.Play(clips[(int)AnimPotato.Idle]);
+        
+    }
+
+    private void RenderPotato()
+    {
+        renderPotato.RenderEyes(_potatoModel.potatoId);
+        renderPotato.RenderHairs(_potatoModel.potatoId);
+        renderPotato.RenderMouths(_potatoModel.potatoId);
     }
     private void FixedUpdate()
     {
@@ -60,9 +82,54 @@ public class PotatoMediator : Character
     }
 }
 
+[Serializable]
+public class RenderPotato
+{
+    [SerializeField] private SpriteRenderer[] potato;
+    private static string[] names = { "PotatoEyes", "PotatoMouth", "PotatoHair"};
+    private static SpriteAtlas[] _potatoAtlas;
+    private static SpriteAtlas[] PotatoAtlas
+    {
+        get
+        {
+            for (var i = 0; i < names.Length; i++)
+            {
+                if (_potatoAtlas[i] == null) _potatoAtlas[i] = Resources.Load<SpriteAtlas>($"SpriteAtlas/{names[i]}");
+            }
+
+            return _potatoAtlas;
+        }
+    }
+
+    private Sprite GetSprite(int id, TypeBody typeBody)
+    {
+        return PotatoAtlas[(int)typeBody].GetSprite($"{typeBody.ToString()}_{id}");
+    }
+
+    public void RenderEyes(int id)
+    {
+        potato[(int)TypeBody.Eyes].sprite = GetSprite(id, TypeBody.Eyes);
+    }
+    public void RenderMouths(int id)
+    {
+        potato[(int)TypeBody.Mouth].sprite = GetSprite(id, TypeBody.Mouth);
+    }
+    public void RenderHairs(int id)
+    {
+        potato[(int)TypeBody.Hair].sprite = GetSprite(id, TypeBody.Hair);
+    }
+}
 public enum AnimPotato
 {
     Idle,
     Move,
     Death
+}
+
+public enum TypeBody
+{
+    Eyes,
+    Mouth,
+    Hair,
+    Weapon
 }

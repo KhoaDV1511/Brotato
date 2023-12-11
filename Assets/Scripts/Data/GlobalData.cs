@@ -1,20 +1,17 @@
+using System;
 using UnityEngine;
 
 public class GlobalData : MonoBehaviour
 {
     public EnemyData enemyData;
+    public PotatoData potatoData;
 
     private static GlobalData _ins;
-    public static GlobalData Ins
-    {
-        get
-        {
-            if (!_ins)
-            {
-                _ins = FindObjectOfType<GlobalData>();
-            }
 
-            return _ins;
-        }
+    private void Awake()
+    {
+        _ins = this;
     }
+
+    public static GlobalData Ins => _ins;
 }

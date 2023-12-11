@@ -11,21 +11,21 @@ public class EnemyData : ScriptableObject
     public List<TimePerWave> timePerWaves = new List<TimePerWave>();
     public TextAsset data;
 
-    [ContextMenu("LoadDAta")]
-    public void ReadData()
-    {
-        waveEnemies.Clear();
-        var jarray = JArray.Parse(data.text);
-        foreach (var j in jarray)
-        {
-            Debug.Log(j);
-            var turn = int.Parse(j["Turn"]!.ToString());
-            var turnReloadBase = float.Parse(j["Turn Reload Base"]!.ToString().Replace(",", "."));
-            var enemyQuantBase = int.Parse(j["Enemy Quant Base"]!.ToString());
-            waveEnemies.Add(new WaveEnemy(turn, turnReloadBase, enemyQuantBase));
-        }
-        
-    }
+    // [ContextMenu("LoadDAta")]
+    // public void ReadData()
+    // {
+    //     waveEnemies.Clear();
+    //     var jarray = JArray.Parse(data.text);
+    //     foreach (var j in jarray)
+    //     {
+    //         Debug.Log(j);
+    //         var turn = int.Parse(j["Turn"]!.ToString());
+    //         var turnReloadBase = float.Parse(j["Turn Reload Base"]!.ToString().Replace(",", "."));
+    //         var enemyQuantBase = int.Parse(j["Enemy Quant Base"]!.ToString());
+    //         waveEnemies.Add(new WaveEnemy(turn, turnReloadBase, enemyQuantBase));
+    //     }
+    //     
+    // }
 }
 
 [Serializable]
