@@ -11,8 +11,9 @@ public class PotatoEquipmentMediator : MonoBehaviour, IEnhancedScrollerDelegate
     [SerializeField] private EnhancedScrollerCellView cellPotatoPrefab, cellWeaponPrefab;
     [SerializeField] private Button btnNext;
 
+    private readonly PotatoModel _potatoModel = PotatoModel.Instance;
     private List<Potato> _potatoes => GlobalData.Ins.potatoData.potatoes;
-    private List<Weapons> _weapons => GlobalData.Ins.potatoData.weapons;
+    private List<Weapons> _weapons = new();
 
     private ChooseProgress _chooseProgress;
 
@@ -20,6 +21,11 @@ public class PotatoEquipmentMediator : MonoBehaviour, IEnhancedScrollerDelegate
     {
         scroll.Delegate = this;
         _chooseProgress = ChooseProgress.PotatoCharacter;
+    }
+
+    private void OnEnable()
+    {
+        _weapons = GlobalData.Ins.potatoData.weapons;
     }
 
     private void Start()
@@ -33,6 +39,8 @@ public class PotatoEquipmentMediator : MonoBehaviour, IEnhancedScrollerDelegate
         if (_chooseProgress == ChooseProgress.PotatoCharacter)
         {
             _chooseProgress = ChooseProgress.Weapon;
+            _weapons = _weapons.FindAll(w =>
+                w.typeWeapon == _potatoes.Find(p => p.id == _potatoModel.potatoId).typeWeapon);
             scroll.ReloadData();
         }
         else

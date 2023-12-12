@@ -6,9 +6,9 @@ using UnityEngine.U2D;
 
 public class WeaponMediator : MonoBehaviour
 {
-    [SerializeField] private WeaponGroup[] weaponGroup;
+    [SerializeField] private Weapon[] weaponGroup;
 
-    private RenderWeapon _renderWeapon;
+    private readonly RenderWeapon _renderWeapon = new RenderWeapon();
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
     private List<Weapons> _weapons => GlobalData.Ins.potatoData.weapons;
     private readonly RenderPotatoSignals _renderPotatoSignals = Signals.Get<RenderPotatoSignals>();
@@ -27,11 +27,10 @@ public class WeaponMediator : MonoBehaviour
     {
         var obj = Instantiate(weaponGroup[(int)_weapons[_potatoModel.weaponId].typeWeapon].gameObject, transform);
         obj.transform.position = new Vector3(0, 0.1f, 0);
-        weaponGroup[(int)_weapons[_potatoModel.weaponId].typeWeapon].SetData(_renderWeapon.GetSprite(_potatoModel.weaponId));
+        weaponGroup[(int)_weapons[_potatoModel.weaponId].typeWeapon].SetWeapon(_renderWeapon.GetSprite(_potatoModel.weaponId));
     }
 }
 
-[Serializable]
 public class RenderWeapon
 {
     private static SpriteAtlas _weaponAtlas;
@@ -47,6 +46,7 @@ public class RenderWeapon
 
     public Sprite GetSprite(int id)
     {
+        Debug.Log($"{TypeBody.Weapon.ToString()}_{id}");
         return WeaponAtlas.GetSprite($"{TypeBody.Weapon.ToString()}_{id}");
     }
 }

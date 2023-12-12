@@ -8,7 +8,7 @@ public class PotatoMediator : Character
     [SerializeField] private Joystick joystick;
     [SerializeField] private AnimationClip[] clips;
     [SerializeField] private Transform potatoBody;
-    [SerializeField] private RenderPotato renderPotato;
+    [SerializeField] private RenderPotato renderPotato = new RenderPotato();
     
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
     private readonly RenderPotatoSignals _renderPotatoSignals = Signals.Get<RenderPotatoSignals>();
@@ -87,23 +87,17 @@ public class RenderPotato
 {
     [SerializeField] private SpriteRenderer[] potato;
     private static string[] names = { "PotatoEyes", "PotatoMouth", "PotatoHair"};
-    private static SpriteAtlas[] _potatoAtlas;
-    private static SpriteAtlas[] PotatoAtlas
+    private static SpriteAtlas _potatoAtlas;
+    private static SpriteAtlas PotatoAtlas(TypeBody typeBody)
     {
-        get
-        {
-            for (var i = 0; i < names.Length; i++)
-            {
-                if (_potatoAtlas[i] == null) _potatoAtlas[i] = Resources.Load<SpriteAtlas>($"SpriteAtlas/{names[i]}");
-            }
+        if (_potatoAtlas == null) _potatoAtlas = Resources.Load<SpriteAtlas>($"SpriteAtlas/{names[(int)typeBody]}");
 
-            return _potatoAtlas;
-        }
+        return _potatoAtlas;
     }
 
     private Sprite GetSprite(int id, TypeBody typeBody)
     {
-        return PotatoAtlas[(int)typeBody].GetSprite($"{typeBody.ToString()}_{id}");
+        return PotatoAtlas(typeBody).GetSprite($"{typeBody.ToString()}_{id}");
     }
 
     public void RenderEyes(int id)

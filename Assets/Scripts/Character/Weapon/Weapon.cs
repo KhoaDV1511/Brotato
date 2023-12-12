@@ -6,6 +6,12 @@ using UnityEngine;
 
 public class Weapon : Character
 {
+    [SerializeField] private SpriteRenderer sprWeapon;
+
+    public void SetWeapon(Sprite weapon)
+    {
+        sprWeapon.sprite = weapon;
+    }
     private float RotationSpeed => enemyInsideArea.Length <= 0 ? 20 : 50;
     protected virtual void LookAtTarget(Vector3 target, Transform weaponPos)
     {

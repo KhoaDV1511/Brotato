@@ -728,6 +728,7 @@ PlayerSettings:
   webGLPowerPreference: 0
   scriptingDefineSymbols:
     Android: ODIN_INSPECTOR
+    Standalone: ODIN_INSPECTOR
     iPhone: ODIN_INSPECTOR
   additionalCompilerArguments: {}
   platformArchitecture: {}
