@@ -20,7 +20,6 @@ public class PotatoItem : EnhancedScrollerCellView
 
     private void OnClick()
     {
-        Debug.Log(_id);
         _potatoModel.potatoId = _id;
     }
 

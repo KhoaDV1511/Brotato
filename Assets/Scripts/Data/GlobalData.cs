@@ -8,10 +8,12 @@ public class GlobalData : MonoBehaviour
 
     private static GlobalData _ins;
 
-    private void Awake()
+    public static GlobalData Ins
     {
-        _ins = this;
+        get
+        {
+            if (_ins == null) _ins = FindObjectOfType<GlobalData>();
+            return _ins;
+        }
     }
-
-    public static GlobalData Ins => _ins;
 }

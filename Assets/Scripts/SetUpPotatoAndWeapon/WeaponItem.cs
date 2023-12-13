@@ -18,7 +18,6 @@ public class WeaponItem : EnhancedScrollerCellView
 
     private void OnClick()
     {
-        Debug.Log(_id);
         _potatoModel.weaponId = _id;
     }
     public void SetData(Weapons weapons)

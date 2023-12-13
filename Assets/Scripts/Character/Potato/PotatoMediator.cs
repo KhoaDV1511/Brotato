@@ -11,7 +11,7 @@ public class PotatoMediator : Character
     [SerializeField] private RenderPotato renderPotato = new RenderPotato();
     
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
-    private readonly RenderPotatoSignals _renderPotatoSignals = Signals.Get<RenderPotatoSignals>();
+    private readonly StartGameSignals _startGameSignals = Signals.Get<StartGameSignals>();
     
     private AnimancerComponent _animancer;
     private Rigidbody2D _rb;
@@ -19,12 +19,12 @@ public class PotatoMediator : Character
 
     private void OnEnable()
     {
-        _renderPotatoSignals.AddListener(RenderPotato);
+        _startGameSignals.AddListener(RenderPotato);
     }
 
     private void OnDisable()
     {
-        _renderPotatoSignals.RemoveListener(RenderPotato);
+        _startGameSignals.RemoveListener(RenderPotato);
     }
 
     private void Start()
@@ -47,10 +47,11 @@ public class PotatoMediator : Character
         var horizontal = joystick.Horizontal;
         var vertical = joystick.Vertical;
         _move = new Vector2(horizontal, vertical);
+        
         if (horizontal != 0)
         {
             Vector3 posMove = _rb.position + _move * (speed * Time.fixedDeltaTime);
-            
+            _potatoModel.moveDirection = ((Vector2)posMove - _rb.position).normalized;
             _rb.MovePosition(posMove.MapLimited());
             _potatoModel.potatoPos = posMove;
             _animancer.Play(clips[(int)AnimPotato.Move]);
@@ -90,7 +91,7 @@ public class RenderPotato
     private static SpriteAtlas _potatoAtlas;
     private static SpriteAtlas PotatoAtlas(TypeBody typeBody)
     {
-        if (_potatoAtlas == null) _potatoAtlas = Resources.Load<SpriteAtlas>($"SpriteAtlas/{names[(int)typeBody]}");
+        _potatoAtlas = Resources.Load<SpriteAtlas>($"SpriteAtlas/{names[(int)typeBody]}");
 
         return _potatoAtlas;
     }

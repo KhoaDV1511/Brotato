@@ -1,2 +1,4 @@
 
-public class RenderPotatoSignals : ASignal{}
+public class StartGameSignals : ASignal{}
+
+public class WaveTimeSignals : ASignal<TimePerWave>{}

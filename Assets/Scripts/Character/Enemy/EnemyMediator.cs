@@ -16,10 +16,22 @@ public class EnemyMediator : MonoBehaviour
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
     private readonly EnemyModel _enemyModel = EnemyModel.Instance;
     
+    private readonly StartGameSignals _startGameSignals = Signals.Get<StartGameSignals>();
+    
     private Coroutine _rtEnemyWave;
     private Vector2 _posAppear;
 
-    private void Start()
+    private void OnEnable()
+    {
+        _startGameSignals.AddListener(StartWaveEnemy);
+    }
+
+    private void OnDisable()
+    {
+        _startGameSignals.RemoveListener(StartWaveEnemy);
+    }
+
+    private void StartWaveEnemy()
     {
         _rtEnemyWave = StartCoroutine(EnemyWave());
     }
@@ -28,6 +40,8 @@ public class EnemyMediator : MonoBehaviour
     {
         foreach (var wave in _enemyModel.TimePerWaves)
         {
+            Signals.Get<WaveTimeSignals>().Dispatch(wave);
+            
             var index = 0;
             float time = 0;
             while (time <= wave.time)
@@ -51,8 +65,8 @@ public class EnemyMediator : MonoBehaviour
                         var objEnemy = Instantiate(enemyType[(int)EnemyType.EnemyCloseCombat], transform);
                         objEnemy.position = _posAppear;
 
-                        objAppear.GetComponent<SpriteRenderer>().DOFade(0.2f, 0.5f)
-                            .From(1).SetLoops(3).OnComplete((() =>
+                        objAppear.GetComponent<SpriteRenderer>().DOFade(0.2f, PotatoKey.TIME_PER_LOOP)
+                            .From(1).SetLoops(PotatoKey.LOOPS).OnComplete((() =>
                             {
                                 objAppear.GetComponent<SpriteRenderer>().ChangeAlpha(0);
                                 Destroy(objAppear.gameObject);
@@ -61,7 +75,7 @@ public class EnemyMediator : MonoBehaviour
                         {
                             if(objEnemy != null)
                                 objEnemy.Show();
-                        }, 0.5f * 3);
+                        }, PotatoKey.TIME_PER_LOOP * PotatoKey.LOOPS);
                     }, time);
                 }
                 

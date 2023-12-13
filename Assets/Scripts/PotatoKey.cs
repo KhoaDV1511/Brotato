@@ -9,4 +9,8 @@ public class PotatoKey
     // Radius posiitin enemy appear
     public const int DISTANCE_MIN = 3;
     public const int DISTANCE_MAX = 7;
+    
+    // Enemy before appear
+    public const int LOOPS = 3;
+    public const float TIME_PER_LOOP = 0.5f;
 }
