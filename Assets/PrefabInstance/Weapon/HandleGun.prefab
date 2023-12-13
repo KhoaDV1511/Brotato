@@ -255,6 +255,7 @@ MonoBehaviour:
   sprWeapon: {fileID: 359424481701601248}
   projectile: {fileID: 7636021223818453868}
   effectBullet: {fileID: 7452793965785230673}
+  gunShoot: {fileID: 359424481701601263}
 --- !u!1 &7452793965785230673
 GameObject:
   m_ObjectHideFlags: 0
