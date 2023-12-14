@@ -30,8 +30,8 @@ public class Gun : Weapon
     {
         _direction = _potatoModel.moveDirection == Vector3.zero
             ? Vector3.right
-            : _potatoModel.moveDirection * 100;
-        var target = enemyInsideArea.Length <= 0 ? _direction : targetPosMin;
+            : _potatoModel.moveDirection;
+        var target = enemyInsideArea.Length <= 0 ? _direction * 100 : targetPosMin;
         LookAtTarget(target, transform);
     }
 

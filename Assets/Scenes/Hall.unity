@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1408,7 +1408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType:
-  - {fileID: 8378723557318077933, guid: 8a5c01077c7462b458db6a9ae989fc0b, type: 3}
+  - {fileID: 0}
   - {fileID: 1741362230476768533, guid: d97b48def71a8c44fa69d3bc86adf570, type: 3}
   posEnemyAppear: {fileID: 167461618}
 --- !u!1 &599268364
@@ -1639,7 +1639,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624773092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1661,6 +1661,7 @@ MonoBehaviour:
   weaponGroup:
   - {fileID: 4754572161390632255, guid: f645aa7adb1f6ab48a88dff7c1ae71af, type: 3}
   - {fileID: 713790740277895634, guid: 2ebad5eb885d7d149928caff9047f260, type: 3}
+  quantityWeapon: 1
 --- !u!1 &681430672
 GameObject:
   m_ObjectHideFlags: 0

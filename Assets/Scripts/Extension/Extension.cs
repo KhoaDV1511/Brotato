@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
 public static class Extension
 {
@@ -81,5 +82,28 @@ public static class Extension
     {
         var t = mono as T;
         return t;
+    }
+    public static void DisableChildren(this Transform t)
+    {
+        foreach (var child in t)
+        {
+            ((Transform) child).Hide();
+        }
+    }
+    
+    public static void DestroyChildren(this Transform t)
+    {
+        foreach (var child in t)
+        {
+            Object.Destroy(((Transform) child).gameObject);
+        }
+    }
+    
+    public static void DestroyChildrenImmediate(this Transform t)
+    {
+        foreach (var child in t)
+        {
+            Object.DestroyImmediate(((Transform) child).gameObject);
+        }
     }
 }
