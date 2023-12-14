@@ -15,7 +15,6 @@ public class PotatoMediator : Character
     
     private AnimancerComponent _animancer;
     private Rigidbody2D _rb;
-    private Vector2 _move;
 
     private void OnEnable()
     {
@@ -30,10 +29,15 @@ public class PotatoMediator : Character
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        speed = 5;
+        Init();
         _animancer = GetComponent<AnimancerComponent>();
         _animancer.Play(clips[(int)AnimPotato.Idle]);
-        
+    }
+
+    protected override void Init()
+    {
+        base.Init();
+        speed = 5;
     }
 
     private void RenderPotato()
@@ -46,32 +50,42 @@ public class PotatoMediator : Character
     {
         var horizontal = joystick.Horizontal;
         var vertical = joystick.Vertical;
-        _move = new Vector2(horizontal, vertical);
+        var move = new Vector2(horizontal, vertical);
         
         if (horizontal != 0)
         {
-            Vector3 posMove = _rb.position + _move * (speed * Time.fixedDeltaTime);
-            _potatoModel.moveDirection = ((Vector2)posMove - _rb.position).normalized;
-            _rb.MovePosition(posMove.MapLimited());
-            _potatoModel.potatoPos = posMove;
-            _animancer.Play(clips[(int)AnimPotato.Move]);
+            PotatoMove(move);
         }
         else
         {
             _animancer.Play(clips[(int)AnimPotato.Idle]);
         }
+        FlipFace(horizontal);
+    }
+
+    private void PotatoMove(Vector2 move)
+    {
+        var position = _rb.position;
+        Vector3 posMove = position + move * (speed * Time.fixedDeltaTime);
+        _potatoModel.moveDirection = ((Vector2)posMove - position).normalized;
+        _rb.MovePosition(posMove.MapLimited());
+        _potatoModel.potatoPos = posMove;
+        _animancer.Play(clips[(int)AnimPotato.Move]);
+    }
+
+    private void FlipFace(float horizontal)
+    {
         switch (horizontal)
         {
             case < 0 when _potatoModel.facingRight:
             case > 0 when !_potatoModel.facingRight:
-                FlipFace();
+                Flip();
                 break;
         }
-        void FlipFace()
+        void Flip()
         {
             _potatoModel.facingRight = !_potatoModel.facingRight;
             var trans = potatoBody;
-            
             trans.eulerAngles = new Vector3 (0, _potatoModel.facingRight ? 0 : 180, 0);
         }
     }

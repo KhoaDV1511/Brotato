@@ -34,7 +34,7 @@ public class WaveEnemy
     public int turn;
     public float turnReloadBase;
     public int enemyQuantBase;
-
+    public EnemyAttribute enemyAttribute;
     public WaveEnemy(int turn, float turnReloadBase, int enemyQuantBase)
     {
         this.turn = turn;
@@ -54,4 +54,20 @@ public class TimePerWave
         this.wave = wave;
         this.time = time;
     }
+}
+
+[Serializable]
+public class EnemyAttribute
+{
+    public int id;
+    public string name;
+    public Sprite avatar;
+    public EnemyType enemyType;
+    public int level;
+}
+
+public enum EnemyType
+{
+    EnemyCloseCombat,
+    EnemyFarCombat
 }

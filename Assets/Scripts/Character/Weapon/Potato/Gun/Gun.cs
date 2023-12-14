@@ -14,10 +14,16 @@ public class Gun : Weapon
 
     private void Start()
     {
+        Init();
+        DetectAndAttackTarget();
+    }
+
+    protected override void Init()
+    {
+        base.Init();
         attackSpeed = 1;
         attackRange = 6;
         radius = 7;
-        DetectAndAttackTarget();
     }
 
     private void Update()
@@ -54,14 +60,18 @@ public class Gun : Weapon
         _attack?.Kill();
         var posXGun = sprWeapon.transform.localPosition.x;
         var endValue = new Vector3(0, 0, AngleBetweenPoints(targetPosMin, transform.position));
-        _attack = DOTween.Sequence().Append(transform.DORotate(endValue, 0.1f)).AppendCallback(() =>
-            {
-                var objBullet = Instantiate(projectile, transform);
-                objBullet.target = targetPosMin;
-                objBullet.Show();
-                effectBullet.Show();
-            }).Append(sprWeapon.transform.DOLocalMoveX(posXGun - 0.1f, 0.05f))
+        _attack = DOTween.Sequence().Append(transform.DORotate(endValue, 0.1f)).AppendCallback(Shoot)
+            .Append(sprWeapon.transform.DOLocalMoveX(posXGun - 0.1f, 0.05f))
             .Append(sprWeapon.transform.DOLocalMoveX(posXGun, 0.05f)).AppendCallback(effectBullet.Hide);
+    }
+
+    private void Shoot()
+    {
+        var objBullet = Instantiate(projectile, transform);
+        objBullet.target = targetPosMin;
+        objBullet.InitBullet(30);
+        objBullet.Show();
+        effectBullet.Show();
     }
 
     protected override void DetectAndAttackTarget()

@@ -16,6 +16,13 @@ public class Character : MonoBehaviour
     protected float attackRange;
     protected float speed;
     
+    protected virtual void Init()
+    {
+        speed = 2;
+        radius = 9.5f;
+        attackSpeed = 1;
+        attackRange = 3f;
+    }
     protected virtual void DetectAndAttackTarget()
     {
         if(_sweep != null) StopCoroutine(_sweep);

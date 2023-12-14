@@ -10,7 +10,7 @@ using Random = UnityEngine.Random;
 
 public class EnemyMediator : MonoBehaviour
 {
-    [SerializeField] private Transform[] enemyType;
+    [SerializeField] private Enemy[] enemyType;
     [SerializeField] private Transform posEnemyAppear;
     
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
@@ -33,6 +33,7 @@ public class EnemyMediator : MonoBehaviour
 
     private void StartWaveEnemy()
     {
+        if(_rtEnemyWave != null) StopCoroutine(_rtEnemyWave);
         _rtEnemyWave = StartCoroutine(EnemyWave());
     }
     
@@ -41,49 +42,59 @@ public class EnemyMediator : MonoBehaviour
         foreach (var wave in _enemyModel.TimePerWaves)
         {
             Signals.Get<WaveTimeSignals>().Dispatch(wave);
-            
             var index = 0;
             float time = 0;
             while (time <= wave.time)
             {
                 var turn = index;
-
-                int Turn()
+                time += _enemyModel.TurnReload(TurnInWave(turn), wave.wave - 1);
+                for (var k = 0; k < _enemyModel.EnemyQuantity(TurnInWave(turn), wave.wave - 1); k++)
                 {
-                    return turn >= _enemyModel.WaveEnemies.Count - 1 ? _enemyModel.WaveEnemies.Count - 1 : turn;
+                    EnemyPerTurn(time, TurnInWave(turn));
                 }
-                time += _enemyModel.TurnReload(Turn(), wave.wave - 1);
-                for (var k = 0; k < _enemyModel.EnemyQuantity(Turn(), wave.wave - 1); k++)
-                {
-                    this.WaitTimeout(() =>
-                    {
-                        _posAppear = PositionAppear();
-                        var objAppear = Instantiate(posEnemyAppear, transform);
-                        objAppear.position = _posAppear;
-                        objAppear.Show();
-                    
-                        var objEnemy = Instantiate(enemyType[(int)EnemyType.EnemyCloseCombat], transform);
-                        objEnemy.position = _posAppear;
-
-                        objAppear.GetComponent<SpriteRenderer>().DOFade(0.2f, PotatoKey.TIME_PER_LOOP)
-                            .From(1).SetLoops(PotatoKey.LOOPS).OnComplete((() =>
-                            {
-                                objAppear.GetComponent<SpriteRenderer>().ChangeAlpha(0);
-                                Destroy(objAppear.gameObject);
-                            }));
-                        this.WaitTimeout(() =>
-                        {
-                            if(objEnemy != null)
-                                objEnemy.Show();
-                        }, PotatoKey.TIME_PER_LOOP * PotatoKey.LOOPS);
-                    }, time);
-                }
-                
                 index++;
             }
-
             yield return new WaitForSeconds(wave.time);
         }
+    }
+
+    private void EnemyPerTurn(float time, int turn)
+    {
+        this.WaitTimeout(() =>
+        {
+            _posAppear = PositionAppear();
+            WarningEnemyAppear(_posAppear);
+            EnemyAppear(_posAppear, turn);
+        }, time);
+    }
+    private void EnemyAppear(Vector2 posAppear, int turn)
+    {
+        var enemyAttribute = _enemyModel.WaveEnemies[turn].enemyAttribute;
+        var objEnemy = Instantiate(enemyType[(int)enemyAttribute.enemyType], transform);
+        objEnemy.transform.position = posAppear;
+        
+        this.WaitTimeout(() =>
+        {
+            if(objEnemy != null)
+                objEnemy.ShowEnemy(enemyAttribute.avatar);
+        }, PotatoKey.TIME_PER_LOOP * PotatoKey.LOOPS);
+    }
+    private void WarningEnemyAppear(Vector2 posAppear)
+    {
+        var objAppear = Instantiate(posEnemyAppear, transform);
+        objAppear.position = posAppear;
+        objAppear.Show();
+        
+        objAppear.GetComponent<SpriteRenderer>().DOFade(0.2f, PotatoKey.TIME_PER_LOOP)
+            .From(1).SetLoops(PotatoKey.LOOPS).OnComplete((() =>
+            {
+                objAppear.GetComponent<SpriteRenderer>().ChangeAlpha(0);
+                Destroy(objAppear.gameObject);
+            }));
+    }
+    private int TurnInWave(int turn)
+    {
+        return turn >= _enemyModel.WaveEnemies.Count - 1 ? _enemyModel.WaveEnemies.Count - 1 : turn;
     }
 
     private Vector3 PositionAppear()
@@ -92,10 +103,4 @@ public class EnemyMediator : MonoBehaviour
         direction = new Vector3(direction.x + _potatoModel.potatoPos.x, direction.y + _potatoModel.potatoPos.y);
         return  direction.MapLimited();
     }
-}
-
-public enum EnemyType
-{
-    EnemyCloseCombat,
-    EnemyFarCombat
 }

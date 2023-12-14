@@ -16,66 +16,192 @@ MonoBehaviour:
   - turn: 1
     turnReloadBase: 3
     enemyQuantBase: 4
+    enemyAttribute:
+      id: 1
+      name: Baby Alien
+      avatar: {fileID: 1658370168, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
+      enemyType: 0
+      level: 1
   - turn: 2
     turnReloadBase: 3
     enemyQuantBase: 4
+    enemyAttribute:
+      id: 2
+      name: Chaser
+      avatar: {fileID: 1658370168, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
+      enemyType: 0
+      level: 2
   - turn: 3
     turnReloadBase: 3
     enemyQuantBase: 4
+    enemyAttribute:
+      id: 3
+      name: Spitter
+      avatar: {fileID: 1658370168, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
+      enemyType: 0
+      level: 3
   - turn: 4
     turnReloadBase: 3
     enemyQuantBase: 4
+    enemyAttribute:
+      id: 4
+      name: Pursuer
+      avatar: {fileID: 1000169177, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
+      enemyType: 0
+      level: 6
   - turn: 5
     turnReloadBase: 3
     enemyQuantBase: 4
+    enemyAttribute:
+      id: 5
+      name: Lamprey
+      avatar: {fileID: -2020001405, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
+      enemyType: 1
+      level: 6
   - turn: 6
     turnReloadBase: 2.8
     enemyQuantBase: 4
+    enemyAttribute:
+      id: 6
+      name: Rhino
+      avatar: {fileID: -2020001405, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
+      enemyType: 1
+      level: 7
   - turn: 7
     turnReloadBase: 2.8
     enemyQuantBase: 4
+    enemyAttribute:
+      id: 7
+      name: 
+      avatar: {fileID: 1244460044, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
+      enemyType: 0
+      level: 0
   - turn: 8
     turnReloadBase: 2.8
     enemyQuantBase: 4
+    enemyAttribute:
+      id: 8
+      name: 
+      avatar: {fileID: -2020001405, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
+      enemyType: 1
+      level: 8
   - turn: 9
     turnReloadBase: 2.8
     enemyQuantBase: 4
+    enemyAttribute:
+      id: 9
+      name: 
+      avatar: {fileID: 920198888, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
+      enemyType: 0
+      level: 10
   - turn: 10
     turnReloadBase: 2.8
     enemyQuantBase: 4
+    enemyAttribute:
+      id: 10
+      name: 
+      avatar: {fileID: 596272573, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
+      enemyType: 1
+      level: 8
   - turn: 11
     turnReloadBase: 2.6
     enemyQuantBase: 6
+    enemyAttribute:
+      id: 11
+      name: 
+      avatar: {fileID: -1565787501, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
+      enemyType: 0
+      level: 10
   - turn: 12
     turnReloadBase: 2.6
     enemyQuantBase: 6
+    enemyAttribute:
+      id: 12
+      name: 
+      avatar: {fileID: -1565787501, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
+      enemyType: 0
+      level: 10
   - turn: 13
     turnReloadBase: 2.6
     enemyQuantBase: 6
+    enemyAttribute:
+      id: 13
+      name: 
+      avatar: {fileID: -1565787501, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
+      enemyType: 0
+      level: 10
   - turn: 14
     turnReloadBase: 2.6
     enemyQuantBase: 6
+    enemyAttribute:
+      id: 14
+      name: 
+      avatar: {fileID: -1037945073, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
+      enemyType: 0
+      level: 11
   - turn: 15
     turnReloadBase: 2.6
     enemyQuantBase: 6
+    enemyAttribute:
+      id: 15
+      name: 
+      avatar: {fileID: -1037945073, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
+      enemyType: 0
+      level: 11
   - turn: 16
     turnReloadBase: 2.4
     enemyQuantBase: 6
+    enemyAttribute:
+      id: 16
+      name: 
+      avatar: {fileID: -142085459, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
+      enemyType: 0
+      level: 11
   - turn: 17
     turnReloadBase: 2.4
     enemyQuantBase: 6
+    enemyAttribute:
+      id: 17
+      name: 
+      avatar: {fileID: -142085459, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
+      enemyType: 0
+      level: 12
   - turn: 18
     turnReloadBase: 2.4
     enemyQuantBase: 6
+    enemyAttribute:
+      id: 18
+      name: 
+      avatar: {fileID: -1366109548, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
+      enemyType: 1
+      level: 15
   - turn: 19
     turnReloadBase: 2.4
     enemyQuantBase: 6
+    enemyAttribute:
+      id: 19
+      name: 
+      avatar: {fileID: -2041733626, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
+      enemyType: 0
+      level: 15
   - turn: 20
     turnReloadBase: 2.4
     enemyQuantBase: 6
-  - turn: 20
+    enemyAttribute:
+      id: 20
+      name: 
+      avatar: {fileID: -2041733626, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
+      enemyType: 0
+      level: 16
+  - turn: 21
     turnReloadBase: 2.2
     enemyQuantBase: 8
+    enemyAttribute:
+      id: 21
+      name: 
+      avatar: {fileID: 798652366, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
+      enemyType: 0
+      level: 16
   timePerWaves:
   - wave: 1
     time: 20

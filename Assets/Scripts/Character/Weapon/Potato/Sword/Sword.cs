@@ -11,13 +11,17 @@ public class Sword : Weapon
 
     private void Start()
     {
-        attackSpeed = 1;
-        attackRange = 5;
-        radius = 7;
-        
+        Init();
         DetectAndAttackTarget();
     }
 
+    protected override void Init()
+    {
+        base.Init();
+        attackSpeed = 1;
+        attackRange = 4;
+        radius = 7;
+    }
     private void Update()
     {
         _direction = _potatoModel.moveDirection == Vector3.zero

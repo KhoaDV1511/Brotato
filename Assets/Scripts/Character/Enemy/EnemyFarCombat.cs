@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class EnemyCloseCombat : Enemy
+public class EnemyFarCombat : Enemy
 {
+    [SerializeField] private Projectile projectile;
     protected override void Start()
     {
         base.Start();
@@ -15,7 +16,7 @@ public class EnemyCloseCombat : Enemy
         speed = 2;
         radius = 9.5f;
         attackSpeed = 1;
-        attackRange = 0.7f;
+        attackRange = 3f;
     }
     
     protected override void DetectAndAttackTarget()
@@ -24,10 +25,14 @@ public class EnemyCloseCombat : Enemy
         if(enemyInsideArea.Length > 0 && Vector3.Distance(targetPosMin, transform.position) <= attackRange)
             Attack();
     }
-
+    
     protected override void Attack()
     {
         base.Attack();
-        Debug.Log("Enemy close Attack");
+        Debug.Log("Enemy far Attack");
+        var objBullet = Instantiate(projectile, transform);
+        objBullet.target = (targetPosMin - objBullet.transform.position).normalized * 10;
+        objBullet.InitBullet(5);
+        objBullet.Show();
     }
 }

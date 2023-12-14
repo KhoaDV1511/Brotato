@@ -125,7 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7244811129355822419}
   - component: {fileID: 7244811129355822416}
-  - component: {fileID: 7244811129355822417}
+  - component: {fileID: 8378723557318077933}
   - component: {fileID: 2732478692117997819}
   - component: {fileID: 2019507608731400024}
   m_Layer: 13
@@ -173,7 +173,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7244811129355822417
+--- !u!114 &8378723557318077933
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,6 +191,7 @@ MonoBehaviour:
   enemyInsideArea: []
   targetPosMin: {x: 0, y: 0, z: 0}
   radius: 0
+  sprEnemy: {fileID: 7244811128509419095}
 --- !u!50 &2732478692117997819
 Rigidbody2D:
   serializedVersion: 4

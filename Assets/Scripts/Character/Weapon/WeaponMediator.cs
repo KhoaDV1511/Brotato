@@ -26,7 +26,7 @@ public class WeaponMediator : MonoBehaviour
     private void RenderWeapon()
     {
         var obj = Instantiate(weaponGroup[(int)_weapons[_potatoModel.weaponId - 1].typeWeapon], transform);
-        obj.transform.position = new Vector3(0, 0.1f, 0);
+        obj.transform.localPosition = Vector3.up * -0.25f;
         obj.SetWeapon(_renderWeapon.GetSprite(_potatoModel.weaponId));
     }
 }

@@ -10,6 +10,6 @@ public class PotatoData : ScriptableObject
 
 public enum TypeWeapon
 {
-    Gun,
-    Sword
+    Ranged,
+    Melee
 }
