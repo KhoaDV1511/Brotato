@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Sword : Weapon
 {
+    [SerializeField] private BoxCollider2D boxMelee;
+    
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
     private Sequence _attack;
     private Vector3 _direction;
@@ -18,16 +20,16 @@ public class Sword : Weapon
     protected override void Init()
     {
         base.Init();
-        attackSpeed = 1;
-        attackRange = 4;
-        radius = 7;
+        attackSpeed = stats.Find(s => s.statType == StatType.AttackSpeed).baseValue;
+        attackRange = stats.Find(s => s.statType == StatType.AttackRange).baseValue;
+        detectRange = stats.Find(s => s.statType == StatType.DetectRange).baseValue;
     }
     private void Update()
     {
         _direction = _potatoModel.moveDirection == Vector3.zero
             ? Vector3.right
-            : _potatoModel.moveDirection * 100;
-        var target = enemyInsideArea.Length <= 0 ? _direction : targetPosMin;
+            : _potatoModel.moveDirection;
+        var target = enemyInsideArea.Length <= 0 ? _direction * 100 : targetPosMin;
         LookAtTarget(target, transform);
     }
     
@@ -36,9 +38,12 @@ public class Sword : Weapon
     {
         base.Attack();
         _attack?.Kill();
+        var attack = true;
+        boxMelee.enabled = !attack;
+        var localPos = transform.localPosition;
         var endValue = new Vector3(0, 0, AngleBetweenPoints(targetPosMin, transform.position));
-        _attack = DOTween.Sequence().Append(transform.DORotate(endValue, 0.1f)).Append(transform.DOMove(targetPosMin, 0.2f))
-            .Append(transform.DOLocalMove(Vector3.zero, 0.1f));
+        _attack = DOTween.Sequence().Append(transform.DORotate(endValue, 0.1f)).AppendCallback(() => boxMelee.enabled = attack).Append(transform.DOMove(targetPosMin, 0.1f)).AppendCallback(() => boxMelee.enabled = !attack)
+            .Append(transform.DOLocalMove(localPos, 0.1f));
     }
 
     protected override void DetectAndAttackTarget()

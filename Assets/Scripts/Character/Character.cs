@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using UnityEngine;
 
 public class Character : MonoBehaviour
@@ -11,17 +13,15 @@ public class Character : MonoBehaviour
     private Coroutine _sweep;
     private readonly List<Vector3> _enemyPos = new List<Vector3>();
     private readonly List<float> _distanceEnemy = new List<float>();
-    public float radius;
+    
+    protected float detectRange;
     protected float attackSpeed;
     protected float attackRange;
-    protected float speed;
+    [SerializeField] protected List<StatCharacter> stats = new List<StatCharacter>();
     
     protected virtual void Init()
     {
-        speed = 2;
-        radius = 9.5f;
-        attackSpeed = 1;
-        attackRange = 3f;
+        
     }
     protected virtual void DetectAndAttackTarget()
     {
@@ -32,7 +32,7 @@ public class Character : MonoBehaviour
     {
         _enemyPos.Clear();
         // ReSharper disable once Unity.PreferNonAllocApi
-        enemyInsideArea = Physics2D.OverlapCircleAll(transform.position, radius, mask);
+        enemyInsideArea = Physics2D.OverlapCircleAll(transform.position, detectRange, mask);
         if(enemyInsideArea.Length > 0)
             PosTargetMin();
  
@@ -56,4 +56,29 @@ public class Character : MonoBehaviour
         
         targetPosMin = _enemyPos[indexInList];
     }
+}
+
+
+[Serializable]
+public class StatCharacter
+{
+    public StatType statType;
+    public float baseValue;
+    public float statIncrease;
+    public float timeEffect;
+
+    public float CurrentValue()
+    {
+        return baseValue + baseValue * statIncrease;
+    }
+}
+
+public enum StatType
+{
+    HP,
+    SpeedVelocity,
+    ATK,
+    DetectRange,
+    AttackSpeed,
+    AttackRange
 }

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8510590884935610622}
   - component: {fileID: 8347441175424381701}
+  - component: {fileID: 5911425757864860175}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494030341835197845}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.464, y: 0, z: 0}
+  m_LocalPosition: {x: 0.301, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f7cfb8b82b7044802b656cb356f2a075, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,6 +85,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5911425757864860175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494030341835197845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a72247d5aa84112962198463a3c864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0, g: 0, b: 0, a: 1}
+  _spriteRenderer: {fileID: 8347441175424381701}
+  _outlineSize: 1
 --- !u!1 &5136721503393506542
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +152,21 @@ MonoBehaviour:
   enemyInsideArea: []
   targetPosMin: {x: 0, y: 0, z: 0}
   radius: 0
+  stats:
+  - statType: 4
+    baseValue: 1
+    statIncrease: 0
+    timeEffect: 0
+  - statType: 5
+    baseValue: 4
+    statIncrease: 0
+    timeEffect: 0
+  - statType: 3
+    baseValue: 0
+    statIncrease: 0
+    timeEffect: 7
   sprWeapon: {fileID: 8347441175424381701}
+  boxMelee: {fileID: 5101472147561381521}
 --- !u!61 &5101472147561381521
 BoxCollider2D:
   m_ObjectHideFlags: 0

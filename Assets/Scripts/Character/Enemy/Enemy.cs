@@ -9,13 +9,26 @@ public class Enemy : Character
 
     private Camera _camera;
     private Vector3 _enemyMoveNotVisible;
-
     private Coroutine _insideCam;
+
+
+    protected int currentHp;
+    protected float speedVelocity;
 
     protected virtual void Start()
     {
         _camera = Camera.main;
+        Init();
         CheckInSideCam();
+    }
+    
+    protected override void Init()
+    {
+        base.Init();
+        attackSpeed = stats.Find(s => s.statType == StatType.AttackSpeed).baseValue;
+        attackRange = stats.Find(s => s.statType == StatType.AttackRange).baseValue;
+        detectRange = stats.Find(s => s.statType == StatType.DetectRange).baseValue;
+        speedVelocity = stats.Find(s => s.statType == StatType.SpeedVelocity).baseValue;
     }
 
     public void ShowEnemy(Sprite spr)
@@ -47,14 +60,14 @@ public class Enemy : Character
         if (enemyInsideArea.Length <= 0)
         {
             positionTrans =
-                Vector3.MoveTowards(positionTrans, _enemyMoveNotVisible.MapLimited(), speed * Time.deltaTime);
+                Vector3.MoveTowards(positionTrans, _enemyMoveNotVisible.MapLimited(), speedVelocity * Time.deltaTime);
             transform.position = positionTrans;
         }
         else
         {
-            transform.position = Vector3.Distance(positionTrans, targetPosMin) < 0.5f
+            transform.position = Vector3.Distance(positionTrans, targetPosMin) < attackRange - 0.2f
                 ? positionTrans
-                : Vector3.MoveTowards(transform.position, targetPosMin, speed * Time.deltaTime);
+                : Vector3.MoveTowards(transform.position, targetPosMin, speedVelocity * Time.deltaTime);
         }
     }
 
@@ -66,11 +79,11 @@ public class Enemy : Character
     {
         if (IsVisible(_camera, transform.position))
         {
-            radius = 9.5f;
+            detectRange = 9.5f;
         }
         else
         {
-            radius = 4.75f;
+            detectRange = 4.75f;
             var position = transform.position;
             var posX = Random.Range(position.x - 2, position.x + 2);
             var posY = Random.Range(position.y - 2, position.y + 2);

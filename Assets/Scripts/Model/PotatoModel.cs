@@ -10,4 +10,6 @@ public class PotatoModel : Singleton<PotatoModel>
     // id choose wepon and potato
     public int potatoId;
     public int weaponId;
+
+    public int currentWeaponValue;
 }

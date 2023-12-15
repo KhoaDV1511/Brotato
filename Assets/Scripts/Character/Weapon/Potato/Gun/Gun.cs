@@ -21,9 +21,9 @@ public class Gun : Weapon
     protected override void Init()
     {
         base.Init();
-        attackSpeed = 1;
-        attackRange = 6;
-        radius = 7;
+        attackSpeed = stats.Find(s => s.statType == StatType.AttackSpeed).baseValue;
+        attackRange = stats.Find(s => s.statType == StatType.AttackRange).baseValue;
+        detectRange = stats.Find(s => s.statType == StatType.DetectRange).baseValue;
     }
 
     private void Update()
@@ -84,6 +84,6 @@ public class Gun : Weapon
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, radius);
+        Gizmos.DrawWireSphere(transform.position, detectRange);
     }
 }

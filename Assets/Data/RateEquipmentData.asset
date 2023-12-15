@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae755659bfd94bb382c8fcd98e2e5ceb, type: 3}
+  m_Name: RateEquipmentData
+  m_EditorClassIdentifier: 
+  ratePerWaves:
+  - wave: 1
+    tireOne: 100
+    tireTwo: 0
+    tireThree: 0
+    tireFour: 0
+  - wave: 2
+    tireOne: 94
+    tireTwo: 6
+    tireThree: 0
+    tireFour: 0
+  - wave: 3
+    tireOne: 88
+    tireTwo: 12
+    tireThree: 0
+    tireFour: 0
+  - wave: 4
+    tireOne: 80.36
+    tireTwo: 17.64
+    tireThree: 2
+    tireFour: 0
+  - wave: 5
+    tireOne: 72.96
+    tireTwo: 23.04
+    tireThree: 4
+    tireFour: 0
+  - wave: 6
+    tireOne: 65.8
+    tireTwo: 28.2
+    tireThree: 6
+    tireFour: 0
+  - wave: 7
+    tireOne: 58.88
+    tireTwo: 33.12
+    tireThree: 8
+    tireFour: 0
+  - wave: 8
+    tireOne: 52.08
+    tireTwo: 37.71
+    tireThree: 9.98
+    tireFour: 0.23
+  - wave: 9
+    tireOne: 45.55
+    tireTwo: 42.05
+    tireThree: 11.94
+    tireFour: 0.46
+  - wave: 10
+    tireOne: 39.29
+    tireTwo: 46.12
+    tireThree: 13.9
+    tireFour: 0.69
+  - wave: 11
+    tireOne: 33.29
+    tireTwo: 49.94
+    tireThree: 15.85
+    tireFour: 0.92
+  - wave: 12
+    tireOne: 32.42
+    tireTwo: 48.63
+    tireThree: 17.79
+    tireFour: 1.15
+  - wave: 13
+    tireOne: 31.56
+    tireTwo: 47.34
+    tireThree: 19.72
+    tireFour: 1.38
+  - wave: 14
+    tireOne: 30.7
+    tireTwo: 46.05
+    tireThree: 21.65
+    tireFour: 1.61
+  - wave: 15
+    tireOne: 29.84
+    tireTwo: 44.76
+    tireThree: 23.56
+    tireFour: 1.84
+  - wave: 16
+    tireOne: 29.38
+    tireTwo: 44.07
+    tireThree: 24.48
+    tireFour: 2.07
+  - wave: 17
+    tireOne: 29.31
+    tireTwo: 43.97
+    tireThree: 24.43
+    tireFour: 2.3
+  - wave: 18
+    tireOne: 29.24
+    tireTwo: 43.86
+    tireThree: 24.37
+    tireFour: 2.53
+  - wave: 19
+    tireOne: 29.17
+    tireTwo: 43.76
+    tireThree: 24.31
+    tireFour: 2.76
+  data: {fileID: 4900000, guid: 15a4be2097bd75a449cde6758e5dc4a6, type: 3}

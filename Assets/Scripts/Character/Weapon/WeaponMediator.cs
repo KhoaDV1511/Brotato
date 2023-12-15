@@ -11,7 +11,7 @@ public class WeaponMediator : MonoBehaviour
 
     private readonly RenderWeapon _renderWeapon = new RenderWeapon();
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
-    private List<Weapons> _weapons => GlobalData.Ins.potatoData.weapons;
+    private List<WeaponInfo> _weapons => GlobalData.Ins.potatoData.weapons;
     private readonly StartGameSignals _startGameSignals = Signals.Get<StartGameSignals>();
 
     public int quantityWeapon = 1;
@@ -30,28 +30,58 @@ public class WeaponMediator : MonoBehaviour
     private void RenderWeapon()
     {
         transform.DestroyChildren();
-
+        transform.localPosition = quantityWeapon == 2 ? Vector2.zero : Vector2.up * 0.25f;
         for (var i = 0; i < quantityWeapon; i++)
         {
-            var obj = Instantiate(weaponGroup[(int)_weapons[_potatoModel.weaponId - 1].typeWeapon], transform);
-            var localPosition = transform.localPosition;
-            float angle = 0;
-            float raius = 0.7f;
-            if (quantityWeapon == 1)
-            {
-                angle = 180f;
-                raius = 0.3f;
-            }else if (quantityWeapon == 2)
-            {
-                angle = 2 * Mathf.PI * i / quantityWeapon + 90;
-                raius = 0.5f;
-            }
-            else angle = 2 * Mathf.PI * i / quantityWeapon;
-            obj.transform.localPosition =
-                new Vector2(localPosition.x + raius * Mathf.Sin(angle),
-                    localPosition.y + raius * Mathf.Cos(angle));
-            obj.SetWeapon(_renderWeapon.GetSprite(_potatoModel.weaponId));
+            var i1 = i;
+            this.WaitTimeout(() => SpawnWeapon(i1), 0.1f * i);
         }
+    }
+
+    private void SpawnWeapon(int i)
+    {
+        transform.eulerAngles = Vector3.zero;
+        var obj = Instantiate(weaponGroup[(int)_weapons[_potatoModel.weaponId - 1].typeWeapon], transform);
+        var position = transform.position;
+        var angle = 2 * Mathf.PI * i / quantityWeapon;
+        obj.transform.position =
+            new Vector2(position.x + SetUpRadius(quantityWeapon) * Mathf.Sin(angle),
+                position.y + SetUpRadius(quantityWeapon) * Mathf.Cos(angle));
+        obj.SetWeapon(_renderWeapon.GetSprite(_potatoModel.weaponId));
+        transform.eulerAngles = Vector3.forward * SetUpZAxis(quantityWeapon);
+    }
+
+    private int SetUpZAxis(int quant)
+    {
+        var zAxis = 0;
+        zAxis = quant switch
+        {
+            1 => 180,
+            2 => 90,
+            3 => 0,
+            4 => 45,
+            5 => 0,
+            6 => 30,
+            _ => zAxis
+        };
+
+        return zAxis;
+    }
+    private float SetUpRadius(int quant)
+    {
+        var radius = 0f;
+        radius = quant switch
+        {
+            1 => 0.3f,
+            2 => 0.35f,
+            3 => 0.4f,
+            4 => 0.45f,
+            5 => 0.5f,
+            6 => 0.55f,
+            _ => radius
+        };
+
+        return radius;
     }
 }
 

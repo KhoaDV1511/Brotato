@@ -5,6 +5,7 @@ public class GlobalData : MonoBehaviour
 {
     public EnemyData enemyData;
     public PotatoData potatoData;
+    public RateEquipment rateEquipment;
 
     private static GlobalData _ins;
 

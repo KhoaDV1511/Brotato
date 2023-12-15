@@ -11,7 +11,7 @@ public class EnemyData : ScriptableObject
     public List<TimePerWave> timePerWaves = new List<TimePerWave>();
     public TextAsset data;
 
-    // [ContextMenu("LoadDAta")]
+    // [ContextMenu("LoadData")]
     // public void ReadData()
     // {
     //     waveEnemies.Clear();

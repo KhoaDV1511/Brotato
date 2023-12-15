@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class EnemyCloseCombat : Enemy
@@ -5,19 +6,9 @@ public class EnemyCloseCombat : Enemy
     protected override void Start()
     {
         base.Start();
-        Init();
         DetectAndAttackTarget();
     }
 
-    protected override void Init()
-    {
-        base.Init();
-        speed = 2;
-        radius = 9.5f;
-        attackSpeed = 1;
-        attackRange = 0.7f;
-    }
-    
     protected override void DetectAndAttackTarget()
     {
         base.DetectAndAttackTarget();

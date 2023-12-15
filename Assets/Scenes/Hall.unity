@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1151,6 +1151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: f4a7bac6f0fed6b4aa4ad5e7d6723945, type: 2}
   potatoData: {fileID: 11400000, guid: b939639b0eef8094f8b85c7aac9f198a, type: 2}
+  rateEquipment: {fileID: 11400000, guid: 180275d4f3066bf4b97d36518c7079fa, type: 2}
 --- !u!4 &370692511
 Transform:
   m_ObjectHideFlags: 0
@@ -1408,7 +1409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType:
-  - {fileID: 0}
+  - {fileID: 8378723557318077933, guid: 8a5c01077c7462b458db6a9ae989fc0b, type: 3}
   - {fileID: 1741362230476768533, guid: d97b48def71a8c44fa69d3bc86adf570, type: 3}
   posEnemyAppear: {fileID: 167461618}
 --- !u!1 &599268364
@@ -1639,7 +1640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624773092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2529,7 +2530,6 @@ GameObject:
   - component: {fileID: 1324494533}
   - component: {fileID: 1324494537}
   - component: {fileID: 1324494536}
-  - component: {fileID: 1324494535}
   - component: {fileID: 1324494534}
   m_Layer: 5
   m_Name: BgWeapon
@@ -2556,7 +2556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -120, y: 0}
+  m_AnchoredPosition: {x: -110, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1324494534
@@ -2603,21 +2603,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1324494535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324494532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1efb265fa7f47fbb9afa39abdbb850d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cellIdentifier: CellWeapon
-  imgWeapon: {fileID: 881410377}
-  btnWeapon: {fileID: 1324494534}
 --- !u!114 &1324494536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2631,14 +2616,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1a5bf81ec271f6e42b4d7d690b050007, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 240282af51d8bbb4d82ab5cfcea25000, type: 2}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10745,7 +10730,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1858217806
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11095,7 +11080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2009836209
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11330,7 +11315,15 @@ MonoBehaviour:
     m_Bits: 0
   enemyInsideArea: []
   targetPosMin: {x: 0, y: 0, z: 0}
-  radius: 0
+  stats:
+  - statType: 1
+    baseValue: 5
+    statIncrease: 0
+    timeEffect: 0
+  - statType: 0
+    baseValue: 10
+    statIncrease: 0
+    timeEffect: 0
   joystick: {fileID: 1653522893}
   clips:
   - {fileID: 7400000, guid: 33d373b80e81ee040978d46dd539b26d, type: 2}

@@ -23,7 +23,7 @@ public class PotatoItem : EnhancedScrollerCellView
         _potatoModel.potatoId = _id;
     }
 
-    public void SetData(Potato potato)
+    public void SetData(PotatoInfo potato)
     {
         imgPotato.sprite = potato.GetSprite();
         _id = potato.id;

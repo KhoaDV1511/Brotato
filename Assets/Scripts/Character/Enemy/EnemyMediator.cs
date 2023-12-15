@@ -55,6 +55,8 @@ public class EnemyMediator : MonoBehaviour
                 index++;
             }
             yield return new WaitForSeconds(wave.time);
+            if (wave.wave == _enemyModel.TimePerWaves[^1].wave) yield break;
+            Signals.Get<EndWaveSignals>().Dispatch();
         }
     }
 

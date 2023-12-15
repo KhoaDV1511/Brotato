@@ -20,9 +20,9 @@ public class WeaponItem : EnhancedScrollerCellView
     {
         _potatoModel.weaponId = _id;
     }
-    public void SetData(Weapons weapons)
+    public void SetData(WeaponInfo weaponInfo)
     {
-        imgWeapon.sprite = weapons.GetSprite();
-        _id = weapons.id;
+        imgWeapon.sprite = weaponInfo.GetSprite();
+        _id = weaponInfo.id;
     }
 }

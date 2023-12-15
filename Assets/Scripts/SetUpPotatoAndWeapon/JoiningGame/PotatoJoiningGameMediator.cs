@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.U2D;
 using UnityEngine.UI;
 
-public class PotatoEquipmentMediator : MonoBehaviour, IEnhancedScrollerDelegate
+public class PotatoJoiningGameMediator : MonoBehaviour, IEnhancedScrollerDelegate
 {
     [SerializeField] private EnhancedScroller scroll;
     [SerializeField] private EnhancedScrollerCellView cellPotatoPrefab, cellWeaponPrefab;
@@ -13,8 +13,8 @@ public class PotatoEquipmentMediator : MonoBehaviour, IEnhancedScrollerDelegate
     [SerializeField] private GameObject choosePotato;
 
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
-    private List<Potato> _potatoes => GlobalData.Ins.potatoData.potatoes;
-    private List<Weapons> _weapons = new List<Weapons>();
+    private List<PotatoInfo> _potatoes => GlobalData.Ins.potatoData.potatoes;
+    private List<WeaponInfo> _weapons = new List<WeaponInfo>();
 
     private ChooseProgress _chooseProgress;
 
@@ -80,7 +80,7 @@ public class PotatoEquipmentMediator : MonoBehaviour, IEnhancedScrollerDelegate
     }
 }
 [Serializable]
-public class Potato
+public class PotatoInfo
 {
     public int id;
     public int rarity;
@@ -102,7 +102,7 @@ public class Potato
     public TypeWeapon typeWeapon;
 }
 [Serializable]
-public class Weapons
+public class WeaponInfo
 {
     public int id;
     public int rarity;

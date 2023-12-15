@@ -3,7 +3,7 @@ using Animancer;
 using UnityEngine;
 using UnityEngine.U2D;
 
-public class PotatoMediator : Character
+public class PotatoMediator : Potato
 {
     [SerializeField] private Joystick joystick;
     [SerializeField] private AnimationClip[] clips;
@@ -26,18 +26,12 @@ public class PotatoMediator : Character
         _startGameSignals.RemoveListener(RenderPotato);
     }
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         _rb = GetComponent<Rigidbody2D>();
-        Init();
         _animancer = GetComponent<AnimancerComponent>();
         _animancer.Play(clips[(int)AnimPotato.Idle]);
-    }
-
-    protected override void Init()
-    {
-        base.Init();
-        speed = 5;
     }
 
     private void RenderPotato()
@@ -66,7 +60,7 @@ public class PotatoMediator : Character
     private void PotatoMove(Vector2 move)
     {
         var position = _rb.position;
-        Vector3 posMove = position + move * (speed * Time.fixedDeltaTime);
+        Vector3 posMove = position + move * (speedVelocity * Time.fixedDeltaTime);
         _potatoModel.moveDirection = ((Vector2)posMove - position).normalized;
         _rb.MovePosition(posMove.MapLimited());
         _potatoModel.potatoPos = posMove;
