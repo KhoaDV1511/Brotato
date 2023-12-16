@@ -12,7 +12,7 @@ public class PotatoKey
     
     // Enemy before appear
     public const int LOOPS = 3;
-    public const float TIME_PER_LOOP = 0.5f;
+    public const float TIME_PER_LOOP = 0.3f;
 
     public const int MAX_WEAPON_IN_HAND = 6;
 }

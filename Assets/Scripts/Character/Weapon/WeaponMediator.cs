@@ -8,60 +8,72 @@ using UnityEngine.U2D;
 public class WeaponMediator : MonoBehaviour
 {
     [SerializeField] private Weapon[] weaponGroup;
+    [SerializeField] private Color[] color;
 
     private readonly RenderWeapon _renderWeapon = new RenderWeapon();
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
     private List<WeaponInfo> _weapons => GlobalData.Ins.potatoData.weapons;
     private readonly StartGameSignals _startGameSignals = Signals.Get<StartGameSignals>();
-
-    public int quantityWeapon = 1;
-
+    private readonly StartNewWaveSignals _startNewWaveSignals = Signals.Get<StartNewWaveSignals>();
+    
     private void OnEnable()
     {
-        _startGameSignals.AddListener(RenderWeapon);
+        _startGameSignals.AddListener(RenderWeaponStartGame);
+        _startNewWaveSignals.AddListener(RenderWeaponStartNewWave);
     }
 
     private void OnDisable()
     {
-        _startGameSignals.RemoveListener(RenderWeapon);
+        _startGameSignals.RemoveListener(RenderWeaponStartGame);
+        _startNewWaveSignals.RemoveListener(RenderWeaponStartNewWave);
     }
 
     [Button]
-    private void RenderWeapon()
+    private void RenderWeaponStartGame()
     {
         transform.DestroyChildren();
-        transform.localPosition = quantityWeapon == 2 ? Vector2.zero : Vector2.up * 0.25f;
-        for (var i = 0; i < quantityWeapon; i++)
+        transform.localPosition =  _potatoModel.currentWeaponValue == 2 ? Vector2.zero : Vector2.up * 0.25f;
+        for (var i = 0; i <  _potatoModel.currentWeaponValue; i++)
         {
             var i1 = i;
-            this.WaitTimeout(() => SpawnWeapon(i1), 0.1f * i);
+            this.WaitTimeout(() => SpawnWeapon(i1, _potatoModel.currentWeaponValue, Tire.TireOne), 0.1f * i);
         }
     }
 
-    private void SpawnWeapon(int i)
+    private void RenderWeaponStartNewWave(List<ElementWeaponUpgrade> elementWeaponUpgrades)
+    {
+        transform.DestroyChildren();
+        transform.localPosition =  _potatoModel.currentWeaponValue == 2 ? Vector2.zero : Vector2.up * 0.25f;
+        for (var i = 0; i <  _potatoModel.currentWeaponValue; i++)
+        {
+            var i1 = i;
+            this.WaitTimeout(() => SpawnWeapon(i1,elementWeaponUpgrades.Count, elementWeaponUpgrades[i1].tire), 0.1f * i);
+        }
+    }
+
+    private void SpawnWeapon(int i, int quantityWeapon, Tire tire)
     {
         transform.eulerAngles = Vector3.zero;
         var obj = Instantiate(weaponGroup[(int)_weapons[_potatoModel.weaponId - 1].typeWeapon], transform);
         var position = transform.position;
-        var angle = 2 * Mathf.PI * i / quantityWeapon;
+        var angle = 2 * Mathf.PI * i / quantityWeapon + SetUpAngle(quantityWeapon);
         obj.transform.position =
             new Vector2(position.x + SetUpRadius(quantityWeapon) * Mathf.Sin(angle),
                 position.y + SetUpRadius(quantityWeapon) * Mathf.Cos(angle));
-        obj.SetWeapon(_renderWeapon.GetSprite(_potatoModel.weaponId));
-        transform.eulerAngles = Vector3.forward * SetUpZAxis(quantityWeapon);
+        obj.SetWeapon(_renderWeapon.GetSprite(_potatoModel.weaponId), color[(int)tire]);
     }
 
-    private int SetUpZAxis(int quant)
+    private float SetUpAngle(int quant)
     {
-        var zAxis = 0;
+        float zAxis = 0;
         zAxis = quant switch
         {
-            1 => 180,
-            2 => 90,
+            1 => Mathf.PI,
+            2 => Mathf.PI / 2,
             3 => 0,
-            4 => 45,
+            4 => Mathf.PI / 4,
             5 => 0,
-            6 => 30,
+            6 => Mathf.PI / 6,
             _ => zAxis
         };
 

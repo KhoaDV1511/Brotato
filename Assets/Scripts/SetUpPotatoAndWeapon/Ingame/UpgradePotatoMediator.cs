@@ -6,10 +6,13 @@ using UnityEngine.UI;
 
 public class UpgradePotatoMediator : MonoBehaviour
 {
+    [SerializeField] private ShopEquipmentMediator shopEquipmentMediator;
+    [SerializeField] private UpgradeWeaponMediator upgradeWeaponMediator;
     [SerializeField] private GameObject bgShopEquipment;
     [SerializeField] private Button btnStartNewWave;
 
-    private EndWaveSignals _endWaveSignals = Signals.Get<EndWaveSignals>();
+    private readonly PotatoModel _potatoModel = PotatoModel.Instance;
+    private readonly EndWaveSignals _endWaveSignals = Signals.Get<EndWaveSignals>();
 
     private void Start()
     {
@@ -26,14 +29,17 @@ public class UpgradePotatoMediator : MonoBehaviour
         _endWaveSignals.RemoveListener(StartUpdatePotato);
     }
 
-    private void StartUpdatePotato()
+    private void StartUpdatePotato(int wave)
     {
         Time.timeScale = 0;
         bgShopEquipment.Show();
+        shopEquipmentMediator.RollEquipment(wave);
     }
 
     private void StartNewWaveClick()
     {
+        _potatoModel.currentWeaponValue = upgradeWeaponMediator.elementWeaponUpgrades.Count;
+        Signals.Get<StartNewWaveSignals>().Dispatch(upgradeWeaponMediator.elementWeaponUpgrades);
         bgShopEquipment.Hide();
         Time.timeScale = 1;
     }

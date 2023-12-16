@@ -10,7 +10,6 @@ public class Gun : Weapon
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
 
     private Sequence _attack;
-    private Vector3 _direction;
 
     private void Start()
     {
@@ -28,23 +27,7 @@ public class Gun : Weapon
 
     private void Update()
     {
-        _direction = _potatoModel.moveDirection == Vector3.zero
-            ? Vector3.right
-            : _potatoModel.moveDirection;
-        var target = enemyInsideArea.Length <= 0 ? _direction * 100 : targetPosMin;
-        LookAtTarget(target, transform);
-    }
-
-    protected override void LookAtTarget(Vector3 target, Transform weaponPos)
-    {
-        base.LookAtTarget(target, weaponPos);
-
-        Flip(target, weaponPos);
-    }
-
-    private void Flip(Vector3 target, Transform weaponPos)
-    {
-        transform.localScale = new Vector2(1, target.x > weaponPos.position.x ? 1 : -1);
+        LookAtTargetAndFlip(transform);
     }
 
     [Button]

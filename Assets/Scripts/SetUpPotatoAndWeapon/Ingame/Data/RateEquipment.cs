@@ -32,4 +32,7 @@ public class RatePerWave
     public float tireTwo;
     public float tireThree;
     public float tireFour;
+
+    public float ValueTireTwo => tireOne + tireTwo;
+    public float ValueTireThree => tireOne + tireTwo + tireThree;
 }

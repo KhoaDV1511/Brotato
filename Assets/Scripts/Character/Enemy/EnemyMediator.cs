@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using DG.Tweening;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
+using static System.Random;
 using Debug = UnityEngine.Debug;
 using Random = UnityEngine.Random;
 
@@ -41,6 +43,7 @@ public class EnemyMediator : MonoBehaviour
     {
         foreach (var wave in _enemyModel.TimePerWaves)
         {
+            transform.DestroyChildren();
             Signals.Get<WaveTimeSignals>().Dispatch(wave);
             var index = 0;
             float time = 0;
@@ -56,7 +59,7 @@ public class EnemyMediator : MonoBehaviour
             }
             yield return new WaitForSeconds(wave.time);
             if (wave.wave == _enemyModel.TimePerWaves[^1].wave) yield break;
-            Signals.Get<EndWaveSignals>().Dispatch();
+            Signals.Get<EndWaveSignals>().Dispatch(wave.wave);
         }
     }
 
@@ -101,7 +104,7 @@ public class EnemyMediator : MonoBehaviour
 
     private Vector3 PositionAppear()
     {
-        var direction = new Vector3(Random.Range(-1, 1f), Random.Range(-1, 1f)).normalized * Random.Range(PotatoKey.DISTANCE_MIN, PotatoKey.DISTANCE_MAX);
+        var direction = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * Random.Range(PotatoKey.DISTANCE_MIN, PotatoKey.DISTANCE_MAX);
         direction = new Vector3(direction.x + _potatoModel.potatoPos.x, direction.y + _potatoModel.potatoPos.y);
         return  direction.MapLimited();
     }

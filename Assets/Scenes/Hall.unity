@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1662,7 +1662,11 @@ MonoBehaviour:
   weaponGroup:
   - {fileID: 4754572161390632255, guid: f645aa7adb1f6ab48a88dff7c1ae71af, type: 3}
   - {fileID: 713790740277895634, guid: 2ebad5eb885d7d149928caff9047f260, type: 3}
-  quantityWeapon: 1
+  color:
+  - {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
+  - {r: 0.40943396, g: 0.82453716, b: 1, a: 0}
+  - {r: 1, g: 0.53207546, b: 0.7638094, a: 0}
+  - {r: 1, g: 0.45660377, b: 0.45660377, a: 0}
 --- !u!1 &681430672
 GameObject:
   m_ObjectHideFlags: 0
@@ -2391,8 +2395,8 @@ GameObject:
   - component: {fileID: 1267347574}
   - component: {fileID: 1267347578}
   - component: {fileID: 1267347577}
-  - component: {fileID: 1267347576}
   - component: {fileID: 1267347575}
+  - component: {fileID: 1267347579}
   m_Layer: 5
   m_Name: BgEquipment
   m_TagString: Untagged
@@ -2466,21 +2470,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1267347576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267347573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dccf6a004574a0d9bcca750614738b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cellIdentifier: CellPotato
-  imgPotato: {fileID: 340899895}
-  btnPotato: {fileID: 1267347575}
 --- !u!114 &1267347577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2519,6 +2508,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267347573}
   m_CullTransparentMesh: 1
+--- !u!114 &1267347579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267347573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 813867d662994c979c5ecb24aa420317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cellIdentifier: 
+  imgEquipment: {fileID: 340899895}
+  txtDescription: {fileID: 699331787}
+  btnEquipment: {fileID: 1267347575}
 --- !u!1 &1324494532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,6 +2536,7 @@ GameObject:
   - component: {fileID: 1324494537}
   - component: {fileID: 1324494536}
   - component: {fileID: 1324494534}
+  - component: {fileID: 1324494538}
   m_Layer: 5
   m_Name: BgWeapon
   m_TagString: Untagged
@@ -2641,6 +2647,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324494532}
   m_CullTransparentMesh: 1
+--- !u!114 &1324494538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324494532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2bf6144fee463a9a5cbfb56e405a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cellIdentifier: 
+  imgBg: {fileID: 1324494536}
+  imgWeapon: {fileID: 881410377}
+  color:
+  - {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+  - {r: 0.44716978, g: 0.77148783, b: 1, a: 1}
+  - {r: 1, g: 0.63584906, b: 0.84422034, a: 1}
+  - {r: 1, g: 0.37169808, b: 0.37169808, a: 1}
 --- !u!1 &1341856789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2654,7 +2680,7 @@ GameObject:
   - component: {fileID: 1341856792}
   - component: {fileID: 1341856791}
   m_Layer: 5
-  m_Name: BtnNext
+  m_Name: BtnStartNewWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2856,6 +2882,7 @@ GameObject:
   - component: {fileID: 1501468863}
   - component: {fileID: 1501468862}
   - component: {fileID: 1501468861}
+  - component: {fileID: 1501468866}
   m_Layer: 5
   m_Name: Scroll View Weapon
   m_TagString: Untagged
@@ -2997,6 +3024,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501468859}
   m_CullTransparentMesh: 1
+--- !u!114 &1501468866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501468859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e286065c414108ae75e15c10dca5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scroll: {fileID: 1501468861}
+  cellPrefab: {fileID: 1324494538}
 --- !u!1 &1594294466
 GameObject:
   m_ObjectHideFlags: 0
@@ -10182,6 +10223,7 @@ GameObject:
   - component: {fileID: 1721549571}
   - component: {fileID: 1721549570}
   - component: {fileID: 1721549569}
+  - component: {fileID: 1721549574}
   m_Layer: 5
   m_Name: Scroll View Equipment
   m_TagString: Untagged
@@ -10323,6 +10365,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721549567}
   m_CullTransparentMesh: 1
+--- !u!114 &1721549574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721549567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc79d45c70164e42a413738d93ab5d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scroll: {fileID: 1721549569}
+  cellPrefab: {fileID: 1267347579}
 --- !u!1 &1781292878
 GameObject:
   m_ObjectHideFlags: 0
@@ -10730,7 +10786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1858217806
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11074,13 +11130,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2009836209}
+  - component: {fileID: 2009836210}
   m_Layer: 5
   m_Name: ShopEquipment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2009836209
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11102,6 +11159,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2009836210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009836208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e997497d4b450fb4d1268c0c64128d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopEquipmentMediator: {fileID: 1721549574}
+  upgradeWeaponMediator: {fileID: 1501468866}
+  bgShopEquipment: {fileID: 1858217805}
+  btnStartNewWave: {fileID: 1341856791}
 --- !u!1 &2017003201
 GameObject:
   m_ObjectHideFlags: 0

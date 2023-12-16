@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a72247d5aa84112962198463a3c864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0, g: 0, b: 0, a: 1}
+  color: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 1}
   _spriteRenderer: {fileID: 359424481701601248}
   _outlineSize: 1
 --- !u!1 &1690415120682157910
@@ -267,7 +267,6 @@ MonoBehaviour:
     m_Bits: 8192
   enemyInsideArea: []
   targetPosMin: {x: 0, y: 0, z: 0}
-  radius: 0
   stats:
   - statType: 4
     baseValue: 1
@@ -282,6 +281,7 @@ MonoBehaviour:
     statIncrease: 0
     timeEffect: 0
   sprWeapon: {fileID: 359424481701601248}
+  spriteOutline: {fileID: 7432551106079330980}
   projectile: {fileID: 4333120642297212104}
   effectBullet: {fileID: 7452793965785230673}
 --- !u!1 &7452793965785230673

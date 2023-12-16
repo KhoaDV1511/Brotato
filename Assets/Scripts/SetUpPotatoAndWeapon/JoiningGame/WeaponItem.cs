@@ -22,7 +22,7 @@ public class WeaponItem : EnhancedScrollerCellView
     }
     public void SetData(WeaponInfo weaponInfo)
     {
-        imgWeapon.sprite = weaponInfo.GetSprite();
+        imgWeapon.sprite = weaponInfo.sprWeapon;
         _id = weaponInfo.id;
     }
 }

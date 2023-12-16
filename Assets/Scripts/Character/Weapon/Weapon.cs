@@ -7,17 +7,39 @@ using UnityEngine;
 public class Weapon : Character
 {
     [SerializeField] protected SpriteRenderer sprWeapon;
+    [SerializeField] private SpriteOutline spriteOutline;
+    private readonly PotatoModel _potatoModel = PotatoModel.Instance;
 
-    public void SetWeapon(Sprite weapon)
+    public void SetWeapon(Sprite weapon, Color color)
     {
+        spriteOutline.color = color;
         sprWeapon.sprite = weapon;
     }
     private float RotationSpeed => enemyInsideArea.Length <= 0 ? 15 : 20;
-    protected virtual void LookAtTarget(Vector3 target, Transform weaponPos)
+    protected void LookAtTargetAndFlip(Transform weaponPos)
     {
-        var angle = AngleBetweenPoints(target, weaponPos.position);
+        var direction = _potatoModel.moveDirection == Vector3.zero
+            ? Vector3.right
+            : _potatoModel.moveDirection;
+        var target = enemyInsideArea.Length <= 0
+            ? direction.FindVectorADistanceVecTorB(origin: transform.localPosition, 10)
+            : targetPosMin;
+        var weaponPosition = enemyInsideArea.Length <= 0 ? weaponPos.localPosition : weaponPos.position;
+        
+        LookAtTarget(target, weaponPosition);
+        Flip(target, weaponPosition);
+    }
+
+    private void LookAtTarget(Vector3 target, Vector3 weaponPos)
+    {
+        var angle = AngleBetweenPoints(target, weaponPos);
         var targetRotation = Quaternion.Euler(new Vector3(0f,0f,angle));
-        transform.rotation = Quaternion.Slerp(weaponPos.rotation, targetRotation, Time.deltaTime * RotationSpeed);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * RotationSpeed);
+    }
+    
+    private void Flip(Vector3 target, Vector3 weaponPos)
+    {
+        transform.localScale = new Vector2(1, target.x > weaponPos.x ? 1 : -1);
     }
     
     protected float AngleBetweenPoints(Vector2 a, Vector2 b)

@@ -48,6 +48,7 @@ public class PotatoJoiningGameMediator : MonoBehaviour, IEnhancedScrollerDelegat
         else
         {
             gameObject.Hide();
+            _potatoModel.currentWeaponValue = 1;
             Signals.Get<StartGameSignals>().Dispatch();
         }
     }
@@ -106,19 +107,9 @@ public class WeaponInfo
 {
     public int id;
     public int rarity;
-    private static SpriteAtlas _sprWeapon;
-    private static SpriteAtlas SprWeapon
-    {
-        get
-        {
-            if (_sprWeapon == null) _sprWeapon = Resources.Load<SpriteAtlas>("SpriteAtlas/WeaponUI");
-            return _sprWeapon;
-        }
-    }
-    public Sprite GetSprite()
-    {
-        return SprWeapon.GetSprite(name);
-    }
+
+    private Sprite _sprWeapon;
+    public Sprite sprWeapon => _sprWeapon.GetSpriteWeapon(id);
 
     public string name;
     public TypeWeapon typeWeapon;
