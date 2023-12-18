@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -7,40 +9,57 @@ public class Enemy : Character
 {
     [SerializeField] private SpriteRenderer sprEnemy;
 
+    private List<EnemyStat> _enemyStats => GlobalData.Ins.enemyStats.enemyStats;
+    private EnemyStat _enemyStat => _enemyStats.Find(e => e.enemyType == _enemyType);
+
+    private int _levelEnemy;
     private Camera _camera;
     private Vector3 _enemyMoveNotVisible;
     private Coroutine _insideCam;
+    private EnemyType _enemyType;
+    private TypeDetectRangeEnemy _typeDetectRangeEnemy;
 
-
-    protected int currentHp;
-    protected float speedVelocity;
-
-    protected virtual void Start()
+    protected override void Start()
     {
+        base.Start();
         _camera = Camera.main;
-        Init();
         CheckInSideCam();
     }
-    
-    protected override void Init()
+
+    public void Init(int level = 0)
     {
-        base.Init();
-        attackSpeed = stats.Find(s => s.statType == StatType.AttackSpeed).baseValue;
-        attackRange = stats.Find(s => s.statType == StatType.AttackRange).baseValue;
-        detectRange = stats.Find(s => s.statType == StatType.DetectRange).baseValue;
-        speedVelocity = stats.Find(s => s.statType == StatType.SpeedVelocity).baseValue;
+        _levelEnemy = level;
+        stats.Add(new StatCharacter(StatType.ATK, _enemyStat.DameAttack(level)));
+        stats.Add(new StatCharacter(StatType.HP, _enemyStat.Health(level)));
+        stats.Add(new StatCharacter(StatType.AttackSpeed, _enemyStat.attackSpeed));
+        stats.Add(new StatCharacter(StatType.AttackRange, _enemyStat.attackRange));
+        stats.Add(new StatCharacter(StatType.DetectRange, _enemyStat.DetectRange(_typeDetectRangeEnemy)));
+        stats.Add(new StatCharacter(StatType.SpeedVelocity, _enemyStat.speedVelocity));
+        //Debug.Log($"Stats enemy: {DameAttack}, {AttackSpeed}, {AttackRange}, {DetectRange}, {CurrentHp}");
     }
 
-    public void ShowEnemy(Sprite spr)
+    public override void ReceiveDamage(StatType statType, float statIncrease)
     {
-        sprEnemy.sprite = spr;
+        base.ReceiveDamage(statType, statIncrease);
+        if(CurrentHp <= 0)
+        {
+            Signals.Get<EnemyDeathSignals>().Dispatch(transform.position);
+            Destroy(gameObject);
+        }
+    }
+
+    public void ShowEnemy(EnemyAttribute enemyAttribute)
+    {
+        sprEnemy.sprite = enemyAttribute.avatar;
+        _enemyType = enemyAttribute.enemyType;
         gameObject.Show();
     }
 
     private void Update()
     {
         EnemyMove();
-        Flip(transform, targetPosMin);
+        if(enemyDetected)
+            Flip(transform, enemyDetected.transform.position);
     }
 
     private void Flip(Transform enemy, Vector2 target)
@@ -60,30 +79,26 @@ public class Enemy : Character
         if (enemyInsideArea.Length <= 0)
         {
             positionTrans =
-                Vector3.MoveTowards(positionTrans, _enemyMoveNotVisible.MapLimited(), speedVelocity * Time.deltaTime);
+                Vector3.MoveTowards(positionTrans, _enemyMoveNotVisible.MapLimited(), SpeedVelocity * Time.deltaTime);
             transform.position = positionTrans;
         }
         else
         {
-            transform.position = Vector3.Distance(positionTrans, targetPosMin) < attackRange - 0.2f
+            transform.position = Vector3.Distance(positionTrans, enemyDetected.transform.position) < AttackRange - 0.2f
                 ? positionTrans
-                : Vector3.MoveTowards(transform.position, targetPosMin, speedVelocity * Time.deltaTime);
+                : Vector3.MoveTowards(transform.position, enemyDetected.transform.position, SpeedVelocity * Time.deltaTime);
         }
-    }
-
-    protected virtual void Attack()
-    {
     }
 
     private IEnumerator InsideCamera()
     {
         if (IsVisible(_camera, transform.position))
         {
-            detectRange = 9.5f;
+            _typeDetectRangeEnemy = TypeDetectRangeEnemy.InsideCam;
         }
         else
         {
-            detectRange = 4.75f;
+            _typeDetectRangeEnemy = TypeDetectRangeEnemy.OutSideCam;
             var position = transform.position;
             var posX = Random.Range(position.x - 2, position.x + 2);
             var posY = Random.Range(position.y - 2, position.y + 2);
@@ -108,13 +123,5 @@ public class Enemy : Character
         }
 
         return true;
-    }
-    
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.CompareTag("Weapon"))
-        {
-            Destroy(gameObject);
-        }
     }
 }

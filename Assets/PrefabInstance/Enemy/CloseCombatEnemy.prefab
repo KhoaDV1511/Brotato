@@ -192,21 +192,9 @@ MonoBehaviour:
   targetPosMin: {x: 0, y: 0, z: 0}
   stats:
   - statType: 4
-    baseValue: 1
-    statIncrease: 0
-    timeEffect: 0
   - statType: 5
-    baseValue: 0.7
-    statIncrease: 0
-    timeEffect: 0
   - statType: 3
-    baseValue: 9.5
-    statIncrease: 0
-    timeEffect: 0
   - statType: 1
-    baseValue: 2
-    statIncrease: 0
-    timeEffect: 0
   sprEnemy: {fileID: 7244811128509419095}
 --- !u!50 &2732478692117997819
 Rigidbody2D:

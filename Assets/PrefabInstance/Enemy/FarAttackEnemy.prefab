@@ -182,7 +182,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cff31f6c0a264c919872cad79f6c2aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {x: 0, y: 0, z: 0}
 --- !u!58 &6213027520105035999
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -276,21 +275,9 @@ MonoBehaviour:
   targetPosMin: {x: 0, y: 0, z: 0}
   stats:
   - statType: 4
-    baseValue: 1
-    statIncrease: 0
-    timeEffect: 0
   - statType: 5
-    baseValue: 3
-    statIncrease: 0
-    timeEffect: 0
   - statType: 3
-    baseValue: 9.5
-    statIncrease: 0
-    timeEffect: 0
   - statType: 1
-    baseValue: 2
-    statIncrease: 0
-    timeEffect: 0
   sprEnemy: {fileID: 7244811128509419095}
   projectile: {fileID: 5018225102632552903}
 --- !u!50 &2732478692117997819
@@ -327,7 +314,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.25}
+  m_Offset: {x: 0.020448893, y: 0.25}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -338,5 +325,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.8}
+  m_Size: {x: 0.6408978, y: 0.79999995}
   m_EdgeRadius: 0

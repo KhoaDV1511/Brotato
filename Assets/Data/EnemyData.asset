@@ -30,7 +30,7 @@ MonoBehaviour:
       name: Chaser
       avatar: {fileID: 1658370168, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
       enemyType: 0
-      level: 2
+      level: 1
   - turn: 3
     turnReloadBase: 3
     enemyQuantBase: 4
@@ -39,7 +39,7 @@ MonoBehaviour:
       name: Spitter
       avatar: {fileID: 1658370168, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
       enemyType: 0
-      level: 3
+      level: 1
   - turn: 4
     turnReloadBase: 3
     enemyQuantBase: 4
@@ -48,7 +48,7 @@ MonoBehaviour:
       name: Pursuer
       avatar: {fileID: 1000169177, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
       enemyType: 0
-      level: 6
+      level: 1
   - turn: 5
     turnReloadBase: 3
     enemyQuantBase: 4
@@ -57,7 +57,7 @@ MonoBehaviour:
       name: Lamprey
       avatar: {fileID: -2020001405, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
       enemyType: 1
-      level: 6
+      level: 1
   - turn: 6
     turnReloadBase: 2.8
     enemyQuantBase: 4
@@ -66,7 +66,7 @@ MonoBehaviour:
       name: Rhino
       avatar: {fileID: -2020001405, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
       enemyType: 1
-      level: 7
+      level: 2
   - turn: 7
     turnReloadBase: 2.8
     enemyQuantBase: 4
@@ -75,7 +75,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: 1244460044, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
       enemyType: 0
-      level: 0
+      level: 2
   - turn: 8
     turnReloadBase: 2.8
     enemyQuantBase: 4
@@ -84,7 +84,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: -2020001405, guid: 0f705b3c0a6f21341bd4bbbe47a93f1c, type: 3}
       enemyType: 1
-      level: 8
+      level: 2
   - turn: 9
     turnReloadBase: 2.8
     enemyQuantBase: 4
@@ -93,7 +93,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: 920198888, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
       enemyType: 0
-      level: 10
+      level: 2
   - turn: 10
     turnReloadBase: 2.8
     enemyQuantBase: 4
@@ -102,7 +102,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: 596272573, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
       enemyType: 1
-      level: 8
+      level: 2
   - turn: 11
     turnReloadBase: 2.6
     enemyQuantBase: 6
@@ -111,7 +111,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: -1565787501, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
       enemyType: 0
-      level: 10
+      level: 3
   - turn: 12
     turnReloadBase: 2.6
     enemyQuantBase: 6
@@ -120,7 +120,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: -1565787501, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
       enemyType: 0
-      level: 10
+      level: 3
   - turn: 13
     turnReloadBase: 2.6
     enemyQuantBase: 6
@@ -129,7 +129,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: -1565787501, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
       enemyType: 0
-      level: 10
+      level: 3
   - turn: 14
     turnReloadBase: 2.6
     enemyQuantBase: 6
@@ -138,7 +138,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: -1037945073, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
       enemyType: 0
-      level: 11
+      level: 3
   - turn: 15
     turnReloadBase: 2.6
     enemyQuantBase: 6
@@ -147,7 +147,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: -1037945073, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
       enemyType: 0
-      level: 11
+      level: 3
   - turn: 16
     turnReloadBase: 2.4
     enemyQuantBase: 6
@@ -156,7 +156,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: -142085459, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
       enemyType: 0
-      level: 11
+      level: 4
   - turn: 17
     turnReloadBase: 2.4
     enemyQuantBase: 6
@@ -165,7 +165,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: -142085459, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
       enemyType: 0
-      level: 12
+      level: 4
   - turn: 18
     turnReloadBase: 2.4
     enemyQuantBase: 6
@@ -174,7 +174,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: -1366109548, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
       enemyType: 1
-      level: 15
+      level: 4
   - turn: 19
     turnReloadBase: 2.4
     enemyQuantBase: 6
@@ -183,7 +183,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: -2041733626, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
       enemyType: 0
-      level: 15
+      level: 4
   - turn: 20
     turnReloadBase: 2.4
     enemyQuantBase: 6
@@ -192,7 +192,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: -2041733626, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
       enemyType: 0
-      level: 16
+      level: 4
   - turn: 21
     turnReloadBase: 2.2
     enemyQuantBase: 8
@@ -201,7 +201,7 @@ MonoBehaviour:
       name: 
       avatar: {fileID: 798652366, guid: da1f3fd17e4b4514e9ecfb42022bda02, type: 3}
       enemyType: 0
-      level: 16
+      level: 5
   timePerWaves:
   - wave: 1
     time: 20

@@ -1,26 +1,45 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.U2D;
 
 public class EquipmentItemInfo
 {
-    public int id;
+    public int idRoll;
+    public int idItem;
     public Tire tire;
     public TypeEquipment typeEquipment;
     private Sprite _sprWeapon;
-    private Sprite sprWeapon => _sprWeapon.GetSpriteWeapon(id);
+
+    private List<WeaponStat> _weaponStats => GlobalData.Ins.weaponAndItemStats.weaponStats;
+    private WeaponStat _weaponStat => _weaponStats.Find(w => w.id == idItem);
+    private List<ItemStat> _itemStats => GlobalData.Ins.weaponAndItemStats.itemStats;
+    private ItemStat _itemStat => _itemStats.Find(i => i.id == idItem);
+
+    private Sprite sprWeapon => _sprWeapon.GetSpriteWeapon(idItem);
     public Sprite GetSprite()
     {
-        return typeEquipment == TypeEquipment.Weapon ? sprWeapon : SprItem.GetSprite($"Item_1");
+        return typeEquipment == TypeEquipment.Weapon ? sprWeapon : SprItem.GetSprite($"Item_{idItem}");
+    }
+
+    public string Price()
+    {
+        return typeEquipment == TypeEquipment.Weapon ? _weaponStat.Price(tire).ToString() : _itemStat.price.ToString();
     }
 
     public string Description()
     {
-        return tire.ToString();
+        return typeEquipment == TypeEquipment.Weapon ? DescriptionWeapon() : tire.ToString();
     }
 
-    public EquipmentItemInfo(int id, Tire tire, TypeEquipment typeEquipment)
+    private string DescriptionWeapon()
     {
-        this.id = id;
+        return $"Sát thương cơ bản {_weaponStat.DameAttack(tire)}\nTốc độ đánh {_weaponStat.AttackSpeed(tire)}\nTầm đánh {_weaponStat.AttackRange(tire)}";
+    }
+
+    public EquipmentItemInfo(int idRoll, int idItem, Tire tire, TypeEquipment typeEquipment)
+    {
+        this.idRoll = idRoll;
+        this.idItem = idItem;
         this.tire = tire;
         this.typeEquipment = typeEquipment;
     }

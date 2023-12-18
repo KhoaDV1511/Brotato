@@ -11,20 +11,10 @@ public class Sword : Weapon
     private Sequence _attack;
     private bool _isAttack = true;
 
-    private void Start()
+    private void OnEnable()
     {
-        Init();
-        DetectAndAttackTarget();
-    }
-
-    protected override void Init()
-    {
-        base.Init();
-        attackSpeed = stats.Find(s => s.statType == StatType.AttackSpeed).baseValue;
-        attackRange = stats.Find(s => s.statType == StatType.AttackRange).baseValue;
-        detectRange = stats.Find(s => s.statType == StatType.DetectRange).baseValue;
-        _isAttack = !_isAttack;
-        boxMelee.enabled = !_isAttack;
+        _isAttack = false;
+        boxMelee.enabled = _isAttack;
     }
 
     private void Update()
@@ -37,27 +27,36 @@ public class Sword : Weapon
     protected override void Attack()
     {
         base.Attack();
+        //Debug.Log($"Stats weapon dame: {dame}");
         _attack?.Kill();
         var transform1 = transform;
         var localPos = transform1.localPosition;
         var position = transform1.position;
-        var endValue = new Vector3(0, 0, AngleBetweenPoints(targetPosMin, position));
+        var enemyPos = enemyDetected.transform.position;
+        var endValue = new Vector3(0, 0, AngleBetweenPoints(enemyPos, position));
 
         _attack = DOTween.Sequence().Append(transform.DOLocalRotate(endValue, 0.1f))
             .AppendCallback(() =>
             {
                 _isAttack = true;
                 boxMelee.enabled = _isAttack;
-            }).Append(transform.DOLocalMove((targetPosMin - position).FindVectorADistanceVecTorB(localPos, attackRange),
+            }).Append(transform.DOLocalMove((enemyPos - position).FindVectorADistanceVecTorB(localPos, AttackRange),
                 0.1f))
             .AppendCallback(() => boxMelee.enabled = false).AppendInterval(0.1f)
             .Append(transform.DOLocalMove(localPos, 0.1f)).AppendCallback(() => _isAttack = false);
     }
-
-    protected override void DetectAndAttackTarget()
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        base.DetectAndAttackTarget();
-        if (enemyInsideArea.Length > 0 && Vector3.Distance(targetPosMin, transform.position) <= attackRange)
-            Attack();
+        if (col.CompareTag(PotatoTag.ENEMY))
+        {
+            if(enemyDetected)
+            {
+                enemyDetected.ReceiveDamage(StatType.HP, DameAttack);
+            }
+            if(!Equals(col.GetComponent<Character>(), enemyDetected))
+            {
+                col.GetComponent<Character>().ReceiveDamage(StatType.HP, DameAttack * 0.7f);
+            }
+        }
     }
 }

@@ -64,6 +64,11 @@ public class EnemyAttribute
     public Sprite avatar;
     public EnemyType enemyType;
     public int level;
+
+    public int LevelEnemyPerWave(int wave, int turn)
+    {
+        return level + wave + turn;
+    }
 }
 
 public enum EnemyType

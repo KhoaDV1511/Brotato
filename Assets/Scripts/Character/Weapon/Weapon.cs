@@ -1,7 +1,4 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class Weapon : Character
@@ -9,11 +6,25 @@ public class Weapon : Character
     [SerializeField] protected SpriteRenderer sprWeapon;
     [SerializeField] private SpriteOutline spriteOutline;
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
+    private List<WeaponStat> _weaponStats => GlobalData.Ins.weaponAndItemStats.weaponStats;
+    private WeaponStat _weaponStat => _weaponStats.Find(w => w.id == _potatoModel.weaponId);
+    
 
     public void SetWeapon(Sprite weapon, Color color)
     {
-        spriteOutline.color = color;
         sprWeapon.sprite = weapon;
+        spriteOutline.color = color;
+        spriteOutline.UpdateOutlineSprite();
+    }
+    
+    public void Init(Tire tire)
+    {
+        stats.Clear();
+        stats.Add(new StatCharacter(StatType.ATK, _weaponStat.DameAttack(tire)));
+        stats.Add(new StatCharacter(StatType.AttackSpeed, _weaponStat.AttackSpeed(tire)));
+        stats.Add(new StatCharacter(StatType.AttackRange, _weaponStat.AttackRange(tire)));
+        stats.Add(new StatCharacter(StatType.DetectRange, _weaponStat.DetectRange(tire)));
+        //Debug.Log($"Stats weapon: {dame}, {attackSpeed}, {attackRange}, {detectRange}");
     }
     private float RotationSpeed => enemyInsideArea.Length <= 0 ? 15 : 20;
     protected void LookAtTargetAndFlip(Transform weaponPos)
@@ -23,7 +34,7 @@ public class Weapon : Character
             : _potatoModel.moveDirection;
         var target = enemyInsideArea.Length <= 0
             ? direction.FindVectorADistanceVecTorB(origin: transform.localPosition, 10)
-            : targetPosMin;
+            : enemyPosMin;
         var weaponPosition = enemyInsideArea.Length <= 0 ? weaponPos.localPosition : weaponPos.position;
         
         LookAtTarget(target, weaponPosition);
@@ -46,8 +57,10 @@ public class Weapon : Character
     {
         return Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
     }
-    protected virtual void Attack()
+
+    private void OnDrawGizmos()
     {
-        
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, AttackRange);
     }
 }

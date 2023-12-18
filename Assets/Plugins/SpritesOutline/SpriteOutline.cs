@@ -20,10 +20,15 @@ public class SpriteOutline : MonoBehaviour {
 
 	private Material _preMat;
 
-	void OnEnable() {
+	public void UpdateOutlineSprite()
+	{
 		_preMat = spriteRenderer.sharedMaterial;
 		spriteRenderer.sharedMaterial = defaultMaterial;
 		UpdateOutline(_outlineSize);
+	}
+	void OnEnable()
+	{
+		UpdateOutlineSprite();
 	}
 
 	void OnDisable() {

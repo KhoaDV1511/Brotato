@@ -1,11 +1,14 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class GlobalData : MonoBehaviour
 {
     public EnemyData enemyData;
     public PotatoData potatoData;
     public RateEquipment rateEquipment;
+    public WeaponAndItemStats weaponAndItemStats;
+    public EnemyStats enemyStats;
 
     private static GlobalData _ins;
 

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Net.NetworkInformation;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -19,6 +20,7 @@ public class EnemyMediator : MonoBehaviour
     private readonly EnemyModel _enemyModel = EnemyModel.Instance;
     
     private readonly StartGameSignals _startGameSignals = Signals.Get<StartGameSignals>();
+    private readonly PotatoRevivalSignals _potatoRevivalSignals = Signals.Get<PotatoRevivalSignals>();
     
     private Coroutine _rtEnemyWave;
     private Vector2 _posAppear;
@@ -26,11 +28,13 @@ public class EnemyMediator : MonoBehaviour
     private void OnEnable()
     {
         _startGameSignals.AddListener(StartWaveEnemy);
+        _potatoRevivalSignals.AddListener(DestroyEnemy);
     }
 
     private void OnDisable()
     {
         _startGameSignals.RemoveListener(StartWaveEnemy);
+        _potatoRevivalSignals.RemoveListener(DestroyEnemy);
     }
 
     private void StartWaveEnemy()
@@ -38,12 +42,17 @@ public class EnemyMediator : MonoBehaviour
         if(_rtEnemyWave != null) StopCoroutine(_rtEnemyWave);
         _rtEnemyWave = StartCoroutine(EnemyWave());
     }
+
+    private void DestroyEnemy()
+    {
+        transform.DestroyChildren();
+    }
     
     private IEnumerator EnemyWave()
     {
         foreach (var wave in _enemyModel.TimePerWaves)
         {
-            transform.DestroyChildren();
+            DestroyEnemy();
             Signals.Get<WaveTimeSignals>().Dispatch(wave);
             var index = 0;
             float time = 0;
@@ -53,7 +62,7 @@ public class EnemyMediator : MonoBehaviour
                 time += _enemyModel.TurnReload(TurnInWave(turn), wave.wave - 1);
                 for (var k = 0; k < _enemyModel.EnemyQuantity(TurnInWave(turn), wave.wave - 1); k++)
                 {
-                    EnemyPerTurn(time, TurnInWave(turn));
+                    EnemyPerTurn(time, TurnInWave(turn), wave.wave);
                 }
                 index++;
             }
@@ -63,25 +72,26 @@ public class EnemyMediator : MonoBehaviour
         }
     }
 
-    private void EnemyPerTurn(float time, int turn)
+    private void EnemyPerTurn(float time, int turn, int wave)
     {
         this.WaitTimeout(() =>
         {
             _posAppear = PositionAppear();
             WarningEnemyAppear(_posAppear);
-            EnemyAppear(_posAppear, turn);
+            EnemyAppear(_posAppear, turn, wave);
         }, time);
     }
-    private void EnemyAppear(Vector2 posAppear, int turn)
+    private void EnemyAppear(Vector2 posAppear, int turn, int wave)
     {
         var enemyAttribute = _enemyModel.WaveEnemies[turn].enemyAttribute;
         var objEnemy = Instantiate(enemyType[(int)enemyAttribute.enemyType], transform);
         objEnemy.transform.position = posAppear;
+        objEnemy.Init(enemyAttribute.LevelEnemyPerWave(wave, turn));
         
         this.WaitTimeout(() =>
         {
             if(objEnemy != null)
-                objEnemy.ShowEnemy(enemyAttribute.avatar);
+                objEnemy.ShowEnemy(enemyAttribute);
         }, PotatoKey.TIME_PER_LOOP * PotatoKey.LOOPS);
     }
     private void WarningEnemyAppear(Vector2 posAppear)

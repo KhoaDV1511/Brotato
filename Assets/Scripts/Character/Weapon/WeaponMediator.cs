@@ -12,42 +12,44 @@ public class WeaponMediator : MonoBehaviour
 
     private readonly RenderWeapon _renderWeapon = new RenderWeapon();
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
+    private List<ElementWeaponUpgrade> ElementWeaponUpgrades => _potatoModel.elementWeaponUpgrades;
     private List<WeaponInfo> _weapons => GlobalData.Ins.potatoData.weapons;
     private readonly StartGameSignals _startGameSignals = Signals.Get<StartGameSignals>();
     private readonly StartNewWaveSignals _startNewWaveSignals = Signals.Get<StartNewWaveSignals>();
     
+    private void Start()
+    {
+        ElementStartGame();
+    }
+    
     private void OnEnable()
     {
-        _startGameSignals.AddListener(RenderWeaponStartGame);
+        _startGameSignals.AddListener(ElementStartGame);
+        _startGameSignals.AddListener(RenderWeaponStartNewWave);
         _startNewWaveSignals.AddListener(RenderWeaponStartNewWave);
     }
 
     private void OnDisable()
     {
-        _startGameSignals.RemoveListener(RenderWeaponStartGame);
+        _startGameSignals.RemoveListener(ElementStartGame);
+        _startGameSignals.RemoveListener(RenderWeaponStartNewWave);
         _startNewWaveSignals.RemoveListener(RenderWeaponStartNewWave);
     }
-
-    [Button]
-    private void RenderWeaponStartGame()
+    
+    private void ElementStartGame()
     {
-        transform.DestroyChildren();
-        transform.localPosition =  _potatoModel.currentWeaponValue == 2 ? Vector2.zero : Vector2.up * 0.25f;
-        for (var i = 0; i <  _potatoModel.currentWeaponValue; i++)
-        {
-            var i1 = i;
-            this.WaitTimeout(() => SpawnWeapon(i1, _potatoModel.currentWeaponValue, Tire.TireOne), 0.1f * i);
-        }
+        ElementWeaponUpgrades.Clear();
+        ElementWeaponUpgrades.Add(new ElementWeaponUpgrade(_potatoModel.weaponId, Tire.TireOne));
     }
 
-    private void RenderWeaponStartNewWave(List<ElementWeaponUpgrade> elementWeaponUpgrades)
+    private void RenderWeaponStartNewWave()
     {
         transform.DestroyChildren();
-        transform.localPosition =  _potatoModel.currentWeaponValue == 2 ? Vector2.zero : Vector2.up * 0.25f;
-        for (var i = 0; i <  _potatoModel.currentWeaponValue; i++)
+        transform.localPosition =  ElementWeaponUpgrades.Count == 2 ? Vector2.zero : Vector2.up * 0.25f;
+        for (var i = 0; i <  ElementWeaponUpgrades.Count; i++)
         {
             var i1 = i;
-            this.WaitTimeout(() => SpawnWeapon(i1,elementWeaponUpgrades.Count, elementWeaponUpgrades[i1].tire), 0.1f * i);
+            this.WaitTimeout(() => SpawnWeapon(i1, ElementWeaponUpgrades.Count, _potatoModel.elementWeaponUpgrades[i1].tire), 0.1f * i);
         }
     }
 
@@ -61,6 +63,7 @@ public class WeaponMediator : MonoBehaviour
             new Vector2(position.x + SetUpRadius(quantityWeapon) * Mathf.Sin(angle),
                 position.y + SetUpRadius(quantityWeapon) * Mathf.Cos(angle));
         obj.SetWeapon(_renderWeapon.GetSprite(_potatoModel.weaponId), color[(int)tire]);
+        obj.Init(tire);
     }
 
     private float SetUpAngle(int quant)

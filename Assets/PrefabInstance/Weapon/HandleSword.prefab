@@ -149,21 +149,11 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 8192
-  enemyInsideArea: []
-  targetPosMin: {x: 0, y: 0, z: 0}
   stats:
   - statType: 4
-    baseValue: 1
-    statIncrease: 0
-    timeEffect: 0
   - statType: 5
-    baseValue: 3
-    statIncrease: 0
-    timeEffect: 0
   - statType: 3
-    baseValue: 7
-    statIncrease: 0
-    timeEffect: 0
+  - statType: 2
   sprWeapon: {fileID: 8347441175424381701}
   spriteOutline: {fileID: 5911425757864860175}
   boxMelee: {fileID: 5101472147561381521}

@@ -48,7 +48,6 @@ public class PotatoJoiningGameMediator : MonoBehaviour, IEnhancedScrollerDelegat
         else
         {
             gameObject.Hide();
-            _potatoModel.currentWeaponValue = 1;
             Signals.Get<StartGameSignals>().Dispatch();
         }
     }

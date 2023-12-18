@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class UpgradeEquipmentItem : EnhancedScrollerCellView
 {
     [SerializeField] private Image imgEquipment;
-    [SerializeField] private TextMeshProUGUI txtDescription;
+    [SerializeField] private TextMeshProUGUI txtDescription, txtPrice;
     [SerializeField] private Button btnEquipment;
 
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
@@ -23,6 +23,7 @@ public class UpgradeEquipmentItem : EnhancedScrollerCellView
     {
         imgEquipment.sprite = equipmentItemInfo.GetSprite();
         txtDescription.SetText(equipmentItemInfo.Description());
+        txtPrice.SetText(equipmentItemInfo.Price());
 
         _typeEquipment = equipmentItemInfo.typeEquipment;
         _equipmentItemInfo = equipmentItemInfo;
@@ -32,13 +33,14 @@ public class UpgradeEquipmentItem : EnhancedScrollerCellView
     {
         if (_typeEquipment == TypeEquipment.Weapon)
         {
-            if(_potatoModel.currentWeaponValue >= PotatoKey.MAX_WEAPON_IN_HAND) return;
+            if(_potatoModel.elementWeaponUpgrades.Count >= PotatoKey.MAX_WEAPON_IN_HAND) return;
             Signals.Get<UpgradeWeaponSignals>().Dispatch(_equipmentItemInfo);
-            _potatoModel.currentWeaponValue += 1;
+            Signals.Get<BuyItemRollClick>().Dispatch(_equipmentItemInfo.idRoll);
         }
         else
         {
             Signals.Get<UpgradeItemSignals>().Dispatch(_equipmentItemInfo);
+            Signals.Get<BuyItemRollClick>().Dispatch(_equipmentItemInfo.idRoll);
         }
     }
 }

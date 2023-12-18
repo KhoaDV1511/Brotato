@@ -11,6 +11,7 @@ TagManager:
   - area
   - Enemy
   - Weapon
+  - DropItem
   layers:
   - Default
   - TransparentFX
