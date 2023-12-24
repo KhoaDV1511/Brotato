@@ -19,7 +19,7 @@ MonoBehaviour:
     - 20
     - 30
     - 50
-    rateDamage:
+    meleeAndRangedDame:
     - 1
     - 1
     - 1
@@ -56,7 +56,7 @@ MonoBehaviour:
     - 10
     - 15
     - 20
-    rateDamage:
+    meleeAndRangedDame:
     - 0.8
     - 0.8
     - 0.8
@@ -93,7 +93,7 @@ MonoBehaviour:
     - 10
     - 15
     - 20
-    rateDamage:
+    meleeAndRangedDame:
     - 0.5
     - 0.5
     - 0.5
@@ -130,7 +130,7 @@ MonoBehaviour:
     - 10
     - 15
     - 20
-    rateDamage:
+    meleeAndRangedDame:
     - 0.5
     - 0.5
     - 0.5
@@ -167,7 +167,7 @@ MonoBehaviour:
     - 4
     - 5
     - 8
-    rateDamage:
+    meleeAndRangedDame:
     - 0.5
     - 0.6
     - 0.7
@@ -204,7 +204,7 @@ MonoBehaviour:
     - 25
     - 40
     - 60
-    rateDamage:
+    meleeAndRangedDame:
     - 1
     - 1
     - 1
@@ -241,7 +241,7 @@ MonoBehaviour:
     - 8
     - 12
     - 20
-    rateDamage:
+    meleeAndRangedDame:
     - 1
     - 1
     - 1
@@ -278,7 +278,7 @@ MonoBehaviour:
     - 9
     - 12
     - 20
-    rateDamage:
+    meleeAndRangedDame:
     - 0.8
     - 0.8
     - 0.8
@@ -315,7 +315,7 @@ MonoBehaviour:
     - 6
     - 9
     - 15
-    rateDamage:
+    meleeAndRangedDame:
     - 0.8
     - 0.8
     - 0.8
@@ -349,41 +349,89 @@ MonoBehaviour:
   itemStats:
   - id: 1
     tire: 1
-    statType: 0
+    statItemIncreases:
+    - statType: 0
+      increaseFor: 0
+      statIncrease: 8
+    - statType: 8
+      increaseFor: 0
+      statIncrease: -0.04
     price: 65
   - id: 2
     tire: 2
-    statType: 0
+    statItemIncreases:
+    - statType: 8
+      increaseFor: 0
+      statIncrease: 0.05
     price: 60
   - id: 3
     tire: 2
-    statType: 0
+    statItemIncreases:
+    - statType: 0
+      increaseFor: 0
+      statIncrease: 15
+    - statType: 1
+      increaseFor: 2
+      statIncrease: 8
     price: 80
   - id: 4
     tire: 1
-    statType: 0
+    statItemIncreases:
+    - statType: 0
+      increaseFor: 0
+      statIncrease: 15
     price: 50
   - id: 5
     tire: 2
-    statType: 0
+    statItemIncreases:
+    - statType: 0
+      increaseFor: 0
+      statIncrease: 8
+    - statType: 6
+      increaseFor: 0
+      statIncrease: 3
     price: 85
   - id: 6
     tire: 0
-    statType: 0
+    statItemIncreases:
+    - statType: 0
+      increaseFor: 0
+      statIncrease: 8
     price: 25
   - id: 7
     tire: 0
-    statType: 0
+    statItemIncreases:
+    - statType: 7
+      increaseFor: 1
+      statIncrease: 3
+    - statType: 5
+      increaseFor: 1
+      statIncrease: 0.03
     price: 15
   - id: 8
     tire: 2
-    statType: 0
+    statItemIncreases:
+    - statType: 0
+      increaseFor: 0
+      statIncrease: 8
+    - statType: 1
+      increaseFor: 0
+      statIncrease: 0.02
     price: 80
   - id: 9
     tire: 3
-    statType: 0
+    statItemIncreases:
+    - statType: 2
+      increaseFor: 1
+      statIncrease: 3
+    - statType: 8
+      increaseFor: 0
+      statIncrease: 0.3
     price: 120
   - id: 10
     tire: 0
-    statType: 0
+    statItemIncreases:
+    - statType: 8
+      increaseFor: 0
+      statIncrease: 0.08
     price: 25

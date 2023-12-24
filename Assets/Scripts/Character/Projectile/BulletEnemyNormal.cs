@@ -6,7 +6,7 @@ public class BulletEnemyNormal : Projectile
     {
         if (col.CompareTag(PotatoTag.PLAYER))
         {
-            Debug.Log($"Dame Attacker {dameCaused}");
+            Debug.Log($"Enemy far Dame Attacker {dameCaused}");
             if (target)
             {
                 target.ReceiveDamage(StatType.HP, dameCaused);

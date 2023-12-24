@@ -52,8 +52,7 @@ public class EnemyMediator : MonoBehaviour
     {
         foreach (var wave in _enemyModel.TimePerWaves)
         {
-            DestroyEnemy();
-            Signals.Get<WaveTimeSignals>().Dispatch(wave);
+            InitStarNewtWave(wave);
             var index = 0;
             float time = 0;
             while (time <= wave.time)
@@ -67,9 +66,23 @@ public class EnemyMediator : MonoBehaviour
                 index++;
             }
             yield return new WaitForSeconds(wave.time);
+            Signals.Get<StopAttackSignals>().Dispatch(true);
+            
+            yield return new WaitForSeconds(0.5f);
+            Signals.Get<HarvestToStoreSignals>().Dispatch();
+            
+            yield return new WaitForSeconds(1.3f);
             if (wave.wave == _enemyModel.TimePerWaves[^1].wave) yield break;
+            Signals.Get<StopAttackSignals>().Dispatch(false);
             Signals.Get<EndWaveSignals>().Dispatch(wave.wave);
         }
+    }
+
+    private void InitStarNewtWave(TimePerWave wave)
+    {
+        _potatoModel.currentWave = wave.wave;
+        DestroyEnemy();
+        Signals.Get<WaveTimeSignals>().Dispatch(wave);
     }
 
     private void EnemyPerTurn(float time, int turn, int wave)
@@ -86,7 +99,7 @@ public class EnemyMediator : MonoBehaviour
         var enemyAttribute = _enemyModel.WaveEnemies[turn].enemyAttribute;
         var objEnemy = Instantiate(enemyType[(int)enemyAttribute.enemyType], transform);
         objEnemy.transform.position = posAppear;
-        objEnemy.Init(enemyAttribute.LevelEnemyPerWave(wave, turn));
+        objEnemy.Init(enemyAttribute.LevelEnemyPerWave(wave, turn), enemyAttribute.enemyType);
         
         this.WaitTimeout(() =>
         {

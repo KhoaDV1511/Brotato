@@ -2,25 +2,27 @@ using System.Net.NetworkInformation;
 using DG.Tweening;
 using UnityEngine;
 
-public class SprDropItem : MonoBehaviour
+public class SprDropItem : MonoBehaviour, DropItemInfo
 {
     [SerializeField] private SpriteRenderer sprDropItem;
-    private readonly EndWaveSignals _endWaveSignals = Signals.Get<EndWaveSignals>();
+
+    private readonly HarvestToStoreSignals _harvestToStoreSignals =
+        Signals.Get<HarvestToStoreSignals>();
 
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
     private Sequence _dropMove;
     private DurationDrop _durationDrop;
     private void OnEnable()
     {
-        _endWaveSignals.AddListener(PickItem);
+        _harvestToStoreSignals.AddListener(PickItem);
     }
 
     private void OnDisable()
     {
-        _endWaveSignals.RemoveListener(PickItem);
+        _harvestToStoreSignals.RemoveListener(PickItem);
     }
 
-    private void PickItem(int wave)
+    private void PickItem()
     {
         if(_durationDrop == DurationDrop.InGame) return;
         Pick(DurationDrop.EndWave);
@@ -30,13 +32,14 @@ public class SprDropItem : MonoBehaviour
     {
         if (durationDrop == DurationDrop.InGame)
         {
-            _potatoModel.dropItemPicked += 1;
+            _potatoModel.dropItemPicked += Level + 1;
             MoveDropItem();
+            Signals.Get<PickItemSignals>().Dispatch(Level, transform.position);
             Signals.Get<UpdateDropItemPickedSignals>().Dispatch();
         }
         else
         {
-            _potatoModel.dropItemStore += 1;
+            _potatoModel.dropItemInfos.Add(this);
             Signals.Get<PotatoPickDropItemToStoreSignals>().Dispatch(transform.position);
             Destroy(gameObject);
         }
@@ -48,9 +51,10 @@ public class SprDropItem : MonoBehaviour
         _dropMove = DOTween.Sequence().Append(transform.DOLocalMove(Vector3.zero, 0.5f)).Append(transform.DOScale(0, 0.3f).From(1))
             .AppendCallback(() => Destroy(gameObject));
     }
-    public void InitDropItem(Sprite sprItem)
+    public void InitDropItem(Sprite sprItem, int level = 0)
     {
         sprDropItem.sprite = sprItem;
+        Level = level;
         gameObject.Show();
     }
     private void OnTriggerEnter2D(Collider2D col)
@@ -62,4 +66,6 @@ public class SprDropItem : MonoBehaviour
             Pick(_durationDrop);
         }
     }
+
+    public int Level { get; set; }
 }

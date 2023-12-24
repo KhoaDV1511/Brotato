@@ -6,8 +6,7 @@ using UnityEngine;
 public class Sword : Weapon
 {
     [SerializeField] private BoxCollider2D boxMelee;
-
-    private readonly PotatoModel _potatoModel = PotatoModel.Instance;
+    
     private Sequence _attack;
     private bool _isAttack = true;
 

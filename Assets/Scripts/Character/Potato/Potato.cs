@@ -7,41 +7,104 @@ using UnityEngine.UI;
 
 public class Potato : Character
 {
-    [SerializeField] private PotatoMediator potatoMediator;
     [SerializeField] private Joystick joystick;
     [SerializeField] private AnimationClip[] clips;
     [SerializeField] private Transform potatoBody;
     [SerializeField] private RenderPotato renderPotato = new RenderPotato();
-
-    private readonly PotatoModel _potatoModel = PotatoModel.Instance;
+    [SerializeField] private PotatoMediator potatoMediator;
     private readonly StartGameSignals _startGameSignals = Signals.Get<StartGameSignals>();
     private readonly PotatoRevivalSignals _potatoRevivalSignals = Signals.Get<PotatoRevivalSignals>();
+    private readonly StartNewWaveSignals _startNewWaveSignals = Signals.Get<StartNewWaveSignals>();
+    private readonly UpgradeItemSignals _upgradeItemSignals = Signals.Get<UpgradeItemSignals>();
     
     private AnimancerComponent _animancer;
     private Rigidbody2D _rb;
-    
-    private void OnEnable()
-    {
-        _startGameSignals.AddListener(Init);
-        _potatoRevivalSignals.AddListener(PotatoRevival);
-    }
-
-    private void OnDisable()
-    {
-        _startGameSignals.RemoveListener(Init);
-        _potatoRevivalSignals.RemoveListener(PotatoRevival);
-    }
 
     protected override void Start()
     {
-        //InitStat();
-        //base.Start();
         _rb = GetComponent<Rigidbody2D>();
         _animancer = GetComponent<AnimancerComponent>();
         _animancer.Play(clips[(int)AnimPotato.Idle]);
     }
+
+    protected override void OnEnable()
+    {
+        _startGameSignals.AddListener(InitStat);
+        _potatoRevivalSignals.AddListener(PotatoResetHp);
+        _startNewWaveSignals.AddListener(PotatoResetHp);
+        _upgradeItemSignals.AddListener(UpdateWeapon);
+    }
+
+    protected override void OnDisable()
+    {
+        _startGameSignals.RemoveListener(InitStat);
+        _potatoRevivalSignals.RemoveListener(PotatoResetHp);
+        _startNewWaveSignals.RemoveListener(PotatoResetHp);
+        _upgradeItemSignals.RemoveListener(UpdateWeapon);
+    }
+    
+    private void UpdateWeapon(EquipmentItemInfo equipmentItemInfo)
+    {
+        var statType = equipmentItemInfo.ItemStat.statItemIncreases.Find(s => s.increaseFor == IncreaseFor.Potato);
+        if (statType != null)
+        {
+            stats.Find(s => s.statType == statType.statType).statIncrease += statType.statIncrease;
+            Debug.Log("update potato");
+        }
+    }
+
+    private void InitPotato()
+    {
+        stats.Clear();
+        var statPotato = new PotatoStatInit(10, 5, 5, 6);
+        stats.Add(new StatCharacter(StatType.HP, statPotato.health));
+        stats.Add(new StatCharacter(StatType.SpeedVelocity, statPotato.speedVelocity));
+        stats.Add(new StatCharacter(StatType.AttackRange));
+        stats.Add(new StatCharacter(StatType.AttackSpeed));
+        stats.Add(new StatCharacter(StatType.Dodge));
+        stats.Add(new StatCharacter(StatType.HPRegeneration));
+        stats.Add(new StatCharacter(StatType.DetectRange, statPotato.detectRange));
+    }
+    private void InitStat()
+    {
+        InitPotato();
+        RenderPotato();
+
+        UpdatePotato(PotatoModel.levelPotato);
+        potatoMediator.InitHealthAndLevel(Mathf.CeilToInt(CurrentHp));
+    }
+    
+    private void PotatoResetHp()
+    {
+        Debug.Log(stats.Count);
+        stats.Find(s => s.statType == StatType.HP).statIncrease = 0;
+        UpdatePotato(PotatoModel.levelPotato);
+        potatoMediator.maxHp = Mathf.CeilToInt(CurrentHp);
+        potatoMediator.SetValueHp(Mathf.CeilToInt(CurrentHp));
+    }
+
+    private void UpdatePotato(int level)
+    {
+        stats.Find(s => s.statType == StatType.HP).statIncrease += level * 10;
+        stats.Find(s => s.statType == StatType.SpeedVelocity).statIncrease += level * 0.2f;
+    }
+    
+    public override void ReceiveDamage(StatType statType, float statIncreases)
+    {
+        base.ReceiveDamage(statType, statIncreases);
+        potatoMediator.SetValueHp(Mathf.CeilToInt(CurrentHp));
+        if(CurrentHp <= 0) Signals.Get<PotatoDeathSignals>().Dispatch();
+    }
+    private void RenderPotato()
+    {
+        renderPotato.RenderEyes(PotatoModel.potatoId);
+        renderPotato.RenderHairs(PotatoModel.potatoId);
+        renderPotato.RenderMouths(PotatoModel.potatoId);
+    }
     private void FixedUpdate()
     {
+        if(PotatoModel.isHarvestToStore) return;
+        
         var horizontal = joystick.Horizontal;
         var vertical = joystick.Vertical;
         var move = new Vector2(horizontal, vertical);
@@ -61,9 +124,9 @@ public class Potato : Character
     {
         var position = _rb.position;
         Vector3 posMove = position + move * (SpeedVelocity * Time.fixedDeltaTime);
-        _potatoModel.moveDirection = ((Vector2)posMove - position).normalized;
+        PotatoModel.moveDirection = ((Vector2)posMove - position).normalized;
         _rb.MovePosition(posMove.MapLimited());
-        _potatoModel.potatoPos = posMove;
+        PotatoModel.potatoPos = posMove;
         _animancer.Play(clips[(int)AnimPotato.Move]);
     }
 
@@ -71,60 +134,17 @@ public class Potato : Character
     {
         switch (horizontal)
         {
-            case < 0 when _potatoModel.facingRight:
-            case > 0 when !_potatoModel.facingRight:
+            case < 0 when PotatoModel.facingRight:
+            case > 0 when !PotatoModel.facingRight:
                 Flip();
                 break;
         }
         void Flip()
         {
-            _potatoModel.facingRight = !_potatoModel.facingRight;
+            PotatoModel.facingRight = !PotatoModel.facingRight;
             var trans = potatoBody;
-            trans.eulerAngles = new Vector3 (0, _potatoModel.facingRight ? 0 : 180, 0);
+            trans.eulerAngles = new Vector3 (0, PotatoModel.facingRight ? 0 : 180, 0);
         }
-    }
-    
-    private void Init()
-    {
-        InitStat();
-        renderPotato.RenderEyes(_potatoModel.potatoId);
-        renderPotato.RenderHairs(_potatoModel.potatoId);
-        renderPotato.RenderMouths(_potatoModel.potatoId);
-    }
-
-    private void InitStat()
-    {
-        stats.Add(new StatCharacter(StatType.HP, 10));
-        stats.Add(new StatCharacter(StatType.SpeedVelocity, 5));
-        stats.Add(new StatCharacter(StatType.DetectRange, 5));
-
-        UpdatePotato(_potatoModel.levelPotato);
-        potatoMediator.InitHealthAndLevel((int)CurrentHp);
-    }
-
-    [Button("PotatoRevival")]
-    private void PotatoRevival()
-    {
-        statIncrease = 0;
-        stats.Find(s => s.statType == StatType.HP).statIncrease = 0;
-        stats.Find(s => s.statType == StatType.SpeedVelocity).statIncrease = 0;
-        UpdatePotato(_potatoModel.levelPotato);
-        Debug.Log(CurrentHp);
-        potatoMediator.SetValueHp((int)CurrentHp);
-    }
-
-    private void UpdatePotato(int level)
-    {
-        stats.Find(s => s.statType == StatType.HP).statIncrease += level * 10;
-        stats.Find(s => s.statType == StatType.SpeedVelocity).statIncrease += level * 0.2f;
-    }
-    
-    public override void ReceiveDamage(StatType statType, float statIncrease)
-    {
-        base.ReceiveDamage(statType, statIncrease);
-        potatoMediator.SetValueHp((int)CurrentHp);
-        Debug.Log(CurrentHp);
-        if(CurrentHp <= 0) Signals.Get<PotatoDeathSignals>().Dispatch();
     }
     private void OnDrawGizmos()
     {

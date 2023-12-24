@@ -49,7 +49,7 @@ public class GameplayUI : MonoBehaviour
         while (isActiveAndEnabled)
         {
             yield return _waitFor1Sec;
-            if (_timeLeft >= -1)
+            if (_timeLeft >= 1)
             {
                 _timeLeft -= 1;
                 ShowTimeRemain();

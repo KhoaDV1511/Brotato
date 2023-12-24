@@ -11,7 +11,6 @@ public class UpgradeEquipmentItem : EnhancedScrollerCellView
     [SerializeField] private Button btnEquipment;
 
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
-    private TypeEquipment _typeEquipment;
     private EquipmentItemInfo _equipmentItemInfo;
 
     private void Start()
@@ -23,15 +22,23 @@ public class UpgradeEquipmentItem : EnhancedScrollerCellView
     {
         imgEquipment.sprite = equipmentItemInfo.GetSprite();
         txtDescription.SetText(equipmentItemInfo.Description());
-        txtPrice.SetText(equipmentItemInfo.Price());
-
-        _typeEquipment = equipmentItemInfo.typeEquipment;
+        txtPrice.SetText(equipmentItemInfo.Price().ToString());
+        
         _equipmentItemInfo = equipmentItemInfo;
     }
 
     private void OnClickUpgrade()
     {
-        if (_typeEquipment == TypeEquipment.Weapon)
+        if(_potatoModel.dropItemPicked < _equipmentItemInfo.Price()) return;
+        _potatoModel.dropItemPicked -= _equipmentItemInfo.Price();
+        Signals.Get<RefreshDropPicked>().Dispatch();
+        
+        BuyItem();
+    }
+
+    private void BuyItem()
+    {
+        if (_equipmentItemInfo.typeEquipment == TypeEquipment.Weapon)
         {
             if(_potatoModel.elementWeaponUpgrades.Count >= PotatoKey.MAX_WEAPON_IN_HAND) return;
             Signals.Get<UpgradeWeaponSignals>().Dispatch(_equipmentItemInfo);

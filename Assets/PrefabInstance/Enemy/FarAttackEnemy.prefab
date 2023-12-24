@@ -156,9 +156,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1571356171
+  m_SortingLayer: 10
+  m_SortingOrder: 2
   m_Sprite: {fileID: 1749639646, guid: 4327b79ad261ab149a5ef3e447bc0bd4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -271,13 +271,6 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 512
-  enemyInsideArea: []
-  targetPosMin: {x: 0, y: 0, z: 0}
-  stats:
-  - statType: 4
-  - statType: 5
-  - statType: 3
-  - statType: 1
   sprEnemy: {fileID: 7244811128509419095}
   projectile: {fileID: 5018225102632552903}
 --- !u!50 &2732478692117997819

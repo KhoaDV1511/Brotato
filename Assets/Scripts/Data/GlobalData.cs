@@ -9,6 +9,7 @@ public class GlobalData : MonoBehaviour
     public RateEquipment rateEquipment;
     public WeaponAndItemStats weaponAndItemStats;
     public EnemyStats enemyStats;
+    public RateDropItems rateDropItems;
 
     private static GlobalData _ins;
 

@@ -1,5 +1,6 @@
 using System;
 using Sirenix.OdinInspector.Editor.Drawers;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -8,6 +9,7 @@ public class GameplayMediator : MonoBehaviour
 {
     [SerializeField] private Button btnPause, btnContinueGame, btnReloadGame, btnRevival, btnStartNewGame;
     [SerializeField] private GameObject panelPauseGame, panelPotatoDeath;
+    [SerializeField] private TextMeshProUGUI txtDameEnemy;
     
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
     private readonly PotatoDeathSignals _potatoDeathSignals = Signals.Get<PotatoDeathSignals>();

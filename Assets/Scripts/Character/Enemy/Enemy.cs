@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -11,13 +12,35 @@ public class Enemy : Character
 
     private List<EnemyStat> _enemyStats => GlobalData.Ins.enemyStats.enemyStats;
     private EnemyStat _enemyStat => _enemyStats.Find(e => e.enemyType == _enemyType);
-
-    private int _levelEnemy;
+    
     private Camera _camera;
     private Vector3 _enemyMoveNotVisible;
     private Coroutine _insideCam;
     private EnemyType _enemyType;
     private TypeDetectRangeEnemy _typeDetectRangeEnemy;
+    
+    private readonly UpgradeItemSignals _upgradeItemSignals = Signals.Get<UpgradeItemSignals>();
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        _upgradeItemSignals.AddListener(UpdateWeapon);
+    }
+
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        _upgradeItemSignals.RemoveListener(UpdateWeapon);
+    }
+
+    private void UpdateWeapon(EquipmentItemInfo equipmentItemInfo)
+    {
+        var statType = equipmentItemInfo.ItemStat.statItemIncreases.Find(s => s.increaseFor == IncreaseFor.Enemy);
+        if (statType != null)
+        {
+            stats.Find(s => s.statType == statType.statType).statIncrease += statType.statIncrease;
+            Debug.Log("update enemy");
+        }
+    }
 
     protected override void Start()
     {
@@ -26,9 +49,9 @@ public class Enemy : Character
         CheckInSideCam();
     }
 
-    public void Init(int level = 0)
+    public void Init(int level, EnemyType enemyType)
     {
-        _levelEnemy = level;
+        _enemyType = enemyType;
         stats.Add(new StatCharacter(StatType.ATK, _enemyStat.DameAttack(level)));
         stats.Add(new StatCharacter(StatType.HP, _enemyStat.Health(level)));
         stats.Add(new StatCharacter(StatType.AttackSpeed, _enemyStat.attackSpeed));
@@ -41,6 +64,11 @@ public class Enemy : Character
     public override void ReceiveDamage(StatType statType, float statIncrease)
     {
         base.ReceiveDamage(statType, statIncrease);
+        if (statType == StatType.HP)
+        {
+            sprEnemy.color = Color.red;
+            DOVirtual.DelayedCall(0.1f, () => sprEnemy.color = Color.white);
+        }
         if(CurrentHp <= 0)
         {
             Signals.Get<EnemyDeathSignals>().Dispatch(transform.position);
@@ -51,12 +79,12 @@ public class Enemy : Character
     public void ShowEnemy(EnemyAttribute enemyAttribute)
     {
         sprEnemy.sprite = enemyAttribute.avatar;
-        _enemyType = enemyAttribute.enemyType;
         gameObject.Show();
     }
 
     private void Update()
     {
+        if(PotatoModel.isHarvestToStore) return;
         EnemyMove();
         if(enemyDetected)
             Flip(transform, enemyDetected.transform.position);
@@ -123,5 +151,10 @@ public class Enemy : Character
         }
 
         return true;
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, AttackRange);
     }
 }

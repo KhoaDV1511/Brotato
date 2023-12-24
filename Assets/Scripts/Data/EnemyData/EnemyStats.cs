@@ -29,7 +29,7 @@ public class EnemyStat
 
     public float DameAttack(int level)
     {
-        return baseDameAttack * level;
+        return baseDameAttack * level / 15 + 0.5f;
     }
 }
 

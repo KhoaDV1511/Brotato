@@ -2,6 +2,7 @@ using System;
 using System.Net.NetworkInformation;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class PotatoMediator : MonoBehaviour
@@ -12,22 +13,27 @@ public class PotatoMediator : MonoBehaviour
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
 
     private readonly UpdateDropItemPickedSignals _updateDropItemPickedSignals =
-        Signals.Get<UpdateDropItemPickedSignals>();
-    private int _maxHp;
+        Signals.Get<UpdateDropItemPickedSignals>(); 
+
+    private readonly RefreshDropPicked _refreshDropPicked = Signals.Get<RefreshDropPicked>();
+    public int maxHp;
 
     private void OnEnable()
     {
         _updateDropItemPickedSignals.AddListener(SetValueLevel);
+        _refreshDropPicked.AddListener(SetTxtDrop);
     }
 
     private void OnDisable()
     {
         _updateDropItemPickedSignals.RemoveListener(SetValueLevel);
+        _refreshDropPicked.RemoveListener(SetTxtDrop);
     }
 
     public void InitHealthAndLevel(int currentHp)
     {
-        _maxHp = currentHp;
+        maxHp = currentHp;
+        _potatoModel.dropItemPicked = 20;
         SetHp(currentHp);
         SetLevel();
         SetStatDropItem();
@@ -35,29 +41,36 @@ public class PotatoMediator : MonoBehaviour
 
     public void SetValueHp(int currentHp)
     {
-        txtSldHp.SetText($"{currentHp}/{_maxHp}");
+        txtSldHp.SetText($"{currentHp}/{maxHp}");
         sldHealth.SetValueWithoutNotify(currentHp);
     }
 
     public void SetValueLevel()
     {
-        txtLevel.SetText(_potatoModel.levelPotato.ToString());
+        txtLevel.SetText($"LV.{_potatoModel.levelPotato}");
+        _potatoModel.experienceCurrentPotato += 1;
         sldExperience.SetValueWithoutNotify(_potatoModel.experienceCurrentPotato);
-
+        
         if (_potatoModel.experienceCurrentPotato >= _potatoModel.experienceMaxPerLevel)
         {
             _potatoModel.experienceCurrentPotato -= _potatoModel.experienceMaxPerLevel;
             _potatoModel.levelPotato += 1;
+            _potatoModel.potatoLevelUp += 1;
             SetLevel();
         }
 
         SetStatDropItem();
     }
+    
+    private void SetTxtDrop()
+    {
+        txtDropItemQuantity.SetText(_potatoModel.dropItemPicked.ToString());
+        txtStoreDropItemQuantity.SetText(_potatoModel.dropItemInfos.Count.ToString());
+    }
 
     private void SetStatDropItem()
     {
-        txtDropItemQuantity.SetText(_potatoModel.dropItemPicked.ToString());
-        txtStoreDropItemQuantity.SetText(_potatoModel.dropItemStore.ToString());
+        SetTxtDrop();
         sldExperience.SetValueWithoutNotify(_potatoModel.experienceCurrentPotato);
     }
 

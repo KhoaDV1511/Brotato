@@ -13,3 +13,7 @@ public class EnemyDeathSignals : ASignal<Vector2>{}
 public class PotatoDeathSignals : ASignal{}
 public class UpdateDropItemPickedSignals : ASignal{}
 public class PotatoPickDropItemToStoreSignals : ASignal<Vector2>{}
+public class StopAttackSignals : ASignal<bool>{}
+public class HarvestToStoreSignals : ASignal{}
+public class RefreshDropPicked : ASignal{}
+public class PickItemSignals : ASignal<int, Vector2>{}

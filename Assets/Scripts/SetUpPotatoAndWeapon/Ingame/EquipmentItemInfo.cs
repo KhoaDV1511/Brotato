@@ -13,7 +13,7 @@ public class EquipmentItemInfo
     private List<WeaponStat> _weaponStats => GlobalData.Ins.weaponAndItemStats.weaponStats;
     private WeaponStat _weaponStat => _weaponStats.Find(w => w.id == idItem);
     private List<ItemStat> _itemStats => GlobalData.Ins.weaponAndItemStats.itemStats;
-    private ItemStat _itemStat => _itemStats.Find(i => i.id == idItem);
+    public ItemStat ItemStat => _itemStats.Find(i => i.id == idItem);
 
     private Sprite sprWeapon => _sprWeapon.GetSpriteWeapon(idItem);
     public Sprite GetSprite()
@@ -21,14 +21,14 @@ public class EquipmentItemInfo
         return typeEquipment == TypeEquipment.Weapon ? sprWeapon : SprItem.GetSprite($"Item_{idItem}");
     }
 
-    public string Price()
+    public int Price()
     {
-        return typeEquipment == TypeEquipment.Weapon ? _weaponStat.Price(tire).ToString() : _itemStat.price.ToString();
+        return typeEquipment == TypeEquipment.Weapon ? _weaponStat.Price(tire) : ItemStat.price;
     }
 
     public string Description()
     {
-        return typeEquipment == TypeEquipment.Weapon ? DescriptionWeapon() : tire.ToString();
+        return typeEquipment == TypeEquipment.Weapon ? DescriptionWeapon() : ItemStat.Description();
     }
 
     private string DescriptionWeapon()

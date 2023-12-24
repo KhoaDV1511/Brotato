@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78ec66368d246abbe79b026be3458aa, type: 3}
+  m_Name: RateDropItems
+  m_EditorClassIdentifier: 
+  elementRateDropItems:
+  - wave: 1
+    dropChange: 1
+  - wave: 2
+    dropChange: 1
+  - wave: 3
+    dropChange: 1
+  - wave: 4
+    dropChange: 1
+  - wave: 5
+    dropChange: 0.925
+  - wave: 6
+    dropChange: 0.91
+  - wave: 7
+    dropChange: 0.895
+  - wave: 8
+    dropChange: 0.88
+  - wave: 9
+    dropChange: 0.865
+  - wave: 10
+    dropChange: 0.85
+  - wave: 11
+    dropChange: 0.835
+  - wave: 12
+    dropChange: 0.82
+  - wave: 13
+    dropChange: 0.805
+  - wave: 14
+    dropChange: 0.79
+  - wave: 15
+    dropChange: 0.775
+  - wave: 16
+    dropChange: 0.76
+  - wave: 17
+    dropChange: 0.745
+  - wave: 18
+    dropChange: 0.73
+  - wave: 19
+    dropChange: 0.715
+  - wave: 20
+    dropChange: 0.7

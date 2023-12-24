@@ -188,14 +188,8 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 512
-  enemyInsideArea: []
-  targetPosMin: {x: 0, y: 0, z: 0}
-  stats:
-  - statType: 4
-  - statType: 5
-  - statType: 3
-  - statType: 1
   sprEnemy: {fileID: 7244811128509419095}
+  txtReceiveDame: {fileID: 0}
 --- !u!50 &2732478692117997819
 Rigidbody2D:
   serializedVersion: 4

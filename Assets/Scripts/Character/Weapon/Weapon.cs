@@ -5,10 +5,31 @@ public class Weapon : Character
 {
     [SerializeField] protected SpriteRenderer sprWeapon;
     [SerializeField] private SpriteOutline spriteOutline;
-    private readonly PotatoModel _potatoModel = PotatoModel.Instance;
     private List<WeaponStat> _weaponStats => GlobalData.Ins.weaponAndItemStats.weaponStats;
-    private WeaponStat _weaponStat => _weaponStats.Find(w => w.id == _potatoModel.weaponId);
-    
+    private WeaponStat _weaponStat => _weaponStats.Find(w => w.id == PotatoModel.weaponId);
+
+    private readonly UpgradeItemSignals _upgradeItemSignals = Signals.Get<UpgradeItemSignals>();
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+        _upgradeItemSignals.AddListener(UpdateWeapon);
+    }
+
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        _upgradeItemSignals.RemoveListener(UpdateWeapon);
+    }
+
+    private void UpdateWeapon(EquipmentItemInfo equipmentItemInfo)
+    {
+        var statType = equipmentItemInfo.ItemStat.statItemIncreases.Find(s => s.increaseFor == IncreaseFor.Weapon);
+        if (statType != null)
+        {
+            stats.Find(s => s.statType == statType.statType).statIncrease += statType.statIncrease;
+            Debug.Log("update weapon");
+        }
+    }
 
     public void SetWeapon(Sprite weapon, Color color)
     {
@@ -17,21 +38,25 @@ public class Weapon : Character
         spriteOutline.UpdateOutlineSprite();
     }
     
+    // ReSharper disable Unity.PerformanceAnalysis
     public void Init(Tire tire)
     {
-        stats.Clear();
-        stats.Add(new StatCharacter(StatType.ATK, _weaponStat.DameAttack(tire)));
+        //stats.Clear();
+        stats.Add(new StatCharacter(StatType.MeleeAndRangedDame));
+        stats.Add(new StatCharacter(StatType.ATK, _weaponStat.DameAttack(tire, MeleeAndRanged)));
         stats.Add(new StatCharacter(StatType.AttackSpeed, _weaponStat.AttackSpeed(tire)));
         stats.Add(new StatCharacter(StatType.AttackRange, _weaponStat.AttackRange(tire)));
         stats.Add(new StatCharacter(StatType.DetectRange, _weaponStat.DetectRange(tire)));
+        
         //Debug.Log($"Stats weapon: {dame}, {attackSpeed}, {attackRange}, {detectRange}");
+        Debug.Log(stats.Count);
     }
     private float RotationSpeed => enemyInsideArea.Length <= 0 ? 15 : 20;
     protected void LookAtTargetAndFlip(Transform weaponPos)
     {
-        var direction = _potatoModel.moveDirection == Vector3.zero
+        var direction = PotatoModel.moveDirection == Vector3.zero
             ? Vector3.right
-            : _potatoModel.moveDirection;
+            : PotatoModel.moveDirection;
         var target = enemyInsideArea.Length <= 0
             ? direction.FindVectorADistanceVecTorB(origin: transform.localPosition, 10)
             : enemyPosMin;

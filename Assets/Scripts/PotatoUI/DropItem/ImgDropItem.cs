@@ -28,7 +28,7 @@ public class ImgDropItem : MonoBehaviour
     private void MoveDropItem(RectTransform rect)
     {
         _dropMove?.Kill();
-        _dropMove = DOTween.Sequence().Append(imgRect.DOMove(rect.position, 1)).Append(transform.DOScale(0, 0.3f).From(1))
+        _dropMove = DOTween.Sequence().Append(imgRect.DOMove(rect.position, 0.7f)).Append(transform.DOScale(0, 0.3f).From(1))
             .AppendCallback(() => Destroy(gameObject));
     }
 
