@@ -1,4 +1,4 @@
-// Animancer // https://kybernetik.com.au/animancer // Copyright 2018-2023 Kybernetik //
+// Animancer // https://kybernetik.com.au/animancer // Copyright 2021 Kybernetik //
 
 #pragma warning disable CS0649 // Field is never assigned to, and will always have its default value.
 
@@ -19,7 +19,6 @@ namespace Animancer.Examples.AnimatorControllers.GameKit
         /************************************************************************************************************************/
 
         [SerializeField] private ClipTransition _Animation;
-        [SerializeField] private CharacterState _RespawnState;
         [SerializeField] private UnityEvent _OnEnterState;// See the Read Me.
         [SerializeField] private UnityEvent _OnExitState;// See the Read Me.
 
@@ -28,7 +27,7 @@ namespace Animancer.Examples.AnimatorControllers.GameKit
         private void Awake()
         {
             // Respawn immediately when the animation ends.
-            _Animation.Events.OnEnd = _RespawnState.ForceEnterState;
+            _Animation.Events.OnEnd = Character.Respawn.ForceEnterState;
         }
 
         /************************************************************************************************************************/
@@ -43,7 +42,7 @@ namespace Animancer.Examples.AnimatorControllers.GameKit
         private void OnEnable()
         {
             Character.Animancer.Play(_Animation);
-            Character.Parameters.ForwardSpeed = 0;
+            Character.ForwardSpeed = 0;
             _OnEnterState.Invoke();
         }
 

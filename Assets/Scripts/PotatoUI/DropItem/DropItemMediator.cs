@@ -23,8 +23,6 @@ public class DropItemMediator : MonoBehaviour
     private readonly PotatoPickDropItemToStoreSignals _potatoPickDropItemSignals = Signals.Get<PotatoPickDropItemToStoreSignals>();
     private readonly PickItemSignals _pickItemSignals = Signals.Get<PickItemSignals>();
 
-    private Tween _txtXnShow;
-
     private void OnEnable()
     {
         _enemyDeathSignals.AddListener(DropSprItem);
@@ -47,8 +45,7 @@ public class DropItemMediator : MonoBehaviour
         objTxt.SetText($"X{(Xn + 1)}");
         objTxt.Show();
         
-        _txtXnShow?.Kill();
-        _txtXnShow = DOVirtual.DelayedCall(0.3f, () => objTxt.Hide());
+        DOVirtual.DelayedCall(0.3f, () => Destroy(objTxt.gameObject));
     }
 
     private void DropSprItem(Vector2 posDrop)

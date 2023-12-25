@@ -1,5 +1,5 @@
 using System;
-using Sirenix.OdinInspector.Editor.Drawers;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,11 +8,12 @@ using UnityEngine.SceneManagement;
 public class GameplayMediator : MonoBehaviour
 {
     [SerializeField] private Button btnPause, btnContinueGame, btnReloadGame, btnRevival, btnStartNewGame;
-    [SerializeField] private GameObject panelPauseGame, panelPotatoDeath;
+    [SerializeField] private GameObject panelPauseGame, panelPotatoDeath, parentTxtDameCaused;
     [SerializeField] private TextMeshProUGUI txtDameEnemy;
     
     private readonly PotatoModel _potatoModel = PotatoModel.Instance;
     private readonly PotatoDeathSignals _potatoDeathSignals = Signals.Get<PotatoDeathSignals>();
+    private readonly DameCausedSignals _dameCausedSignals = Signals.Get<DameCausedSignals>();
 
     private void Start()
     {
@@ -26,13 +27,23 @@ public class GameplayMediator : MonoBehaviour
     private void OnEnable()
     {
         _potatoDeathSignals.AddListener(OnPotatoDeath);
+        _dameCausedSignals.AddListener(DameCaused);
     }
 
     private void OnDisable()
     {
         _potatoDeathSignals.RemoveListener(OnPotatoDeath);
+        _dameCausedSignals.RemoveListener(DameCaused);
     }
-
+    private void DameCaused(int dame, Vector2 posTxtAppear)
+    {
+        // var objTxt = Instantiate(txtDameEnemy, parentTxtDameCaused.transform);
+        // objTxt.transform.position = posTxtAppear;
+        // objTxt.SetText(dame.ToString());
+        // objTxt.Show();
+        //
+        // DOVirtual.DelayedCall(0.3f, () => Destroy(objTxt.gameObject));
+    }
     private void OnPotatoDeath()
     {
         Time.timeScale = 0;

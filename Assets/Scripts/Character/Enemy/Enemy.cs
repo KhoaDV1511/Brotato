@@ -23,16 +23,16 @@ public class Enemy : Character
     protected override void OnEnable()
     {
         base.OnEnable();
-        _upgradeItemSignals.AddListener(UpdateWeapon);
+        _upgradeItemSignals.AddListener(UpdateEnemy);
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
-        _upgradeItemSignals.RemoveListener(UpdateWeapon);
+        _upgradeItemSignals.RemoveListener(UpdateEnemy);
     }
 
-    private void UpdateWeapon(EquipmentItemInfo equipmentItemInfo)
+    private void UpdateEnemy(EquipmentItemInfo equipmentItemInfo)
     {
         var statType = equipmentItemInfo.ItemStat.statItemIncreases.Find(s => s.increaseFor == IncreaseFor.Enemy);
         if (statType != null)
@@ -66,6 +66,7 @@ public class Enemy : Character
         base.ReceiveDamage(statType, statIncrease);
         if (statType == StatType.HP)
         {
+            Signals.Get<DameCausedSignals>().Dispatch(Mathf.CeilToInt(statIncrease), transform.position);
             sprEnemy.color = Color.red;
             DOVirtual.DelayedCall(0.1f, () => sprEnemy.color = Color.white);
         }

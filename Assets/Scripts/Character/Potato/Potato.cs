@@ -1,6 +1,5 @@
 using System;
 using Animancer;
-using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.U2D;
 using UnityEngine.UI;
@@ -32,7 +31,7 @@ public class Potato : Character
         _startGameSignals.AddListener(InitStat);
         _potatoRevivalSignals.AddListener(PotatoResetHp);
         _startNewWaveSignals.AddListener(PotatoResetHp);
-        _upgradeItemSignals.AddListener(UpdateWeapon);
+        _upgradeItemSignals.AddListener(UpdatePotato);
     }
 
     protected override void OnDisable()
@@ -40,15 +39,15 @@ public class Potato : Character
         _startGameSignals.RemoveListener(InitStat);
         _potatoRevivalSignals.RemoveListener(PotatoResetHp);
         _startNewWaveSignals.RemoveListener(PotatoResetHp);
-        _upgradeItemSignals.RemoveListener(UpdateWeapon);
+        _upgradeItemSignals.RemoveListener(UpdatePotato);
     }
     
-    private void UpdateWeapon(EquipmentItemInfo equipmentItemInfo)
+    private void UpdatePotato(EquipmentItemInfo equipmentItemInfo)
     {
         var statType = equipmentItemInfo.ItemStat.statItemIncreases.Find(s => s.increaseFor == IncreaseFor.Potato);
         if (statType != null)
         {
-            stats.Find(s => s.statType == statType.statType).statIncrease += statType.statIncrease;
+            stats.Find(s => s.statType == statType.statType).baseValue += statType.statIncrease;
             Debug.Log("update potato");
         }
     }
@@ -79,14 +78,14 @@ public class Potato : Character
         Debug.Log(stats.Count);
         stats.Find(s => s.statType == StatType.HP).statIncrease = 0;
         UpdatePotato(PotatoModel.levelPotato);
-        potatoMediator.maxHp = Mathf.CeilToInt(CurrentHp);
+        potatoMediator.SetMaxValueHp(Mathf.CeilToInt(CurrentHp));
         potatoMediator.SetValueHp(Mathf.CeilToInt(CurrentHp));
     }
 
     private void UpdatePotato(int level)
     {
         stats.Find(s => s.statType == StatType.HP).statIncrease += level * 10;
-        stats.Find(s => s.statType == StatType.SpeedVelocity).statIncrease += level * 0.2f;
+        stats.Find(s => s.statType == StatType.SpeedVelocity).statIncrease += level * 0.02f;
     }
     
     public override void ReceiveDamage(StatType statType, float statIncreases)

@@ -1,4 +1,4 @@
-// Animancer // https://kybernetik.com.au/animancer // Copyright 2018-2023 Kybernetik //
+// Animancer // https://kybernetik.com.au/animancer // Copyright 2021 Kybernetik //
 
 #pragma warning disable CS0649 // Field is never assigned to, and will always have its default value.
 
@@ -32,7 +32,7 @@ namespace Animancer.Examples.Jobs
     public sealed class SimpleLean : AnimancerJob<SimpleLean.Job>, IDisposable
     {
         /************************************************************************************************************************/
-        #region Initialization
+        #region Initialisation
         /************************************************************************************************************************/
 
         public SimpleLean(AnimancerPlayable animancer, Vector3 axis, NativeArray<TransformStreamHandle> leanBones)
@@ -50,6 +50,22 @@ namespace Animancer.Examples.Jobs
             CreatePlayable(animancer);
 
             animancer.Disposables.Add(this);
+        }
+
+        /************************************************************************************************************************/
+
+        public SimpleLean(AnimancerPlayable animancer)
+            : this(animancer, Vector3.forward, GetDefaultHumanoidLeanBones(animancer.Component.Animator))
+        { }
+
+        /************************************************************************************************************************/
+
+        public static NativeArray<TransformStreamHandle> GetDefaultHumanoidLeanBones(Animator animator)
+        {
+            var leanBones = new NativeArray<TransformStreamHandle>(2, Allocator.Persistent, NativeArrayOptions.UninitializedMemory);
+            leanBones[0] = animator.BindStreamTransform(animator.GetBoneTransform(HumanBodyBones.Spine));
+            leanBones[1] = animator.BindStreamTransform(animator.GetBoneTransform(HumanBodyBones.Chest));
+            return leanBones;
         }
 
         /************************************************************************************************************************/

@@ -1,6 +1,5 @@
 using System;
 using DG.Tweening;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class Sword : Weapon
@@ -21,8 +20,7 @@ public class Sword : Weapon
         if (_isAttack) return;
         LookAtTargetAndFlip(transform);
     }
-
-    [Button]
+    
     protected override void Attack()
     {
         base.Attack();

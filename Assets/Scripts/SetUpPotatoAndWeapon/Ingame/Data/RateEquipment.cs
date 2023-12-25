@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "RateEquipmentDAta")]

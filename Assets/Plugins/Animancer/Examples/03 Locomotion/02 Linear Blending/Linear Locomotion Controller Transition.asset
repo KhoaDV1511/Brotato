@@ -21,11 +21,12 @@ MonoBehaviour:
       data:
         _FadeDuration: 0.25
         _Events:
+          _Names: []
           _NormalizedTimes: []
           _Callbacks: []
-          _Names: []
         _Controller: {fileID: 91242112294343564}
-        _ActionsOnStop: 
+        _NormalizedStartTime: NaN
+        _KeepStateOnStop: 0
         _ParameterName: Speed
 --- !u!91 &91242112294343564
 AnimatorController:
@@ -116,7 +117,7 @@ AnimatorState:
   m_TimeParameterActive: 0
   m_Motion: {fileID: 206771759363972004}
   m_Tag: 
-  m_SpeedParameter: Speed
+  m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 

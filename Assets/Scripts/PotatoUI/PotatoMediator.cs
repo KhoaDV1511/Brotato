@@ -16,7 +16,7 @@ public class PotatoMediator : MonoBehaviour
         Signals.Get<UpdateDropItemPickedSignals>(); 
 
     private readonly RefreshDropPicked _refreshDropPicked = Signals.Get<RefreshDropPicked>();
-    public int maxHp;
+    private int _maxHp;
 
     private void OnEnable()
     {
@@ -32,8 +32,8 @@ public class PotatoMediator : MonoBehaviour
 
     public void InitHealthAndLevel(int currentHp)
     {
-        maxHp = currentHp;
-        _potatoModel.dropItemPicked = 20;
+        _maxHp = currentHp;
+        _potatoModel.dropItemPicked = 35;
         SetHp(currentHp);
         SetLevel();
         SetStatDropItem();
@@ -41,14 +41,14 @@ public class PotatoMediator : MonoBehaviour
 
     public void SetValueHp(int currentHp)
     {
-        txtSldHp.SetText($"{currentHp}/{maxHp}");
+        txtSldHp.SetText($"{currentHp}/{_maxHp}");
         sldHealth.SetValueWithoutNotify(currentHp);
     }
 
-    public void SetValueLevel()
+    private void SetValueLevel(int exp)
     {
         txtLevel.SetText($"LV.{_potatoModel.levelPotato}");
-        _potatoModel.experienceCurrentPotato += 1;
+        _potatoModel.experienceCurrentPotato += exp;
         sldExperience.SetValueWithoutNotify(_potatoModel.experienceCurrentPotato);
         
         if (_potatoModel.experienceCurrentPotato >= _potatoModel.experienceMaxPerLevel)
@@ -85,5 +85,11 @@ public class PotatoMediator : MonoBehaviour
     {
         sldHealth.maxValue = currentHp;
         SetValueHp(currentHp);
+    }
+
+    public void SetMaxValueHp(int maxHp)
+    {
+        _maxHp = maxHp;
+        sldHealth.maxValue = maxHp;
     }
 }

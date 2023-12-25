@@ -1,4 +1,4 @@
-// Animancer // https://kybernetik.com.au/animancer // Copyright 2018-2023 Kybernetik //
+// Animancer // https://kybernetik.com.au/animancer // Copyright 2021 Kybernetik //
 
 #pragma warning disable CS0649 // Field is never assigned to, and will always have its default value.
 
@@ -10,9 +10,9 @@ namespace Animancer.Examples.Events
     /// <example><see href="https://kybernetik.com.au/animancer/docs/examples/events/footsteps">Footstep Events</see></example>
     /// https://kybernetik.com.au/animancer/api/Animancer.Examples.Events/FootstepEvents
     /// 
-    [AddComponentMenu(Strings.ExamplesMenuPrefix + "Footstep Events - Footstep Events")]
+    [AddComponentMenu(Strings.ExamplesMenuPrefix + "Footstep Events - Animancer")]
     [HelpURL(Strings.DocsURLs.ExampleAPIDocumentation + nameof(Events) + "/" + nameof(FootstepEvents))]
-    public sealed class FootstepEvents : MonoBehaviour
+    public class FootstepEvents : MonoBehaviour
     {
         /************************************************************************************************************************/
 
@@ -22,18 +22,27 @@ namespace Animancer.Examples.Events
 
         /************************************************************************************************************************/
 
-        private void OnEnable()
+        protected void OnEnable()
         {
             _Animancer.Play(_Walk);
         }
 
         /************************************************************************************************************************/
 
-        // Called by Animancer Events.
+        /// <summary>Chooses a random sound an plays it on the specified `source` (because each foot has its own).</summary>
+        /// <remarks>Called by Animancer Events.</remarks>
         public void PlaySound(AudioSource source)
         {
             source.clip = _Sounds[Random.Range(0, _Sounds.Length)];
             source.Play();
+
+            // Note that the minimum value in Random.Range is inclusive (so it can pick 0) while the maximum value is
+            // exclusive (so it can not pick `_Sounds.Length`), which is perfect for picking a random array element.
+
+            // A more complex system could have different footstep sounds depending on the surface being stepped on.
+            // This could be done by raycasting down from the feet and determining which sound to use based on the
+            // sharedMaterial of the ground's Renderer as demonstrated in the 3D Game Kit example or even a simple
+            // script that holds an enum indicating the type.
         }
 
         /************************************************************************************************************************/

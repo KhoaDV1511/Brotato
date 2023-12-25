@@ -1,8 +1,5 @@
-// Animancer // https://kybernetik.com.au/animancer // Copyright 2018-2023 Kybernetik //
+// Animancer // https://kybernetik.com.au/animancer // Copyright 2021 Kybernetik //
 
-#if ! UNITY_EDITOR
-#pragma warning disable CS0618 // Type or member is obsolete (for MixerState in Animancer Lite).
-#endif
 #pragma warning disable CS0649 // Field is never assigned to, and will always have its default value.
 
 using Animancer.Units;
@@ -39,7 +36,7 @@ namespace Animancer.Examples.AnimatorControllers.GameKit
 
         private void OnEnable()
         {
-            Character.Parameters.ForwardSpeed = 0;
+            Character.ForwardSpeed = 0;
             Character.Animancer.Play(_Animation);
 
             var direction = DetermineHitDirection();

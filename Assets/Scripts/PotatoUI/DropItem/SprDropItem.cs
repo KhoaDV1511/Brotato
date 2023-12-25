@@ -35,7 +35,7 @@ public class SprDropItem : MonoBehaviour, DropItemInfo
             _potatoModel.dropItemPicked += Level + 1;
             MoveDropItem();
             Signals.Get<PickItemSignals>().Dispatch(Level, transform.position);
-            Signals.Get<UpdateDropItemPickedSignals>().Dispatch();
+            Signals.Get<UpdateDropItemPickedSignals>().Dispatch(Level + 1);
         }
         else
         {

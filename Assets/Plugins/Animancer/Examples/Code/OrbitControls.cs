@@ -1,4 +1,4 @@
-// Animancer // https://kybernetik.com.au/animancer // Copyright 2018-2023 Kybernetik //
+// Animancer // https://kybernetik.com.au/animancer // Copyright 2021 Kybernetik //
 
 using UnityEngine;
 
@@ -18,10 +18,20 @@ namespace Animancer.Examples
         /************************************************************************************************************************/
 
         [SerializeField] private Vector3 _FocalPoint = new Vector3(0, 1, 0);
-        [SerializeField] private Vector3 _Sensitivity = new Vector3(1, -0.75f, -0.1f);
-        [SerializeField] private float _MinZoom = 0.5f;
+        [SerializeField] private MouseButton _MouseButton = MouseButton.Right;
+        [SerializeField] private Vector3 _Sensitivity = new Vector3(15, -10, -0.1f);
 
         private float _Distance;
+
+        /************************************************************************************************************************/
+
+        public enum MouseButton
+        {
+            Automatic = -1,
+            Left = 0,
+            Right = 1,
+            Middle = 2,
+        }
 
         /************************************************************************************************************************/
 
@@ -44,10 +54,13 @@ namespace Animancer.Examples
             }
 #endif
 
-            if (ExampleInput.RightMouseHold)
+            if (_MouseButton == MouseButton.Automatic || Input.GetMouseButton((int)_MouseButton))
             {
-                var movement = ExampleInput.MousePositionDelta;
-                if (!movement.Equals(default))
+                var movement = new Vector2(
+                    Input.GetAxis("Mouse X"),
+                    Input.GetAxis("Mouse Y"));
+
+                if (movement != default)
                 {
                     var euler = transform.localEulerAngles;
                     euler.y += movement.x * _Sensitivity.x;
@@ -59,16 +72,12 @@ namespace Animancer.Examples
                 }
             }
 
-            // Scroll to zoom if the mouse is currently inside the game window.
-            var zoom = ExampleInput.MouseScrollDelta.y * _Sensitivity.z;
-            var mousePosition = ExampleInput.MousePosition;
+            var zoom = Input.mouseScrollDelta.y * _Sensitivity.z;
             if (zoom != 0 &&
-                mousePosition.x >= 0 && mousePosition.x <= Screen.width &&
-                mousePosition.y >= 0 && mousePosition.y <= Screen.height)
+                Input.mousePosition.x >= 0 && Input.mousePosition.x <= Screen.width &&
+                Input.mousePosition.y >= 0 && Input.mousePosition.y <= Screen.height)
             {
                 _Distance *= 1 + zoom;
-                if (_Distance < _MinZoom)
-                    _Distance = _MinZoom;
             }
 
             // Always update position even with no input in case the target is moving.

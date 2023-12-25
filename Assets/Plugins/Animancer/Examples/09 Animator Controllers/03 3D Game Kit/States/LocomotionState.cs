@@ -1,8 +1,5 @@
-// Animancer // https://kybernetik.com.au/animancer // Copyright 2018-2023 Kybernetik //
+// Animancer // https://kybernetik.com.au/animancer // Copyright 2021 Kybernetik //
 
-#if ! UNITY_EDITOR
-#pragma warning disable CS0618 // Type or member is obsolete (for ControllerState in Animancer Lite).
-#endif
 #pragma warning disable CS0649 // Field is never assigned to, and will always have its default value.
 
 using Animancer.Units;
@@ -45,7 +42,7 @@ namespace Animancer.Examples.AnimatorControllers.GameKit
 
         /************************************************************************************************************************/
 
-        public override bool CanEnterState => Character.Movement.IsGrounded;
+        public override bool CanEnterState => Character.IsGrounded;
 
         /************************************************************************************************************************/
 
@@ -61,8 +58,8 @@ namespace Animancer.Examples.AnimatorControllers.GameKit
             if (Character.CheckMotionState())
                 return;
 
-            Character.Movement.UpdateSpeedControl();
-            _LocomotionMixer.State.Parameter = Character.Parameters.ForwardSpeed;
+            Character.UpdateSpeedControl();
+            _LocomotionMixer.State.Parameter = Character.ForwardSpeed;
 
             UpdateRotation();
             UpdateAudio();
@@ -77,13 +74,13 @@ namespace Animancer.Examples.AnimatorControllers.GameKit
             if (!_LocomotionMixer.State.IsActive)
                 return;
 
-            if (!Character.Movement.GetTurnAngles(Character.Parameters.MovementDirection, out var currentAngle, out var targetAngle))
+            if (!Character.GetTurnAngles(Character.Brain.Movement, out var currentAngle, out var targetAngle))
                 return;
 
             // Check if we should play a quick turn animation:
 
             // If we are moving fast enough.
-            if (Character.Parameters.ForwardSpeed > _QuickTurnMoveSpeed)
+            if (Character.ForwardSpeed > _QuickTurnMoveSpeed)
             {
                 // And turning sharp enough.
                 var deltaAngle = Mathf.DeltaAngle(currentAngle, targetAngle);
@@ -103,17 +100,18 @@ namespace Animancer.Examples.AnimatorControllers.GameKit
                 }
             }
 
-            Character.Movement.TurnTowards(currentAngle, targetAngle, Character.Movement.CurrentTurnSpeed);
+            Character.TurnTowards(currentAngle, targetAngle, Character.CurrentTurnSpeed);
         }
 
         /************************************************************************************************************************/
 
         [SerializeField] private UnityEvent _PlayFootstepAudio;// See the Read Me.
-
         private bool _CanPlayAudio;
         private bool _IsPlayingAudio;
 
-        // This is the same logic used for locomotion audio in the original PlayerController.
+        /// <remarks>
+        /// This is the same logic used for locomotion audio in the original PlayerController.
+        /// </remarks>
         private void UpdateAudio()
         {
             const float Threshold = 0.01f;
@@ -128,8 +126,8 @@ namespace Animancer.Examples.AnimatorControllers.GameKit
                 // so it calls RandomAudioPlayer.PlayRandomClip with those parameters:
                 //_FootstepAudio.PlayRandomClip(Character.GroundMaterial, Character.ForwardSpeed < 4 ? 0 : 1);
 
-                // Unfortunately UnityEvents can't call methods with multiple parameters (UltEvents can), but it
-                // doesn't realy matter because the 3D Game Kit Lite only has one set of footstep sounds anyway.
+                // Unfortunately UnityEvents cannot call methods with multiple parameters (UltEvents can), but it does
+                // not realy matter because the 3D Game Kit Lite only has one set of footstep sounds anyway.
 
                 _PlayFootstepAudio.Invoke();
             }

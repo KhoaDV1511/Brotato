@@ -1,4 +1,4 @@
-// Animancer // https://kybernetik.com.au/animancer // Copyright 2018-2023 Kybernetik //
+// Animancer // https://kybernetik.com.au/animancer // Copyright 2021 Kybernetik //
 
 #pragma warning disable CS0649 // Field is never assigned to, and will always have its default value.
 
@@ -31,10 +31,12 @@ namespace Animancer.Examples.AnimatorControllers.GameKit
 
         private void Update()
         {
-            if (ExampleInput.Number1Up)
-                SelectCharacter(0);
-            else if (ExampleInput.Number2Up)
-                SelectCharacter(1);
+            for (int i = 0; i < _Characters.Length; i++)
+            {
+                var key = KeyCode.Alpha1 + i;
+                if (Input.GetKeyUp(key))
+                    SelectCharacter(i);
+            }
         }
 
         /************************************************************************************************************************/
@@ -45,16 +47,13 @@ namespace Animancer.Examples.AnimatorControllers.GameKit
 
             for (int i = 0; i < _Characters.Length; i++)
             {
-                // Activate the target and deactivate everyone else.
                 var active = i == index;
                 _Characters[i].SetActive(active);
-
-                // Build all their names into a string explaining which keys they correspond to.
 
                 if (i > 0)
                     text.AppendLine();
 
-                if (active)// Use Rich Text Tags to make the active character Bold.
+                if (active)
                     text.Append("<b>");
 
                 text.Append(1 + i)
